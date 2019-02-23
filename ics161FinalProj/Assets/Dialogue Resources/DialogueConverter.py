@@ -14,7 +14,7 @@ ASSUMPTIONS:
 """
 ##HEADER INITIALIZATION##
 from openpyxl import Workbook, load_workbook
-
+import csv
 
 ##VARIABLES##
 FILENAME = "Dialogue.txt"
@@ -54,7 +54,7 @@ def makewb(title:str, text:str):
         ws.cell(row, 2).value  = line[line.index(":")+1:]
         ws.cell(row, 3).value  = "default"
 
-    wb.save(f"{title}.xlsx")
+    wb.save(f"{title}.csv")
 
 
 def cleanup(file):

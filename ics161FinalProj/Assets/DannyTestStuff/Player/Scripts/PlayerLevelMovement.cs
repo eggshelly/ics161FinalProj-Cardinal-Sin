@@ -69,6 +69,4 @@ public class PlayerLevelMovement : MonoBehaviour
         else
             m_isGrounded = false;   
     }
-
-
 }
