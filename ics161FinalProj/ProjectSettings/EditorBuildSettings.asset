@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/DannyTestStuff/MenusAndUI/MainMenu.unity
+    guid: 284415f82fd76d54a90bfe3979f3bbb8
+  - enabled: 1
+    path: Assets/DannyTestStuff/MenusAndUI/SaveFiles.unity
+    guid: 62889690bcfb1a742a84fda14113f37f
+  - enabled: 1
+    path: Assets/DannyTestStuff/TestMap/TestMap.unity
+    guid: 15185304b0d5ac54e8bf8bac4d083219
   m_configObjects: {}
