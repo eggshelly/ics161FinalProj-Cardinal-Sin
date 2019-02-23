@@ -19,6 +19,10 @@ public class DialogueImport : MonoBehaviour
     void Start()
     {
         readData();
+        foreach(KeyValuePair<int, Dialogue> i in GameDialogue)
+        {
+            Debug.Log(i);
+        }
     }
 
     // Update is called once per frame
