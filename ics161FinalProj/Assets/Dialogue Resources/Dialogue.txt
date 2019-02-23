@@ -1,0 +1,73 @@
+INTRODUCTION
+M: New Years… 
+M: Everything about this year will be new. New house, new school, new classmates… 
+M: ...all these new things, with an expiration date. 
+M: Because this year will be my last year as a high school student.
+M: Until now, I’ve idled away my time with mediocre friendships, mediocre grades, mediocre…
+M: ...everything.
+M:  What have I become? Some generic protagonist of an indie Visual Novel? 
+M: Well, I’ve made a promise to myself.
+M: This new year, this new season...
+M: things will change.
+SPRING 1
+MC: Today seems like a nice day to walk around the school. 
+MC: Even if I won’t be here long, it won’t do me any good if I’m getting lost all semester. 
+M: I proceed to explore the school, taking mental note of each turn…
+M: er, or so I thought. I forgot how many turns I made and now
+M: I don’t even know which way to start backtracking. Shoot!
+MC: Why does every classroom look the same?? Am I even in the same building… 
+Haruka: Ah, sorry to bother, but do you think you might be lost? 
+M: I hear a small but friendly sounding voice from behind me. 
+M: D-Did I just say what I said before out loud?? Oh crap. Wasn’t that a girl’s voice too? Just my luck, I act like a fool in front of the first person I meet… 
+M: I get the urge to run away, or brush her off.
+M: But then I realize, the promise I made to myself earlier this year. To be different.
+M: I clear my throat and let whatever comes to my mind first become words.
+MC: Uhhh, yes, yes I am. I just transferred here, so... 
+M: SmallTalk.exe not found. 
+Haruka: Oh! I thought you looked familiar. You introduced yourself earlier. Ah… nice to meet you, I’m Haruka Yamauchi. 
+M: I turn around and see a <DESCRIBE HER> 
+Haruka: This school can be pretty confusing, if I’m not paying attention I could easily walk pass our classroom too.
+M: too…? I look to my right, and sure enough, there’s a sign clearly labelled with my classroom number.
+MC: !!! Oh gosh! I really was lost. Thank-you, I would’ve been in circles for hours. 
+M: I start to turn red, and Haruka starts to giggle, slightly. 
+Haruka: Hehe. You’re not wrong though, this school is pretty modern, so many of the hallways do look the same. 
+M: That’s for sure…
+M: Haruka looks like a responsible girl. I hate to ask people for things, but at this rate, I’ll be walking in circles the whole semester. 
+MC: Ah, I don’t want to trouble you, but... do you think you could show me around? When you’re not busy, of course… 
+Haruka: Hm? 
+M: I felt a second wave of embarrassment take over. I’m not used to doing things so bold, but… I have to start somewhere. 
+M: Before I could turn any redder, Haruka smiles shyly.
+Haruka: Sure! If you don’t mind me. I can show you around right now, if you’d like. 
+M: I give her a smile back, and a happy nod. 
+Haruka: Great! I’ll show you the library first, its my favorite place… 
+M: She shows me around for a few hours, and we make small talk. 
+M: She seems friendly, yet also reserved like me. I think we can get along well. 
+Haruka: And, were back to the classroom. I tried to cover all the important places… 
+MC: Mm, thank-you so much. I really owe you one. I don’t want to keep you any longer, and it's getting pretty late so I’ll head off now… 
+M: In a cheery mood, we say our goodbyes and I begin to turn to leave…
+M: ...but I don’t get very far before I hear her voice call out to me again.
+Haruka: Umm….
+M: Haruka looks down at her feet, fiddling with her fingers. As if she wants to say something. 
+M: If I leave now… she probably won’t get to say anything…
+M: But if I make the mistake of assuming she has more to say… that’ll be awkward… 
+M: What do I do…? 
+M: Out of nowhere, my growing feelings of indecisiveness and insecurity are cut by a wave of dizziness... so strong it numbs my thoughts. 
+M: My consciousness goes blank, and the saturated colors of the hallway slowly fades away with it… 
+SPRING 1 GOOD END
+M: ...my thoughts slowly seep back in, and the school hall and Haruka materialize back into vision. 
+M: Self-awareness hits me like cold water to the face.
+MC: Hm? Sorry, is there more you had to say? 
+Haruka: Ah… I just wanted to say… if you need anything else, please let me know! Let’s, mm get along… 
+M: Her voice trails off at the end, that I could barely catch the last part. 
+MC: Mm, definitely. See you tomorrow! 
+M: I turn slightly to wave once more, and start walking away. Out of the corner of my eye
+M: I realize Haruka was the same shade of red I was when we first met. 
+SPRING 1 BAD END
+M: ...my thoughts slowly seep back in, and the school hall and Haruka materialize back into vision. 
+M: Self-awareness hits me like cold water to the face.
+M: I don’t really know what to say or do, and it won’t help much if I just stand here. 
+MC: Well, see you tomorrow. 
+Haruka: Ah… yeah, see you… 
+M: As I make my way down the hall, I can’t help but feel as if there were a slight sound of disappointment to her words.
+M: I do my best to shake it off. It was probably nothing, right? 
+M: At least, I’ve met someone new at this school. 
