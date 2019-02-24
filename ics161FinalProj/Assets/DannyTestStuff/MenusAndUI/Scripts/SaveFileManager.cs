@@ -84,7 +84,7 @@ public class SaveFileManager : MonoBehaviour
                 Vector3 loadedPos = new Vector3(level.position[0], level.position[1], level.position[2]);
                 player.transform.position = loadedPos;
 
-                stageHub.loadStages(level.stagesEntered);
+                stageHub.loadStages(level.stageCollectibles);
 
             }
         }

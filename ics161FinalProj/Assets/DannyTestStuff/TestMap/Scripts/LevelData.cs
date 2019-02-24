@@ -12,7 +12,7 @@ public class LevelData
 
 
     //for the stage
-    public bool[] stagesEntered;
+    public int[] stageCollectibles;
 
     public LevelData(PlayerData playerData, StageHubScript stageHub)
     {
@@ -24,11 +24,11 @@ public class LevelData
 
 
 
-        stagesEntered = new bool[stageHub.GetNumberOfStages()];
+        stageCollectibles = new int[stageHub.GetNumberOfStages()];
         Stage[] allStages = stageHub.getAllStages();
         for(int i = 0; i < allStages.Length; ++i)
         {
-            stagesEntered[i] = allStages[i].alreadyEntered;
+            stageCollectibles[i] = allStages[i].collectiblesLeft;
         }
     }
 }

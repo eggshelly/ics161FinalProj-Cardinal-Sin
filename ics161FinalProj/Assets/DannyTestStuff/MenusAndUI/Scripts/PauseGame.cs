@@ -5,6 +5,7 @@ using UnityEngine;
 public class PauseGame : MonoBehaviour
 {
     [SerializeField] GameObject PausePanel;
+    [SerializeField] GameObject StagePanel;
 
 
     bool toggled = false;
@@ -19,13 +20,20 @@ public class PauseGame : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            if (!toggled)
+            if (!StagePanel.activeInHierarchy)
             {
-                Pause();
+                if (!toggled)
+                {
+                    Pause();
+                }
+                else
+                {
+                    ResumedGame();
+                }
             }
             else
             {
-                ResumedGame();
+                StagePanel.SetActive(false);
             }
         }
     }
