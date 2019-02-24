@@ -5,7 +5,7 @@
 #michacg2@uci.edu
 
 """
-This file reads from a word document and creates a an excel file.
+This file reads from a word document and creates a an csv file.
 Will appropriately place dialogue lines into cell to use for UNITY. 
 
 ASSUMPTIONS:
@@ -13,7 +13,6 @@ ASSUMPTIONS:
 
 """
 ##HEADER INITIALIZATION##
-from openpyxl import Workbook, load_workbook
 import csv
 
 ##VARIABLES##
@@ -22,15 +21,15 @@ FILENAME = "Dialogue.txt"
 ##SCRIPT##
 
 def run(file):   
-    canmakewb = False
+    canmakecsv = False
     text = list()
 
     for line in file:
         if line == "INTRODUCTION\n" or (" " in line and line[:line.index(" ")] in ["INTRODUCTION", "WINTER", "SPRING", "SUMMER", "AUTUMN"]): #means new wb!
             print(line)
-            if canmakewb:
-                makewb(title, text)
-            canmakewb = True
+            if canmakecsv:
+                makecsv(title, text)
+            canmakecsv = True
 
             title = line.rstrip()
             text  = list()
@@ -38,23 +37,17 @@ def run(file):
         else:
             text.append(line.rstrip())
             
-    makewb(title,text)
+    makecsv(title,text)
 
 
-def makewb(title:str, text:str):
-    wb = Workbook()
-    ws = wb.active
-    ws.cell(1,1).value = "SPEAKER"
-    ws.cell(1,2).value = "CONVO"
-    ws.cell(1,3).value = "SPRITE"
+def makecsv(title:str, text:str):
+    with open(f"{title}.csv", "w") as csvfile:
+        filewriter = csv.writer(csvfile, delimiter=',',
+                            quotechar='|', quoting=csv.QUOTE_MINIMAL)
 
-    for line in text:
-        row = ws.max_row + 1
-        ws.cell(row, 1).value  = line[:line.index(":")]
-        ws.cell(row, 2).value  = line[line.index(":")+1:]
-        ws.cell(row, 3).value  = "default"
-
-    wb.save(f"{title}.csv")
+        filewriter.writerow(["SPEAKER", "CONVO", "SPRITE"])
+        for line in text:
+            filewriter.writerow([line[:line.index(":")], line[line.index(":")+1:], "default"])
 
 
 def cleanup(file):
