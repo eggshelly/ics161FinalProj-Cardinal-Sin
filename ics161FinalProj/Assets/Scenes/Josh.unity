@@ -207,7 +207,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d77cd80ac026bac42b43dc40377c8a8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
 --- !u!1 &1681973215
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,7 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb3140aafef4ea24b8dece3e10956ce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  csvFile: {fileID: 0}
+  assetThing: {fileID: 4900000, guid: 3af44fa4d7d42a64f9f50d87c9210c37, type: 3}
 --- !u!4 &1681973217
 Transform:
   m_ObjectHideFlags: 0

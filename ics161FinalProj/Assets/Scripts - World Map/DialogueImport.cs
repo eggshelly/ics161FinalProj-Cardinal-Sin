@@ -7,66 +7,39 @@ using System.Text.RegularExpressions;
 
 public class DialogueImport : MonoBehaviour
 {
-    //public TextAsset csvFile = Resources.Load("INTRODUCTION.csv") as TextAsset;
-    public TextAsset csvFile;
-    private char lineSeparator = '\n';
-    private char fieldSeparator = ',';
-    private Dictionary<int, Dialogue> GameDialogue;
+    public TextAsset assetThing;
 
-    // Start is called before the first frame update
+    public static Dictionary<int, Dialogue> GameDialogue;
+    private int currentLine = 1;
+    private int maxLine = 0;
+
     void Awake()
     {
         GameDialogue = new Dictionary<int, Dialogue>();
+
+        string[] data = assetThing.text.Split(new char[] { '\n' });
+
+        maxLine = (data.Length - 1) / 2;
+
+        for (int i = 2; i <= data.Length - 1; i += 2)
+        {
+            string[] parsedData = data[i].Split(new char[] { ',' });
+
+            Dialogue dialogueObj = new Dialogue(parsedData[0], parsedData[2], parsedData[1].Replace("XYZ", ","));
+
+            GameDialogue.Add(i / 2, dialogueObj);
+        }
     }
+
     void Start()
     {
-        readData();
-        foreach(KeyValuePair<int, Dialogue> i in GameDialogue)
-        {
-            Debug.Log(i);
-        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-    private void readData()
-    {
-        string name = "";
-        string text = "";
-        string sprite = "";
-        int i = 0;
-        string[] parsedFields = new string[0];
-        string[] parsedLines = csvFile.text.Split(new char[] { '\n' });
-        Debug.Log(parsedLines.Length);
-        for (int j = 0; j < parsedLines.Length - 1; j++)
-        {
-            string[] row = parsedLines[j].Split(new char[] { ','});
-            Debug.Log(row);
-        }
-
-        foreach(string line in parsedLines)
-        {
-            parsedFields = line.Split(fieldSeparator);
-        } 
-        foreach(string field in parsedFields)
-        {
-            if(i%3 == 0)
-            {
-                name = parsedFields[i];
-            }
-            else if(i%3 == 1)
-            {
-                text = parsedFields[i];
-            }
-            else if(i%3 == 2)
-            {
-                sprite = parsedFields[i];
-                GameDialogue.Add((i-2), new Dialogue(name, text, sprite));
-            }
-            ++i;
-        }
+        if (Input.GetKeyDown(KeyCode.Space) && currentLine <= maxLine)
+            Debug.Log(GameDialogue[currentLine++].text);         
     }
 }
