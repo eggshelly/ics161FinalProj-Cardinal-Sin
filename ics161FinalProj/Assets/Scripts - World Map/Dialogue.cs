@@ -6,17 +6,14 @@ using System;
 [System.Serializable]
 public class Dialogue
 {
-    //public string key;
-    public string named;
-   // [TextArea(3,10)]
-    //public string[] sentences;
-    public string spriteType;
+    public string speaker;
     public string text;
+    public string sprite;
 
-    public Dialogue(string named, string spriteType, string text)
+    public Dialogue(string speaker, string text, string sprite)
     {
-        this.named = named;
-        this.spriteType = spriteType;
+        this.speaker = speaker;
         this.text = text;
+        this.sprite = sprite;
     }
 }
