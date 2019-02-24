@@ -21,7 +21,7 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (textOutput.Count != 0)
+        if (textOutput.Count >= 1)
         {
             dialoguePanel.SetActive(true);
             Time.timeScale = 0;
@@ -31,6 +31,15 @@ public class DialogueManager : MonoBehaviour
 
             if (Input.GetKey(KeyCode.Space) && !spaceDelay)
                 DisplayNextSentence();
+        }
+        else if (textOutput.Count == 0)
+        {
+            if (Input.GetKey(KeyCode.Space) && !spaceDelay)
+            {
+                dialoguePanel.SetActive(false);
+                Time.timeScale = 1;
+                initialText = 0;
+            }
         }
     }
 
@@ -71,22 +80,12 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueText.text = "";
 
-        foreach(char letter in text.ToCharArray())
+        foreach (char letter in text.ToCharArray())
         {
             dialogueText.text += letter;
             yield return null;
         }
 
-        if (textOutput.Count == 0)
-        {
-            dialoguePanel.SetActive(false);
-            Time.timeScale = 1;
-            initialText = 0;
-        }
-
         spaceDelay = false;
     }
 }
-
-//Function to load a specific dictionary
-//Have keyboard input to progress text in Update()
