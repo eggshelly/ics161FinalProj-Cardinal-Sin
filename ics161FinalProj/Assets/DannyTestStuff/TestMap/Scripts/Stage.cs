@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class IntUnityEvent : UnityEvent<int> { }
 
-public class StringIntUnityEvent: UnityEvent<string, int, int> { }
+public class StringIntUnityEvent: UnityEvent<string, int, bool[]> { }
 
 public class Stage : MonoBehaviour
 {
@@ -14,20 +14,28 @@ public class Stage : MonoBehaviour
     [SerializeField] float sizeMulti;
     [SerializeField] int totalNumCollectibles;
 
+    public UnityEvent StageLeft;
+
     public IntUnityEvent FinishedStage;
 
     public StringIntUnityEvent StageEntered;
+
+    public int stageIndex { get; set; } 
 
     SpriteRenderer m_SpriteRenderer;
     Color origColor;
     GameObject player;
 
+    bool[] collectibles;
+
     public int collectiblesLeft = -1;
 
     private void Awake()
     {
+        CreateCollectiblesArray();
         StageEntered = new StringIntUnityEvent();
         FinishedStage = new IntUnityEvent();
+        StageLeft = new UnityEvent();
         collectiblesLeft = (collectiblesLeft < 0 ? totalNumCollectibles: collectiblesLeft);
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
         player = GameObject.FindGameObjectWithTag("Player");
@@ -45,6 +53,20 @@ public class Stage : MonoBehaviour
         
     }
 
+    void CreateCollectiblesArray()
+    {
+        collectibles = new bool[totalNumCollectibles];
+        for(int i = 0; i < totalNumCollectibles; ++i)
+        {
+            collectibles[i] = false;
+        }
+    }
+
+    public int GetTotalCollectibles()
+    {
+        return totalNumCollectibles;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag("Player"))
@@ -60,23 +82,30 @@ public class Stage : MonoBehaviour
         {
                 transform.localScale = transform.localScale / sizeMulti;
                 m_SpriteRenderer.color = origColor;
+                 StageLeft.Invoke();
         }
     }
 
     public void EnterStage()
     {
-            StageEntered.Invoke(gameObject.name, collectiblesLeft, totalNumCollectibles);
-            FinishedStage.Invoke(pointValue);
+            StageEntered.Invoke(gameObject.name, stageIndex, collectibles);
+            //FinishedStage.Invoke(pointValue);
     }
 
     public void CheckIfEntered()
     {
     }
 
-    public void LoadEntered(int collectibles)
+    public void LoadCollectibles(bool[] collect)
     {
-        collectiblesLeft = collectibles;
+        
+        if (collect.Length > 0)
+        {
+            collectibles = collect;
+        }
     }
+
+    
 
 
 }

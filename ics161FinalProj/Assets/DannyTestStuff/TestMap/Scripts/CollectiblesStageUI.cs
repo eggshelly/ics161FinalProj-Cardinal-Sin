@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CollectiblesScript : MonoBehaviour
+public class CollectiblesStageUI : MonoBehaviour
 {
     [SerializeField] GameObject Panel;
     [SerializeField] Sprite keySpriteFilled;
@@ -20,36 +20,27 @@ public class CollectiblesScript : MonoBehaviour
         
     }
 
-    public void CreateCollectibles(int collectibles, int totalC)
+    public void CreateCollectibles(bool[] collectibles)
     {
         DeleteCurrent();
         RectTransform r = Panel.GetComponent<RectTransform>();
         float width = r.rect.width;
         Vector3 leftBorder = new Vector3(r.rect.xMin, r.transform.position.y);
-        float distanceBetween = width / (totalC * 2);
-        for (int i = 0; i < totalC; i++)
+        float distanceBetween = width / (collectibles.Length * 2);
+        for (int i = 0; i < collectibles.Length; i++)
         {
             GameObject newImage = new GameObject();
             newImage.transform.SetParent(Panel.transform, false);
             RectTransform rect = newImage.AddComponent<RectTransform>();
             rect.anchoredPosition = new Vector2(leftBorder.x + distanceBetween + distanceBetween* 2 * i , newImage.transform.localPosition.y);
             Image image = newImage.AddComponent<Image>();
-            if (i < (totalC -collectibles))
+            if (collectibles[i])
                 image.sprite = keySpriteFilled;
             else
                 image.sprite = keySpriteEmpty;
         }
 
     }
-
-     /*void SetInformation(int collectibles, int totalC)
-    {
-        totalCollectibles = totalC;
-        collectiblesLeft = collectibles;
-        RectTransform r = GetComponent<RectTransform>();
-        width = r.rect.width;
-        leftBorder = new Vector3(r.rect.xMin, r.transform.position.y);
-    }*/
 
     void DeleteCurrent()
     {

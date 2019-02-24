@@ -8,6 +8,9 @@ TagManager:
   - StageHub
   - Save
   - Ground
+  - Collectible
+  - Manager
+  - Exit
   layers:
   - Default
   - TransparentFX

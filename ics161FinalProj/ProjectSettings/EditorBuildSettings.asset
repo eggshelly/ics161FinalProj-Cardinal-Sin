@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/DannyTestStuff/TestMap/TestMap.unity
     guid: 15185304b0d5ac54e8bf8bac4d083219
+  - enabled: 1
+    path: Assets/DannyTestStuff/TestLevels/Stage 1.unity
+    guid: ea8518254548f704181ea8401c9aadeb
   m_configObjects: {}

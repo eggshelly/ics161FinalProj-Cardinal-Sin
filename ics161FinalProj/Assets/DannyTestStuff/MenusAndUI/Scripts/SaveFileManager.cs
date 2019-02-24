@@ -9,14 +9,23 @@ public class SaveFileManager : MonoBehaviour
 
     [SerializeField] GameObject OpenFile;
 
-    PlayerData player;
     StageHubScript stageHub;
+
+    GameObject player;
 
     OpenFileScript fileScript;
 
     string currentButton;
 
+    int currentStage;
+    string currentStageName;
+    bool[] currentStageCollectibles;
+
+    Vector3 playerPos;
+
     bool loadData = false;
+
+    bool finishedAStage = false;
 
     private void Awake()
     {
@@ -34,6 +43,7 @@ public class SaveFileManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
     }
 
     private void Update()
@@ -52,7 +62,13 @@ public class SaveFileManager : MonoBehaviour
 
     public void SaveGame()
     {
-        SaveFileScript.SaveLevel(currentButton, player, stageHub);
+        if(SceneManager.GetActiveScene() != SceneManager.GetSceneByName("TestMap"))
+            SaveFileScript.SaveLevel(currentButton, playerPos, stageHub);
+        else
+        {
+            SaveFileScript.SaveLevel(currentButton, player.transform.position, stageHub);
+        }
+        LoadDataForLevel();
     }
 
     public void ChooseSaveFile(string buttonName)
@@ -74,19 +90,53 @@ public class SaveFileManager : MonoBehaviour
         }
         else if (loadedScene == SceneManager.GetSceneByName("TestMap"))
         {
-            player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerData>();
+            player = GameObject.FindGameObjectWithTag("Player");
             stageHub = GameObject.FindGameObjectWithTag("StageHub").GetComponent<StageHubScript>();
-
             if (loadData)
             {
                 LevelData level = SaveFileScript.LoadLevel(currentButton);
-                player.totalPoints = level.points;
                 Vector3 loadedPos = new Vector3(level.position[0], level.position[1], level.position[2]);
                 player.transform.position = loadedPos;
-
                 stageHub.loadStages(level.stageCollectibles);
 
             }
+            if (finishedAStage)
+            {
+                stageHub.UpdateCollectiblesForStage(currentStage, currentStageCollectibles);
+                player.transform.position = playerPos;
+                finishedAStage = false;
+            }
+        }
+        else if(loadedScene.name == currentStageName)
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+        }
+
+    }
+
+    public void SaveCurrentPosition()
+    {
+        playerPos = player.transform.position;
+    }
+
+    public void AddCollectablesCountToCurrentState(bool[] collected)
+    {
+        currentStageCollectibles = collected;
+        finishedAStage = true;
+        //loadData = true;
+    }
+
+    public void SetCurrentStageNumber(int index, string name)
+    {
+        currentStageName = name;
+        currentStage = index;
+    }
+
+   void printListOfBools(bool[] list)
+    {
+        for(int i = 0; i < list.Length; ++i)
+        {
+            Debug.Log(list[i]);
         }
     }
 

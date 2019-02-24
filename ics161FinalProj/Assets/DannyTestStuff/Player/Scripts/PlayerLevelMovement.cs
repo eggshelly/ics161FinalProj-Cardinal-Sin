@@ -12,13 +12,17 @@ public class PlayerLevelMovement : MonoBehaviour
     Rigidbody2D m_RigidBody2D;
     CircleCollider2D m_CircleCollider2D;
 
+    LevelManager manager;
+
     int jumpsRemaining;
 
     bool m_isGrounded;
 
+    bool canExit = false;
     // Start is called before the first frame update
     void Start()
     {
+        manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<LevelManager>();
         m_RigidBody2D = GetComponent<Rigidbody2D>();
         m_CircleCollider2D = GetComponent<CircleCollider2D>();
         jumpsRemaining = maxNumberOfJumps;
@@ -28,6 +32,8 @@ public class PlayerLevelMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        CheckExit();
+
         checkGrounded();
         Move();
         if (Input.GetKeyDown(KeyCode.W))
@@ -68,5 +74,35 @@ public class PlayerLevelMovement : MonoBehaviour
         }
         else
             m_isGrounded = false;   
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.CompareTag("Exit"))
+        {
+            canExit = collision.gameObject.GetComponent<ExitDoorScript>().canExit;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Stage"))
+        {
+            canExit = false;
+        }
+    }
+
+    void CheckExit()
+    {
+        if(canExit)
+        {
+            if(Input.GetKeyDown(KeyCode.P))
+            {
+                manager.PassDataToSaveManager();
+
+            }
+        }
+
     }
 }

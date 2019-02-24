@@ -8,27 +8,34 @@ public class LevelData
 {
     //for the player
     public float[] position;
-    public int points;
 
 
     //for the stage
-    public int[] stageCollectibles;
+    public bool[][] stageCollectibles;
 
-    public LevelData(PlayerData playerData, StageHubScript stageHub)
+    public LevelData(Vector3 playerPos, StageHubScript stageHub)
     {
-        points = playerData.totalPoints;
         position = new float[3];
-        position[0] = playerData.transform.position.x;
-        position[1] = playerData.transform.position.y;
-        position[2] = playerData.transform.position.z;
+        position[0] = playerPos.x;
+        position[1] = playerPos.y;
+        position[2] = playerPos.z;
+
+        //Debug.Log(stageHub.allStageCollectibles.Count);
+        stageCollectibles = stageHub.allStageCollectibles.ToArray();//ConvertListToArray(stageHub.allStageCollectibles).ToArray();
+        
+    }
 
 
-
-        stageCollectibles = new int[stageHub.GetNumberOfStages()];
-        Stage[] allStages = stageHub.getAllStages();
-        for(int i = 0; i < allStages.Length; ++i)
+    List<bool> ConvertListToArray(List<bool[]> collect)
+    {
+        List<bool> temp = new List<bool>();
+        for(int i = 0; i < collect.Count; ++i)
         {
-            stageCollectibles[i] = allStages[i].collectiblesLeft;
+            for(int j = 0; j < collect[i].Length; ++j)
+            {
+                temp.Add(collect[i][j]);
+            }
         }
+        return temp;
     }
 }

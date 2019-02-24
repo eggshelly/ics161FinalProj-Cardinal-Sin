@@ -5,13 +5,13 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public static class SaveFileScript
 {
-    public static void SaveLevel(string buttonName, PlayerData player, StageHubScript stageHub)
+    public static void SaveLevel(string buttonName, Vector3 playerPos, StageHubScript stageHub)
     {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + string.Format("/{0}.csin", buttonName);
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        LevelData l = new LevelData(player, stageHub);
+        LevelData l = new LevelData(playerPos, stageHub);
 
         formatter.Serialize(stream, l);
         stream.Close();

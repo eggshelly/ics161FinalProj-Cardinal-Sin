@@ -74,4 +74,6 @@ public class PlayerMapMovement : MonoBehaviour
         top = bounds.bounds.center.y + bounds.bounds.extents.y;
         bottom = bounds.bounds.center.y - bounds.bounds.extents.y;
     }
+
+
 }
