@@ -75,3 +75,6 @@ TagManager:
   - name: Foreground
     uniqueID: 2734174999
     locked: 0
+  - name: FoliageFront
+    uniqueID: 1546070311
+    locked: 0
