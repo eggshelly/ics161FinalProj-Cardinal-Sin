@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using UnityEngine.UI;
+using System.Text.RegularExpressions;
 
 public class DialogueImport : MonoBehaviour
 {
+    //public TextAsset csvFile = Resources.Load("INTRODUCTION.csv") as TextAsset;
     public TextAsset csvFile;
     private char lineSeparator = '\n';
     private char fieldSeparator = ',';
@@ -37,7 +39,13 @@ public class DialogueImport : MonoBehaviour
         string sprite = "";
         int i = 0;
         string[] parsedFields = new string[0];
-        string[] parsedLines = csvFile.text.Split(lineSeparator);
+        string[] parsedLines = csvFile.text.Split(new char[] { '\n' });
+        Debug.Log(parsedLines.Length);
+        for (int j = 0; j < parsedLines.Length - 1; j++)
+        {
+            string[] row = parsedLines[j].Split(new char[] { ','});
+            Debug.Log(row);
+        }
 
         foreach(string line in parsedLines)
         {
