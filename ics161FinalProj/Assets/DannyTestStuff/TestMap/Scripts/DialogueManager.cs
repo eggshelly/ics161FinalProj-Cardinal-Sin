@@ -12,7 +12,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject namePanel;
 
     private Queue<Dialogue> textOutput;
-    private int initialText = 0;    //if initialText is 0, then there will be a sentence printed automatically
+    private int initialText = 0;    //if initialText is 0, then a sentence can start as the dialoguePanel is set to true
     private bool spaceDelay = false;    //locks the player from pressing spacebar while there is text being printed
 
     void Start()
@@ -56,7 +56,7 @@ public class DialogueManager : MonoBehaviour
 
         string[] data = textFile.text.Split(new char[] { '\n' });
 
-        for (int i = 2; i <= data.Length - 1; i += 2)
+        for (int i = 2; i <= data.Length - 1; i += 2) //even lines due to CSV sheet issues (prime lines are ,,)
         {
             string[] parsedData = data[i].Split(new char[] { ',' });
 
@@ -90,12 +90,12 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = "";
         dialogueText.fontStyle = FontStyles.Normal;
 
-        if (DialogueObj.speaker.Length == 1)
+        if (DialogueObj.speaker.Length == 1) //monologue: set namePanel to invisible and text to italic
         {
             namePanel.SetActive(false);
             dialogueText.fontStyle = FontStyles.Italic;
         }
-        else
+        else //any other character: set namePanel to visible and text to normal
         {
             namePanel.SetActive(true);
             nameText.text = DialogueObj.speaker;
@@ -109,4 +109,6 @@ public class DialogueManager : MonoBehaviour
 
         spaceDelay = false;
     }
+
+    //Function to load a sprite based on DialogueObj.speaker
 }
