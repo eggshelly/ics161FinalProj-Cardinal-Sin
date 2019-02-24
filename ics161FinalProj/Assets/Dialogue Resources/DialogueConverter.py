@@ -35,6 +35,8 @@ def run(file):
             text  = list()
 
         else:
+            if "," in line:
+                line = line.replace(",","XYZ")
             text.append(line.rstrip())
             
     makecsv(title,text)
@@ -47,6 +49,7 @@ def makecsv(title:str, text:str):
 
         filewriter.writerow(["SPEAKER", "CONVO", "SPRITE"])
         for line in text:
+            print(line)
             filewriter.writerow([line[:line.index(":")], line[line.index(":")+1:], "default"])
 
 

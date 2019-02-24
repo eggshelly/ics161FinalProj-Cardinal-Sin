@@ -1,9 +1,9 @@
 SPEAKER,CONVO,SPRITE
-M,| ...my thoughts slowly seep back in, and the school hall and Haruka materialize back into vision.|,default
+M, ...my thoughts slowly seep back inXYZ and the school hall and Haruka materialize back into vision.,default
 M, Self-awareness hits me like cold water to the face.,default
-M,| I don’t really know what to say or do, and it won’t help much if I just stand here.|,default
-MC,| Well, see you tomorrow.|,default
-Haruka,| Ah… yeah, see you…|,default
-M,| As I make my way down the hall, I can’t help but feel as if there were a slight sound of disappointment to her words.|,default
-M,| I do my best to shake it off. It was probably nothing, right?|,default
-M,| At least, I’ve met someone new at this school.|,default
+M, I don’t really know what to say or doXYZ and it won’t help much if I just stand here.,default
+MC, WellXYZ see you tomorrow.,default
+Haruka, Ah… yeahXYZ see you…,default
+M, As I make my way down the hallXYZ I can’t help but feel as if there were a slight sound of disappointment to her words.,default
+M, I do my best to shake it off. It was probably nothingXYZ right?,default
+M, At leastXYZ I’ve met someone new at this school.,default
