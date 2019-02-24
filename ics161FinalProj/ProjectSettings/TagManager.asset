@@ -42,9 +42,36 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: CloudsTop
+    uniqueID: 3067498423
+    locked: 0
+  - name: CloudsBot
+    uniqueID: 1510158711
+    locked: 0
+  - name: Hills
+    uniqueID: 2792506289
+    locked: 0
+  - name: Trees
+    uniqueID: 3962892183
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: FoliageBack
+    uniqueID: 3660367387
+    locked: 0
+  - name: PlatDark
+    uniqueID: 2030651331
+    locked: 0
+  - name: PlatBack
+    uniqueID: 1161440983
+    locked: 0
+  - name: PlatFront
+    uniqueID: 1343664585
+    locked: 0
   - name: Player
     uniqueID: 2479024553
+    locked: 0
+  - name: Foreground
+    uniqueID: 2734174999
     locked: 0
