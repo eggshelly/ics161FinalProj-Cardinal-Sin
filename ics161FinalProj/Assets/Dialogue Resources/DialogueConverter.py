@@ -36,7 +36,7 @@ def run(file):
             text  = list()
 
         else:
-            text.append(line)
+            text.append(line.rstrip())
             
     makewb(title,text)
 
