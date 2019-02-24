@@ -11,15 +11,12 @@ public class DialogueImport : MonoBehaviour
 
     public static Dictionary<int, Dialogue> GameDialogue;
     private int currentLine = 1;
-    private int maxLine = 0;
 
     void Awake()
     {
         GameDialogue = new Dictionary<int, Dialogue>();
 
         string[] data = assetThing.text.Split(new char[] { '\n' });
-
-        maxLine = (data.Length - 1) / 2;
 
         for (int i = 2; i <= data.Length - 1; i += 2)
         {
@@ -39,7 +36,7 @@ public class DialogueImport : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && currentLine <= maxLine)
-            Debug.Log(GameDialogue[currentLine++].text);         
+        //if (Input.GetKeyDown(KeyCode.Space) && currentLine <= GameDialogue.Count)
+        //    Debug.Log(GameDialogue[currentLine++].text);         
     }
 }
