@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Events;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -14,6 +15,13 @@ public class DialogueManager : MonoBehaviour
     private Queue<Dialogue> textOutput;
     private int initialText = 0;    //if initialText is 0, then a sentence can start as the dialoguePanel is set to true
     private bool spaceDelay = false;    //locks the player from pressing spacebar while there is text being printed
+
+    public UnityEvent DoneWithDialogue;
+
+    private void Awake()
+    {
+        DoneWithDialogue = new UnityEvent();
+    }
 
     void Start()
     {
@@ -46,6 +54,7 @@ public class DialogueManager : MonoBehaviour
                 namePanel.SetActive(false);
                 Time.timeScale = 1;
                 initialText = 0;
+                DoneWithDialogue.Invoke();
             }
         }
     }

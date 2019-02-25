@@ -11,11 +11,12 @@ public class StageHubScript : MonoBehaviour
     [SerializeField] int numStages;
     [SerializeField] GameObject StagePanel;
     [SerializeField] TextMeshProUGUI headerText;
+    [SerializeField] GameObject dialogueManager;
 
 
     Stage[] allStages;
 
-    string currentStage;
+    string currentStage = null;
 
     public List<bool[]> allStageCollectibles;
 
@@ -29,7 +30,7 @@ public class StageHubScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        dialogueManager.GetComponent<DialogueManager>().DoneWithDialogue.AddListener(DoneWithDialogueListener);
         SetStageListeners();
     }
 
@@ -50,25 +51,6 @@ public class StageHubScript : MonoBehaviour
         {
             allStageCollectibles[i] = stagesCollectibles[i];
         }
-        /*int index= 0;
-        int maxColl = allStages[index].GetTotalCollectibles();
-        List<bool> temp = new List<bool>();
-        for (int i = 0; i < stagesCollectibles.Length; ++i)
-        {
-            if(temp.Count < maxColl)
-            {
-                temp.Add(stagesCollectibles[i]);
-            }
-            else
-            {
-                allStageCollectibles[index] = temp.ToArray();
-                temp.Clear();
-                index += 1;
-                maxColl = allStages[index].GetTotalCollectibles();
-                temp.Add(stagesCollectibles[i]);
-            }
-            
-        }*/
         UpdateCollectiblesOfStages();
     }
 
@@ -107,6 +89,7 @@ public class StageHubScript : MonoBehaviour
 
     public void BackToMap()
     {
+        currentStage = null;
         StagePanel.SetActive(false);
     }
 
@@ -125,10 +108,18 @@ public class StageHubScript : MonoBehaviour
         UpdateCollectiblesOfStages();
     }
 
+    void DoneWithDialogueListener()
+    {
+        BeginCurrentLevel();
+    }
+
     public void BeginCurrentLevel()
     {
-        SaveFileManager.instance.SaveCurrentPosition();
-        SceneManager.LoadScene(currentStage);
+        if (currentStage != null)
+        {
+            SaveFileManager.instance.SaveCurrentPosition();
+            SceneManager.LoadScene(currentStage);
+        }
     }
 
 }
