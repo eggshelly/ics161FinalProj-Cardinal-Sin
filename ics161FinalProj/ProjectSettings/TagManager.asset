@@ -72,6 +72,9 @@ TagManager:
   - name: PlatFront
     uniqueID: 1343664585
     locked: 0
+  - name: Collectibles
+    uniqueID: 3003320517
+    locked: 0
   - name: Player
     uniqueID: 2479024553
     locked: 0

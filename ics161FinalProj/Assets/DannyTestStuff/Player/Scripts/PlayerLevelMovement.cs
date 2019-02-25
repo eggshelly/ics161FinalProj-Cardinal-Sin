@@ -38,7 +38,7 @@ public class PlayerLevelMovement : MonoBehaviour
 
         checkGrounded();
         Move();
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
         }
