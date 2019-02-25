@@ -10,7 +10,8 @@ public class PlayerLevelMovement : MonoBehaviour
 
 
     Rigidbody2D m_RigidBody2D;
-    CircleCollider2D m_CircleCollider2D;
+    CapsuleCollider2D m_CapsuleCollider2D;
+    SpriteRenderer m_SpriteRenderer;
 
     LevelManager manager;
 
@@ -24,7 +25,8 @@ public class PlayerLevelMovement : MonoBehaviour
     {
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<LevelManager>();
         m_RigidBody2D = GetComponent<Rigidbody2D>();
-        m_CircleCollider2D = GetComponent<CircleCollider2D>();
+        m_CapsuleCollider2D = GetComponent<CapsuleCollider2D>();
+        m_SpriteRenderer = GetComponent<SpriteRenderer>();
         jumpsRemaining = maxNumberOfJumps;
 
     }
@@ -44,7 +46,18 @@ public class PlayerLevelMovement : MonoBehaviour
 
     void Move()
     {
-        m_RigidBody2D.velocity = new Vector3(Input.GetAxis("Horizontal") * speed, m_RigidBody2D.velocity.y);
+        float movementModifier = Input.GetAxisRaw("Horizontal");
+
+        if (movementModifier > 0)
+        {
+            m_SpriteRenderer.flipX = false;
+        }
+        else if (movementModifier < 0)
+        {
+            m_SpriteRenderer.flipX = true;
+        }
+
+        m_RigidBody2D.velocity = new Vector3(movementModifier * speed, m_RigidBody2D.velocity.y);
     }
 
     void Jump()
@@ -65,7 +78,7 @@ public class PlayerLevelMovement : MonoBehaviour
 
     void checkGrounded()
     {
-        Vector3 pos = m_CircleCollider2D.bounds.center + m_CircleCollider2D.bounds.extents.y * Vector3.down;
+        Vector3 pos = m_CapsuleCollider2D.bounds.center + m_CapsuleCollider2D.bounds.extents.y * Vector3.down;
         RaycastHit2D ray = Physics2D.Raycast(pos, Vector2.down, 0.01f);
         if (ray.collider != null && ray.collider.CompareTag("Ground"))
         {
