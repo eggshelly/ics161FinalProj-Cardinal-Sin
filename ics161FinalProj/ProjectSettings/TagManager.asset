@@ -66,17 +66,17 @@ TagManager:
   - name: PlatDark
     uniqueID: 2030651331
     locked: 0
-  - name: PlatBack
-    uniqueID: 1161440983
-    locked: 0
-  - name: PlatFront
-    uniqueID: 1343664585
-    locked: 0
   - name: Collectibles
     uniqueID: 3003320517
     locked: 0
   - name: Player
     uniqueID: 2479024553
+    locked: 0
+  - name: PlatBack
+    uniqueID: 1161440983
+    locked: 0
+  - name: PlatFront
+    uniqueID: 1343664585
     locked: 0
   - name: Foreground
     uniqueID: 2734174999
