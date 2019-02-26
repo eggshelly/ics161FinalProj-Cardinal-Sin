@@ -103,24 +103,32 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = "";
         dialogueText.fontStyle = FontStyles.Normal;
         string filePath = "Art/Waifu/";
-        string spriteName = "none";
+        string spriteName = DialogueObj.sprite.ToString().Trim();
 
         if (DialogueObj.speaker.Length == 1) //monologue: set namePanel to invisible and text to italic
         {
             namePanel.SetActive(false);
-            spritePanel.SetActive(true);
+
+            if (spriteName == "none")
+            {
+                Debug.Log("NO SPRITE");
+                spritePanel.SetActive(false);
+            }
+
+            else
+                spritePanel.SetActive(true);
+
             dialogueText.fontStyle = FontStyles.Italic;
         }
         else //any other character: set namePanel to visible and text to normal
         {
             namePanel.SetActive(true);
             nameText.text = DialogueObj.speaker;
-            spriteName = DialogueObj.sprite.ToString().Trim();
-            filePath = string.Format("{0}{1}", filePath, spriteName); //HeartKey is replaced by DialogueObj.sprite no quotes
+            filePath = string.Format("{0}{1}/{2}", filePath, DialogueObj.speaker.Trim(), spriteName);
 
             if (DialogueObj.speaker != "MC")
             {
-                Debug.Log(spriteName);
+                Debug.Log(filePath);
                 spritePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>(filePath) as Sprite;
             }
 

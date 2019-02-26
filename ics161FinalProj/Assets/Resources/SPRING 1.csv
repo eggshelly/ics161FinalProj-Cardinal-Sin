@@ -1,16 +1,16 @@
 SPEAKER,CONVO,SPRITE
 ,,
-MC,Today seems like a nice day to walk around the school.,default
+MC,Today seems like a nice day to walk around the school.,none
 ,,
-MC,Even if I won’t be here longXYZ it won’t do me any good if I’m getting lost all semester.,default
+MC,Even if I won’t be here longXYZ it won’t do me any good if I’m getting lost all semester.,none
 ,,
-M,I proceed to explore the schoolXYZ taking mental note of each turn…,default
+M,I proceed to explore the schoolXYZ taking mental note of each turn…,none
 ,,
-M,erXYZ or so I thought. I forgot how many turns I made and now,default
+M,erXYZ or so I thought. I forgot how many turns I made and now,none
 ,,
-M,I don’t even know which way to start backtracking. Shoot!,default
+M,I don’t even know which way to start backtracking. Shoot!,none
 ,,
-MC,Why does every classroom look the same?? Am I even in the same building…,default
+MC,Why does every classroom look the same?? Am I even in the same building…,none
 ,,
 Haruka,AhXYZ sorry to botherXYZ but do you think you might be lost?,surprise 
 ,,
@@ -40,7 +40,7 @@ MC,!!! Oh gosh... I really was lost. Thank youXYZ I would’ve been in circles f
 ,,
 M,I could feel my face turn redXYZ and Haruka starts to giggleXYZ slightly.,default
 ,,
-Haruka,Hehe. You’re not wrong thoughXYZ this school is pretty modernXYZ so many of the hallways do look the same.,smile
+Haruka,Hehe. You’re not wrong thoughXYZ this school is pretty modernXYZ so many of the hallways do look the same.,joy2
 ,,
 M,That’s for sure.,default
 ,,
@@ -58,7 +58,7 @@ Haruka,Sure! If you don’t mind me. I can show you around right nowXYZ if you�
 ,,
 MC,I would appreciate that. Thank you,default
 ,,
-Haruka,Great! I’ll show you the library firstXYZ its my favorite place…,smile
+Haruka,Great! I’ll show you the library firstXYZ its my favorite place…,default
 ,,
 M,She shows me around for a few hoursXYZ and we make small talk.,default
 ,,
@@ -68,7 +68,7 @@ M,She has a cheerful and bright aura…,default
 ,,
 M,but I could tell she was naturally a bit reservedXYZ like me. I think we get along well.,default
 ,,
-Haruka,AaandXYZ were back to the classroom. I tried to cover all the important places…,default
+Haruka,AaandXYZ were back to the classroom. I tried to cover all the important places…,default2
 ,,
 MC,Already? WowXYZ time flew... I really owe you one.,default
 ,,
