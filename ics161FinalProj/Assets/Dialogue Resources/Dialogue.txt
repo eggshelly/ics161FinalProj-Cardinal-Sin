@@ -1,13 +1,14 @@
 INTRODUCTION
 M: New Years… 
 M: Everything about this year will be new. New house, new school, new classmates… 
-M: ...all these new things, with an expiration date. 
-M: Because this year will be my last year as a high school student.
-M: Until now, I’ve idled away my time with mediocre friendships, mediocre grades, mediocre…
+M: and hopefully, new experiences. 
+M: All these new things however, will not be without an expiration date. 
+M: Because this year will be my last chance. Its my last year as a high school student.
+M: Until now, I’ve idled away my time with average friendships, average grades, average...
 M: ...everything.
 M:  What have I become? Some generic protagonist of an indie Visual Novel? 
 M: Well, I’ve made a promise to myself.
-M: This new year, this new season...
+M: This new year, this new season… 
 M: things will change.
 SPRING 1
 MC: Today seems like a nice day to walk around the school. 
@@ -18,56 +19,302 @@ M: I don’t even know which way to start backtracking. Shoot!
 MC: Why does every classroom look the same?? Am I even in the same building… 
 Haruka: Ah, sorry to bother, but do you think you might be lost? 
 M: I hear a small but friendly sounding voice from behind me. 
-M: D-Did I just say what I said before out loud?? Oh crap. Wasn’t that a girl’s voice too? Just my luck, I act like a fool in front of the first person I meet… 
-M: I get the urge to run away, or brush her off.
-M: But then I realize, the promise I made to myself earlier this year. To be different.
+M: D-Did I just say what I said before out loud?? Oh crap. Wasn’t that a girl’s voice too? 
+M: I get the urge to just pretend like I know where I’m going, but… 
+M: I remembered the promise I made to myself earlier this year. To be different.
 M: I clear my throat and let whatever comes to my mind first become words.
 MC: Uhhh, yes, yes I am. I just transferred here, so... 
 M: SmallTalk.exe not found. 
-Haruka: Oh! I thought you looked familiar. You introduced yourself earlier. Ah… nice to meet you, I’m Haruka Yamauchi. 
-M: I turn around and see a <DESCRIBE HER> 
+Haruka: Oh! I thought you looked familiar. You introduced yourself earlier in class. Mm… nice to meet you, I’m Haruka Yamauchi. 
+M: I turn around and see a small-framed girl with blush colored hair and bright green eyes. 
 Haruka: This school can be pretty confusing, if I’m not paying attention I could easily walk pass our classroom too.
-M: too…? I look to my right, and sure enough, there’s a sign clearly labelled with my classroom number.
-MC: !!! Oh gosh! I really was lost. Thank-you, I would’ve been in circles for hours. 
-M: I start to turn red, and Haruka starts to giggle, slightly. 
-Haruka: Hehe. You’re not wrong though, this school is pretty modern, so many of the hallways do look the same. 
-M: That’s for sure…
-M: Haruka looks like a responsible girl. I hate to ask people for things, but at this rate, I’ll be walking in circles the whole semester. 
-MC: Ah, I don’t want to trouble you, but... do you think you could show me around? When you’re not busy, of course… 
+M: Our classroom…? I look to my right, and sure enough, there’s a familiar sign clearly labelled with my classroom number.
+MC: !!! Oh gosh... I really was lost. Thank you, I would’ve been in circles for hours. 
+M: I could feel my face turn red, and Haruka starts to giggle, slightly. 
+Haruka: Hehe. You’re not wrong though, this school is pretty modern, so many of the hallways do look the same.
+M: That’s for sure.
+M: Hmm, Haruka looks like a responsible girl. I hate to ask a stranger, but at this rate, I’ll be walking in circles the whole semester.
+MC: Haruka… if you’re not busy, do you think you could show me around?
 Haruka: Hm? 
-M: I felt a second wave of embarrassment take over. I’m not used to doing things so bold, but… I have to start somewhere. 
+M: I felt a second wave of embarrassment take over. She probably has better things to do than show a transfer student around.
 M: Before I could turn any redder, Haruka smiles shyly.
 Haruka: Sure! If you don’t mind me. I can show you around right now, if you’d like. 
-M: I give her a smile back, and a happy nod. 
+MC: I would appreciate that. Thank you 
 Haruka: Great! I’ll show you the library first, its my favorite place… 
 M: She shows me around for a few hours, and we make small talk. 
-M: She seems friendly, yet also reserved like me. I think we can get along well. 
-Haruka: And, were back to the classroom. I tried to cover all the important places… 
-MC: Mm, thank-you so much. I really owe you one. I don’t want to keep you any longer, and it's getting pretty late so I’ll head off now… 
-M: In a cheery mood, we say our goodbyes and I begin to turn to leave…
-M: ...but I don’t get very far before I hear her voice call out to me again.
-Haruka: Umm….
-M: Haruka looks down at her feet, fiddling with her fingers. As if she wants to say something. 
-M: If I leave now… she probably won’t get to say anything…
-M: But if I make the mistake of assuming she has more to say… that’ll be awkward… 
-M: What do I do…? 
+M: I learn she’s pretty studious, but enjoys going out with friends often. She likes to have her quiet time in the library and read when she feels like being alone. 
+M: She has a cheerful and bright aura…
+M: but I could tell she was naturally a bit reserved, like me. I think we get along well. 
+Haruka: Aaand, were back to the classroom. I tried to cover all the important places… 
+MC: Already? Wow, time flew... I really owe you one.
+M: The coppery sunset bled through the window. A lot of time really had passed… 
+M: It was going to get dark soon. 
+M: Haruka notices me staring out the window, and looks at the dim sky as well. 
+Haruka: Ah! It’s already getting dark, I should get going… 
+M: Oh no… I kept her here this long, I feel bad. Should I offer to walk her home? 
+M: Maybe that’s too bold to ask right now… but… 
+M: I turn to look at Haruka, who’s still facing the russet colored window. 
+M: I really want to ask… 
 M: Out of nowhere, my growing feelings of indecisiveness and insecurity are cut by a wave of dizziness... so strong it numbs my thoughts. 
 M: My consciousness goes blank, and the saturated colors of the hallway slowly fades away with it… 
 SPRING 1 GOOD END
-M: ...my thoughts slowly seep back in, and the school hall and Haruka materialize back into vision. 
-M: Self-awareness hits me like cold water to the face.
-MC: Hm? Sorry, is there more you had to say? 
-Haruka: Ah… I just wanted to say… if you need anything else, please let me know! Let’s, mm get along… 
+M: ...my thoughts slowly seep back in, and the school hall and Haruka materialize back into vision.
+M: Self-awareness hits me like cold water to the face. Why was I even second-guessing myself? 
+M: The right thing to do is offer to walk her home. Plus, maybe I’ll get to know her a bit better.
+MC: Haruka, it’s my fault for keeping you out this late. Is it okay I walk you home?
+Haruka: Oh! D-Don’t worry… you don’t have to… 
+MC: I know, but it’s the least I can do. Is it okay, then?
+Haruka: Ah sure… thank you... 
+M: We grab our things and make our way out the school. She doesn’t live too far, so we make some small talk on the way.
+M: ...until she stops in front of a small apartment complex. 
+Haruka: Well, this is where I live. Thank you for walking me all this way. 
+M: Before I could say goodbye, Haruka begins to talk again. This time, in an even more timid tone.  
+Haruka: Hey… can I be honest with you? 
+MC: Mhm, of course. 
+Haruka: I actually knew you were the transfer student all along.. I saw you pass by our class a few times and I could tell you were lost… 
+Haruka: But I wanted to be the one to help you, because… 
+Haruka: I actually only transferred last Spring. So I know what it feels like to feel overwhelmed, and it can get pretty lonely if you have no one to talk to, so… 
+Haruka: … let’s get along, okay? 
 M: Her voice trails off at the end, that I could barely catch the last part. 
-MC: Mm, definitely. See you tomorrow! 
-M: I turn slightly to wave once more, and start walking away. Out of the corner of my eye
+M: I let out a relieving laugh and feel my nerves subside. For the first time since coming to this school, I felt like I had made a friend. A friend I could relate to.    
+MC: Yes, I’d like that. I’ll see you tomorrow, Haruka. 
+M: I wave, and start walking away. But out of the corner of my eye
 M: I realize Haruka was the same shade of red I was when we first met. 
 SPRING 1 BAD END
 M: ...my thoughts slowly seep back in, and the school hall and Haruka materialize back into vision. 
 M: Self-awareness hits me like cold water to the face.
-M: I don’t really know what to say or do, and it won’t help much if I just stand here. 
+M: No… there’s no way I could ask to walk her home. We just met, afterall.
+M: I turn to see Haruka, who is still looking out the sunset painted sky. I start to feel regretful, but I quickly shake those feelings off.
 MC: Well, see you tomorrow. 
 Haruka: Ah… yeah, see you… 
 M: As I make my way down the hall, I can’t help but feel as if there were a slight sound of disappointment to her words.
 M: I do my best to shake it off. It was probably nothing, right? 
 M: At least, I’ve met someone new at this school. 
+WINTER 1
+MC: Maybe I’ll check out the music rooms and see if there are any clubs to join.
+MC: Clubs will be a good way to meet new people, right? 
+M: I walk towards the music rooms
+M: ...only to find them mostly empty and unused.
+MC: Sheesh, well this is disappointing. Where is everyone? 
+M: Before I could let out a sigh of disappointment, I notice the gentle sound of a piano coming from a room at the end of the hall. 
+M: It’s so faint, I could barely notice it, but… 
+M: It’s played in such a beautiful way, as if it’s drawing me closer.
+M: Before I realize it, I’m a few steps away from the room the music is coming from.
+MC: Clair de lune… 
+M: It’s one of my favorites. I stand there, dazed, letting the music fill my ears… the air… the hall… 
+M: I stand there, like a zombie, letting my body hang there like jelly. With all the new changes, it’s been a while since I’ve been able to feel so…
+MC: ...so at peace 
+M: As soon as those words leave my mouth, a little louder than intended, an abrupt silence cuts off the sound. Louder than the song played before
+M: The beautiful arrangement was replaced by a staccato of footsteps, slowly heading towards the door.
+M: Shoot… Shoot… they heard me… 
+M: I panic as the steps grow nearer. 
+M: The door opens… and a the mysterious pianist emerges from the other side. She stares at me with a blank look, her cold eyes staring sharply through me like icicles. 
+MC: Uhhhh…. 
+M: Momentarily, I was stunned. 
+Touka: … 
+M: Oh god… I look like a creep now… 
+Touka: ...I’m done with the music room. My apologies if I took long. Feel free to use it...
+MC: O-Oh, no no please feel free to keep playing. I didn’t mean to interrupt, I just really liked your playing… 
+M: The mystery player’s eyes widened slightly. 
+Touka: Mm. Is that so. 
+Touka: … Thank you.  
+M: She is sure hard to read… but looks like I didn’t scare her off. 
+MC: Yeah… I just transferred and was hoping to find a music club to join… but looks like there isn’t anyone here, ahaha… 
+Touka: Mm…
+Touka: Music clubs don’t usually practice on these days…  
+Touka: So I am sure if you come another day, you could join.
+M: She doesn’t say much, and comes off a little cold but… she’s quite kind of her to a stranger who interrupted her piano sesh. 
+M: Somehow her demeanor calmed my racing nerves from before. It is often comforting to be able to share silence with another person.
+Touka: ... Debussy. 
+MC: H-Hm? 
+Touka: You said you liked my playing. It’s a classic by Debussy…
+Touka: Have you heard… before…? 
+M: Agh yes! I love Clair de Lune. I’ve listened to it since I was a child. I want to talk to her about the piece she was playing, it was so beautiful, but…
+M: ...if I start talking about it, she may think I was spying her the whole time…
+M: Do I really want to risk it…? 
+M: All of a sudden, my mind becomes soft, like melted snow
+M: My mind begins to succumb to the weight of pros and cons for each choice, becoming heavier each second I have nothing to say. 
+M: I’m frozen. 
+WINTER 1 GOOD END
+M: To hell with it. What do I have to lose? 
+MC: Yes! Clair de Lune. I used to hear it when I was younger. 
+MC: Although, it was in a video game, but… 
+Touka: Clair de Lune… I’m glad you recognized it. 
+Touka: … I failed to introduce myself before, but.. 
+Touka: My name is Touka Akamatsu. If you ever want to hear more Debussy, or discuss classics… 
+Touka: Feel free to come by... 
+MC: A chance to hear more? I’d love that. 
+MC: Nice to meet you, Touka.
+M: Throughout our whole conversation, Touka’s expression never changed. 
+M: However, maybe it’s my imagination, but…
+M: Her eyes seemed warmer than before. 
+M: Just a bit. 
+WINTER 1 BAD END
+MC: N-No... I didn’t hear much of it. It was beautiful though. 
+Touka: Ah… I see...
+Touka: …
+Touka: Well. If you would like to listen again, I am usually here. If you’re ever looking for me… 
+Touka: You can ask for Touka Akamatsu...
+MC: Really? If it’s not a bother, I will certainly come here again. It was nice meeting you, Touka. 
+Touka: Mm. 
+M: As I turn around to leave, I swear I could still feel her gaze…
+M: Almost colder than when we first met.
+AUTUMN 1
+M: Today was rather cold. Seems like the perfect day to grab some hot coffee. 
+M: So convenient there’s one close to the school… 
+Akiko: Welcome!! Have a seat right over here please~
+M: The tall waitress cheerfully beckons me over, with a welcoming smile. Her warm colored hair and smile made me feel somehow at home. 
+M: A feeling I’ve been longing for with all of these changes. 
+MC: Mm, thank you…
+Akiko: My name is Akiko, if you need anything at all please let me know~ 
+M: Her voice was soft and warm, yet had a sense of maturity to it. 
+MC: Hmmm, I’ll have a vanilla latte, with almond milk please. 
+Akiko: Alright! One vanilla latte with almond milk coming up~ 
+M: Akiko swiftly spins on her heal and leaves, her long russet strands of hair sweeping behind her like autumn leaves in the wind. 
+M: As I wait, I sit and bask in the cafe’s peaceful ambiance. 
+M: The cozy aura mingled with the scent of coffee grounds felt like heaven compared to the stark breeze outside. I sniffle a few times just at the thought of the cold weather. 
+M: Her name was Akiko… right? 
+M: I turn to see the busy waitress hopping from table to table, yet always maintaining her warm demeanor. Must be hard to memorize all those orders by herself… 
+M: I realized too late that I was staring at her too long, and Akiko meets my gaze with a friendly grin. She begins making her way to my table again. 
+Akiko: Sorry about the wait. Here is your latte~ 
+M: She sets the cup down, and a packet of tissues. 
+MC: Oh I didn’t-- 
+Akiko: So sorry, I’ll be right back! 
+M: Before I could comment on the tissues she misplaced, she’s running off to greet more customers at the door. 
+M: I wonder why she left these here… 
+M: There’s no way she saw me sniffling before and left these for me? No… that’d be silly to think she’d notice that… 
+M: Before I could make a reasonable conclusion, I see Akiko rushing back to my table. 
+Akiko: Sorry about that, I had to clock out so my coworker could take my place. Phew! 
+Akiko: I wanted to talk to you though. 
+MC: M-me? 
+Akiko: Ehh? Aww don’t tell me you don’t remember your own class rep… 
+M: !!! 
+M: Now that I think about it, she did seem familiar. And she’s wearing our class uniform. 
+M: Akiko seemed to catch onto my realization. She giggles. 
+Akiko: Hehehe, no need to worry, I’m just kidding~ 
+Akiko: My name is Akiko Shimizu. You’re our new transfer, hmm? 
+MC: Y-Yeah. Sorry, I remember you now. 
+Akiko: Hehe, no worries at all. Are you here to study for your college entrance exams? 
+MC: Actually, no, I just wanted to explore the town a bit. 
+M: Although, with all this “new season new me” stuff… I sort of forgot about those. 
+Akiko: Ehhh? They’re really important, you know. You only get one shot! 
+Akiko: However, rest is important too. If you ever fall too behind though, this cafe is a pleasant place to study. At least, I think so. 
+M: Her words sounded concerned, yet her tone remained warm and friendly. She really is a class rep. 
+M: I sniffle a few more times, and Akiko looks at me with a concerned look on her face.
+Akiko: Ahh, coffee isn’t good for colds you know. Let me grab you some tea. 
+MC: Ah wait, it’s oka-- 
+M: Before I could even get the rest of my sentence out, she’s already up and gone. 
+MC: *Sigh* What a quick girl. 
+M: I sniffle a few more times. I could really use a tissue right now...
+M: My eyes veer towards the tissues, still next to my untouched latte. 
+M: If she accidently left them here, that’d be pretty rude if I just took one… but… 
+M: my nose… 
+M: She seems nice enough but… agh… 
+M: A familiar sense of indecisiveness fills my chest as my nose starts to burn more and more. 
+MC: *sniffle* 
+AUTUMN 1 GOOD END
+M: I quickly grab a tissue and blow my nose. 
+MC: Ahh… what a life saver. I’ll be sure to thank her when she’s back. 
+M: Akiko comes back to the table with a steaming cup of tea. 
+Akiko: Here you go~ 
+MC: Ah, thank you, Akiko… 
+MC: And mm… thank you for the tissues earlier. 
+Akiko: Ah! You noticed. I almost forgot about them~
+M: She seems pleased. I smile and hand her back the tissues. 
+Akiko: Well, I have to go study but, as class rep 
+Akiko: It’s my duty to make sure we all achieve our own goals so… 
+Akiko: Please come by if you need assistance! 
+MC: Mm! I’ll study hard. 
+M: She smiles and swiftly leaves in the same fashion as before. 
+MC: I think I found a new place to study. 
+AUTUMN 1 BAD END
+M: No… I can’t use it, that’d be weird. 
+M: As I see Akiko come back with a hot cup of tea, I awkwardly cover my face with my sleeve. 
+Akiko: Here you go~ Hm? 
+M: Crap… I look strange… 
+MC: Ah, th-thank you Akiko. I’m sorry, I should probably get going. 
+M: Akiko smiles in an understanding way. 
+Akiko: Sure, I understand. Come by anytime, ok? 
+M: I get up and leave abruptly. I hope I wasn’t rude… but… 
+M: Leaving the cafe somehow made the outside feel even colder. 
+SUMMER 1
+M: The weather was fair and sunny, a perfect day to check out the school’s field. 
+MC: Maybe there will be sport clubs practicing today, if I’m lucky…
+M: I walk to an open field, the sun basking lightly on the fresh green grass. I could hear faint cheering and yelling.
+Natsuki: Hey…!!! Hey you!!!! 
+MC: ??? 
+M: I hear a small yet aggressive voice call out in my direction. Is she talking to… me?? 
+M: A girl runs off the track circle excitedly towards my direction, her golden ponytail contrasting with the bright blue hues of the sky. 
+Natsuki: C’mon, I was waving to you stupid!!
+M: Ok. She’s definitely talking to me but… 
+M: The peculiar girl notices my discomfort and confusion. Maybe we really did meet? I feel like I would’ve recognized someone this… er,
+M: ...noticeable… 
+MC: Hi…? 
+M: The sunny girl responds with a displeased pout. 
+Natsuki: Is that our school uniform?? How could you not tell me you were transferring here? 
+M: This girl is not getting it. 
+M: My best bet is to just play along.
+MC: Y-Yeah, I moved here recently. Are you on the track team? 
+M: She gives me a skeptical look. 
+Natsuki: Hmmph, you sure changed. 
+Natsuki: Anyways, yeah. I’m the girl’s track captain now.
+M: She smiles proudly at her statement.
+MC: Wow, that’s pretty cool! Is the school’s team any good?
+Natsuki: Eh??? I m-mean… we haven’t won any titles but…
+M: Her off-guard demeanor abruptly turns into anger. She shoots a firey glare.
+Natsuki: They try really hard ok??? Don’t disrespect my team!! 
+MC: Oh wait no I wasn’t-- 
+Natsuki: Anyways, you haven’t told me, why didn’t you tell me you were transferring here??
+Natsuki: You don’t even seem excited to see me… after all these years… 
+M: Her bright demeanor dims to a single candle, and her voice lowers for the first time in our meeting. 
+M: Crap… now I feel bad… 
+M: She said after all these years though... 
+M: I dig my brain for answers.
+M: Who could she be…? 
+SUMMER 1 GOOD END
+M: And then, a flood of childhood memories instantly hit me. 
+MC: !!! 
+MC: Natsuki? Natsuki Kawakami? 
+M: Natsuki’s face lights up instantly.
+Natsuki: Yeah you big idiot!! What took you so long?? 
+Natsuki: Hmmph, whatever. I guess I have matured into quite the beauty, fufufu~
+M: Wrong. Well, at least her height hasn’t changed much. 
+M: However, she has certainly…
+M: changed...
+M: Natsuki and I grew up together, and I spent the majority of my summer vacations with her.
+M: That is, until she moved away. 
+M: She cried a bunch of tears that day, and yelled at her parents for forcing her to go. 
+M: I let out a relieving sigh. In an unfamiliar place, this wave of nostalgia was much needed.
+MC: Heh, I guess you have grown up a bit. And wow, look at you! You’re track captain now. 
+MC: I remember you always loved the outdoors as a kid. We really got into some trouble because of some of your ideas, you know. 
+Natsuki: My ideas??? It’s only because your baby butt BEGGED to come along. 
+M: Wrong, again. She always clinged to me. But she never liked to admit it. 
+Natsuki: Anyways, don’t be a stranger. We’re schoolmates now, kay?? I have to get back to practice. 
+MC: Definitely. It was nice to see you again, Natsuki.
+Natsuki: Hmmph, whatever. 
+M: Her dismissive words contradicted the smile that I knew she was holding back. 
+M: It truly was nice to see her again. 
+SUMMER 1 BAD END 
+M: I tried and tried to think but…
+M: I just couldn’t remember who she was.
+MC: I’m really sorry, but…
+MC: Who... are you...?
+M: As the words left my mouth, I could see a hint of hurt appear on the girl’s face. 
+Natsuki: … Natsuki. Natsuki Kawakami.
+M: As soon as she said her name, I felt a flood of nostalgia take over. 
+M: Natsuki and I grew up together, and I spent the majority of my summer vacations with her.
+M: That is, until she moved away. 
+M: She cried a bunch of tears that day, and yelled at her parents for forcing her to go. 
+M: How could I forget? 
+MC: Natsuki, shoot. Of course I remember! It’s so nice to be in the same school again.  
+Natsuki: Idiot! Not nice enough for you to remember, I guess. Hmph. 
+Natsuki: ...It is nice to see your big dumb face again too. 
+MC: Heh. I’m sorry though, for not realizing earlier. 
+Natsuki: Whatever, I don’t care. It’s been years anyways, I just remembered you c-cause… 
+Natsuki: Cause who else has an idiot face like you! I could spot it a mile a way…
+M: Those words hung in the air. They didn’t mean to but, they made me feel even more ashamed. 
+Natsuki: A-Anyways… I have to go back to practice so… 
+Natsuki: Feel free to show your stupid face here again. If you want. 
+M: She runs off before I could say anything back. 
+MC: Natsuki…
+MC: Sorry… 

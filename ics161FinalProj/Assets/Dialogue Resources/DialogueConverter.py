@@ -34,6 +34,9 @@ def run(file):
             title = line.rstrip()
             text  = list()
 
+        elif line == "\n":
+            pass
+
         else:
             if "," in line:
                 line = line.replace(",","XYZ")
