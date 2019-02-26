@@ -11,6 +11,7 @@ TagManager:
   - Collectible
   - Manager
   - Exit
+  - spritePanel
   layers:
   - Default
   - TransparentFX

@@ -11,6 +11,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject dialoguePanel;
     public GameObject stagePanel;
     public GameObject namePanel;
+    public GameObject spritePanel;
 
     private Queue<Dialogue> textOutput;
     private int initialText = 0;    //if initialText is 0, then a sentence can start as the dialoguePanel is set to true
@@ -36,6 +37,7 @@ public class DialogueManager : MonoBehaviour
         {
             dialoguePanel.SetActive(true);
             Time.timeScale = 0;
+            
 
             if (initialText == 0)
             {
@@ -52,6 +54,7 @@ public class DialogueManager : MonoBehaviour
             {
                 dialoguePanel.SetActive(false);
                 namePanel.SetActive(false);
+                spritePanel.SetActive(false);
                 Time.timeScale = 1;
                 initialText = 0;
                 DoneWithDialogue.Invoke();
@@ -98,16 +101,21 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueText.text = "";
         dialogueText.fontStyle = FontStyles.Normal;
+        string filePath = "Art/Waifu/";
 
         if (DialogueObj.speaker.Length == 1) //monologue: set namePanel to invisible and text to italic
         {
             namePanel.SetActive(false);
+            spritePanel.SetActive(false);
             dialogueText.fontStyle = FontStyles.Italic;
         }
         else //any other character: set namePanel to visible and text to normal
         {
             namePanel.SetActive(true);
             nameText.text = DialogueObj.speaker;
+            filePath = string.Format("{0}{1}", filePath, "HeartKey"); //HeartKey is replaced by DialogueObj.sprite no quotes
+            spritePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>(filePath);
+            spritePanel.SetActive(true);
         }
 
         foreach (char letter in DialogueObj.text.ToCharArray())
