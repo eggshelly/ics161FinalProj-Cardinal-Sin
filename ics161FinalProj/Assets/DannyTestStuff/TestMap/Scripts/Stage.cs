@@ -10,7 +10,6 @@ public class StringIntUnityEvent: UnityEvent<string, int, bool[]> { }
 
 public class Stage : MonoBehaviour
 {
-    [SerializeField] int pointValue;
     [SerializeField] float sizeMulti;
     [SerializeField] int totalNumCollectibles;
 

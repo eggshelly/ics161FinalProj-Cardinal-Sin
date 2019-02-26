@@ -75,7 +75,6 @@ public class LevelManager : MonoBehaviour
     {
         RectTransform r = collectiblesPanel.GetComponent<RectTransform>();
         Vector3 leftBorder = new Vector3(r.rect.xMin, r.transform.position.y);
-        Debug.Log(distanceBetween);
         for (int i = 0; i < totalCollectibles; i++)
         {
             GameObject newImage = new GameObject();
