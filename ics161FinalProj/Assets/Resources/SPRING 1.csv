@@ -12,15 +12,15 @@ M,I don’t even know which way to start backtracking. Shoot!,default
 ,,
 MC,Why does every classroom look the same?? Am I even in the same building…,default
 ,,
-Haruka,AhXYZ sorry to botherXYZ but do you think you might be lost?,default
+Haruka,AhXYZ sorry to botherXYZ but do you think you might be lost?,surprise 
 ,,
 M,I hear a small but friendly sounding voice from behind me.,default
 ,,
-M,D-Did I just say what I said before out loud?? Oh crap. Wasn’t that a girl’s voice too? Just my luckXYZ I act like a fool in front of the first person I meet…,default
+M,D-Did I just say what I said before out loud?? Oh crap. Wasn’t that a girl’s voice too?,default
 ,,
-M,I get the urge to run awayXYZ or brush her off.,default
+M,I get the urge to just pretend like I know where I’m goingXYZ but…,default
 ,,
-M,But then I realizeXYZ the promise I made to myself earlier this year. To be different.,default
+M,I remembered the promise I made to myself earlier this year. To be different.,default
 ,,
 M,I clear my throat and let whatever comes to my mind first become words.,default
 ,,
@@ -28,59 +28,65 @@ MC,UhhhXYZ yesXYZ yes I am. I just transferred hereXYZ so...,default
 ,,
 M,SmallTalk.exe not found.,default
 ,,
-Haruka,Oh! I thought you looked familiar. You introduced yourself earlier. Ah… nice to meet youXYZ I’m Haruka Yamauchi.,default
+Haruka,Oh! I thought you looked familiar. You introduced yourself earlier in class. Mm… nice to meet youXYZ I’m Haruka Yamauchi.,default
 ,,
-M,I turn around and see a <DESCRIBE HER>,default
+M,I turn around and see a small-framed girl with blush colored hair and bright green eyes.,default
 ,,
-Haruka,This school can be pretty confusingXYZ if I’m not paying attention I could easily walk pass our classroom too.,default
+Haruka,This school can be pretty confusingXYZ if I’m not paying attention I could easily walk pass our classroom too.,smile
 ,,
-M,too…? I look to my rightXYZ and sure enoughXYZ there’s a sign clearly labelled with my classroom number.,default
+M,Our classroom…? I look to my rightXYZ and sure enoughXYZ there’s a familiar sign clearly labelled with my classroom number.,default
 ,,
-MC,!!! Oh gosh! I really was lost. Thank-youXYZ I would’ve been in circles for hours.,default
+MC,!!! Oh gosh... I really was lost. Thank youXYZ I would’ve been in circles for hours.,default
 ,,
-M,I start to turn redXYZ and Haruka starts to giggleXYZ slightly.,default
+M,I could feel my face turn redXYZ and Haruka starts to giggleXYZ slightly.,default
 ,,
-Haruka,Hehe. You’re not wrong thoughXYZ this school is pretty modernXYZ so many of the hallways do look the same.,default
+Haruka,Hehe. You’re not wrong thoughXYZ this school is pretty modernXYZ so many of the hallways do look the same.,smile
 ,,
-M,That’s for sure…,default
+M,That’s for sure.,default
 ,,
-M,Haruka looks like a responsible girl. I hate to ask people for thingsXYZ but at this rateXYZ I’ll be walking in circles the whole semester.,default
+M,HmmXYZ Haruka looks like a responsible girl. I hate to ask a strangerXYZ but at this rateXYZ I’ll be walking in circles the whole semester.,default
 ,,
-MC,AhXYZ I don’t want to trouble youXYZ but... do you think you could show me around? When you’re not busyXYZ of course…,default
+MC,Haruka… if you’re not busyXYZ do you think you could show me around?,default
 ,,
-Haruka,Hm?,default
+Haruka,Hm?,surprise
 ,,
-M,I felt a second wave of embarrassment take over. I’m not used to doing things so boldXYZ but… I have to start somewhere.,default
+M,I felt a second wave of embarrassment take over. She probably has better things to do than show a transfer student around.,default
 ,,
 M,Before I could turn any redderXYZ Haruka smiles shyly.,default
 ,,
 Haruka,Sure! If you don’t mind me. I can show you around right nowXYZ if you’d like.,default
 ,,
-M,I give her a smile backXYZ and a happy nod.,default
+MC,I would appreciate that. Thank you,default
 ,,
-Haruka,Great! I’ll show you the library firstXYZ its my favorite place…,default
+Haruka,Great! I’ll show you the library firstXYZ its my favorite place…,smile
 ,,
 M,She shows me around for a few hoursXYZ and we make small talk.,default
 ,,
-M,She seems friendlyXYZ yet also reserved like me. I think we can get along well.,default
+M,I learn she’s pretty studiousXYZ but enjoys going out with friends often. She likes to have her quiet time in the library and read when she feels like being alone.,default
 ,,
-Haruka,AndXYZ were back to the classroom. I tried to cover all the important places…,default
+M,She has a cheerful and bright aura…,default
 ,,
-MC,MmXYZ thank-you so much. I really owe you one. I don’t want to keep you any longerXYZ and it's getting pretty late so I’ll head off now…,default
+M,but I could tell she was naturally a bit reservedXYZ like me. I think we get along well.,default
 ,,
-M,In a cheery moodXYZ we say our goodbyes and I begin to turn to leave…,default
+Haruka,AaandXYZ were back to the classroom. I tried to cover all the important places…,default
 ,,
-M,...but I don’t get very far before I hear her voice call out to me again.,default
+MC,Already? WowXYZ time flew... I really owe you one.,default
 ,,
-Haruka,Umm….,default
+M,The coppery sunset bled through the window. A lot of time really had passed…,default
 ,,
-M,Haruka looks down at her feetXYZ fiddling with her fingers. As if she wants to say something.,default
+M,It was going to get dark soon.,default
 ,,
-M,If I leave now… she probably won’t get to say anything…,default
+M,Haruka notices me staring out the windowXYZ and looks at the dim sky as well.,default
 ,,
-M,But if I make the mistake of assuming she has more to say… that’ll be awkward…,default
+Haruka,Ah! It’s already getting darkXYZ I should get going…,surprise
 ,,
-M,What do I do…?,default
+M,Oh no… I kept her here this longXYZ I feel bad. Should I offer to walk her home?,default
+,,
+M,Maybe that’s too bold to ask right now… but…,default
+,,
+M,I turn to look at HarukaXYZ who’s still facing the russet colored window.,default
+,,
+M,I really want to ask…,default
 ,,
 M,Out of nowhereXYZ my growing feelings of indecisiveness and insecurity are cut by a wave of dizziness... so strong it numbs my thoughts.,default
 ,,

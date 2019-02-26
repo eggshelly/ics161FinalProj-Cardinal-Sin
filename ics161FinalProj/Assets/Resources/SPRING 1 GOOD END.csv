@@ -2,16 +2,44 @@ SPEAKER,CONVO,SPRITE
 ,,
 M,...my thoughts slowly seep back inXYZ and the school hall and Haruka materialize back into vision.,default
 ,,
-M,Self-awareness hits me like cold water to the face.,default
+M,Self-awareness hits me like cold water to the face. Why was I even second-guessing myself?,default
 ,,
-MC,Hm? SorryXYZ is there more you had to say?,default
+M,The right thing to do is offer to walk her home. PlusXYZ maybe I’ll get to know her a bit better.,default
 ,,
-Haruka,Ah… I just wanted to say… if you need anything elseXYZ please let me know! Let’sXYZ mm get along…,default
+MC,HarukaXYZ it’s my fault for keeping you out this late. Is it okay I walk you home?,default
+,,
+Haruka,Oh! D-Don’t worry… you don’t have to…,surprise
+,,
+MC,I knowXYZ but it’s the least I can do. Is it okayXYZ then?,default
+,,
+Haruka,Ah sure… thank you...,default
+,,
+M,We grab our things and make our way out the school. She doesn’t live too farXYZ so we make some small talk on the way.,default
+,,
+M,...until she stops in front of a small apartment complex.,default
+,,
+Haruka,WellXYZ this is where I live. Thank you for walking me all this way.,smile
+,,
+M,Before I could say goodbyeXYZ Haruka begins to talk again. This timeXYZ in an even more timid tone.,default
+,,
+Haruka,Hey… can I be honest with you?,sad
+,,
+MC,MhmXYZ of course.,default
+,,
+Haruka,I actually knew you were the transfer student all along.. I saw you pass by our class a few times and I could tell you were lost…,sad
+,,
+Haruka,But I wanted to be the one to help youXYZ because…,surprise
+,,
+Haruka,I actually only transferred last Spring. So I know what it feels like to feel overwhelmedXYZ and it can get pretty lonely if you have no one to talk toXYZ so…,sad
+,,
+Haruka,… let’s get alongXYZ okay?,smile
 ,,
 M,Her voice trails off at the endXYZ that I could barely catch the last part.,default
 ,,
-MC,MmXYZ definitely. See you tomorrow!,default
+M,I let out a relieving laugh and feel my nerves subside. For the first time since coming to this schoolXYZ I felt like I had made a friend. A friend I could relate to.,default
 ,,
-M,I turn slightly to wave once moreXYZ and start walking away. Out of the corner of my eye,default
+MC,YesXYZ I’d like that. I’ll see you tomorrowXYZ Haruka.,default
+,,
+M,I waveXYZ and start walking away. But out of the corner of my eye,default
 ,,
 M,I realize Haruka was the same shade of red I was when we first met.,default
