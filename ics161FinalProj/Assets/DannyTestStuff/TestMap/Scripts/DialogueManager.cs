@@ -154,6 +154,4 @@ public class DialogueManager : MonoBehaviour
 
         spaceDelay = false;
     }
-
-    //Function to load a sprite based on DialogueObj.speaker
 }
