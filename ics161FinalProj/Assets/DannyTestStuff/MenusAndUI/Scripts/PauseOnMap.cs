@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PauseGame : MonoBehaviour
+public class PauseOnMap : MonoBehaviour
 {
     [SerializeField] GameObject PausePanel;
     [SerializeField] GameObject StagePanel;

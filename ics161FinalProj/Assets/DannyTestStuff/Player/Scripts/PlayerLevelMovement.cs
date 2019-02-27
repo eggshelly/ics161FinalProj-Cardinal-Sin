@@ -110,7 +110,7 @@ public class PlayerLevelMovement : MonoBehaviour
     {
         if(canExit)
         {
-            if(Input.GetKeyDown(KeyCode.P))
+            if(Input.GetKeyDown(KeyCode.E))
             {
                 manager.PassDataToSaveManager();
 

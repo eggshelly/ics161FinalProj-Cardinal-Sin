@@ -23,7 +23,7 @@ public class PlayerMapInteraction : MonoBehaviour
     {
         if(canEnterStage)
         {
-            if(Input.GetKeyDown(KeyCode.P))
+            if(Input.GetKeyDown(KeyCode.E))
             {
                 OnThisStage.EnterStage();
             }
