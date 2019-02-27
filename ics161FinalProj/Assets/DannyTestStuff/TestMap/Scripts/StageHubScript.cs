@@ -11,7 +11,6 @@ public class StageHubScript : MonoBehaviour
     [SerializeField] int numStages;
     [SerializeField] GameObject StagePanel;
     [SerializeField] TextMeshProUGUI headerText;
-    [SerializeField] GameObject dialogueManager;
 
 
     Stage[] allStages;
@@ -30,7 +29,7 @@ public class StageHubScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        dialogueManager.GetComponent<DialogueManager>().DoneWithDialogue.AddListener(DoneWithDialogueListener);
+        DialogueManager.instance.DoneWithDialogue.AddListener(DoneWithDialogueListener);
         SetStageListeners();
     }
 
