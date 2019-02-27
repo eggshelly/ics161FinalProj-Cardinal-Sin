@@ -12,6 +12,7 @@ TagManager:
   - Manager
   - Exit
   - spritePanel
+  - windowPanel
   layers:
   - Default
   - TransparentFX
