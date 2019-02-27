@@ -21,7 +21,7 @@ public class PlayerMapInteraction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(canEnterStage)
+        if(canEnterStage && Time.timeScale != 0)
         {
             if(Input.GetKeyDown(KeyCode.E))
             {

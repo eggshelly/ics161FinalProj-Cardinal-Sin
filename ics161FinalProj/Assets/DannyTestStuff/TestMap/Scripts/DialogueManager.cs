@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
+    public static DialogueManager instance = null;
+
     public TextMeshProUGUI dialogueText;
     public TextMeshProUGUI nameText;
     public GameObject dialoguePanel;
@@ -15,7 +17,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject spritePanel;
 
     private Queue<Dialogue> textOutput;
-    private int initialText = 0;    //if initialText is 0, then a sentence can start as the dialoguePanel is set to true
+    public int initialText = 0;    //if initialText is -1, then a sentence can start as the dialoguePanel is set to true
     private bool spaceDelay = false;    //locks the player from pressing spacebar while there is text being printed
 
     public UnityEvent DoneWithDialogue;
@@ -23,6 +25,14 @@ public class DialogueManager : MonoBehaviour
     private void Awake()
     {
         DoneWithDialogue = new UnityEvent();
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+            Destroy(this.gameObject);
+
+        DontDestroyOnLoad(this.gameObject);
     }
 
     void Start()
@@ -39,7 +49,6 @@ public class DialogueManager : MonoBehaviour
             dialoguePanel.SetActive(true);
             Time.timeScale = 0;
             
-
             if (initialText == 0)
             {
                 initialText++;
@@ -51,13 +60,14 @@ public class DialogueManager : MonoBehaviour
         }
         else if (textOutput.Count == 0)     //if we're on the last sentence, we want to wait for the player to close the dialogue box
         {
-            if (Input.GetKey(KeyCode.Space) && !spaceDelay)
+            if (Input.GetKey(KeyCode.Space) && !spaceDelay && Time.timeScale == 0)
             {
                 dialoguePanel.SetActive(false);
                 namePanel.SetActive(false);
                 spritePanel.SetActive(false);
                 Time.timeScale = 1;
                 initialText = 0;
+
                 DoneWithDialogue.Invoke();
             }
         }
@@ -86,6 +96,7 @@ public class DialogueManager : MonoBehaviour
         stagePanel.SetActive(false);
 
         int currentLine = 1;
+
         Dictionary<int, Dialogue> dialogueDict = BuildDialogueDictionary(Resources.Load<TextAsset>(fileName));
 
         while (currentLine <= dialogueDict.Count)
