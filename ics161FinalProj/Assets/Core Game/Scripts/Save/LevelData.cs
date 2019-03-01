@@ -10,9 +10,10 @@ public class LevelData
     public float[] position;
 
 
-    //for the stage
+    //keeps track of all stage collectibles. If a collectible has been obtained, then it is "true" in the array. otherwise, false
     public bool[][] stageCollectibles;
 
+    //Constructs the LevelData object which stores all the information that should be saved and later retrieved
     public LevelData(Vector3 playerPos, StageHubScript stageHub)
     {
         position = new float[3];
@@ -20,8 +21,7 @@ public class LevelData
         position[1] = playerPos.y;
         position[2] = playerPos.z;
 
-        //Debug.Log(stageHub.allStageCollectibles.Count);
-        stageCollectibles = stageHub.allStageCollectibles.ToArray();//ConvertListToArray(stageHub.allStageCollectibles).ToArray();
+        stageCollectibles = stageHub.allStageCollectibles.ToArray();
         
     }
 

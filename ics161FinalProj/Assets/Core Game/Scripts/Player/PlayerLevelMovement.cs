@@ -44,6 +44,7 @@ public class PlayerLevelMovement : MonoBehaviour
         }
     }
 
+    //Sets player's velocity and flips the character depending on what direction it is moving 
     void Move()
     {
         float movementModifier = Input.GetAxisRaw("Horizontal");
@@ -60,6 +61,7 @@ public class PlayerLevelMovement : MonoBehaviour
         m_RigidBody2D.velocity = new Vector3(movementModifier * speed, m_RigidBody2D.velocity.y);
     }
 
+    
     void Jump()
     {
         if(m_isGrounded)
@@ -106,6 +108,8 @@ public class PlayerLevelMovement : MonoBehaviour
         }
     }
 
+
+    //If the player can exit (collected all collectibles), if they press E in front of the door, then leave the level
     void CheckExit()
     {
         if(canExit)

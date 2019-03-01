@@ -15,13 +15,6 @@ public class Collectible : MonoBehaviour
     {
         Collected = new IntUnityEvent();
     }
-
-    /*void Start()
-    {
-        LevelManager.instance.itemsLeft += 1;
-    }*/
-    // Start is called before the first frame update
-
     public void setIndex(int i)
     {
         index = i;

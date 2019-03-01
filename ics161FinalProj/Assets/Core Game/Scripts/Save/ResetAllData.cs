@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ResetAllData : MonoBehaviour
 {
-
+    //Deletes all existing file pathss
     public void DeleteAllData()
     {
         foreach(Transform t in transform)

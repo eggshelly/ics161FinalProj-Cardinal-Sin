@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerMapMovement : MonoBehaviour
 {
-    [SerializeField] GameObject boundary;
-    [SerializeField] float speed;
+    [SerializeField] GameObject boundary; //A box collider used by the Cinemachine to confine the camera
+    [SerializeField] float speed; //Player's map speed
 
     Rigidbody2D m_RigidBody2D;
     BoxCollider2D m_Collider;
@@ -30,6 +30,7 @@ public class PlayerMapMovement : MonoBehaviour
         Move();
     }
 
+    //Translates the player's position
     void Move()
     {
         float xDirection = Input.GetAxisRaw("Horizontal");
@@ -37,6 +38,8 @@ public class PlayerMapMovement : MonoBehaviour
         transform.Translate(new Vector3((CompletelyInBoundsX(xDirection) ? xDirection * speed: 0), (CompletelyInBoundsY(yDirection)? yDirection * speed: 0)) * Time.deltaTime);
     }
 
+
+    //Makes sure the player does not leave the bounds of the map
     bool CompletelyInBoundsX(float xDir)
     {
         float l = 0;
@@ -65,7 +68,7 @@ public class PlayerMapMovement : MonoBehaviour
         return (t < top && b > bottom);
     }
 
-
+    //Sets the boundaries based on the confining collider
     void SetBoundaries()
     {
         PolygonCollider2D bounds = boundary.GetComponent<PolygonCollider2D>();

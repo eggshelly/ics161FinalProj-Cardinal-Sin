@@ -12,15 +12,15 @@ public class OpenFileScript : MonoBehaviour
 
     private void Awake()
     {
-        //GetObjects();
     }
 
-
+    // Called by ChooseSaveFile function in SaveFileManager script. If no path exists this then Load Game button is not interactable
     public void CannotLoad()
     {
         loadButton.interactable = false;
     }
 
+    //Sets Active the Panel when a file is selected
     public void LoadFile(string buttonName)
     {
         Panel.SetActive(true);
@@ -28,16 +28,9 @@ public class OpenFileScript : MonoBehaviour
         headerText.text = buttonName + " Loaded"; 
     }
 
+    //Sets inactive the Panel when the player wants to select another file 
     public void ChangeFile()
     {
-        Panel.SetActive(false);
-    }
-
-    void GetObjects()
-    {
-        Panel = GameObject.Find("FilePanel");
-        headerText = GameObject.Find("HeaderText").GetComponent<TextMeshProUGUI>();
-        loadButton = GameObject.Find("Load Game").GetComponent<Button>();
         Panel.SetActive(false);
     }
     

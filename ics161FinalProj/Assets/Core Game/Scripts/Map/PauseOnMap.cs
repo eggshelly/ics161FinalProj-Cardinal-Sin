@@ -15,7 +15,7 @@ public class PauseOnMap : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    // Update is called once per frame
+    //If escape is pressed: if the stage panel is activated, then deactive it. Otherwise the pause menu is brought up. If pause panel is already active, then deactivate it
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape))
@@ -52,6 +52,7 @@ public class PauseOnMap : MonoBehaviour
         toggled = false;
     }
 
+    //Saves the game 
     public void SaveGame()
     {
         SaveFileManager.instance.SaveGame();

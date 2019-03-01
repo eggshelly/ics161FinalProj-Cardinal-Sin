@@ -9,15 +9,15 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/DannyTestStuff/MenusAndUI/MainMenu.unity
+    path: Assets/Core Game/Scenes/MainMenu.unity
     guid: 284415f82fd76d54a90bfe3979f3bbb8
   - enabled: 1
-    path: Assets/DannyTestStuff/MenusAndUI/SaveFiles.unity
+    path: Assets/Core Game/Scenes/SaveFiles.unity
     guid: 62889690bcfb1a742a84fda14113f37f
   - enabled: 1
-    path: Assets/DannyTestStuff/TestMap/TestMap.unity
+    path: Assets/Core Game/Scenes/TestMap.unity
     guid: 15185304b0d5ac54e8bf8bac4d083219
   - enabled: 1
-    path: Assets/Scenes/Stage 1.unity
+    path: Assets/Core Game/Scenes/Stage 1.unity
     guid: e57a76719f60de54eaec11c69d53fc99
   m_configObjects: {}

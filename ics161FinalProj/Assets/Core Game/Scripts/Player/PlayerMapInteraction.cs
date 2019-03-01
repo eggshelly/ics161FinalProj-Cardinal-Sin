@@ -9,16 +9,7 @@ public class PlayerMapInteraction : MonoBehaviour
 
     bool canEnterStage = false;
 
-    private void Awake()
-    {
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
+    
     void Update()
     {
         if(canEnterStage && Time.timeScale != 0)
@@ -29,9 +20,9 @@ public class PlayerMapInteraction : MonoBehaviour
             }
         }
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
-    {
-        
+    {   
         if(collision.CompareTag("Stage"))
         {
             canEnterStage = true;

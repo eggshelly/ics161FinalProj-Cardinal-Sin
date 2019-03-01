@@ -15,7 +15,6 @@ public class ButtonFunctions : MonoBehaviour
     {
         SceneManager.LoadScene("SaveFiles");
     }
-
     public void BackToMenu()
     {
         SceneManager.LoadScene("MainMenu");

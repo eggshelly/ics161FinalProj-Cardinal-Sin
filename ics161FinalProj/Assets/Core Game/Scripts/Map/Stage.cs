@@ -11,7 +11,7 @@ public class StringIntUnityEvent: UnityEvent<string, int, bool[]> { }
 public class Stage : MonoBehaviour
 {
     [SerializeField] float sizeMulti;
-    [SerializeField] int totalNumCollectibles;
+    [SerializeField] int totalNumCollectibles; //total number of collectibles the stage will contain. MUST SET IN THE INSPECTOR IN ORDER TO DISPLAY CORRECTLY ON THE PANEL
 
     public UnityEvent StageLeft;
 
@@ -21,37 +21,31 @@ public class Stage : MonoBehaviour
 
     public int stageIndex { get; set; } 
 
+    //--------------------
+    //temporary
     SpriteRenderer m_SpriteRenderer;
     Color origColor;
+    //--------------------
     GameObject player;
 
-    bool[] collectibles;
-
-    public int collectiblesLeft = -1;
+    bool[] collectibles; //collectibles for the stage
 
     private void Awake()
     {
-        CreateCollectiblesArray();
+        //Events to be called
         StageEntered = new StringIntUnityEvent();
         FinishedStage = new IntUnityEvent();
         StageLeft = new UnityEvent();
-        collectiblesLeft = (collectiblesLeft < 0 ? totalNumCollectibles: collectiblesLeft);
-        m_SpriteRenderer = GetComponent<SpriteRenderer>();
+
+
+
+        CreateCollectiblesArray();
         player = GameObject.FindGameObjectWithTag("Player");
+        m_SpriteRenderer = GetComponent<SpriteRenderer>();
         origColor = m_SpriteRenderer.color;
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    //Initially sets its collectibles to all false - no collectibles have been obtained yet
     void CreateCollectiblesArray()
     {
         collectibles = new bool[totalNumCollectibles];
@@ -61,40 +55,42 @@ public class Stage : MonoBehaviour
         }
     }
 
+    //Used by StageHubScript
     public int GetTotalCollectibles()
     {
         return totalNumCollectibles;
     }
 
+
+    //Makes the stage increase in size and turn red when the player is over the stage - temporary
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag("Player"))
         {
-                transform.localScale = transform.localScale * sizeMulti;
-                m_SpriteRenderer.color = Color.red;
+            transform.localScale = transform.localScale * sizeMulti;
+            m_SpriteRenderer.color = Color.red;
         }
     }
 
+    //reverts the size and color when the player leaves
     private void OnTriggerExit2D(Collider2D collision)
     {
         if(collision.CompareTag("Player"))
         {
-                transform.localScale = transform.localScale / sizeMulti;
-                m_SpriteRenderer.color = origColor;
-                 StageLeft.Invoke();
+            transform.localScale = transform.localScale / sizeMulti;
+            m_SpriteRenderer.color = origColor;
+            StageLeft.Invoke();
         }
     }
 
+    //Called by PlayerMapInteraction - Passes this information to StageHubScript
     public void EnterStage()
     {
-            StageEntered.Invoke(gameObject.name, stageIndex, collectibles);
-            //FinishedStage.Invoke(pointValue);
+        StageEntered.Invoke(gameObject.name, stageIndex, collectibles);
     }
 
-    public void CheckIfEntered()
-    {
-    }
 
+    //Called by StageHubScript to load in the collectibles 
     public void LoadCollectibles(bool[] collect)
     {
         

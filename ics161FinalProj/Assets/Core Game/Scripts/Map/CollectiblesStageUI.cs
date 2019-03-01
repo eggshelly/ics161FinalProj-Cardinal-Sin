@@ -9,17 +9,7 @@ public class CollectiblesStageUI : MonoBehaviour
     [SerializeField] Sprite keySpriteFilled;
     [SerializeField] Sprite keySpriteEmpty;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    //Called by StageHubScript when a stage is "entered". Creates the collectible icons on the StagePanel 
     public void CreateCollectibles(bool[] collectibles)
     {
         DeleteCurrent();
@@ -42,6 +32,8 @@ public class CollectiblesStageUI : MonoBehaviour
 
     }
 
+
+    //Deletes all the existing collectible icons.
     void DeleteCurrent()
     {
         foreach (Transform t in Panel.transform)

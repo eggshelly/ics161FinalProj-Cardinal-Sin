@@ -9,15 +9,15 @@ public class StageHubScript : MonoBehaviour
 {
 
     [SerializeField] int numStages;
-    [SerializeField] GameObject StagePanel;
-    [SerializeField] TextMeshProUGUI headerText;
+    [SerializeField] GameObject StagePanel; //Panels that displays the number of collected/missing collectibles and allows the player to enter the level
+    [SerializeField] TextMeshProUGUI headerText; //Name at the top of the panel that displays the stage name
 
 
-    Stage[] allStages;
+    Stage[] allStages; //array that stores all the stages
 
-    string currentStage = null;
+    string currentStage = null; //Keeps track of which stage the player is currently on 
 
-    public List<bool[]> allStageCollectibles;
+    public List<bool[]> allStageCollectibles; //A list of bool arrays where the bool arrays are the list of collectibles of each stage
 
     private void Awake()
     {
@@ -33,6 +33,7 @@ public class StageHubScript : MonoBehaviour
         SetStageListeners();
     }
 
+    //Retrieves the list of collectibles from each stage and puts it into the list allStageCollectibles
     void CreateArrays()
     {
         allStageCollectibles.Clear();
@@ -43,7 +44,7 @@ public class StageHubScript : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+    //Called by SaveFileManager when data is loaded. Passes in the stored lists of collectibles and stores it.
     public void loadStages(bool[][] stagesCollectibles)
     {
         for (int i = 0; i < stagesCollectibles.Length; ++i)
@@ -53,6 +54,7 @@ public class StageHubScript : MonoBehaviour
         UpdateCollectiblesOfStages();
     }
 
+    //Updates the collectibles of each individual stage to the array stored by this class. Used when loading in data
     void UpdateCollectiblesOfStages()
     {
         for (int i = 0; i < allStages.Length; ++i)
@@ -61,37 +63,24 @@ public class StageHubScript : MonoBehaviour
         }
     }
 
-
-    public Stage[] getAllStages()
-    {
-        return allStages;
-    }
-
-    public int GetNumberOfStages()
-    {
-        return numStages;
-    }
-
+    //When a player presses E on a stage, the StageEntered Event is Invoked. Passes the stage name and stage index to SaveFileManager and activates the Panel. 
     void StageEnteredListener(string stageName, int index, bool[] collectibles)
     {
         StagePanel.SetActive(true);
         headerText.text = stageName;
         currentStage = stageName;
         SaveFileManager.instance.SetCurrentStageNumber(index, stageName);
-        StagePanel.GetComponent<CollectiblesStageUI>().CreateCollectibles(collectibles);
+        StagePanel.GetComponent<CollectiblesStageUI>().CreateCollectibles(collectibles); //Creates the collectibles sprite (filled and/or empty) on the panel
     }
 
+    //Deactivates the Panel
     void StageLeftListener()
-    {
-        BackToMap();
-    }
-
-    public void BackToMap()
     {
         currentStage = null;
         StagePanel.SetActive(false);
     }
 
+    //Adds event listeners to the Events in the Stage script
     void SetStageListeners()
     {
         for (int i = 0; i < allStages.Length; ++i)
@@ -101,18 +90,15 @@ public class StageHubScript : MonoBehaviour
         }
     }
 
+    //Updates the list of collectibles for an individual stage. Used when a stage is completed
     public void UpdateCollectiblesForStage(int index, bool[] stageColl)
     {
         allStageCollectibles[index] = stageColl;
         UpdateCollectiblesOfStages();
     }
 
+    //Listener that is triggered when the DialogueManager is done with the current sequence. Starts the level 
     void DoneWithDialogueListener()
-    {
-        BeginCurrentLevel();
-    }
-
-    public void BeginCurrentLevel()
     {
         if (currentStage != null)
         {
@@ -120,5 +106,4 @@ public class StageHubScript : MonoBehaviour
             SceneManager.LoadScene(currentStage);
         }
     }
-
 }
