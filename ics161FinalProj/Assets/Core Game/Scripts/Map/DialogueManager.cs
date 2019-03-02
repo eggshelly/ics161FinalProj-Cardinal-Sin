@@ -59,6 +59,20 @@ public class DialogueManager : MonoBehaviour
 
             if (Input.GetKey(KeyCode.Space) && !spaceDelay)
                 DisplayNextSentence();
+            else if (Input.GetKey(KeyCode.P)) //press P to skip dialogue, FOR T E S T I N G P U R P O S E S
+            {
+                spaceDelay = false;
+                initialText = 0;
+                Time.timeScale = 1;
+
+                dialoguePanel.SetActive(false);
+                namePanel.SetActive(false);
+                spritePanel.SetActive(false);
+                windowPanel.SetActive(false);
+
+                textOutput.Clear();
+                DoneWithDialogue.Invoke();
+            }
         }
         else if (textOutput.Count == 0)     //if we're on the last sentence, we want to wait for the player to close the dialogue box
         {
