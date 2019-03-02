@@ -1,23 +1,99 @@
-SPEAKER,CONVO,SPRITE
-,,
-M,New Years…,none
-,,
-M,Everything about this year will be new. New houseXYZ new schoolXYZ new classmates…,none
-,,
-M,and hopefullyXYZ new experiences.,none
-,,
-M,All these new things howeverXYZ will not be without an expiration date.,none
-,,
-M,Because this year will be my last chance. Its my last year as a high school student.,none
-,,
-M,Until nowXYZ I’ve idled away my time with average friendshipsXYZ average gradesXYZ average...,none
-,,
-M,...everything.,none
-,,
-M,What have I become? Some generic protagonist of an indie Visual Novel?,none
-,,
-M,WellXYZ I’ve made a promise to myself.,none
-,,
-M,This new yearXYZ this new season…,none
-,,
-M,things will change.,none
+SPEAKER,CONVO,SPRITE,AUDIO
+,,,
+M,10 years ago,default,main
+,,,
+M,I walked this same path,default,main
+,,,
+M,to reach the other side of a town thatXYZ at the time,default,main
+,,,
+M,I would call home.,default,main
+,,,
+M,The new buildings and paved walkways made the little rural town I grew up in almost unrecognizableXYZ but,default,main
+,,,
+M,Something about being back hereXYZ for the first time… since I lost someone...,default,main
+,,,
+M,made everything feel more familiar.,default,main
+,,,
+M,This time last SpringXYZ my MotherXYZ after a long battle,default,main
+,,,
+M,succumbed to her illness and passed on.,default,main
+,,,
+M,I spent the last four seasons grievingXYZ letting time pass by…,default,main
+,,,
+M,Wishing things were different...,default,main
+,,,
+M,Until I realizedXYZ even if time seemed to stop in my cramped room,default,main
+,,,
+M,Seasons were still changing outside. And I was missing all of it.,default,main
+,,,
+M,As last winter’s snow began to meltXYZ signaling the coming of a new school term,default,main
+,,,
+M,my remaining family gently suggested to finish my last year as a high school student in a more familiar setting.,default,main
+,,,
+M,My hometown.,default,main
+,,,
+M,In the distanceXYZ I see trees dotted with flush colored blossomsXYZ slowly growing near.,default,main
+,,,
+MC,Cherry blossoms. Those were her favorite.,default,main
+,,,
+M,I stop in the middle of the roadXYZ basking in the comfortable Spring breezeXYZ recalling the times my mom would drag me to the cherry blossom viewings.,default,main
+,,,
+M,We’ve been to many different onesXYZ but…,default,main
+,,,
+M,Nothing could ever compare to my home town’s blossoms.,default,main
+,,,
+Haruka,They’re prettyXYZ aren’t they?,default,main
+,,,
+MC,Huh?,default,main
+,,,
+M,I turn to see a small girl with blush colored hairXYZ gazing at the same tree I was dazed by.,default,main
+,,,
+MC,Yeah... too bad they don’t last very longXYZ though.,default,main
+,,,
+Haruka,Hm…,default,main
+,,,
+M,The girl shakes her headXYZ still admiring the budding flowers.,default,main
+,,,
+Haruka,Isn’t that part of their beautyXYZ though?,default,main
+,,,
+Haruka,The fact you know they won’t be there longXYZ but…,default,main
+,,,
+Haruka,you spend extra time looking at them anyways?,default,main
+,,,
+MC,…,default,main
+,,,
+Haruka,In the countrysideXYZ there are so many wonderful plants and flowers that bloom year-round.,default,main
+,,,
+Haruka,But people always make a big event of seeing the ones that don’t last long. It must be because they’re temporaryXYZ don’t you think?,default,main
+,,,
+M,Temporary…,default,main
+,,,
+M,So many unhappy memories attached to a single word.,default,main
+,,,
+M,If there’s anything I’ve learned this past year…,default,main
+,,,
+M,...is that the only permanent thing in life is the passage of time.,default,main
+,,,
+M,And time takes away things.,default,main
+,,,
+MC,I guess that means we just take things for grantedXYZ then.,default,main
+,,,
+M,The girl laughs a bit.,default,main
+,,,
+Haruka,That’s a bit dark!,default,main
+,,,
+M,She turns to meXYZ the slight breeze catching her hair.,default,main
+,,,
+Haruka,I’d like to think…,default,main
+,,,
+Haruka,We just know how to especially appreciate things enoughXYZ before they go.,default,main
+,,,
+M,Before they go…,default,main
+,,,
+M,10 years agoXYZ I walked this same path.,default,main
+,,,
+M,This timeXYZ I’m walking on a branching path that wasn’t paved beforeXYZ,default,main
+,,,
+M,to the other side of a town that,default,main
+,,,
+M,Is no longer my home.,default,main
