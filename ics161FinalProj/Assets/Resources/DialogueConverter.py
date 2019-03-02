@@ -53,7 +53,9 @@ def makecsv(title:str, text:str):
         filewriter.writerow(["SPEAKER", "CONVO", "SPRITE", "AUDIO"])
         for line in text:
             print(line)
-            filewriter.writerow([line[:line.index(":")], line[line.index(":")+1:], "default", "main"])
+            speaker = line[:line.index(":")]
+            convo   = line[line.index(":")+1:]
+            filewriter.writerow(speaker, convo, "none" if speaker == "MC" else "default", "main"])
 
 
 def cleanup(file):
