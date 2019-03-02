@@ -110,6 +110,14 @@ public class SaveFileManager : MonoBehaviour
             }
             if (finishedAStage)
             {
+                string path = string.Format("{0} ", currentStageName);      //create the string to be the name of the current stage followed by the stage number
+                if(isStageCompleted)
+                    path += "GOOD END";
+                else
+                    path += "BAD END";
+                
+                Debug.Log(path);
+                DialogueManager.instance.LoadDialogue(path);
                 stageHub.UpdateCollectiblesForStage(currentStage, currentStageCollectibles);
                 player.transform.position = playerPos;
                 finishedAStage = false;

@@ -110,7 +110,8 @@ public class DialogueManager : MonoBehaviour
 
     public void LoadDialogue(string fileName) //loads dictionary into queue
     {
-        stagePanel.SetActive(false);
+        if (stagePanel != null)
+            stagePanel.SetActive(false);
 
         int currentLine = 1;
 
