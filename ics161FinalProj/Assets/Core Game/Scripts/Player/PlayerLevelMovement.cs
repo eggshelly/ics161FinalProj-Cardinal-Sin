@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class PlayerLevelMovement : MonoBehaviour
 {
-    [SerializeField] float speed;
+    [SerializeField] float walkSpeed;
+    [SerializeField] float runSpeed;
+    [SerializeField] bool canRun;
     [SerializeField] int maxNumberOfJumps;
     [SerializeField] float jumpForce;
 
+    float speed;
 
     Rigidbody2D m_RigidBody2D;
     CapsuleCollider2D m_CapsuleCollider2D;
@@ -23,6 +26,7 @@ public class PlayerLevelMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        speed = walkSpeed;
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<LevelManager>();
         m_RigidBody2D = GetComponent<Rigidbody2D>();
         m_CapsuleCollider2D = GetComponent<CapsuleCollider2D>();
@@ -48,6 +52,14 @@ public class PlayerLevelMovement : MonoBehaviour
     void Move()
     {
         float movementModifier = Input.GetAxisRaw("Horizontal");
+        if(Input.GetKey(KeyCode.LeftShift) && canRun)
+        {
+            speed = runSpeed;
+        }
+        else
+        {
+            speed = walkSpeed;
+        }
 
         if (movementModifier > 0)
         {

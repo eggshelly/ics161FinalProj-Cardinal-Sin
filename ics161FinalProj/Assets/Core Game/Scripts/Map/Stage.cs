@@ -13,6 +13,8 @@ public class Stage : MonoBehaviour
     [SerializeField] float sizeMulti;
     [SerializeField] int totalNumCollectibles; //total number of collectibles the stage will contain. MUST SET IN THE INSPECTOR IN ORDER TO DISPLAY CORRECTLY ON THE PANEL
 
+    public int currentLevel{ get; private set; }
+
     public UnityEvent StageLeft;
 
     public IntUnityEvent FinishedStage;
@@ -40,6 +42,7 @@ public class Stage : MonoBehaviour
 
 
         CreateCollectiblesArray();
+        currentLevel = 1;
         player = GameObject.FindGameObjectWithTag("Player");
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
         origColor = m_SpriteRenderer.color;
@@ -86,7 +89,7 @@ public class Stage : MonoBehaviour
     //Called by PlayerMapInteraction - Passes this information to StageHubScript
     public void EnterStage()
     {
-        StageEntered.Invoke(gameObject.name, stageIndex, collectibles);
+        StageEntered.Invoke(GetName(), stageIndex, collectibles);
     }
 
 
@@ -98,6 +101,11 @@ public class Stage : MonoBehaviour
         {
             collectibles = collect;
         }
+    }
+
+    string GetName()
+    {
+        return gameObject.name + " " + currentLevel;
     }
 
     
