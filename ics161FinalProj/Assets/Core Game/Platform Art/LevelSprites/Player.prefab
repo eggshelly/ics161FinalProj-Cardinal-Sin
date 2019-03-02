@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6154046035216310538}
   - component: {fileID: 6154046035216310539}
   - component: {fileID: 6154046035216310540}
+  - component: {fileID: 4391115164612980576}
   - component: {fileID: 2133770918}
   m_Layer: 0
   m_Name: Player
@@ -80,7 +81,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!58 &6154046035216310538
@@ -137,6 +138,18 @@ MonoBehaviour:
   canRun: 1
   maxNumberOfJumps: 2
   jumpForce: 8
+--- !u!114 &4391115164612980576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6154046035216310541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e236f18d3d783746921951f85160d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!70 &2133770918
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -23,6 +23,8 @@ public class PlayerLevelMovement : MonoBehaviour
     bool m_isGrounded;
 
     bool canExit = false;
+
+    bool isPulling = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -60,17 +62,28 @@ public class PlayerLevelMovement : MonoBehaviour
         {
             speed = walkSpeed;
         }
-
-        if (movementModifier > 0)
-        {
-            m_SpriteRenderer.flipX = false;
-        }
-        else if (movementModifier < 0)
-        {
-            m_SpriteRenderer.flipX = true;
-        }
-
+        ChangeDirection(movementModifier);
         m_RigidBody2D.velocity = new Vector3(movementModifier * speed, m_RigidBody2D.velocity.y);
+    }
+
+    void ChangeDirection(float movementMod)
+    {
+        if (!isPulling)
+        {
+            if (movementMod > 0)
+            {
+                m_SpriteRenderer.flipX = false;
+            }
+            else if (movementMod < 0)
+            {
+                m_SpriteRenderer.flipX = true;
+            }
+        }
+    }
+
+    public void PullingObject(bool pull)
+    {
+        isPulling = pull;
     }
 
     
@@ -94,7 +107,7 @@ public class PlayerLevelMovement : MonoBehaviour
     {
         Vector3 pos = m_CapsuleCollider2D.bounds.center + m_CapsuleCollider2D.bounds.extents.y * Vector3.down;
         RaycastHit2D ray = Physics2D.Raycast(pos, Vector2.down, 0.01f);
-        if (ray.collider != null && ray.collider.CompareTag("Ground"))
+        if (ray.collider != null && ray.collider.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
             m_isGrounded = true;
             jumpsRemaining = maxNumberOfJumps;
