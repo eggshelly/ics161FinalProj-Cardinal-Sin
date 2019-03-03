@@ -54,13 +54,13 @@ public class PlayerLevelMovement : MonoBehaviour
         {
             Jump();
         }
-        if (m_RigidBody2D.velocity.y > 0)
+        if (m_RigidBody2D.velocity.y > 0 && !m_isGrounded)
         {
-            animator.SetFloat("VelocityY", 1);
+            animator.SetFloat("VelocityY", 2);
         }
-        else if (m_RigidBody2D.velocity.y < 0)
+        else if (m_RigidBody2D.velocity.y < 0 && !m_isGrounded)
         {
-            animator.SetFloat("VelocityY", -1);
+            animator.SetFloat("VelocityY", -2);
         }
         else
         {
