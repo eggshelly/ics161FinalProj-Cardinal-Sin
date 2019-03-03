@@ -27,9 +27,12 @@ public class PlayerLevelMovement : MonoBehaviour
     bool isPulling = false;
 
     Animator animator;
+
+    PlayerLevelInteraction m_Interaction;
     // Start is called before the first frame update
     void Start()
     {
+        m_Interaction = GetComponent<PlayerLevelInteraction>();
         animator = GetComponent<Animator>();
         speed = walkSpeed;
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<LevelManager>();
@@ -96,6 +99,7 @@ public class PlayerLevelMovement : MonoBehaviour
     {
         if(m_isGrounded)
         {
+            m_Interaction.DetachObject();
            m_RigidBody2D.velocity = new Vector2(m_RigidBody2D.velocity.x, 0);
             m_RigidBody2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             jumpsRemaining -= 1;
