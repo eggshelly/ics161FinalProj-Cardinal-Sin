@@ -9,13 +9,11 @@ public class PlayerMapMovement : MonoBehaviour
 
     Rigidbody2D m_RigidBody2D;
     BoxCollider2D m_Collider;
-    SpriteRenderer m_Renderer;
 
     float left, right, top, bottom;
-    Animator animator;
+
     private void Awake()
     {
-        m_Renderer = GetComponent<SpriteRenderer>();
         m_RigidBody2D = GetComponent<Rigidbody2D>();
         m_Collider = GetComponent<BoxCollider2D>();
     }
@@ -23,7 +21,6 @@ public class PlayerMapMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator>();
         SetBoundaries();
     }
 
@@ -38,23 +35,9 @@ public class PlayerMapMovement : MonoBehaviour
     {
         float xDirection = Input.GetAxisRaw("Horizontal");
         float yDirection = Input.GetAxisRaw("Vertical");
-        animator.SetFloat("Vertical", yDirection);
-        animator.SetFloat("Horizontal", xDirection);
-        ChangeDirection(xDirection);
         transform.Translate(new Vector3((CompletelyInBoundsX(xDirection) ? xDirection * speed: 0), (CompletelyInBoundsY(yDirection)? yDirection * speed: 0)) * Time.deltaTime);
     }
 
-    void ChangeDirection(float move)
-    {
-        if (move < 0)
-        {
-            m_Renderer.flipX = true;
-        }
-        else if(move > 0)
-        {
-            m_Renderer.flipX = false;
-        }
-    }
 
     //Makes sure the player does not leave the bounds of the map
     bool CompletelyInBoundsX(float xDir)
