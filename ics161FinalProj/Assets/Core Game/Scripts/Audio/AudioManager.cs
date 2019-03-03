@@ -7,6 +7,7 @@ using System;
 
 public class AudioManager : MonoBehaviour
 {
+    [HideInInspector]
     public Sound s;
     public Sound[] sounds;
     public static AudioManager instance;
@@ -41,6 +42,7 @@ public class AudioManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /* 
         s.source.volume = s.volume;
         try{
             //if(!LevelManager.instance.isGameOver)
@@ -74,7 +76,7 @@ public class AudioManager : MonoBehaviour
             {
                 Play("LoopTrack");
             }
-        }
+        }*/
 
         
     }
