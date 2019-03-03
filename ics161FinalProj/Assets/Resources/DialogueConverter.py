@@ -50,13 +50,12 @@ def makecsv(title:str, text:str):
         filewriter = csv.writer(csvfile, delimiter=',',
                             quotechar='|', quoting=csv.QUOTE_MINIMAL)
 
-        filewriter.writerow(["SPEAKER", "CONVO", "SPRITE", "AUDIO"])
+        filewriter.writerow(["SPEAKER", "CONVO", "SPRITE", "AUDIO", "BACKGROUND"])
         for line in text:
             print(line)
             speaker = line[:line.index(":")]
             convo   = line[line.index(":")+1:]
-            filewriter.writerow(speaker, convo, "none" if speaker == "MC" else "default", "main"])
-
+            filewriter.writerow([speaker, convo, "none" if speaker == "MC" else "default", "main", "classroom"])
 
 def cleanup(file):
     file.close()
