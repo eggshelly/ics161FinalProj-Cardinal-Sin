@@ -54,13 +54,25 @@ public class PlayerLevelMovement : MonoBehaviour
         {
             Jump();
         }
+        if (m_RigidBody2D.velocity.y > 0)
+        {
+            animator.SetFloat("VelocityY", 1);
+        }
+        else if (m_RigidBody2D.velocity.y < 0)
+        {
+            animator.SetFloat("VelocityY", -1);
+        }
+        else
+        {
+            animator.SetFloat("VelocityY", 0);
+        }
     }
 
     //Sets player's velocity and flips the character depending on what direction it is moving 
     void Move()
     {
         float movementModifier = Input.GetAxisRaw("Horizontal");
-        if(Input.GetKey(KeyCode.LeftShift) && canRun)
+        if (Input.GetKey(KeyCode.LeftShift) && canRun)
         {
             animator.SetFloat("VelocityX", movementModifier);
             speed = runSpeed;
