@@ -25,9 +25,15 @@ public class PlayerLevelMovement : MonoBehaviour
     bool canExit = false;
 
     bool isPulling = false;
+
+    Animator animator;
+
+    PlayerLevelInteraction m_Interaction;
     // Start is called before the first frame update
     void Start()
     {
+        m_Interaction = GetComponent<PlayerLevelInteraction>();
+        animator = GetComponent<Animator>();
         speed = walkSpeed;
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<LevelManager>();
         m_RigidBody2D = GetComponent<Rigidbody2D>();
@@ -56,10 +62,12 @@ public class PlayerLevelMovement : MonoBehaviour
         float movementModifier = Input.GetAxisRaw("Horizontal");
         if(Input.GetKey(KeyCode.LeftShift) && canRun)
         {
+            animator.SetFloat("VelocityX", movementModifier);
             speed = runSpeed;
         }
         else
         {
+            animator.SetFloat("VelocityX", movementModifier / 2);
             speed = walkSpeed;
         }
         ChangeDirection(movementModifier);
@@ -91,6 +99,7 @@ public class PlayerLevelMovement : MonoBehaviour
     {
         if(m_isGrounded)
         {
+            m_Interaction.DetachObject();
            m_RigidBody2D.velocity = new Vector2(m_RigidBody2D.velocity.x, 0);
             m_RigidBody2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             jumpsRemaining -= 1;

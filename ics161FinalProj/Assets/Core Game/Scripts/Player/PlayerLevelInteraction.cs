@@ -9,8 +9,7 @@ public class PlayerLevelInteraction : MonoBehaviour
     float distanceAwayX;
     float distanceAwayY;
 
-    Rigidbody2D ObjectToPull;
-    Collider2D ObjectCollider;
+    GameObject ObjectToPull;
 
     CapsuleCollider2D m_Collider;
     SpriteRenderer m_SpriteRenderer;
@@ -35,12 +34,10 @@ public class PlayerLevelInteraction : MonoBehaviour
                 m_LevelMovement.PullingObject(GrabItem());
             else
             {
-                ObjectToPull = null;
-                m_LevelMovement.PullingObject(false);
+                DetachObject();
             }
         }
         MoveObject();
-        
     }
 
     bool GrabItem()
@@ -50,14 +47,12 @@ public class PlayerLevelInteraction : MonoBehaviour
         RaycastHit2D ray = Physics2D.Raycast(pos, (m_SpriteRenderer.flipX ? Vector2.left : Vector2.right), 0.5f);
         if(ray.collider!= null && ray.collider.CompareTag("Interactable"))
         {
-            ObjectToPull = ray.collider.gameObject.GetComponent<Rigidbody2D>();
-            ObjectCollider = ray.collider;
-            distanceAwayY = Mathf.Abs(ObjectCollider.bounds.center.y - m_Collider.bounds.center.y);
-            distanceAwayX = Mathf.Abs(ObjectCollider.bounds.center.x - m_Collider.bounds.center.x) + MaxDistanceAway;
+            ObjectToPull = ray.collider.gameObject;
+            float distanceAway = ray.collider.bounds.center.x - m_Collider.bounds.center.x;
+            ObjectToPull.transform.parent = transform;
             return true;
         }
         ObjectToPull = null;
-        ObjectCollider = null;
         return false;
     }
 
@@ -65,14 +60,14 @@ public class PlayerLevelInteraction : MonoBehaviour
     {
         if(ObjectToPull != null)
         {
-            if(Mathf.Abs(ObjectCollider.bounds.center.x - m_Collider.bounds.center.x) > distanceAwayX || Mathf.Abs(ObjectCollider.bounds.center.y - m_Collider.bounds.center.y) > distanceAwayY)
-            {
-                ObjectToPull = null;
-                ObjectCollider = null;
-                m_LevelMovement.PullingObject(false);
-            }
-            else
-                ObjectToPull.velocity = new Vector3(m_RigidBody.velocity.x, 0,0);
+            ObjectToPull.transform.Translate(m_RigidBody.velocity * Time.deltaTime);
         }
+    }
+
+    public void DetachObject()
+    { 
+        transform.DetachChildren();
+        ObjectToPull = null;
+        m_LevelMovement.PullingObject(false);
     }
 }

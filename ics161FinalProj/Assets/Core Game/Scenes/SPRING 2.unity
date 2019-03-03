@@ -29402,6 +29402,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &1104641662 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6154046035216310541, guid: 1131598cd5cd38b4d91b19834c095a44,
+    type: 3}
+  m_PrefabInstance: {fileID: 1243221835}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1104641669
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104641662}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1c2389e4d2686b04aacdee96b6561472, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1142925249
 GameObject:
   m_ObjectHideFlags: 0
@@ -29663,7 +29688,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 636c994b81e586843b14e492ab85ab59,
+      objectReference: {fileID: 21300000, guid: 042af7432d863f24c89f66ddbda0b7d5,
         type: 3}
     - target: {fileID: 6154046035216310537, guid: 1131598cd5cd38b4d91b19834c095a44,
         type: 3}
@@ -31094,7 +31119,7 @@ PrefabInstance:
     - target: {fileID: 5309328394198043222, guid: d45a8c493340b9943916596b053ee466,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0006647035
+      value: -0.0006648432
       objectReference: {fileID: 0}
     - target: {fileID: 5309328394198043222, guid: d45a8c493340b9943916596b053ee466,
         type: 3}
