@@ -25,9 +25,12 @@ public class PlayerLevelMovement : MonoBehaviour
     bool canExit = false;
 
     bool isPulling = false;
+
+    Animator animator;
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
         speed = walkSpeed;
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<LevelManager>();
         m_RigidBody2D = GetComponent<Rigidbody2D>();
@@ -56,10 +59,12 @@ public class PlayerLevelMovement : MonoBehaviour
         float movementModifier = Input.GetAxisRaw("Horizontal");
         if(Input.GetKey(KeyCode.LeftShift) && canRun)
         {
+            animator.SetFloat("VelocityX", movementModifier);
             speed = runSpeed;
         }
         else
         {
+            animator.SetFloat("VelocityX", movementModifier / 2);
             speed = walkSpeed;
         }
         ChangeDirection(movementModifier);
