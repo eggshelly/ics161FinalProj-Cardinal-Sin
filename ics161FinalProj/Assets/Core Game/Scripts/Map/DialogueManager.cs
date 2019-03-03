@@ -15,7 +15,6 @@ public class DialogueManager : MonoBehaviour
     public GameObject stagePanel;
     public GameObject namePanel;
     public GameObject spritePanel;
-    public GameObject windowPanel;
 
     private Queue<Dialogue> textOutput;
     public int initialText = 0;    //if initialText is -1, then a sentence can start as the dialoguePanel is set to true
@@ -50,7 +49,6 @@ public class DialogueManager : MonoBehaviour
         if (textOutput.Count >= 1)
         {
             dialoguePanel.SetActive(true);
-            windowPanel.SetActive(true);
             Time.timeScale = 0;
 
             if (initialText == 0)
@@ -103,7 +101,6 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(false);
         namePanel.SetActive(false);
         spritePanel.SetActive(false);
-        windowPanel.SetActive(false);
     }
 
     private Dictionary<int, Dialogue> BuildDialogueDictionary(TextAsset textFile) //converts CSV file to dictionary
