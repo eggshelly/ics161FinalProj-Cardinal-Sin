@@ -34,12 +34,6 @@ public class SaveFileManager : MonoBehaviour
     //Creates the instance of the SaveFileManager
     private void Awake()
     {
-        if(!loadData)
-        {
-            Destroy(instance);
-            Destroy(DialogueManager.instance);
-        }
-
         if (instance == null)
         {
             instance = this;
@@ -82,6 +76,14 @@ public class SaveFileManager : MonoBehaviour
         }
     }
 
+    public void DeleteInstancesIfNotLoading()
+    {
+        if(!loadData)
+        {
+            Destroy(instance);
+            Destroy(DialogueManager.instance);
+        }
+    }
 
     /*
      * Takes care the bulk of loading data and setting script variables:
@@ -114,7 +116,7 @@ public class SaveFileManager : MonoBehaviour
                 LevelData level = SaveFileScript.LoadLevel(currentButton);
                 Vector3 loadedPos = new Vector3(level.position[0], level.position[1], level.position[2]);
                 player.transform.position = loadedPos;
-                stageHub.loadStages(level.stageCollectibles);
+                stageHub.loadStages(level.stageCollectibles, level.stageLevels);
 
             }
             if (finishedAStage)
@@ -124,9 +126,10 @@ public class SaveFileManager : MonoBehaviour
                     path += "GOOD END";
                 else
                     path += "BAD END";
-               
+
+                Debug.Log(path);
                 DialogueManager.instance.LoadDialogue(path);
-                stageHub.UpdateCollectiblesForStage(currentStage, currentStageLevel, currentStageCollectibles);
+                stageHub.UpdateFinishedStage(currentStage, currentStageLevel, currentStageCollectibles);
                 player.transform.position = playerPos;
                 finishedAStage = false;
             }

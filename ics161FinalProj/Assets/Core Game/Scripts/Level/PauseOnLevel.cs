@@ -10,16 +10,20 @@ public class PauseOnLevel : MonoBehaviour
     // Start is called before the first frame update
     bool toggled = false;
 
+    LevelManager m_Manager;
     void Start()
     {
+        m_Manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<LevelManager>();
         Time.timeScale = 1;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (!m_Manager.isGameOver())
         {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
                 if (!toggled)
                 {
                     Pause();
@@ -28,6 +32,7 @@ public class PauseOnLevel : MonoBehaviour
                 {
                     ResumedGame();
                 }
+            }
         }
     }
 
@@ -43,15 +48,5 @@ public class PauseOnLevel : MonoBehaviour
         Time.timeScale = 1;
         PausePanel.SetActive(false);
         toggled = false;
-    }
-
-    public void RestartLevel()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-
-    public void BackToMap()
-    {
-        SceneManager.LoadScene("TestMap");
     }
 }

@@ -23,6 +23,7 @@ public class ButtonFunctions : MonoBehaviour
 
     public void StartGame()
     {
+        SaveFileManager.instance.DeleteInstancesIfNotLoading();
         SceneManager.LoadScene("TestMap");
     }
 

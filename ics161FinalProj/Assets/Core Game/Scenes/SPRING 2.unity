@@ -14461,8 +14461,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 264781011}
-        m_MethodName: BackToMap
+      - m_Target: {fileID: 980872472}
+        m_MethodName: PassDataToSaveManager
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14602,6 +14602,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 358f226309f36f1428c94e469698668d, type: 3}
+--- !u!114 &980872472 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4116506116296435903, guid: 358f226309f36f1428c94e469698668d,
+    type: 3}
+  m_PrefabInstance: {fileID: 980872471}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5884c939a6e9e904d9036c0ed6a80c33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &987555866
 GameObject:
   m_ObjectHideFlags: 0
@@ -31073,7 +31085,7 @@ PrefabInstance:
     - target: {fileID: 5309328394198043222, guid: d45a8c493340b9943916596b053ee466,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0006659049
+      value: -0.00066593284
       objectReference: {fileID: 0}
     - target: {fileID: 5309328394198043222, guid: d45a8c493340b9943916596b053ee466,
         type: 3}

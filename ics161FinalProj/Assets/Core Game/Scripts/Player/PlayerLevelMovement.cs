@@ -26,12 +26,15 @@ public class PlayerLevelMovement : MonoBehaviour
 
     bool isPulling = false;
 
+    public bool frozen { get; set; }
+
     Animator animator;
 
     PlayerLevelInteraction m_Interaction;
     // Start is called before the first frame update
     void Start()
     {
+        frozen = false;
         m_Interaction = GetComponent<PlayerLevelInteraction>();
         animator = GetComponent<Animator>();
         speed = walkSpeed;
@@ -46,25 +49,28 @@ public class PlayerLevelMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CheckExit();
+        if (!frozen)
+        {
+            CheckExit();
 
-        checkGrounded();
-        Move();
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Jump();
-        }
-        if (m_RigidBody2D.velocity.y > 0 && !m_isGrounded)
-        {
-            animator.SetFloat("VelocityY", 2);
-        }
-        else if (m_RigidBody2D.velocity.y < 0 && !m_isGrounded)
-        {
-            animator.SetFloat("VelocityY", -2);
-        }
-        else
-        {
-            animator.SetFloat("VelocityY", 0);
+            checkGrounded();
+            Move();
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Jump();
+            }
+            if (m_RigidBody2D.velocity.y > 0 && !m_isGrounded)
+            {
+                animator.SetFloat("VelocityY", 2);
+            }
+            else if (m_RigidBody2D.velocity.y < 0 && !m_isGrounded)
+            {
+                animator.SetFloat("VelocityY", -2);
+            }
+            else
+            {
+                animator.SetFloat("VelocityY", 0);
+            }
         }
     }
 

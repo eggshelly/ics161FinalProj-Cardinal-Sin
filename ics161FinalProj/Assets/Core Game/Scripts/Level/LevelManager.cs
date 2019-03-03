@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
+    [SerializeField] GameObject GameOverPanel;
     [SerializeField] GameObject collectiblesPanel; //the panel to add the key sprites to
     [SerializeField] Sprite keySpriteFilled; //key sprite filled
     [SerializeField] Sprite keySpriteEmpty; //key sprite outline
@@ -23,6 +24,10 @@ public class LevelManager : MonoBehaviour
     int totalCollectibles;
     int itemsCollected = 0;
 
+    bool gameOver = false;
+
+    PlayerLevelMovement playerMovement;
+
     void Awake()
     {
         FinishedLevel = new UnityEvent();
@@ -30,6 +35,8 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
+        SetDeathBlockListener();
+        playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerLevelMovement>();
         collectibles = GameObject.FindGameObjectsWithTag("Collectible");
         collectiblesSprites = new Image[collectibles.Length];
         collected = new bool[collectibles.Length];
@@ -42,6 +49,17 @@ public class LevelManager : MonoBehaviour
         }
         CreateCollectiblesPanel();
     }
+
+    //Adds the listener to the GameOver event of the DeathBlock
+    void SetDeathBlockListener()
+    {
+        GameObject deathBlock = GameObject.FindGameObjectWithTag("DeathBlock");
+        if(deathBlock != null)
+        {
+            deathBlock.GetComponent<KillPlayerScript>().GameOver.AddListener(GameOverListener);
+        }
+    }
+
     //Tells the ExitDoorScript that the player can exit - ExitDoorScript is kind of unnecessary, I can merge it with this script later if you want)
     void checkExit()
     {
@@ -88,5 +106,31 @@ public class LevelManager : MonoBehaviour
     void UpdateCollectiblesPanel(int index)
     {
         collectiblesSprites[index].sprite = keySpriteFilled;
+    }
+
+    //Listens for the GameOver event given by deathblocks
+    void GameOverListener()
+    {
+        FreezePlayer();
+        GameOverPanel.SetActive(true);
+    }
+
+    //Constrains the player so animator doesn't update nor can the player move
+    public void FreezePlayer()
+    {
+        playerMovement.frozen = true;
+        playerMovement.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+    }
+
+    //Restarts the level
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    //Checks if the game is over
+    public bool isGameOver()
+    {
+        return gameOver;
     }
 }
