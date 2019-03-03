@@ -35,7 +35,6 @@ public class PlayerLevelInteraction : MonoBehaviour
             else
             {
                 DetachObject();
-                m_LevelMovement.PullingObject(false);
             }
         }
         MoveObject();
@@ -66,8 +65,9 @@ public class PlayerLevelInteraction : MonoBehaviour
     }
 
     public void DetachObject()
-    {
+    { 
         transform.DetachChildren();
         ObjectToPull = null;
+        m_LevelMovement.PullingObject(false);
     }
 }
