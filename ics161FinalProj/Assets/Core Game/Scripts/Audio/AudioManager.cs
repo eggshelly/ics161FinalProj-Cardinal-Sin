@@ -43,13 +43,13 @@ public class AudioManager : MonoBehaviour
     {
         s.source.volume = s.volume;
         try{
-            if(!LevelManager.instance.isGameOver)
-            {
+            //if(!LevelManager.instance.isGameOver)
+            //{
                 if(!s.source.isPlaying)
                     Play("LoopTrack");
-            }
-            else
-            {
+            //}
+            //else
+            //{
                 if(s.name != "GameOverLoop")
                 {
                      if(s.source.volume > 0)
@@ -66,7 +66,7 @@ public class AudioManager : MonoBehaviour
                         StartCoroutine(FadeIn(1f));
                     }
                 }
-            }
+            //}
         }
         catch(Exception e)
         {
