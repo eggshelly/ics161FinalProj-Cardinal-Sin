@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Core Game/Scenes/SPRING 1.unity
     guid: e57a76719f60de54eaec11c69d53fc99
+  - enabled: 1
+    path: Assets/Core Game/Scenes/SPRING 2.unity
+    guid: bb6e6f23c290eab469ecc8e695642eeb
   m_configObjects: {}

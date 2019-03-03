@@ -17,8 +17,11 @@ public class SaveFileManager : MonoBehaviour
     OpenFileScript fileScript; //This is the script attached to the OpenFile gameobject above
 
     string currentButton; //this is the file that was loaded e.g. File 1, File 2, in order to keep track of what path to save to
+
+    //FOR THE STAGE THAT THE PLAYER IS EITHER CURRENTLY IN OR ON IN THE TEST MAP
     int currentStage; //Each stage is given an index by StageHub and is stored in an array. This makes it easier to quickly locate the stage that was just finished to update collectibles
-    public string currentStageName { get; private set; } //The Stage's name is also the name of the scene. This keeps track of what Stage/Scene was just finished 
+    public string currentStageName; //The Stage's name is also the name of the scene. This keeps track of what Stage/Scene was just finished 
+    int currentStageLevel;
     bool[] currentStageCollectibles; //Keeps track of the list of collectibles from the finished stage (each index refers to one collectible, true if collected, false if not)
 
     Vector3 playerPos; //Keeps track of the position of the player prior to entering the stage. Once the stage is finished the player is moved to this location
@@ -31,13 +34,19 @@ public class SaveFileManager : MonoBehaviour
     //Creates the instance of the SaveFileManager
     private void Awake()
     {
+        if(!loadData)
+        {
+            Destroy(instance);
+            Destroy(DialogueManager.instance);
+        }
+
         if (instance == null)
         {
             instance = this;
         }
         else
             Destroy(this.gameObject);
-        DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(instance);
 
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
@@ -115,10 +124,9 @@ public class SaveFileManager : MonoBehaviour
                     path += "GOOD END";
                 else
                     path += "BAD END";
-                
-                Debug.Log(path);
+               
                 DialogueManager.instance.LoadDialogue(path);
-                stageHub.UpdateCollectiblesForStage(currentStage, currentStageCollectibles);
+                stageHub.UpdateCollectiblesForStage(currentStage, currentStageLevel, currentStageCollectibles);
                 player.transform.position = playerPos;
                 finishedAStage = false;
             }
@@ -142,10 +150,11 @@ public class SaveFileManager : MonoBehaviour
     }
 
     //Sets the name and index of the stage that was interacted with. (this is called if the player presses E on the stage and brings up the stage enter panel)
-    public void SetCurrentStageNumber(int index, string name)
+    public void SetCurrentStageNumber(string name, int index, int level)
     {
         currentStageName = name;
         currentStage = index;
+        currentStageLevel = level;
     }
     
 }

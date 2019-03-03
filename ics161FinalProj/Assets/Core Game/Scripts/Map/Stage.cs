@@ -6,22 +6,21 @@ using UnityEngine.Events;
 
 public class IntUnityEvent : UnityEvent<int> { }
 
-public class StringIntUnityEvent: UnityEvent<string, int, bool[]> { }
+public class StringIntUnityEvent: UnityEvent<string, int, int, bool[]> { }
 
 public class Stage : MonoBehaviour
 {
     [SerializeField] float sizeMulti;
     [SerializeField] int totalNumCollectibles; //total number of collectibles the stage will contain. MUST SET IN THE INSPECTOR IN ORDER TO DISPLAY CORRECTLY ON THE PANEL
 
-    public int currentLevel{ get; private set; }
+    public int currentLevel{ get; set; }
+    public int stageIndex { get; set; }
 
     public UnityEvent StageLeft;
 
     public IntUnityEvent FinishedStage;
 
     public StringIntUnityEvent StageEntered;
-
-    public int stageIndex { get; set; } 
 
     //--------------------
     //temporary
@@ -41,7 +40,8 @@ public class Stage : MonoBehaviour
 
 
 
-        CreateCollectiblesArray();
+        collectibles = new bool[totalNumCollectibles];
+        ResetCollectiblesArray();
         currentLevel = 1;
         player = GameObject.FindGameObjectWithTag("Player");
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
@@ -49,9 +49,8 @@ public class Stage : MonoBehaviour
     }
 
     //Initially sets its collectibles to all false - no collectibles have been obtained yet
-    void CreateCollectiblesArray()
-    {
-        collectibles = new bool[totalNumCollectibles];
+    void ResetCollectiblesArray()
+    { 
         for(int i = 0; i < totalNumCollectibles; ++i)
         {
             collectibles[i] = false;
@@ -89,7 +88,7 @@ public class Stage : MonoBehaviour
     //Called by PlayerMapInteraction - Passes this information to StageHubScript
     public void EnterStage()
     {
-        StageEntered.Invoke(GetName(), stageIndex, collectibles);
+        StageEntered.Invoke(GetName(), stageIndex, currentLevel, collectibles);
     }
 
 
@@ -101,6 +100,12 @@ public class Stage : MonoBehaviour
         {
             collectibles = collect;
         }
+    }
+
+    public void NextLevel(int level)
+    {
+        currentLevel = level + 1;
+        ResetCollectiblesArray();
     }
 
     string GetName()

@@ -11,6 +11,7 @@ public class StageHubScript : MonoBehaviour
     [SerializeField] int numStages;
     [SerializeField] GameObject StagePanel; //Panels that displays the number of collected/missing collectibles and allows the player to enter the level
     [SerializeField] TextMeshProUGUI headerText; //Name at the top of the panel that displays the stage name
+    [SerializeField] Button EnterStage;
 
 
     Stage[] allStages; //array that stores all the stages
@@ -21,6 +22,7 @@ public class StageHubScript : MonoBehaviour
 
     private void Awake()
     {
+        
         allStageCollectibles = new List<bool[]>();
         allStages = GetComponentsInChildren<Stage>();
         CreateArrays();
@@ -29,6 +31,7 @@ public class StageHubScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        EnterStage.onClick.AddListener(delegate { DialogueManager.instance.LoadDialogue(currentStage); });
         DialogueManager.instance.DoneWithDialogue.AddListener(DoneWithDialogueListener);
         SetStageListeners();
     }
@@ -64,12 +67,12 @@ public class StageHubScript : MonoBehaviour
     }
 
     //When a player presses E on a stage, the StageEntered Event is Invoked. Passes the stage name and stage index to SaveFileManager and activates the Panel. 
-    void StageEnteredListener(string stageName, int index, bool[] collectibles)
+    void StageEnteredListener(string stageName, int stageIndex, int stageLevel, bool[] collectibles)
     {
         StagePanel.SetActive(true);
         headerText.text = stageName;
         currentStage = stageName;
-        SaveFileManager.instance.SetCurrentStageNumber(index, stageName);
+        SaveFileManager.instance.SetCurrentStageNumber(stageName, stageIndex, stageLevel);
         StagePanel.GetComponent<CollectiblesStageUI>().CreateCollectibles(collectibles); //Creates the collectibles sprite (filled and/or empty) on the panel
     }
 
@@ -91,9 +94,10 @@ public class StageHubScript : MonoBehaviour
     }
 
     //Updates the list of collectibles for an individual stage. Used when a stage is completed
-    public void UpdateCollectiblesForStage(int index, bool[] stageColl)
+    public void UpdateCollectiblesForStage(int index, int stageLevel, bool[] stageColl)
     {
         allStageCollectibles[index] = stageColl;
+        allStages[index].NextLevel(stageLevel);
         UpdateCollectiblesOfStages();
     }
 
@@ -105,5 +109,10 @@ public class StageHubScript : MonoBehaviour
             SaveFileManager.instance.SaveCurrentPosition();
             SceneManager.LoadScene(currentStage);
         }
+    }
+
+    public void BackToMap()
+    {
+        StagePanel.SetActive(false);
     }
 }

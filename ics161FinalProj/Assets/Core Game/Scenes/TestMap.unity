@@ -2982,6 +2982,7 @@ MonoBehaviour:
   numStages: 4
   StagePanel: {fileID: 1954083806}
   headerText: {fileID: 1223697063}
+  EnterStage: {fileID: 1614763267}
 --- !u!1 &1335650318
 GameObject:
   m_ObjectHideFlags: 0
@@ -3642,7 +3643,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.3, y: 0.2}
   m_AnchorMax: {x: 0.3, y: 0.2}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.0000076293945, y: 0}
   m_SizeDelta: {x: 143.17, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1614763267
