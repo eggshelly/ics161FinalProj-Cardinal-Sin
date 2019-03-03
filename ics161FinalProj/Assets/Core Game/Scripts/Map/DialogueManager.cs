@@ -152,7 +152,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueText.text = "";
         dialogueText.fontStyle = FontStyles.Normal;
-        string filePath = "Art/Waifu/";
+        string filePath = "Art/Portraits/";
         string spriteName = DialogueObj.sprite.ToString().Trim();
 
         if (DialogueObj.speaker.Length == 1) //monologue: set namePanel to invisible and text to italic
@@ -188,7 +188,7 @@ public class DialogueManager : MonoBehaviour
             nameText.text = DialogueObj.speaker;
             filePath = string.Format("{0}{1}/{2}", filePath, DialogueObj.speaker.Trim(), spriteName);
 
-            if (DialogueObj.speaker != "MC")
+            if (DialogueObj.speaker != "Haruka" && DialogueObj.speaker != "Touka" && DialogueObj.speaker != "Akiko" && DialogueObj.speaker != "Natsuki") //aka we don't have a sprite for it (MC, other charas, etc)    
             {
                 Debug.Log(filePath);
                 spritePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>(filePath) as Sprite;
@@ -200,7 +200,7 @@ public class DialogueManager : MonoBehaviour
         foreach (char letter in DialogueObj.text.ToCharArray())
         {
             dialogueText.text += letter;
-            yield return null;
+            yield return null;  
         }
         spaceDelay = false;
     }
