@@ -50,43 +50,43 @@ M,I turn to see a small girl with blush colored hairXYZ gazing at the same tree 
 ,,,
 MC,Yeah... too bad they don’t last very longXYZ though.,default,main
 ,,,
-Haruka,Hm…,default,main
+Haruka,Hm…,default2,main
 ,,,
-M,The girl shakes her headXYZ still admiring the budding flowers.,default,main
+M,The girl shakes her headXYZ still admiring the budding flowers.,default2,main
 ,,,
-Haruka,Isn’t that part of their beautyXYZ though?,default,main
+Haruka,Isn’t that part of their beautyXYZ though?,surprise2,main
 ,,,
-Haruka,The fact you know they won’t be there longXYZ but…,default,main
+Haruka,The fact you know they won’t be there longXYZ but…,smile_blush,main
 ,,,
-Haruka,you spend extra time looking at them anyways?,default,main
+Haruka,you spend extra time looking at them anyways?,joy_blush,main
 ,,,
-MC,…,default,main
+MC,…,joy_blush,main
 ,,,
-Haruka,In the countrysideXYZ there are so many wonderful plants and flowers that bloom year-round.,default,main
+Haruka,In the countrysideXYZ there are so many wonderful plants and flowers that bloom year-round.,default2,main
 ,,,
-Haruka,But people always make a big event of seeing the ones that don’t last long. It must be because they’re temporaryXYZ don’t you think?,default,main
+Haruka,But people always make a big event of seeing the ones that don’t last long. It must be because they’re temporaryXYZ don’t you think?,default2,main
 ,,,
-M,Temporary…,default,main
+M,Temporary…,default2,main
 ,,,
-M,So many unhappy memories attached to a single word.,default,main
+M,So many unhappy memories attached to a single word.,default2,main
 ,,,
-M,If there’s anything I’ve learned this past year…,default,main
+M,If there’s anything I’ve learned this past year…,default2,main
 ,,,
-M,...is that the only permanent thing in life is the passage of time.,default,main
+M,...is that the only permanent thing in life is the passage of time.,default2,main
 ,,,
-M,And time takes away things.,default,main
+M,And time takes away things.,default2,main
 ,,,
-MC,I guess that means we just take things for grantedXYZ then.,default,main
+MC,I guess that means we just take things for grantedXYZ then.,default2,main
 ,,,
-M,The girl laughs a bit.,default,main
+M,The girl laughs a bit.,default2,main
 ,,,
-Haruka,That’s a bit dark!,default,main
+Haruka,That’s a bit dark!,joy,main
 ,,,
 M,She turns to meXYZ the slight breeze catching her hair.,default,main
 ,,,
-Haruka,I’d like to think…,default,main
+Haruka,I’d like to think…,neutral2_blush,main
 ,,,
-Haruka,We just know how to especially appreciate things enoughXYZ before they go.,default,main
+Haruka,We just know how to especially appreciate things enoughXYZ before they go.,neutral2_blush,main
 ,,,
 M,Before they go…,default,main
 ,,,
