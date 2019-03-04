@@ -24,6 +24,8 @@ public class DialogueManager : MonoBehaviour
 
     public UnityEvent DoneWithDialogue;
 
+    public bool hasDoneIntro = false;
+
     private void Awake()
     {
         DoneWithDialogue = new UnityEvent();
@@ -34,13 +36,17 @@ public class DialogueManager : MonoBehaviour
         else
             Destroy(this.gameObject);
 
-        DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(instance);
     }
 
     void Start()
     {
         textOutput = new Queue<Dialogue>();
-        LoadDialogue("INTRODUCTION");
+        if (!hasDoneIntro)
+        {
+            LoadDialogue("INTRODUCTION");
+            hasDoneIntro = true;
+        }
     }
 
     // Update is called once per frame

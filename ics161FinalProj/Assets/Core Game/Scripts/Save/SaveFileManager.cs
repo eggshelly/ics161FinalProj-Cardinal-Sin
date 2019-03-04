@@ -60,7 +60,7 @@ public class SaveFileManager : MonoBehaviour
     //Saves the game
     public void SaveGame()
     {
-        SaveFileScript.SaveLevel(currentButton, player.transform.position, stageHub);
+        SaveFileScript.SaveLevel(currentButton, player.transform.position, stageHub, DialogueManager.instance);
         LoadDataForLevel();
     }
 
@@ -117,6 +117,7 @@ public class SaveFileManager : MonoBehaviour
                 Vector3 loadedPos = new Vector3(level.position[0], level.position[1], level.position[2]);
                 player.transform.position = loadedPos;
                 stageHub.loadStages(level.stageCollectibles, level.stageLevels);
+                DialogueManager.instance.hasDoneIntro = level.introCompleted;
 
             }
             if (finishedAStage)

@@ -16,8 +16,11 @@ public class LevelData
     //keeps track of stage levels
     public int[] stageLevels;
 
+    //To keep track of if the intro has been done already
+    public bool introCompleted;
+
     //Constructs the LevelData object which stores all the information that should be saved and later retrieved
-    public LevelData(Vector3 playerPos, StageHubScript stageHub)
+    public LevelData(Vector3 playerPos, StageHubScript stageHub, DialogueManager manager)
     {
         position = new float[3];
         position[0] = playerPos.x;
@@ -26,6 +29,8 @@ public class LevelData
 
         stageCollectibles = stageHub.allStageCollectibles.ToArray();
         stageLevels = stageHub.GetStageLevels().ToArray();
+
+        introCompleted = manager.hasDoneIntro;
         
     }
 }
