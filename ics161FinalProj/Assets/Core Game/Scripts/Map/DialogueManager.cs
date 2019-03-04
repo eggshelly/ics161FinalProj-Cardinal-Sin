@@ -161,7 +161,7 @@ public class DialogueManager : MonoBehaviour
 
             if (spriteName == "none")
             {
-                Debug.Log("NO SPRITE");
+                //Debug.Log("NO SPRITE");
                 spritePanel.SetActive(false);
             }
 
@@ -177,7 +177,7 @@ public class DialogueManager : MonoBehaviour
 
             if (spriteName == "none")
             {
-                Debug.Log("NO SPRITE");
+                //Debug.Log("NO SPRITE");
                 spritePanel.SetActive(false);
             }
 
@@ -188,9 +188,9 @@ public class DialogueManager : MonoBehaviour
             nameText.text = DialogueObj.speaker;
             filePath = string.Format("{0}{1}/{2}", filePath, DialogueObj.speaker.Trim(), spriteName);
 
-            if (DialogueObj.speaker != "Haruka" && DialogueObj.speaker != "Touka" && DialogueObj.speaker != "Akiko" && DialogueObj.speaker != "Natsuki") //aka we don't have a sprite for it (MC, other charas, etc)    
+            if (DialogueObj.speaker == "Haruka" || DialogueObj.speaker == "Touka" || DialogueObj.speaker == "Akiko" || DialogueObj.speaker == "Natsuki") //aka only loads avail sprite    
             {
-                Debug.Log(filePath);
+                //Debug.Log(filePath);
                 spritePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>(filePath) as Sprite;
             }
 
