@@ -42,7 +42,7 @@ public class SaveFileManager : MonoBehaviour
             Destroy(this.gameObject);
         DontDestroyOnLoad(instance);
 
-        SceneManager.sceneLoaded += OnSceneLoaded;
+        SceneManager.sceneLoaded += OnSceneLoaded;      
     }
 
     //Called by LoadFile function in the ButtonFunctions script when the "Load Game" button is pressed in the SaveFiles scene. Makes it so that data is loaded once the TestMap scene is loaded

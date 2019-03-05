@@ -38,12 +38,15 @@ public class PlayerMapMovement : MonoBehaviour
     //Translates the player's position
     void Move()
     {
-        float xDirection = Input.GetAxisRaw("Horizontal");
-        float yDirection = Input.GetAxisRaw("Vertical");
-        animator.SetFloat("Vertical", yDirection);
-        animator.SetFloat("Horizontal", xDirection);
-        ChangeDirection(xDirection);
-        transform.Translate(new Vector3((CompletelyInBoundsX(xDirection) ? xDirection * speed: 0), (CompletelyInBoundsY(yDirection)? yDirection * speed: 0)) * Time.deltaTime);
+        if (!DialogueManager.instance.dialogueAvailable)
+        {
+            float xDirection = Input.GetAxisRaw("Horizontal");
+            float yDirection = Input.GetAxisRaw("Vertical");
+            animator.SetFloat("Vertical", yDirection);
+            animator.SetFloat("Horizontal", xDirection);
+            ChangeDirection(xDirection);
+            transform.Translate(new Vector3((CompletelyInBoundsX(xDirection) ? xDirection * speed : 0), (CompletelyInBoundsY(yDirection) ? yDirection * speed : 0)) * Time.deltaTime);
+        }
     }
 
     void ChangeDirection(float move)

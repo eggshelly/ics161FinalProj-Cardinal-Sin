@@ -21,6 +21,9 @@ public class DialogueManager : MonoBehaviour
     private bool spaceDelay = false;    //locks the player from pressing spacebar while there is text being printed
     private Dialogue nextLine;  //holds the next line on the queue, used to print letter by letter or replace the current text
     private Coroutine lastRoutine = null;   //used to hold pointer to coroutine call responsible for printing letter by letter
+    private bool introTransition = false;
+    public bool activeFade = false;
+    public bool dialogueAvailable = false;
 
     public UnityEvent DoneWithDialogue;
 
@@ -54,8 +57,8 @@ public class DialogueManager : MonoBehaviour
     {
         if (textOutput.Count >= 1)
         {
-            dialoguePanel.SetActive(true);
-            Time.timeScale = 0;
+            dialogueAvailable = true;
+            dialoguePanel.SetActive(true);            
 
             if (initialText == 0)
             {
@@ -71,7 +74,6 @@ public class DialogueManager : MonoBehaviour
             {
                 spaceDelay = false;
                 initialText = 0;
-                Time.timeScale = 1;
 
                 HidePanels();
 
@@ -81,21 +83,21 @@ public class DialogueManager : MonoBehaviour
         }
         else if (textOutput.Count == 0)     //if we're on the last sentence, we want to wait for the player to close the dialogue box
         {
-            if (Input.GetKeyDown(KeyCode.Space) && !spaceDelay && Time.timeScale == 0)
+            if (Input.GetKeyDown(KeyCode.Space) && !spaceDelay)
             {
                 HidePanels();
-                Time.timeScale = 1;
                 initialText = 0;
+                dialogueAvailable = false;
 
                 DoneWithDialogue.Invoke();
             }
-            else if (Input.GetKeyDown(KeyCode.Space) && spaceDelay && Time.timeScale == 0)
+            else if (Input.GetKeyDown(KeyCode.Space) && spaceDelay)
             {
                 DisplayFullSentence();
 
                 HidePanels();
-                Time.timeScale = 1;
                 initialText = 0;
+                dialogueAvailable = false;
 
                 DoneWithDialogue.Invoke();
             }
@@ -196,6 +198,12 @@ public class DialogueManager : MonoBehaviour
 
             if (DialogueObj.speaker == "Haruka" || DialogueObj.speaker == "Touka" || DialogueObj.speaker == "Akiko" || DialogueObj.speaker == "Natsuki") //aka only loads avail sprite    
             {
+                if (DialogueObj.speaker == "Haruka" && !introTransition)
+                {
+                    Debug.Log("Fade out!");
+                    StartCoroutine(TransitionManager.instance.FadeToLevel(2f));
+                    introTransition = true;
+                }
                 //Debug.Log(filePath);
                 spritePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>(filePath) as Sprite;
             }

@@ -13,12 +13,11 @@ public class ButtonFunctions : MonoBehaviour
 
     public void CheckSaveFiles()
     {
-        SceneManager.LoadScene("SaveFiles");
+        StartCoroutine(LoadMenu());
     }
     public void BackToMenu()
     {
-        SceneManager.LoadScene("MainMenu");
-        SaveFileManager.instance.SetLoadDataFalse();
+        StartCoroutine(LoadMainScreen());
     }
 
     public void StartGame()
@@ -45,14 +44,23 @@ public class ButtonFunctions : MonoBehaviour
 
     public IEnumerator StartGameCR()
     {
-
-        while(AudioManager.instance.CR_running)
-        {
-            yield return null;
-        }
+        yield return StartCoroutine(TransitionManager.instance.FadeToBlack(2.1f));
         SaveFileManager.instance.DeleteInstancesIfNotLoading();
         SceneManager.LoadScene("TestMap");
+    }
 
+    public IEnumerator LoadMenu()
+    {
+        yield return StartCoroutine(TransitionManager.instance.FadeToBlack(1.5f));
+        SceneManager.LoadScene("SaveFiles");
+        yield return StartCoroutine(TransitionManager.instance.FadeToLevel(1.5f));
+    }
 
+    public IEnumerator LoadMainScreen()
+    {
+        yield return StartCoroutine(TransitionManager.instance.FadeToBlack(1.5f));
+        SceneManager.LoadScene("MainMenu");
+        yield return StartCoroutine(TransitionManager.instance.FadeToLevel(1.5f));
+        SaveFileManager.instance.SetLoadDataFalse();
     }
 }
