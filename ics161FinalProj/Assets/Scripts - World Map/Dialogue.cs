@@ -10,14 +10,14 @@ public class Dialogue
     public string text;
     public string sprite;
     public string audio;
-    public string background;
+    //public string background;
 
-    public Dialogue(string speaker, string text, string sprite, string audio, string background)
+    public Dialogue(string speaker, string text, string sprite, string audio)  //,string background
     {
         this.speaker = speaker;
         this.text = text;
         this.sprite = sprite;
         this.audio = audio;
-        this.background = background;
+        //this.background = background;
     }
 }

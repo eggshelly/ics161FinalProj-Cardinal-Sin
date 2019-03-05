@@ -119,7 +119,7 @@ public class DialogueManager : MonoBehaviour
         {
             string[] parsedData = data[i].Split(new char[] { ',' });
 
-            Dialogue dialogueObj = new Dialogue(parsedData[0], parsedData[1].Replace("XYZ", ","), parsedData[2], parsedData[3], parsedData[4]);
+            Dialogue dialogueObj = new Dialogue(parsedData[0], parsedData[1].Replace("XYZ", ","), parsedData[2], parsedData[3]); //, parsedData[4]
 
             GameDialogue.Add(i / 2, dialogueObj);
         }

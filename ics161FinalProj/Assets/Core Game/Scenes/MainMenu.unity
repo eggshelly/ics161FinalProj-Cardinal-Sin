@@ -5778,6 +5778,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1428112524}
   - component: {fileID: 1428112523}
+  - component: {fileID: 1428112525}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -5806,6 +5807,30 @@ MonoBehaviour:
     volume: 0
     pitch: 1
     source: {fileID: 0}
+  - name: SPRING
+    loop: 1
+    clip: {fileID: 8300000, guid: 29ad4a341c1a5984eacdcf0df999b6a0, type: 3}
+    volume: 0
+    pitch: 1
+    source: {fileID: 0}
+  - name: SUMMER
+    loop: 1
+    clip: {fileID: 8300000, guid: e4b17d10b8d8b34469147798b2d2b577, type: 3}
+    volume: 0
+    pitch: 1
+    source: {fileID: 0}
+  - name: AUTUMN
+    loop: 1
+    clip: {fileID: 8300000, guid: 975d3d58d2993b64eafbc7ebefd2b575, type: 3}
+    volume: 0
+    pitch: 1
+    source: {fileID: 0}
+  - name: TestMap
+    loop: 1
+    clip: {fileID: 8300000, guid: 2f111f43cf1c2e84d85c830b76de4c15, type: 3}
+    volume: 0
+    pitch: 1
+    source: {fileID: 0}
   CR_running: 0
 --- !u!4 &1428112524
 Transform:
@@ -5821,6 +5846,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1428112525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428112522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 498866eeec7cca54c92406b23ecb693a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1519250925
 GameObject:
   m_ObjectHideFlags: 0
@@ -6140,7 +6177,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.68}
   m_AnchorMax: {x: 0.5, y: 0.68}
-  m_AnchoredPosition: {x: 5.8099933, y: 7.2}
+  m_AnchoredPosition: {x: 5.8099933, y: 7.200012}
   m_SizeDelta: {x: 400, y: 40}
   m_Pivot: {x: 0.5, y: 0.68}
 --- !u!114 &1820804212
