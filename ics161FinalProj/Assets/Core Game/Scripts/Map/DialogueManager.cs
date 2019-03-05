@@ -22,7 +22,6 @@ public class DialogueManager : MonoBehaviour
     private Dialogue nextLine;  //holds the next line on the queue, used to print letter by letter or replace the current text
     private Coroutine lastRoutine = null;   //used to hold pointer to coroutine call responsible for printing letter by letter
     private bool introTransition = false;
-    public bool activeFade = false;
     public bool dialogueAvailable = false;
 
     public UnityEvent DoneWithDialogue;
@@ -73,10 +72,16 @@ public class DialogueManager : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.P)) //press P to skip dialogue, FOR T E S T I N G P U R P O S E S
             {
                 spaceDelay = false;
+                dialogueAvailable = false;
+
+                if (!introTransition)
+                {
+                    StartCoroutine(TransitionManager.instance.FadeToLevel(2f));
+                    introTransition = true;
+                }
+
                 initialText = 0;
-
                 HidePanels();
-
                 textOutput.Clear();
                 DoneWithDialogue.Invoke();
             }
@@ -200,7 +205,6 @@ public class DialogueManager : MonoBehaviour
             {
                 if (DialogueObj.speaker == "Haruka" && !introTransition)
                 {
-                    Debug.Log("Fade out!");
                     StartCoroutine(TransitionManager.instance.FadeToLevel(2f));
                     introTransition = true;
                 }

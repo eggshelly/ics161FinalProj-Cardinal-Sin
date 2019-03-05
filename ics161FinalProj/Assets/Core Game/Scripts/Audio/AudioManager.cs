@@ -93,8 +93,5 @@ public class AudioManager : MonoBehaviour
             yield return null;
         }
         CR_running = false;
-    }
-
-
-    
+    }    
 }
