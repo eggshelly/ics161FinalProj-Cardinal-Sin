@@ -9,7 +9,8 @@ public class AudioManager : MonoBehaviour
 {
     //[HideInInspector]
     //public Sound s;
-    public float fadeTime;  //affects how long it takes to fade audio
+    public float fadeInTime;  //affects how long it takes to fade audio
+    public float fadeOutTime;
     public Sound[] sounds;
     public static AudioManager instance;
     private IEnumerator fadeIn;
@@ -73,7 +74,7 @@ public class AudioManager : MonoBehaviour
         CR_running = true;
         while(s.source.volume > 0.01f)
         {
-            s.source.volume -= Time.deltaTime / 2.1f;  //For a duration of fadeTime, volume gradually decreases till its 0
+            s.source.volume -= Time.deltaTime / fadeOutTime;  //For a duration of fadeTime, volume gradually decreases till its 0
             yield return null;
         }
         CR_running = false;
@@ -87,7 +88,7 @@ public class AudioManager : MonoBehaviour
         s.source.Play();
         while (s.source.volume < 1.0f)
         {
-            s.source.volume += Time.deltaTime / fadeTime; //fades in over course of seconds fadeTime
+            s.source.volume += Time.deltaTime / fadeInTime; //fades in over course of seconds fadeTime
             yield return null;
         }
         CR_running = false;

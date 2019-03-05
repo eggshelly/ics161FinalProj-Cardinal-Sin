@@ -5797,7 +5797,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 063cabaaf06186a4dae4c259f26c3277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeTime: 5
+  fadeInTime: 4
+  fadeOutTime: 2.1
   sounds:
   - name: Opening
     loop: 1
@@ -5805,6 +5806,7 @@ MonoBehaviour:
     volume: 0
     pitch: 1
     source: {fileID: 0}
+  CR_running: 0
 --- !u!4 &1428112524
 Transform:
   m_ObjectHideFlags: 0
