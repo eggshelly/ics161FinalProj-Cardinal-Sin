@@ -27,6 +27,7 @@ public class LevelManager : MonoBehaviour
     bool gameOver = false;
 
     PlayerLevelMovement playerMovement;
+    PlayerLevelInteraction playerInteraction;
 
     void Awake()
     {
@@ -37,6 +38,7 @@ public class LevelManager : MonoBehaviour
     {
         SetDeathBlockListener();
         playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerLevelMovement>();
+        playerInteraction = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerLevelInteraction>();
         collectibles = GameObject.FindGameObjectsWithTag("Collectible");
         collectiblesSprites = new Image[collectibles.Length];
         collected = new bool[collectibles.Length];
@@ -79,10 +81,11 @@ public class LevelManager : MonoBehaviour
     //Passes the array of bools representing the collectibles obtained to SaveFileManager (to pass to the StageHubScript to update the StagePanel in the test map) and then loads the Test Map scene
     public void PassDataToSaveManager()
     {
+        Time.timeScale = 1;    //allows the fade coroutine to run when player wants to quit back to map
+        playerInteraction.enabled = false;
+        playerMovement.enabled = false;
         FindObjectOfType<AudioManager>().Stop("SPRING"); //this needs to be replaced with a variable holding the current song being played
-        StartCoroutine(BackToMapCR());   //bug to fix: coroutine that diminishes music must be able to run when timescale is 0. this will fix
-                                         //issue where music does not increase during dialogue and where player can not leave level while game
-                                         //is paused. Also need to pause the game during fade and still have coroutine run during this time. 
+        StartCoroutine(BackToMapCR()); 
     }
 
     //Creates the collectible icons in the top left corner
@@ -143,6 +146,8 @@ public class LevelManager : MonoBehaviour
         {
             yield return null;
         }
+        playerMovement.enabled = true;
+        playerInteraction.enabled = true;
         SaveFileManager.instance.AddCollectablesCountToCurrentState(collected);
         SceneManager.LoadScene("TestMap");
 

@@ -18,6 +18,7 @@ public class StageHubScript : MonoBehaviour
     Stage[] allStages; //array that stores all the stages
     public Dictionary<Stage, List<bool[]>> allStageCollectibles; //A list of bool arrays where the bool arrays are the list of collectibles of each stage
     int[] stageLevels;
+    GameObject player;
 
     StagePanelScript panel;
 
@@ -32,6 +33,7 @@ public class StageHubScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.Find("Player");
         panel = StagePanel.GetComponent<StagePanelScript>();
         DialogueManager.instance.DoneWithDialogue.AddListener(DoneWithDialogueListener);
         SetStageListeners();
@@ -117,6 +119,8 @@ public class StageHubScript : MonoBehaviour
     {
         if (currentStage != null)
         {
+            player.GetComponent<PlayerMapMovement>().enabled = false;
+            player.GetComponent<PlayerMapInteraction>().enabled = false;
             FindObjectOfType<AudioManager>().Stop("TestMap");
             StartCoroutine(DoneDialogueCR());
         }
@@ -146,6 +150,8 @@ public class StageHubScript : MonoBehaviour
         {
             yield return null;
         }
+        player.GetComponent<PlayerMapMovement>().enabled = true;
+        player.GetComponent<PlayerMapInteraction>().enabled = true;
         SaveFileManager.instance.SaveCurrentPosition();
         SceneManager.LoadScene(currentStage);
 
