@@ -79,8 +79,10 @@ public class LevelManager : MonoBehaviour
     //Passes the array of bools representing the collectibles obtained to SaveFileManager (to pass to the StageHubScript to update the StagePanel in the test map) and then loads the Test Map scene
     public void PassDataToSaveManager()
     {
-        SaveFileManager.instance.AddCollectablesCountToCurrentState(collected);
-        SceneManager.LoadScene("TestMap");
+        FindObjectOfType<AudioManager>().Stop("SPRING"); //this needs to be replaced with a variable holding the current song being played
+        StartCoroutine(BackToMapCR());   //bug to fix: coroutine that diminishes music must be able to run when timescale is 0. this will fix
+                                         //issue where music does not increase during dialogue and where player can not leave level while game
+                                         //is paused. Also need to pause the game during fade and still have coroutine run during this time. 
     }
 
     //Creates the collectible icons in the top left corner
@@ -132,5 +134,18 @@ public class LevelManager : MonoBehaviour
     public bool isGameOver()
     {
         return gameOver;
+    }
+
+    public IEnumerator BackToMapCR()
+    {
+
+        while(AudioManager.instance.CR_running)
+        {
+            yield return null;
+        }
+        SaveFileManager.instance.AddCollectablesCountToCurrentState(collected);
+        SceneManager.LoadScene("TestMap");
+
+
     }
 }
