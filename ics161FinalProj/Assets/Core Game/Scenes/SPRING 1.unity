@@ -26118,7 +26118,7 @@ PrefabInstance:
     - target: {fileID: 5309328394198043222, guid: d45a8c493340b9943916596b053ee466,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00071319746
+      value: -0.00071325334
       objectReference: {fileID: 0}
     - target: {fileID: 5309328394198043222, guid: d45a8c493340b9943916596b053ee466,
         type: 3}
@@ -26816,26 +26816,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 980872472}
-    - target: {fileID: 774392049800601352, guid: 830451f6974a90745a68fe1fe15949f9,
-        type: 3}
-      propertyPath: m_text
-      value: Give Up
-      objectReference: {fileID: 0}
-    - target: {fileID: 774392049800601352, guid: 830451f6974a90745a68fe1fe15949f9,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 774392049905382844, guid: 830451f6974a90745a68fe1fe15949f9,
-        type: 3}
-      propertyPath: m_text
-      value: Retry Level
-      objectReference: {fileID: 0}
-    - target: {fileID: 774392049905382844, guid: 830451f6974a90745a68fe1fe15949f9,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 830451f6974a90745a68fe1fe15949f9, type: 3}
 --- !u!1001 &2031392831955524891
