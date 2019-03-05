@@ -21,7 +21,7 @@ M: I stop in the middle of the road, basking in the comfortable Spring breeze, r
 M: We’ve been to many different ones, but…
 M: Nothing could ever compare to my home town’s blossoms. 
 Haruka: They’re pretty, aren’t they?
-MC: Huh? 
+MC: Huh?
 M: I turn to see a small girl with blush colored hair, gazing at the same tree I was dazed by. 
 MC: Yeah... too bad they don’t last very long, though. 
 Haruka: Hm…
@@ -48,6 +48,7 @@ M: 10 years ago, I walked this same path.
 M: This time, I’m walking on a branching path that wasn’t paved before,
 M: to the other side of a town that
 M: Is no longer my home.
+
 SPRING 1
 MC: Ah… so tiring!
 M: I let out a relieved sigh and stretch out in relief on my desk. 
@@ -71,7 +72,7 @@ M: Oh, I thought she looked familiar… it’s the cherry blossom girl I had a stran
 Haruka: Oh!
 M: Before I could confirm my assumptions, Haruka’s face beamed with the same sudden realization.
 Haruka: I saw you while walking to school, didn’t I? Sorry for not introducing myself earlier
-Haruka: My name is Haruka Yamauchi, you introduced yourself to my class today.
+Haruka: My name is Haruka Furukawa, you introduced yourself to my class today.
 MC: Ah, nice to properly meet you.
 Haruka: You just moved here, right? This school can be pretty confusing. If I’m not paying attention I could easily walk pass our classroom too, hehe.
 M: Our classroom…? I look to my right, and sure enough, there’s a familiar sign clearly labelled with my classroom number.
@@ -87,12 +88,21 @@ M: I felt a second wave of embarrassment take over. Our conversation earlier was
 M: Before I could turn any redder, Haruka smiles shyly.
 Haruka: Sure! If you don’t mind me. I can show you around right now, if you’d like. 
 MC: I would appreciate that. Thank you.
-Haruka: Great! I’ll show you the library first, its my favorite place… 
+Haruka: Great! I’ll show you the library first, it’s my favorite place… 
 M: She shows me around the library, field, and other school facilities.
 M: We naturally make small talk.
-M: Despite our cherry blossom dialogue earlier, I learn she’s pretty serious about her studies. She likes to have her quiet time in the library and read when she feels like being alone. 
-M: I was surprised to hear that, since she has such a cheerful and bright aura… she probably gets along well with anyone.
-M: She seemed like the kind of person who was always surrounded by others.
+MC: If the library is your favorite place, I’m guessing you’re the studious type, then.
+Haruka: Mmm I try! I’m nowhere near as diligent as our class rep though. I don’t usually go to the library to just study, though.
+MC: Oh? That’s a bit strange. What else would you do there?
+Haruka: Mm I dunno, sometimes read, sometimes just have time to myself
+MC: I see...
+M: Time to herself? She definitely doesn’t seem like an introvert to me. Especially with her rather uh… interesting cherry blossom dialogue earlier… 
+Haruka: Mhm! But… that’s not as often. I usually go out with friends after school if I have the time, all though it’s hard to find new things to do in such a small town, hehe 
+MC: Heh. Tell me about it.
+M: Going out with friends after school, idling time away in the library… she’s living the dream high school life.
+M: Plus she can easily make conversation with a stranger. With a personality like that, she probably gets along well with anyone.
+M: I wish… that stuff came easily to me, too.
+M: We spend a while talking and walking, Haruka kindly showing me all the important places.
 Haruka: Aaand, were back to the classroom. I tried to cover all the important places… 
 MC: Already? Time flew... I really owe you one.
 M: The copper sunset shone through the hall windows. A lot of time really had passed… 
@@ -121,14 +131,13 @@ M: How could she not recognize me earlier, if she noticed that I was lost? That 
 M: Before I could say anything, Haruka stops in front of a small apartment complex.
 Haruka: Well, this is where I live. Thank you for walking me all this way. 
 MC: …
-M: I let my voice break the awkward silence.
 MC: Haruka, before you go… can I ask you something?
 Haruka: Hm? 
 MC: Earlier, when I was lost, you acted like you didn’t recognize me, but… 
 MC: You knew who I was, right? Since you said you saw me pass the classroom. 
 M: Haruka’s surprised look slowly melts into a shy smile.
 Haruka: Mm… you caught me, haha. I...
-Haruka: ...I actually knew you were the transfer student all along. Even when we were at the trees. In a small town, there’s no way I wouldn’t recognize you unless you were a new student.
+Haruka: ...I actually knew you were the transfer student all along. Even when we were at the road with cherry blossoms. In a small town, there’s no way I wouldn’t recognize you unless you were a new student.
 Haruka: And then today... I saw you pass by our class a few times and I could tell you were lost. So I thought it was a perfect opportunity to talk to you.
 MC: Talk to me? Why me? 
 Haruka: Because I wanted to be the one to help you, since...
@@ -152,3 +161,199 @@ M: As I make my way down the street, I can’t help but feel as if there was a sli
 M: And the fact she seemed to not recognize me earlier still seems… far fetched…
 M: I do my best to shake it off. It’s probably all just in my head, right? 
 M: At least, I’ve met someone new at this school. 
+
+SPRING 2
+M: I go into class and spend most of the day attempting to stay focused. During break, Haruka catches my eye.
+M: The past few weeks have flown by, and I’ve began to adjust to my new high school life.
+M: There are days harder than others, but meeting new people and doing normal high school things like schoolwork have actually helped a lot.
+M: ...and then there’s Haruka. I find that the better days are when I get to walk home and chat with her.
+M: I hear Haruka giggling softly with a group of people around her.
+MC: Must be nice to have such a radiating aura around yourself like that… 
+M: Haruka momentarily stops her conversation and peers over at me. She smiles and waves.
+MC: That’s right… we’re friends, too.
+M: Out of my surprise, Haruka gets out of her seat and walk towards my desk. 
+Haruka: Would you like to eat inside the classroom together? I made extra bento.
+MC: O-Oh, yeah, that sounds great.
+M: Homemade bento… it’s been a while.
+M: We spend time eating and exchanging normal small talk about life and classes.
+M: She really does have a positive aura. 
+MC: Ahhh that was so good! Where’d you learn to cook so well? 
+Haruka: My mom taught me! She used to spend a lot of time cutting fruit into cute shapes, shaping things into hearts. And somehow made it taste really delicious too
+M: Haruka’s mother seems really caring, I can see where Haruka gets it from.
+M: I remember my own Mom would make me lunches to take to school, even up until…
+M: ...
+MC: That’s sweet, does she still make you lunch still?
+M: Haruka shyly fidgets and looks down at her food, continuing to eat. 
+Haruka: Umm- You see...
+M: I was worried at her expression at first, but her voice seemed calm and open as she began to speak. 
+Haruka: Before I entered high school, my father passed away in an accident. So my mom works full-time now to support my brother and I... 
+M: As Haruka’s words began to fade off, I felt a surge of guilt in my chest. Before I could apologize however, Haruka’s demeanor perks up as quickly as it dimmed down.
+Haruka: She taught me everything she knew, before she went back to work. So in a way I still get to enjoy her lunches. She’s really amazing!
+MC: Oh… I’m sorry, I didn’t… 
+Haruka: Mm! Don’t worry about it, I don’t mind sharing. I’m glad you liked it though, hehe. I’ve been practicing a lot lately.
+M: Haruka smiles at me, seemingly unbothered.
+Haruka: How about you? Is your mother a good chef, too? 
+MC: ...
+M: I don’t know how to answer that. I want to make sure Haruka is okay, since I may have unintentionally brought up painful memories for her, but… 
+M: How do I do that when the spotlight is on me now? I don’t know how to really answer while being fully honest... 
+M: A familiar feeling emerges. The same emotion I felt when I was deep in thought while walking Haruka home that one day… sending me to a strange place where I collected keys until I knew what to say.
+M: Wherever I’m going, please let it help me unlock the right thing to say.
+SPRING 2 GOOD END
+M: Just like before, the physical world comes back into view. A new sense of confidence takes over.
+M: That’s right… it’s scary, but, if I want to learn more about Haruka, I have to open up too.
+MC: …
+Haruka: Hm?
+MC: She was.
+Haruka: …?
+Haruka: ...oh! I--
+MC: It’s okay, I don’t mind talking about it. She was a fantastic cook, and made me lunches to take to school, even in high school. Even when she was sick, she made sure I ate well.
+MC: That’s actually why I transferred here, so...
+MC: I really appreciate that you reached out. Especially even more now that I know that you too...
+M: My words hung in the air, followed by a brief moment of silence.
+Haruka: …
+M: To my surprise, Haruka smiles softly.
+Haruka: You know…
+Haruka: I don’t really talk much about these things with my friends. I never want to bring down the mood, so I try to divert attention away when topics like that come up.
+Haruka: When my father passed away, my whole world stopped. Everyday life was completely different from then on, and I didn’t know how to process it. So I just continued to dismiss my feelings...
+Haruka: So you being able to talk about it, and relate… 
+Haruka: It makes me happy. That I feel like I can talk a bit more freely about these things with you.
+Haruka: And... I’m sorry for your loss, too.
+MC: Haruka… 
+MC: I don’t think you bring down the mood. I’m sure your friends care about your feelings, too.
+Haruka: That’s true… but
+Haruka: All they’ve seen is the happy Haruka. Aloof Haruka, Haruka who studies hard and says silly things.
+Haruka: I don’t want to be rejected if they see this part of me.
+MC: I understand it’s scary but... you talked about it with me, didn’t you?
+Haruka: Yeah, you’re right. And it worked out. Maybe, little by little… I can show them this side, too.
+Haruka: Until then, can I confide in you?
+M: I felt heat rise from my face. It was difficult to explain… this topic is difficult for me to talk about, but somehow… I feel so happy.
+M: Overwhelmed, I muster up a response.
+MC: Of course.
+Haruka: Hehe. Alright! In exchange, I’ll make you more food next time I try something. So don’t get sick of my cooking, kay?
+M: Like I said before, there are days harder than others… and the better days are when I get to talk with Haruka.
+M: In the short time I’ve moved back to my town, however…
+M: This might be one of the best.
+SPRING 2 BAD END
+M: Just like before, the physical world comes back into view. I can’t talk about it… and I feel like it would just take the attention off of Haruka, anyways.
+M: I clear my throat and make an attempt to give a mostly honest answer.
+MC: She’s pretty good, but she doesn’t make me food anymore.
+Haruka: Oh, I see… 
+Haruka: Well, we all have to grow up at some point, don’t we? Hehe. Anyways, what do you think of the chicken? I don’t know if its too greasy…
+M: The topic naturally shifted to something different, and that was that. I never really learned more about her or her father from that conversation, and there wasn’t much of an opportunity to bring it up again.
+M: It’s not easy to open up, so perhaps if I did… she would feel more comfortable talking about it.
+Haruka: Oh, break time is almost over. Hehe, this was fun! I’ll make you food again some time.
+MC: Oh, yeah… thank you, I would appreciate it.
+M: I watch her pack up and walk back to her assigned seat. The rest of the day was a blur, and I couldn’t shake off the lingering feeling of regret. 
+MC: Haruka… 
+M: Like I said before, there are days harder than others… and the better days are when I get to talk with Haruka.
+M: But today, even though I ate lunch with her...
+M: This day was hard.
+
+SPRING 3
+M: Midterms are handed back today. More than half the term already passed by… 
+M: I look down at my paper, clearly marked with a red 73.
+MC: Barely made it… 
+MC: I wonder how Haruka did…
+Student A: Haruka wait!! 
+Student B: Haruka!
+M: A small commotion emerges from the corner of the classroom. By the time I look over, I see two girls standing up from their desks, and another girl with pink hair run out the room with papers in her hand.
+MC: Haruka…?
+M: I jolt out of my seat and head over to the students that called out her name. I’ve seen them around Haruka before, they must be her close friends.
+MC: What happened…?
+Student A: I don’t know! She got her test back and went all silent… then ran off without saying anything...
+Student B: She’s left like that before. Albeit, not as dramatic as this…
+Student A: I’m worried!! Should we go find her? We never know where she goes…
+M: I let the two girls talk amongst themselves. My focus is finding Haruka… it seems really out of character for her to leave like that.
+MC: Where would she go, though?
+M: My mind flashes back to our previous conversations and interactions.
+Haruka: I’ll show you the library first, its my favorite place… 
+MC: That’s right! The library… 
+M: I run out of the classroom and down the hall, recounting the way Haruka showed me the first day I came to this school 
+M: ...and finally, I arrive to the familiar room, and see a pink fluff of hair in the corner table.
+MC: Haruka…?
+Haruka: !!
+Haruka: O-Oh… it’s you… 
+M: Her eyes appeared puffy and red. She sniffles a few times as I walk over.
+MC: Are you okay...?
+Haruka: Ahaha… yeah… just didn’t do that well and… yeah, haha…
+Haruka: Sorry for creating such a commotion back there. I just needed some air…
+MC: Hmm…
+MC: You know, you can talk to me about your problems Haruka. I’m your friend.
+Haruka: …
+Haruka: … thank you … 
+M: Haruka’s tone dims, and the usual cheerful ring to her voice is gone. The last time I heard Haruka sound like this was when we first had lunch together, and she told me about her father. I could tell something was wrong.
+Haruka: ...it’s just that… I’ve never really been that great at school. I tried but, I always liked to do other things, like meet people or draw… 
+Haruka: But after I finished middle school, and my Mom went back to work... I just see her work so hard. I can’t idle away while she’s working so hard for us… 
+MC: I see…
+Haruka: So I decided I’d get into a good college and make good money in an office, just like my Mom. So that she doesn’t have to work so hard all the time. I study and study, and my grades really have improved but… 
+M: Haruka looks at her paper. I could see her eyes appear shinier, as if she’s holding back tears.
+Haruka: With grades like these, I don’t know how I’ll be able to do any of that… 
+MC: Haruka… 
+M: My chest started to fill with sorrow. She’s definitely been studying so hard… for the sake of others… 
+M: I want to say something comforting. I need to go back *there*. I need to unlock the right words… now more than ever… 
+SPRING 3 GOOD END
+MC: Haruka… you’re too hard on yourself.
+Haruka: Eh? 
+M: The words came out even before Haruka could fizzle back into my vision. Once again, that *place* has guided me.  
+MC: You think of everyone else’s happiness all the time, and don’t give yourself enough credit. You said you struggled before, right? So… since you’ve made progress…
+MC: You should be proud.
+Haruka: …
+Haruka: You’re so kind, you know… 
+Haruka: I’m still pretty sad right now, so I probably can’t feel it yet but… 
+Haruka: Thank you… you’re right… I should be proud.
+Haruka: To be honest, I… I can’t really imagine myself cooped up in a corporate building. My mom complains about work meetings and conflict all the time, yet she’s able to lead all those people… 
+Haruka: I just can’t really see myself doing that. My mom always said I took after my father in that way… he was a freelance creative writer. A ‘free bird,’ she’d call it 
+Haruka: I always thought I’d be like that too, but with art. But…
+M: Haruka shifts around uncomfortably, looking down at the ground.
+Haruka: But… I can’t support my family doing that.
+MC: But your dad…? Didn’t he support you guys when he was a writer?
+Haruka: Mhm, yeah… but that was because he worked freelance for years, so he was able to build a loyal clientele. I don’t want to make my mom wait for that… 
+Haruka: So, I decided I’d throw that dream away, for the sake of my mom… and my brother too, of course. I want him to be able to chase his dreams, and be happy.
+MC: But…
+MC: What about your happiness? 
+Haruka: Hm?
+MC: Your mom, doesn’t she work hard for you? I’m sure of it… the fact she taught you all her recipes and works long hours... she wants you to be happy. I don’t know her but
+MC: I have a feeling she wouldn’t want to hear her daughter say that she’s throwing away her dreams for the sake of her mother.
+MC: There’s something that I really admire about your altruism, Haruka. But, I think you should remember that
+MC: It’s okay to live for yourself, too.
+Haruka: Ah…
+M: I made sure my words were said with certainty, out of hope she would believe them too. I may have just met Haruka this year but… she has already shown me so much kindness.
+M: Despite going through similar tragic events, she still thinks of others. While I… just let time pass by. In my own world.
+M: So this time, I want to make something out of my hurt. I want to be like Haruka, and use it to help others. Especially her.
+Haruka: … I was wrong about you… 
+MC: H-Huh?
+Haruka: At the road with the cherry blossoms… I called you dark, remember?
+M: I do. She giggles. Typical Haruka... even when she’s sad.
+Haruka: But now you’re the one being optimistic, and I’m gloomy.
+Haruka: But… you’re right. You’ve never met my mom but, she’d totally scold the crap out of me for talking like that!!
+M: I can’t help but smile. 
+MC: I told you so. C’mon, I’m sure she’d be proud of your score. And wherever you end up going to college.  
+M: I’m also sure she’ll just be proud of raising someone so hardworking and kind, Haruka.
+Haruka: Hehe… 
+M: Haruka lets out a relieved sigh.
+Haruka: Aaah, I do like the library but, it’s so stuffy! Want to celebrate the end of midterms with me? I’m feeling ice cream…
+MC: Haha, of course. Except there’s not much to celebrate for me, I barely passed… 
+Haruka: Ehhhh? O-Oh no!! I’m sorry!! Here I was complaining…. 
+MC: Don’t worry about it Haruka. Let’s go out and celebrate like you said. Oh and maybe before we go, tell your friends you’re okay? They seemed pretty worried.
+Haruka: Th-they were? I feel bad… but I’ll tell them. Alright, let’s head out!
+M: We grab our things and leave the library.
+M: Today I learned a lot about Haruka. During my short time here, I was able to learn a lot about her, and learned so much from her. She’s helped me view so many things differently.
+M: And today… I was able to return the favor.
+M: I think… I would like to continue returning the favor, for a very long time.
+SPRING 3 BAD END
+MC: It’s okay, I failed too. You’re not alone.
+M: After coming back from that *place*, that was all I could muster up. I couldn’t collect all the keys to understanding Haruka… 
+Haruka: Eh?? I’m sorry! Here I am complaining, not thinking about how it would sound.
+MC: Oh no, that’s not what… 
+Haruka: No no, you’re right. It does pull me back into reality knowing that others are in the same boat as I am. Thank you… 
+MC: …
+M: It doesn’t feel quite right saying ‘You’re Welcome’
+M: I shouldn’t have said that… sure, that might have made other people felt better, but…
+M: If I understood Haruka better… I would instantly realize that Haruka would just worry about my score instead. So I ended up not comforting her at all… 
+Haruka: It’s okay, don’t be sad! Let’s just focus on the fact midterms are over. We can both improve next time!
+MC: Y-Yeah… 
+Haruka: How about we go get ice cream, hm? My treat! 
+M: We head out of the library. I am happy to see Haruka not… so sad, but… 
+M: It doesn’t take a genius to figure out she’s trying to cheer me up instead. Somehow, my efforts were counter-intuitive.
+M: I’m sorry, Haruka. You’ve showed me so much, and made my time here so pleasant, but…
+M: I couldn’t even return the favor… 

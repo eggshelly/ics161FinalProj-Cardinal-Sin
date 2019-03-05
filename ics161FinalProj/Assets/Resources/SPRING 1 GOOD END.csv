@@ -1,51 +1,25 @@
-SPEAKER,CONVO,SPRITE,AUDIO
-,,,
-M,The answer hits me like cold water to the face. Thatâ€™s right!,default,main
-,,,
-M,How could she not recognize me earlierXYZ if she noticed that I was lost? That seems highly unlikely. Iâ€™ll ask her about that.,default,main
-,,,
-M,Before I could say anythingXYZ Haruka stops in front of a small apartment complex.,default,main
-,,,
-Haruka,WellXYZ this is where I live. Thank you for walking me all this way.,default,main
-,,,
-MC,â€¦,default,main
-,,,
-M,I let my voice break the awkward silence.,default,main
-,,,
-MC,HarukaXYZ before you goâ€¦ can I ask you something?,default,main
-,,,
-Haruka,Hm?,default,main
-,,,
-MC,EarlierXYZ when I was lostXYZ you acted like you didnâ€™t recognize meXYZ butâ€¦,default,main
-,,,
-MC,You knew who I wasXYZ right? Since you said you saw me pass the classroom.,default,main
-,,,
-M,Harukaâ€™s surprised look slowly melts into a shy smile.,default,main
-,,,
-Haruka,Mmâ€¦ you caught meXYZ haha. I...,default,main
-,,,
-Haruka,...I actually knew you were the transfer student all along. Even when we were at the trees. In a small townXYZ thereâ€™s no way I wouldnâ€™t recognize you unless you were a new student.,default,main
-,,,
-Haruka,And then today... I saw you pass by our class a few times and I could tell you were lost. So I thought it was a perfect opportunity to talk to you.,default,main
-,,,
-MC,Talk to me? Why me?,default,main
-,,,
-Haruka,Because I wanted to be the one to help youXYZ since...,default,main
-,,,
-Haruka,I actually only transferred here a year agoXYZ last Spring. Due to unfortunate circumstancesXYZ I had to leave my high school midway and start a new life here.,default,main
-,,,
-Haruka,So I know what it feels like to feel overwhelmedXYZ and it can get pretty lonely if you have no one to talk toXYZ soâ€¦,default,main
-,,,
-Haruka,â€¦ letâ€™s get alongXYZ okay?,default,main
-,,,
-M,Her voice trails off at the endXYZ that I could barely catch the last part.,default,main
-,,,
-M,I let out a relieving laugh and feel my nerves subside. For the first time in a whileXYZ I felt like I had made a friend. A friend I could relate to.,default,main
-,,,
-MC,YesXYZ Iâ€™d like that. Donâ€™t be afraid to be forward with meXYZ okay?,default,main
-,,,
-MC,Iâ€™ll see you tomorrowXYZ Haruka.,default,main
-,,,
-M,I waveXYZ and start walking away. But out of the corner of my eye,default,main
-,,,
-M,I realize Haruka was the same shade of red I was when we first met.,default,main
+SPEAKER,CONVO,SPRITE,AUDIO,BACKGROUND
+M, The answer hits me like cold water to the face. That’s right!,default,SPRING,default
+M, How could she not recognize me earlierXYZ if she noticed that I was lost? That seems highly unlikely. I’ll ask her about that.,default,SPRING,default
+M, Before I could say anythingXYZ Haruka stops in front of a small apartment complex.,default,SPRING,default
+Haruka, WellXYZ this is where I live. Thank you for walking me all this way.,default,SPRING,default
+MC, …,none,SPRING,default
+MC, HarukaXYZ before you go… can I ask you something?,none,SPRING,default
+Haruka, Hm?,default,SPRING,default
+MC, EarlierXYZ when I was lostXYZ you acted like you didn’t recognize meXYZ but…,none,SPRING,default
+MC, You knew who I wasXYZ right? Since you said you saw me pass the classroom.,none,SPRING,default
+M, Haruka’s surprised look slowly melts into a shy smile.,default,SPRING,default
+Haruka, Mm… you caught meXYZ haha. I...,default,SPRING,default
+Haruka, ...I actually knew you were the transfer student all along. Even when we were at the road with cherry blossoms. In a small townXYZ there’s no way I wouldn’t recognize you unless you were a new student.,default,SPRING,default
+Haruka, And then today... I saw you pass by our class a few times and I could tell you were lost. So I thought it was a perfect opportunity to talk to you.,default,SPRING,default
+MC, Talk to me? Why me?,none,SPRING,default
+Haruka, Because I wanted to be the one to help youXYZ since...,default,SPRING,default
+Haruka, I actually only transferred here a year agoXYZ last Spring. Due to unfortunate circumstancesXYZ I had to leave my high school midway and start a new life here.,default,SPRING,default
+Haruka, So I know what it feels like to feel overwhelmedXYZ and it can get pretty lonely if you have no one to talk toXYZ so…,default,SPRING,default
+Haruka, … let’s get alongXYZ okay?,default,SPRING,default
+M, Her voice trails off at the endXYZ that I could barely catch the last part.,default,SPRING,default
+M, I let out a relieving laugh and feel my nerves subside. For the first time in a whileXYZ I felt like I had made a friend. A friend I could relate to.,default,SPRING,default
+MC, YesXYZ I’d like that. Don’t be afraid to be forward with meXYZ okay?,none,SPRING,default
+MC, I’ll see you tomorrowXYZ Haruka.,none,SPRING,default
+M, I waveXYZ and start walking away. But out of the corner of my eye,default,SPRING,default
+M, I realize Haruka was the same shade of red I was when we first met.,default,SPRING,default

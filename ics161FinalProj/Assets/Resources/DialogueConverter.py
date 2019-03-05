@@ -14,6 +14,7 @@ ASSUMPTIONS:
 """
 ##HEADER INITIALIZATION##
 import csv
+import os
 
 ##VARIABLES##
 FILENAME = "Dialogue.txt"
@@ -26,7 +27,6 @@ def run(file):
 
     for line in file:
         if line == "INTRODUCTION\n" or (" " in line and line[:line.index(" ")] in ["INTRODUCTION", "WINTER", "SPRING", "SUMMER", "AUTUMN"]): #means new wb!
-            print(line)
             if canmakecsv:
                 makecsv(title, text)
             canmakecsv = True
@@ -46,16 +46,44 @@ def run(file):
 
 
 def makecsv(title:str, text:str):
+    if os.path.isfile(f"./{title}.csv"):  #already in directory
+        dialogue_map = dict()
+        skippedFirst  = False
+        
+        with open(f"./{title}.csv") as csvfile:
+            filereader = csv.reader(csvfile,delimiter=',')
+            
+            for line in filereader:
+                if line != [] and skippedFirst:
+                    dialogue_map.update({line[1]:{"sprite":line[2], "audio":line[3], "background":line[4]}})
+                skippedFirst = True
+
+
     with open(f"{title}.csv", "w") as csvfile:
         filewriter = csv.writer(csvfile, delimiter=',',
                             quotechar='|', quoting=csv.QUOTE_MINIMAL)
-        
+
         filewriter.writerow(["SPEAKER", "CONVO", "SPRITE", "AUDIO", "BACKGROUND"])
         for line in text:
             print(line)
             speaker = line[:line.index(":")]
             convo   = line[line.index(":")+1:]
-            filewriter.writerow([speaker, convo, "none" if speaker == "MC" else "default", f"{title[:title.index(" ")]}", "default"])
+            audio   = title[:title.index(" ")] if " " in title else title
+            filewrite.writerow([speaker, convo, dialogue_map[convo]["sprite"] if convo in dialogue_map else "none" if speaker == MC else "default", dialogue_map[convo]["audio"] if convo in dialogue_map else audio, dialogue_map[convo]["background"] if convo in dialogue_map else "default"])
+    
+
+##    else: #newfile
+##        with open(f"{title}.csv", "w") as csvfile:
+##            filewriter = csv.writer(csvfile, delimiter=',',
+##                                quotechar='|', quoting=csv.QUOTE_MINIMAL)
+##            
+##            filewriter.writerow(["SPEAKER", "CONVO", "SPRITE", "AUDIO", "BACKGROUND"])
+##            for line in text:
+##                print(line)
+##                speaker = line[:line.index(":")]
+##                convo   = line[line.index(":")+1:]
+##                audio   = title[:title.index(" ")] if " " in title else title
+##                filewriter.writerow([speaker, convo, "none" if speaker == "MC" else "default", audio, "default"])
 
 def cleanup(file):
     file.close()
