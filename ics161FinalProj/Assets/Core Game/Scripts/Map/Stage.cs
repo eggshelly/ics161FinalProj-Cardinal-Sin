@@ -11,9 +11,9 @@ public class StringIntUnityEvent: UnityEvent<string, int, int, bool[]> { }
 public class Stage : MonoBehaviour
 {
     [SerializeField] float sizeMulti;
-    [SerializeField] int totalNumCollectibles; //total number of collectibles the stage will contain. MUST SET IN THE INSPECTOR IN ORDER TO DISPLAY CORRECTLY ON THE PANEL
+    [SerializeField] int[] totalNumCollectibles; //total number of collectibles the stage will contain. MUST SET IN THE INSPECTOR IN ORDER TO DISPLAY CORRECTLY ON THE PANEL
 
-    public int currentLevel{ get; set; }
+    public int currentLevel{ get; private set; }
     public int stageIndex { get; set; }
 
     public UnityEvent StageLeft;
@@ -29,6 +29,8 @@ public class Stage : MonoBehaviour
     //--------------------
     GameObject player;
 
+    Dictionary<int, bool[]> allCollectibles;
+
     bool[] collectibles; //collectibles for the stage
 
     private void Awake()
@@ -40,27 +42,36 @@ public class Stage : MonoBehaviour
 
 
 
-        collectibles = new bool[totalNumCollectibles];
-        ResetCollectiblesArray();
+        allCollectibles = new Dictionary<int, bool[]>();
+        ResetCollectibles();
         currentLevel = 1;
         player = GameObject.FindGameObjectWithTag("Player");
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
         origColor = m_SpriteRenderer.color;
     }
 
+    public bool[] GetLevelCollectibles()
+    {
+        return allCollectibles[currentLevel];
+    }
+
     //Initially sets its collectibles to all false - no collectibles have been obtained yet
-    void ResetCollectiblesArray()
+    void ResetCollectibles()
     { 
-        for(int i = 0; i < totalNumCollectibles; ++i)
+        for(int i = 1; i < 5; ++i)
         {
-            collectibles[i] = false;
+            allCollectibles[i] = new bool[totalNumCollectibles[i - 1]];
+            for(int j = 0; j < totalNumCollectibles[i-1]; ++j)
+            {
+                allCollectibles[i][j] = false;
+            }
         }
     }
 
     //Used by StageHubScript
-    public int GetTotalCollectibles()
+    public int GetTotalCollectibles(int index)
     {
-        return totalNumCollectibles;
+        return totalNumCollectibles[index];
     }
 
 
@@ -88,24 +99,29 @@ public class Stage : MonoBehaviour
     //Called by PlayerMapInteraction - Passes this information to StageHubScript
     public void EnterStage()
     {
-        StageEntered.Invoke(GetName(), stageIndex, currentLevel, collectibles);
+        StageEntered.Invoke(GetName(), stageIndex, currentLevel, allCollectibles[currentLevel]);
     }
 
 
     //Called by StageHubScript to load in the collectibles 
-    public void LoadCollectibles(bool[] collect)
+    public void LoadCollectibles(List<bool[]> collect)
     {
-        
-        if (collect.Length > 0)
+       for(int i = 0; i < collect.Count; ++i)
         {
-            collectibles = collect;
+            allCollectibles[i + 1] = collect[i];
         }
     }
 
-    public void NextLevel(int level)
+    public int NextLevel(int level)
     {
         currentLevel = level + 1;
-        ResetCollectiblesArray();
+        return currentLevel;
+    }
+
+    public int PrevLevel(int level)
+    {
+        currentLevel = level - 1;
+        return currentLevel;
     }
 
     string GetName()

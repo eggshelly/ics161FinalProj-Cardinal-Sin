@@ -11,10 +11,8 @@ public class LevelData
 
 
     //keeps track of all stage collectibles. If a collectible has been obtained, then it is "true" in the array. otherwise, false
-    public bool[][] stageCollectibles;
+    public bool[][][] stageCollectibles;
 
-    //keeps track of stage levels
-    public int[] stageLevels;
 
     //To keep track of if the intro has been done already
     public bool introCompleted;
@@ -27,8 +25,13 @@ public class LevelData
         position[1] = playerPos.y;
         position[2] = playerPos.z;
 
-        stageCollectibles = stageHub.allStageCollectibles.ToArray();
-        stageLevels = stageHub.GetStageLevels().ToArray();
+        List<bool[][]> coll = new List<bool[][]>();
+        foreach(List<bool[]> c in stageHub.allStageCollectibles.Values)
+        {
+            coll.Add(c.ToArray());
+        }
+
+        stageCollectibles = coll.ToArray();
 
         introCompleted = manager.hasDoneIntro;
         
