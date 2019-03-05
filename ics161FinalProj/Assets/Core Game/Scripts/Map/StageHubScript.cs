@@ -118,13 +118,25 @@ public class StageHubScript : MonoBehaviour
     {
         if (currentStage != null)
         {
-            SaveFileManager.instance.SaveCurrentPosition();
-            SceneManager.LoadScene(currentStage);
+            FindObjectOfType<AudioManager>().Stop("TestMap");
+            StartCoroutine(DoneDialogueCR());
         }
     }
 
     public void BackToMap()
     {
         StagePanel.SetActive(false);
+    }
+
+    public IEnumerator DoneDialogueCR()
+    {
+
+        while(AudioManager.instance.CR_running)
+        {
+            yield return null;
+        }
+        SaveFileManager.instance.SaveCurrentPosition();
+        SceneManager.LoadScene(currentStage);
+
     }
 }
