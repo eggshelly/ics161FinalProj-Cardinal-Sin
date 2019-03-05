@@ -12,10 +12,11 @@ public class AudioManager : MonoBehaviour
     public float fadeTime;  //affects how long it takes to fade audio
     public Sound[] sounds;
     public static AudioManager instance;
-    IEnumerator fadeIn;
-    IEnumerator fadeOut;
+    private IEnumerator fadeIn;
+    private IEnumerator fadeOut;
+    [HideInInspector]
+    public bool CR_running = false;
 
-    // Start is called before the first frame update
     void Awake()
     {
         if(instance == null)
@@ -41,12 +42,6 @@ public class AudioManager : MonoBehaviour
         Play("Opening");
     }
 
-
-    // Update is called once per frame
-    void Update()
-    {     
-    }
-
     public void Play (string name)  //s.source.volume will adjust actual volume. s.volume will adjust initial value which has no meaning here
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
@@ -57,8 +52,6 @@ public class AudioManager : MonoBehaviour
             Debug.Log("ERROR: Sound not found");
             return;
         }
-        //s.volume = 0f;
-        //s.source.volume = 0.0f;
         StopCoroutine(fadeOut);    //ensures that fading out does not occur simultaneously to fading in
         StartCoroutine(fadeIn);
 
@@ -74,60 +67,30 @@ public class AudioManager : MonoBehaviour
         }
         StopCoroutine(fadeIn);  
         StartCoroutine(fadeOut);
-        
-    }
-
-    public void StraightPlay(string name)
-    {
-        Sound s = Array.Find(sounds, sound => sound.name == name);
-        if(s == null)
-        {
-            Debug.Log("ERROR: Sound not found");
-            return;
-        }
-        s.source.Play();
-        while(s.source.volume < 1.0f)
-        {
-            s.source.volume += Time.deltaTime / fadeTime;
-        }
-    }
-
-    public void StraightStop(string name)
-    {
-        Sound s = Array.Find(sounds, sound => sound.name == name);
-        if(s == null)
-        {
-            Debug.Log("ERROR: Sound not found");
-            return;
-        }
-        while(s.source.volume < 1.0f)
-        {
-            Debug.Log("here");
-            s.source.volume -= Time.deltaTime / fadeTime;
-        }
-        s.source.volume = 0f;
-        s.source.Stop();
     }
     public IEnumerator FadeOut(Sound s)
     {
+        CR_running = true;
         while(s.source.volume > 0.01f)
         {
-            s.source.volume -= Time.deltaTime / 1.0f;  //For a duration of fadeTime, volume gradually decreases till its 0
-            //yield return new WaitForSeconds(0.5f);
+            s.source.volume -= Time.deltaTime / 2.1f;  //For a duration of fadeTime, volume gradually decreases till its 0
             yield return null;
         }
+        CR_running = false;
         s.source.volume = 0f;
         s.source.Stop();
     }
 
     public IEnumerator FadeIn(Sound s)
     {
+        CR_running = true;
         s.source.Play();
         while (s.source.volume < 1.0f)
         {
             s.source.volume += Time.deltaTime / fadeTime; //fades in over course of seconds fadeTime
             yield return null;
         }
+        CR_running = false;
     }
 
 

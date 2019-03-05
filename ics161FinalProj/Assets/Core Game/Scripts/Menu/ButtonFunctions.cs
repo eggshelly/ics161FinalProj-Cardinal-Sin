@@ -24,8 +24,7 @@ public class ButtonFunctions : MonoBehaviour
     public void StartGame()
     {
         FindObjectOfType<AudioManager>().Stop("Opening");
-        SaveFileManager.instance.DeleteInstancesIfNotLoading();
-        SceneManager.LoadScene("TestMap");
+        StartCoroutine(StartGameCR());
     }
 
     public void Credits()
@@ -42,5 +41,18 @@ public class ButtonFunctions : MonoBehaviour
     {
         SaveFileManager.instance.LoadDataForLevel();
         StartGame();
+    }
+
+    public IEnumerator StartGameCR()
+    {
+
+        while(AudioManager.instance.CR_running)
+        {
+            yield return null;
+        }
+        SaveFileManager.instance.DeleteInstancesIfNotLoading();
+        SceneManager.LoadScene("TestMap");
+
+
     }
 }
