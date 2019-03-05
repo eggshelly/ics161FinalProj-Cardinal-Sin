@@ -10,9 +10,9 @@ public class Dialogue
     public string text;
     public string sprite;
     public string audio;
-    public string dialogue;
+    public string background;
 
-    public Dialogue(string speaker, string text, string sprite, string audio, string dialogue)
+    public Dialogue(string speaker, string text, string sprite, string audio, string background)
     {
         this.speaker = speaker;
         this.text = text;
