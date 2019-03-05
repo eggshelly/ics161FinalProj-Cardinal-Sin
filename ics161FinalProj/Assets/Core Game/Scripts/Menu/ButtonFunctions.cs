@@ -23,6 +23,7 @@ public class ButtonFunctions : MonoBehaviour
 
     public void StartGame()
     {
+        FindObjectOfType<AudioManager>().Stop("Opening");
         SaveFileManager.instance.DeleteInstancesIfNotLoading();
         SceneManager.LoadScene("TestMap");
     }
