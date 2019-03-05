@@ -1,36 +1,71 @@
-SPEAKER,CONVO,SPRITE,AUDIO,BACKGROUND
-M, I go into class and spend most of the day attempting to stay focused. During breakXYZ Haruka catches my eye.,default,SPRING,default
-M, The past few weeks have flown byXYZ and I’ve began to adjust to my new high school life.,default,SPRING,default
-M, There are days harder than othersXYZ but meeting new people and doing normal high school things like schoolwork have actually helped a lot.,default,SPRING,default
-M, ...and then there’s Haruka. I find that the better days are when I get to walk home and chat with her.,default,SPRING,default
-M, I hear Haruka giggling softly with a group of people around her.,default,SPRING,default
-MC, Must be nice to have such a radiating aura around yourself like that…,none,SPRING,default
-M, Haruka momentarily stops her conversation and peers over at me. She smiles and waves.,default,SPRING,default
-MC, That’s right… we’re friendsXYZ too.,none,SPRING,default
-M, Out of my surpriseXYZ Haruka gets out of her seat and walk towards my desk.,default,SPRING,default
-Haruka, Would you like to eat inside the classroom together? I made extra bento.,default,SPRING,default
-MC, O-OhXYZ yeahXYZ that sounds great.,none,SPRING,default
-M, Homemade bento… it’s been a while.,default,SPRING,default
-M, We spend time eating and exchanging normal small talk about life and classes.,default,SPRING,default
-M, She really does have a positive aura.,default,SPRING,default
-MC, Ahhh that was so good! Where’d you learn to cook so well?,none,SPRING,default
-Haruka, My mom taught me! She used to spend a lot of time cutting fruit into cute shapesXYZ shaping things into hearts. And somehow made it taste really delicious too,default,SPRING,default
-M, Haruka’s mother seems really caringXYZ I can see where Haruka gets it from.,default,SPRING,default
-M, I remember my own Mom would make me lunches to take to schoolXYZ even up until…,default,SPRING,default
-M, ...,default,SPRING,default
-MC, That’s sweetXYZ does she still make you lunch still?,none,SPRING,default
-M, Haruka shyly fidgets and looks down at her foodXYZ continuing to eat.,default,SPRING,default
-Haruka, Umm- You see...,default,SPRING,default
-M, I was worried at her expression at firstXYZ but her voice seemed calm and open as she began to speak.,default,SPRING,default
-Haruka, Before I entered high schoolXYZ my father passed away in an accident. So my mom works full-time now to support my brother and I...,default,SPRING,default
-M, As Haruka’s words began to fade offXYZ I felt a surge of guilt in my chest. Before I could apologize howeverXYZ Haruka’s demeanor perks up as quickly as it dimmed down.,default,SPRING,default
-Haruka, She taught me everything she knewXYZ before she went back to work. So in a way I still get to enjoy her lunches. She’s really amazing!,default,SPRING,default
-MC, Oh… I’m sorryXYZ I didn’t…,none,SPRING,default
-Haruka, Mm! Don’t worry about itXYZ I don’t mind sharing. I’m glad you liked it thoughXYZ hehe. I’ve been practicing a lot lately.,default,SPRING,default
-M, Haruka smiles at meXYZ seemingly unbothered.,default,SPRING,default
-Haruka, How about you? Is your mother a good chefXYZ too?,default,SPRING,default
-MC, ...,none,SPRING,default
-M, I don’t know how to answer that. I want to make sure Haruka is okayXYZ since I may have unintentionally brought up painful memories for herXYZ but…,default,SPRING,default
-M, How do I do that when the spotlight is on me now? I don’t know how to really answer while being fully honest...,default,SPRING,default
-M, A familiar feeling emerges. The same emotion I felt when I was deep in thought while walking Haruka home that one day… sending me to a strange place where I collected keys until I knew what to say.,default,SPRING,default
-M, Wherever I’m goingXYZ please let it help me unlock the right thing to say.,default,SPRING,default
+SPEAKER,CONVO,SPRITE,AUDIO,BACKGROUND
+,,,,
+M,I go into class and spend most of the day attempting to stay focused. During breakXYZ Haruka catches my eye.,default,SPRING,default
+,,,,
+M,The past few weeks have flown byXYZ and Iâ€™ve began to adjust to my new high school life.,default,SPRING,default
+,,,,
+M,There are days harder than othersXYZ but meeting new people and doing normal high school things like schoolwork have actually helped a lot.,default,SPRING,default
+,,,,
+M,...and then thereâ€™s Haruka. I find that the better days are when I get to walk home and chat with her.,default,SPRING,default
+,,,,
+M,I hear Haruka giggling softly with a group of people around her.,default,SPRING,default
+,,,,
+MC,Must be nice to have such a radiating aura around yourself like thatâ€¦,none,SPRING,default
+,,,,
+M,Haruka momentarily stops her conversation and peers over at me. She smiles and waves.,default,SPRING,default
+,,,,
+MC,Thatâ€™s rightâ€¦ weâ€™re friendsXYZ too.,none,SPRING,default
+,,,,
+M,Out of my surpriseXYZ Haruka gets out of her seat and walk towards my desk.,default,SPRING,default
+,,,,
+Haruka,Would you like to eat inside the classroom together? I made extra bento.,joy,SPRING,default
+,,,,
+MC,O-OhXYZ yeahXYZ that sounds great.,none,SPRING,default
+,,,,
+M,Homemade bentoâ€¦ itâ€™s been a while.,default,SPRING,default
+,,,,
+M,We spend time eating and exchanging normal small talk about life and classes.,default,SPRING,default
+,,,,
+M,She really does have a positive aura.,default,SPRING,default
+,,,,
+MC,Ahhh that was so good! Whereâ€™d you learn to cook so well?,none,SPRING,default
+,,,,
+Haruka,My mom taught me! She used to spend a lot of time cutting fruit into cute shapesXYZ shaping things into hearts. And somehow made it taste really delicious too,default2,SPRING,default
+,,,,
+M,Harukaâ€™s mother seems really caringXYZ I can see where Haruka gets it from.,default,SPRING,default
+,,,,
+M,I remember my own Mom would make me lunches to take to schoolXYZ even up untilâ€¦,default,SPRING,default
+,,,,
+M,...,default,SPRING,default
+,,,,
+MC,Thatâ€™s sweetXYZ does she still make you lunch still?,none,SPRING,default
+,,,,
+M,Haruka shyly fidgets and looks down at her foodXYZ continuing to eat.,default,SPRING,default
+,,,,
+Haruka,Umm- You see...,sad2,SPRING,default
+,,,,
+M,I was worried at her expression at firstXYZ but her voice seemed calm and open as she began to speak.,default,SPRING,default
+,,,,
+Haruka,Before I entered high schoolXYZ my father passed away in an accident. So my mom works full-time now to support my brother and I...,sad,SPRING,default
+,,,,
+M,As Harukaâ€™s words began to fade offXYZ I felt a surge of guilt in my chest. Before I could apologize howeverXYZ Harukaâ€™s demeanor perks up as quickly as it dimmed down.,default,SPRING,default
+,,,,
+Haruka,She taught me everything she knewXYZ before she went back to work. So in a way I still get to enjoy her lunches. Sheâ€™s really amazing!,joy2,SPRING,default
+,,,,
+MC,Ohâ€¦ Iâ€™m sorryXYZ I didnâ€™tâ€¦,none,SPRING,default
+,,,,
+Haruka,Mm! Donâ€™t worry about itXYZ I donâ€™t mind sharing. Iâ€™m glad you liked it thoughXYZ hehe. Iâ€™ve been practicing a lot lately.,default,SPRING,default
+,,,,
+M,Haruka smiles at meXYZ seemingly unbothered.,default,SPRING,default
+,,,,
+Haruka,How about you? Is your mother a good chefXYZ too?,smile,SPRING,default
+,,,,
+MC,...,none,SPRING,default
+,,,,
+M,I donâ€™t know how to answer that. I want to make sure Haruka is okayXYZ since I may have unintentionally brought up painful memories for herXYZ butâ€¦,default,SPRING,default
+,,,,
+M,How do I do that when the spotlight is on me now? I donâ€™t know how to really answer while being fully honest...,default,SPRING,default
+,,,,
+M,A familiar feeling emerges. The same emotion I felt when I was deep in thought while walking Haruka home that one dayâ€¦ sending me to a strange place where I collected keys until I knew what to say.,default,SPRING,default
+,,,,
+M,Wherever Iâ€™m goingXYZ please let it help me unlock the right thing to say.,default,SPRING,default

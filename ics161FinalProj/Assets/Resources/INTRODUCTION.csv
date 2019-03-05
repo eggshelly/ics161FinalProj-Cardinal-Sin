@@ -1,50 +1,99 @@
-SPEAKER,CONVO,SPRITE,AUDIO,BACKGROUND
-M, 10 years ago,default,INTRODUCTION,default
-M, I walked this same path,default,INTRODUCTION,default
-M, to reach the other side of a town thatXYZ at the time,default,INTRODUCTION,default
-M, I would call home.,default,INTRODUCTION,default
-M, The new buildings and paved walkways made the little rural town I grew up in almost unrecognizableXYZ but,default,INTRODUCTION,default
-M, Something about being back hereXYZ for the first time… since I lost someone...,default,INTRODUCTION,default
-M, made everything feel more familiar.,default,INTRODUCTION,default
-M, This time last SpringXYZ my MotherXYZ after a long battle,default,INTRODUCTION,default
-M, succumbed to her illness and passed on.,default,INTRODUCTION,default
-M, I spent the last four seasons grievingXYZ letting time pass by…,default,INTRODUCTION,default
-M, Wishing things were different...,default,INTRODUCTION,default
-M, Until I realizedXYZ even if time seemed to stop in my cramped room,default,INTRODUCTION,default
-M, Seasons were still changing outside. And I was missing all of it.,default,INTRODUCTION,default
-M, As last winter’s snow began to meltXYZ signaling the coming of a new school term,default,INTRODUCTION,default
-M, my remaining family gently suggested to finish my last year as a high school student in a more familiar setting.,default,INTRODUCTION,default
-M, My hometown.,default,INTRODUCTION,default
-M, In the distanceXYZ I see trees dotted with flush colored blossomsXYZ slowly growing near.,default,INTRODUCTION,default
-MC, Cherry blossoms. Those were her favorite.,none,INTRODUCTION,default
-M, I stop in the middle of the roadXYZ basking in the comfortable Spring breezeXYZ recalling the times my mom would drag me to the cherry blossom viewings.,default,INTRODUCTION,default
-M, We’ve been to many different onesXYZ but…,default,INTRODUCTION,default
-M, Nothing could ever compare to my home town’s blossoms.,default,INTRODUCTION,default
-Haruka, They’re prettyXYZ aren’t they?,default,INTRODUCTION,default
-MC, Huh?,none,INTRODUCTION,default
-M, I turn to see a small girl with blush colored hairXYZ gazing at the same tree I was dazed by.,default,INTRODUCTION,default
-MC, Yeah... too bad they don’t last very longXYZ though.,none,INTRODUCTION,default
-Haruka, Hm…,default,INTRODUCTION,default
-M, The girl shakes her headXYZ still admiring the budding flowers.,default,INTRODUCTION,default
-Haruka, Isn’t that part of their beautyXYZ though?,default,INTRODUCTION,default
-Haruka, The fact you know they won’t be there longXYZ but…,default,INTRODUCTION,default
-Haruka, you spend extra time looking at them anyways?,default,INTRODUCTION,default
-MC, …,none,INTRODUCTION,default
-Haruka, In the countrysideXYZ there are so many wonderful plants and flowers that bloom year-round.,default,INTRODUCTION,default
-Haruka, But people always make a big event of seeing the ones that don’t last long. It must be because they’re temporaryXYZ don’t you think?,default,INTRODUCTION,default
-M, Temporary…,default,INTRODUCTION,default
-M, So many unhappy memories attached to a single word.,default,INTRODUCTION,default
-M, If there’s anything I’ve learned this past year…,default,INTRODUCTION,default
-M, ...is that the only permanent thing in life is the passage of time.,default,INTRODUCTION,default
-M, And time takes away things.,default,INTRODUCTION,default
-MC, I guess that means we just take things for grantedXYZ then.,none,INTRODUCTION,default
-M, The girl laughs a bit.,default,INTRODUCTION,default
-Haruka, That’s a bit dark!,default,INTRODUCTION,default
-M, She turns to meXYZ the slight breeze catching her hair.,default,INTRODUCTION,default
-Haruka, I’d like to think…,default,INTRODUCTION,default
-Haruka, We just know how to especially appreciate things enoughXYZ before they go.,default,INTRODUCTION,default
-M, Before they go…,default,INTRODUCTION,default
-M, 10 years agoXYZ I walked this same path.,default,INTRODUCTION,default
-M, This timeXYZ I’m walking on a branching path that wasn’t paved beforeXYZ,default,INTRODUCTION,default
-M, to the other side of a town that,default,INTRODUCTION,default
-M, Is no longer my home.,default,INTRODUCTION,default
+SPEAKER,CONVO,SPRITE,AUDIO,BACKGROUND
+,,,,
+M,10 years ago,none,INTRODUCTION,default
+,,,,
+M,I walked this same path,none,INTRODUCTION,default
+,,,,
+M,to reach the other side of a town thatXYZ at the time,none,INTRODUCTION,default
+,,,,
+M,I would call home.,none,INTRODUCTION,default
+,,,,
+M,The new buildings and paved walkways made the little rural town I grew up in almost unrecognizableXYZ but,none,INTRODUCTION,default
+,,,,
+M,Something about being back hereXYZ for the first timeâ€¦ since I lost someone...,none,INTRODUCTION,default
+,,,,
+M,made everything feel more familiar.,none,INTRODUCTION,default
+,,,,
+M,This time last SpringXYZ my MotherXYZ after a long battle,none,INTRODUCTION,default
+,,,,
+M,succumbed to her illness and passed on.,none,INTRODUCTION,default
+,,,,
+M,I spent the last four seasons grievingXYZ letting time pass byâ€¦,none,INTRODUCTION,default
+,,,,
+M,Wishing things were different...,none,INTRODUCTION,default
+,,,,
+M,Until I realizedXYZ even if time seemed to stop in my cramped room,none,INTRODUCTION,default
+,,,,
+M,Seasons were still changing outside. And I was missing all of it.,none,INTRODUCTION,default
+,,,,
+M,As last winterâ€™s snow began to meltXYZ signaling the coming of a new school term,none,INTRODUCTION,default
+,,,,
+M,my remaining family gently suggested to finish my last year as a high school student in a more familiar setting.,none,INTRODUCTION,default
+,,,,
+M,My hometown.,none,INTRODUCTION,default
+,,,,
+M,In the distanceXYZ I see trees dotted with flush colored blossomsXYZ slowly growing near.,none,INTRODUCTION,default
+,,,,
+MC,Cherry blossoms. Those were her favorite.,none,INTRODUCTION,default
+,,,,
+M,I stop in the middle of the roadXYZ basking in the comfortable Spring breezeXYZ recalling the times my mom would drag me to the cherry blossom viewings.,none,INTRODUCTION,default
+,,,,
+M,Weâ€™ve been to many different onesXYZ butâ€¦,none,INTRODUCTION,default
+,,,,
+M,Nothing could ever compare to my home townâ€™s blossoms.,none,INTRODUCTION,default
+,,,,
+Haruka,Theyâ€™re prettyXYZ arenâ€™t they?,default2,INTRODUCTION,default
+,,,,
+MC,Huh?,none,INTRODUCTION,default
+,,,,
+M,I turn to see a small girl with blush colored hairXYZ gazing at the same tree I was dazed by.,default,INTRODUCTION,default
+,,,,
+MC,Yeah... too bad they donâ€™t last very longXYZ though.,none,INTRODUCTION,default
+,,,,
+Haruka,Hmâ€¦,default,INTRODUCTION,default
+,,,,
+M,The girl shakes her headXYZ still admiring the budding flowers.,default,INTRODUCTION,default
+,,,,
+Haruka,Isnâ€™t that part of their beautyXYZ though?,smile,CG_intro,default
+,,,,
+Haruka,The fact you know they wonâ€™t be there longXYZ butâ€¦,smile,CG_intro,default
+,,,,
+Haruka,you spend extra time looking at them anyways?,joy2,CG_intro,default
+,,,,
+MC,â€¦,none,CG_intro,default
+,,,,
+Haruka,In the countrysideXYZ there are so many wonderful plants and flowers that bloom year-round.,default,CG_intro,default
+,,,,
+Haruka,But people always make a big event of seeing the ones that donâ€™t last long. It must be because theyâ€™re temporaryXYZ donâ€™t you think?,default2,CG_intro,default
+,,,,
+M,Temporaryâ€¦,default,CG_intro,default
+,,,,
+M,So many unhappy memories attached to a single word.,default,CG_intro,default
+,,,,
+M,If thereâ€™s anything Iâ€™ve learned this past yearâ€¦,default,CG_intro,default
+,,,,
+M,...is that the only permanent thing in life is the passage of time.,default,CG_intro,default
+,,,,
+M,And time takes away things.,default,CG_intro,default
+,,,,
+MC,I guess that means we just take things for grantedXYZ then.,default,CG_intro,default
+,,,,
+M,The girl laughs a bit.,default,CG_intro,default
+,,,,
+Haruka,Thatâ€™s a bit dark!,joy2_blush,CG_intro,default
+,,,,
+M,She turns to meXYZ the slight breeze catching her hair.,default,CG_intro,default
+,,,,
+Haruka,Iâ€™d like to thinkâ€¦,default,CG_intro,default
+,,,,
+Haruka,We just know how to especially appreciate things enoughXYZ before they go.,neutral2_blush,CG_intro,default
+,,,,
+M,Before they goâ€¦,default,CG_intro,default
+,,,,
+M,10 years agoXYZ I walked this same path.,default,CG_intro,default
+,,,,
+M,This timeXYZ Iâ€™m walking on a branching path that wasnâ€™t paved beforeXYZ,default,CG_intro,default
+,,,,
+M,to the other side of a town that,default,CG_intro,default
+,,,,
+M,Is no longer my home.,default,CG_intro,default

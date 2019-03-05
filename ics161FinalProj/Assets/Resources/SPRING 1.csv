@@ -1,76 +1,151 @@
-SPEAKER,CONVO,SPRITE,AUDIO,BACKGROUND
-MC, Ah… so tiring!,none,SPRING,default
-M, I let out a relieved sigh and stretch out in relief on my desk.,default,SPRING,default
-M, I just completed my first day of high school.,default,SPRING,default
-M, Besides the fact it’s been almost a year since I’ve been through a proper school day,default,SPRING,default
-M, Everyone was excited to see a new transfer studentXYZ especially a senior.,default,SPRING,default
-M, I’ve spent so much time in the city that I forgot how easily things can become news in a small town.,default,SPRING,default
-MC, Where to now…,none,SPRING,default
-M, Even if I won’t be here longXYZ it won’t do me any good if I’m getting lost all semester.,default,SPRING,default
-M, I proceed to explore the schoolXYZ taking mental note of each turn…,default,SPRING,default
-M, erXYZ or so I thought. I forgot how many turns I made and now,default,SPRING,default
-M, I don’t even know which way to start backtracking. Shoot!,default,SPRING,default
-MC, Why does every classroom look the same?? Am I even in the same building…,none,SPRING,default
-Haruka, AhXYZ sorry to botherXYZ but do you think you might be lost?,default,SPRING,default
-M, I hear a small yet familiar sounding voice from behind me.,default,SPRING,default
-M, D-Did I just say what I said before out loud?? Oh crap...,default,SPRING,default
-MC, UhhhXYZ yesXYZ yes I am. I just transferred hereXYZ so...,none,SPRING,default
-M, SmallTalk.exe not found.,default,SPRING,default
-M, I turn around and see a small-framed girl with blush colored hair and bright green eyes.,default,SPRING,default
-M, OhXYZ I thought she looked familiar… it’s the cherry blossom girl I had a strange conversation with earlier.,default,SPRING,default
-Haruka, Oh!,default,SPRING,default
-M, Before I could confirm my assumptionsXYZ Haruka’s face beamed with the same sudden realization.,default,SPRING,default
-Haruka, I saw you while walking to schoolXYZ didn’t I? Sorry for not introducing myself earlier,default,SPRING,default
-Haruka, My name is Haruka FurukawaXYZ you introduced yourself to my class today.,default,SPRING,default
-MC, AhXYZ nice to properly meet you.,none,SPRING,default
-Haruka, You just moved hereXYZ right? This school can be pretty confusing. If I’m not paying attention I could easily walk pass our classroom tooXYZ hehe.,default,SPRING,default
-M, Our classroom…? I look to my rightXYZ and sure enoughXYZ there’s a familiar sign clearly labelled with my classroom number.,default,SPRING,default
-M, Shit.,default,SPRING,default
-MC, O-Oh... I really was lost. Thank youXYZ I would’ve been in circles for hours.,none,SPRING,default
-M, I could feel my face glow with embarrassmentXYZ and Haruka starts to giggleXYZ slightly.,default,SPRING,default
-Haruka, Hehe. You’re not wrong thoughXYZ this school is pretty modernXYZ so many of the hallways look similar.,default,SPRING,default
-MC, That’s for sure.,none,SPRING,default
-M, Hmm... I hate to ask a strangerXYZ but at this rateXYZ I’ll be walking in circles the rest of my high school life.,default,SPRING,default
-MC, HarukaXYZ I don’t really know anyone else at this schoolXYZ so… if you’re not busyXYZ do you think you could show me around?,none,SPRING,default
-Haruka, Hm?,default,SPRING,default
-M, I felt a second wave of embarrassment take over. Our conversation earlier wasn’t the most… conventional. I’m not so sure someone like Haruka would want to show a gloomy guy around.,default,SPRING,default
-M, Before I could turn any redderXYZ Haruka smiles shyly.,default,SPRING,default
-Haruka, Sure! If you don’t mind me. I can show you around right nowXYZ if you’d like.,default,SPRING,default
-MC, I would appreciate that. Thank you.,none,SPRING,default
-Haruka, Great! I’ll show you the library firstXYZ it’s my favorite place…,default,SPRING,default
-M, She shows me around the libraryXYZ fieldXYZ and other school facilities.,default,SPRING,default
-M, We naturally make small talk.,default,SPRING,default
-MC, If the library is your favorite placeXYZ I’m guessing you’re the studious typeXYZ then.,none,SPRING,default
-Haruka, Mmm I try! I’m nowhere near as diligent as our class rep though. I don’t usually go to the library to just studyXYZ though.,default,SPRING,default
-MC, Oh? That’s a bit strange. What else would you do there?,none,SPRING,default
-Haruka, Mm I dunnoXYZ sometimes readXYZ sometimes just have time to myself,default,SPRING,default
-MC, I see...,none,SPRING,default
-M, Time to herself? She definitely doesn’t seem like an introvert to me. Especially with her rather uh… interesting cherry blossom dialogue earlier…,default,SPRING,default
-Haruka, Mhm! But… that’s not as often. I usually go out with friends after school if I have the timeXYZ all though it’s hard to find new things to do in such a small townXYZ hehe,default,SPRING,default
-MC, Heh. Tell me about it.,none,SPRING,default
-M, Going out with friends after schoolXYZ idling time away in the library… she’s living the dream high school life.,default,SPRING,default
-M, Plus she can easily make conversation with a stranger. With a personality like thatXYZ she probably gets along well with anyone.,default,SPRING,default
-M, I wish… that stuff came easily to meXYZ too.,default,SPRING,default
-M, We spend a while talking and walkingXYZ Haruka kindly showing me all the important places.,default,SPRING,default
-Haruka, AaandXYZ were back to the classroom. I tried to cover all the important places…,default,SPRING,default
-MC, Already? Time flew... I really owe you one.,none,SPRING,default
-M, The copper sunset shone through the hall windows. A lot of time really had passed…,default,SPRING,default
-M, It was going to get dark soon.,default,SPRING,default
-M, Haruka notices me staring out the windowXYZ and looks at the dim sky as well.,default,SPRING,default
-Haruka, Ah! It’s already getting darkXYZ I should get going…,default,SPRING,default
-M, Oh no… I kept her here this longXYZ I feel bad. Should I offer to walk her home?,default,SPRING,default
-M, Maybe that’s too bold to ask right now… but…,default,SPRING,default
-M, The right thing to do is offer to walk her home. PlusXYZ maybe I’ll get to know her a bit better.,default,SPRING,default
-MC, HarukaXYZ it’s my fault for keeping you out this late. Is it okay I walk you home?,none,SPRING,default
-Haruka, Oh! D-Don’t worry… you don’t have to…,default,SPRING,default
-MC, I knowXYZ but it’s the least I can do. Is it okayXYZ then?,none,SPRING,default
-Haruka, Ah sure… thank you...,default,SPRING,default
-M, We grab our things and make our way out the school.,default,SPRING,default
-M, My thoughts begin to wander.,default,SPRING,default
-M, We just met but… she seems awfully generous to show a stranger around.,default,SPRING,default
-M, And then that conversation near the blossoms as well… it seems a bit odd…,default,SPRING,default
-M, Unlike beforeXYZ Haruka was strangely quiet.,default,SPRING,default
-M, And why didn’t she notice who I was earlier…? Is it really just a coincidence?,default,SPRING,default
-M, I think hard. I want to ask her straight outXYZ but I don’t want to come off accusatory. I need evidence.,default,SPRING,default
-M, I don’t know how to approach thisXYZ I just met her after all…,default,SPRING,default
-M, Just think… what can I say to figure this out…?,default,SPRING,default
+SPEAKER,CONVO,SPRITE,AUDIO,BACKGROUND
+,,,,
+MC,Ahâ€¦ so tiring!,none,SPRING,default
+,,,,
+M,I let out a relieved sigh and stretch out in relief on my desk.,default,SPRING,default
+,,,,
+M,I just completed my first day of high school.,default,SPRING,default
+,,,,
+M,Besides the fact itâ€™s been almost a year since Iâ€™ve been through a proper school day,default,SPRING,default
+,,,,
+M,Everyone was excited to see a new transfer studentXYZ especially a senior.,default,SPRING,default
+,,,,
+M,Iâ€™ve spent so much time in the city that I forgot how easily things can become news in a small town.,default,SPRING,default
+,,,,
+MC,Where to nowâ€¦,none,SPRING,default
+,,,,
+M,Even if I wonâ€™t be here longXYZ it wonâ€™t do me any good if Iâ€™m getting lost all semester.,default,SPRING,default
+,,,,
+M,I proceed to explore the schoolXYZ taking mental note of each turnâ€¦,default,SPRING,default
+,,,,
+M,erXYZ or so I thought. I forgot how many turns I made and now,default,SPRING,default
+,,,,
+M,I donâ€™t even know which way to start backtracking. Shoot!,default,SPRING,default
+,,,,
+MC,Why does every classroom look the same?? Am I even in the same buildingâ€¦,none,SPRING,default
+,,,,
+Haruka,AhXYZ sorry to botherXYZ but do you think you might be lost?,surprise2,SPRING,default
+,,,,
+M,I hear a small yet familiar sounding voice from behind me.,default,SPRING,default
+,,,,
+M,D-Did I just say what I said before out loud?? Oh crap...,default,SPRING,default
+,,,,
+MC,UhhhXYZ yesXYZ yes I am. I just transferred hereXYZ so...,none,SPRING,default
+,,,,
+M,SmallTalk.exe not found.,default,SPRING,default
+,,,,
+M,I turn around and see a small-framed girl with blush colored hair and bright green eyes.,default,SPRING,default
+,,,,
+M,OhXYZ I thought she looked familiarâ€¦ itâ€™s the cherry blossom girl I had a strange conversation with earlier.,default,SPRING,default
+,,,,
+Haruka,Oh!,surprise2_blush,SPRING,default
+,,,,
+M,Before I could confirm my assumptionsXYZ Harukaâ€™s face beamed with the same sudden realization.,default,SPRING,default
+,,,,
+Haruka,I saw you while walking to schoolXYZ didnâ€™t I? Sorry for not introducing myself earlier,smile,SPRING,default
+,,,,
+Haruka,My name is Haruka FurukawaXYZ you introduced yourself to my class today.,joy,SPRING,default
+,,,,
+MC,AhXYZ nice to properly meet you.,none,SPRING,default
+,,,,
+Haruka,You just moved hereXYZ right? This school can be pretty confusing. If Iâ€™m not paying attention I could easily walk pass our classroom tooXYZ hehe.,default2,SPRING,default
+,,,,
+M,Our classroomâ€¦? I look to my rightXYZ and sure enoughXYZ thereâ€™s a familiar sign clearly labelled with my classroom number.,default,SPRING,default
+,,,,
+M,Shit.,default,SPRING,default
+,,,,
+MC,O-Oh... I really was lost. Thank youXYZ I wouldâ€™ve been in circles for hours.,none,SPRING,default
+,,,,
+M,I could feel my face glow with embarrassmentXYZ and Haruka starts to giggleXYZ slightly.,default,SPRING,default
+,,,,
+Haruka,Hehe. Youâ€™re not wrong thoughXYZ this school is pretty modernXYZ so many of the hallways look similar.,default,SPRING,default
+,,,,
+MC,Thatâ€™s for sure.,none,SPRING,default
+,,,,
+M,Hmm... I hate to ask a strangerXYZ but at this rateXYZ Iâ€™ll be walking in circles the rest of my high school life.,default,SPRING,default
+,,,,
+MC,HarukaXYZ I donâ€™t really know anyone else at this schoolXYZ soâ€¦ if youâ€™re not busyXYZ do you think you could show me around?,none,SPRING,default
+,,,,
+Haruka,Hm?,surprise2,SPRING,default
+,,,,
+M,I felt a second wave of embarrassment take over. Our conversation earlier wasnâ€™t the mostâ€¦ conventional. Iâ€™m not so sure someone like Haruka would want to show a gloomy guy around.,default,SPRING,default
+,,,,
+M,Before I could turn any redderXYZ Haruka smiles shyly.,default,SPRING,default
+,,,,
+Haruka,Sure! If you donâ€™t mind me. I can show you around right nowXYZ if youâ€™d like.,smile,SPRING,default
+,,,,
+MC,I would appreciate that. Thank you.,none,SPRING,default
+,,,,
+Haruka,Great! Iâ€™ll show you the library firstXYZ itâ€™s my favorite placeâ€¦,joy2,SPRING,default
+,,,,
+M,She shows me around the libraryXYZ fieldXYZ and other school facilities.,default,SPRING,default
+,,,,
+M,We naturally make small talk.,default,SPRING,default
+,,,,
+MC,If the library is your favorite placeXYZ Iâ€™m guessing youâ€™re the studious typeXYZ then.,none,SPRING,default
+,,,,
+Haruka,Mmm I try! Iâ€™m nowhere near as diligent as our class rep though. I donâ€™t usually go to the library to just studyXYZ though.,joy,SPRING,default
+,,,,
+MC,Oh? Thatâ€™s a bit strange. What else would you do there?,none,SPRING,default
+,,,,
+Haruka,Mm I dunnoXYZ sometimes readXYZ sometimes just have time to myself,default,SPRING,default
+,,,,
+MC,I see...,none,SPRING,default
+,,,,
+M,Time to herself? She definitely doesnâ€™t seem like an introvert to me. Especially with her rather uhâ€¦ interesting cherry blossom dialogue earlierâ€¦,default,SPRING,default
+,,,,
+Haruka,Mhm! Butâ€¦ thatâ€™s not as often. I usually go out with friends after school if I have the timeXYZ all though itâ€™s hard to find new things to do in such a small townXYZ hehe,default2,SPRING,default
+,,,,
+MC,Heh. Tell me about it.,none,SPRING,default
+,,,,
+M,Going out with friends after schoolXYZ idling time away in the libraryâ€¦ sheâ€™s living the dream high school life.,default,SPRING,default
+,,,,
+M,Plus she can easily make conversation with a stranger. With a personality like thatXYZ she probably gets along well with anyone.,default,SPRING,default
+,,,,
+M,I wishâ€¦ that stuff came easily to meXYZ too.,default,SPRING,default
+,,,,
+M,We spend a while talking and walkingXYZ Haruka kindly showing me all the important places.,default,SPRING,default
+,,,,
+Haruka,AaandXYZ were back to the classroom. I tried to cover all the important placesâ€¦,default,SPRING,default
+,,,,
+MC,Already? Time flew... I really owe you one.,none,SPRING,default
+,,,,
+M,The copper sunset shone through the hall windows. A lot of time really had passedâ€¦,default,SPRING,default
+,,,,
+M,It was going to get dark soon.,default,SPRING,default
+,,,,
+M,Haruka notices me staring out the windowXYZ and looks at the dim sky as well.,default,SPRING,default
+,,,,
+Haruka,Ah! Itâ€™s already getting darkXYZ I should get goingâ€¦,neutral2_blush,SPRING,default
+,,,,
+M,Oh noâ€¦ I kept her here this longXYZ I feel bad. Should I offer to walk her home?,default,SPRING,default
+,,,,
+M,Maybe thatâ€™s too bold to ask right nowâ€¦ butâ€¦,default,SPRING,default
+,,,,
+M,The right thing to do is offer to walk her home. PlusXYZ maybe Iâ€™ll get to know her a bit better.,default,SPRING,default
+,,,,
+MC,HarukaXYZ itâ€™s my fault for keeping you out this late. Is it okay I walk you home?,none,SPRING,default
+,,,,
+Haruka,Oh! D-Donâ€™t worryâ€¦ you donâ€™t have toâ€¦,surprise2_blush,SPRING,default
+,,,,
+MC,I knowXYZ but itâ€™s the least I can do. Is it okayXYZ then?,none,SPRING,default
+,,,,
+Haruka,Ah sureâ€¦ thank you...,neutral_blush,SPRING,default
+,,,,
+M,We grab our things and make our way out the school.,default,SPRING,default
+,,,,
+M,My thoughts begin to wander.,default,SPRING,default
+,,,,
+M,We just met butâ€¦ she seems awfully generous to show a stranger around.,default,SPRING,default
+,,,,
+M,And then that conversation near the blossoms as wellâ€¦ it seems a bit oddâ€¦,default,SPRING,default
+,,,,
+M,Unlike beforeXYZ Haruka was strangely quiet.,default,SPRING,default
+,,,,
+M,And why didnâ€™t she notice who I was earlierâ€¦? Is it really just a coincidence?,default,SPRING,default
+,,,,
+M,I think hard. I want to ask her straight outXYZ but I donâ€™t want to come off accusatory. I need evidence.,default,SPRING,default
+,,,,
+M,I donâ€™t know how to approach thisXYZ I just met her after allâ€¦,default,SPRING,default
+,,,,
+M,Just thinkâ€¦ what can I say to figure this outâ€¦?,default,SPRING,default

@@ -1,15 +1,29 @@
-SPEAKER,CONVO,SPRITE,AUDIO,BACKGROUND
-M, Just like beforeXYZ the physical world comes back into view. I can’t talk about it… and I feel like it would just take the attention off of HarukaXYZ anyways.,default,SPRING,default
-M, I clear my throat and make an attempt to give a mostly honest answer.,default,SPRING,default
-MC, She’s pretty goodXYZ but she doesn’t make me food anymore.,none,SPRING,default
-Haruka, OhXYZ I see…,default,SPRING,default
-Haruka, WellXYZ we all have to grow up at some pointXYZ don’t we? Hehe. AnywaysXYZ what do you think of the chicken? I don’t know if its too greasy…,default,SPRING,default
-M, The topic naturally shifted to something differentXYZ and that was that. I never really learned more about her or her father from that conversationXYZ and there wasn’t much of an opportunity to bring it up again.,default,SPRING,default
-M, It’s not easy to open upXYZ so perhaps if I did… she would feel more comfortable talking about it.,default,SPRING,default
-Haruka, OhXYZ break time is almost over. HeheXYZ this was fun! I’ll make you food again some time.,default,SPRING,default
-MC, OhXYZ yeah… thank youXYZ I would appreciate it.,none,SPRING,default
-M, I watch her pack up and walk back to her assigned seat. The rest of the day was a blurXYZ and I couldn’t shake off the lingering feeling of regret.,default,SPRING,default
-MC, Haruka…,none,SPRING,default
-M, Like I said beforeXYZ there are days harder than others… and the better days are when I get to talk with Haruka.,default,SPRING,default
-M, But todayXYZ even though I ate lunch with her...,default,SPRING,default
-M, This day was hard.,default,SPRING,default
+SPEAKER,CONVO,SPRITE,AUDIO,BACKGROUND
+,,,,
+M,Just like beforeXYZ the physical world comes back into view. I canâ€™t talk about itâ€¦ and I feel like it would just take the attention off of HarukaXYZ anyways.,default,SPRING,default
+,,,,
+M,I clear my throat and make an attempt to give a mostly honest answer.,default,SPRING,default
+,,,,
+MC,Sheâ€™s pretty goodXYZ but she doesnâ€™t make me food anymore.,none,SPRING,default
+,,,,
+Haruka,OhXYZ I seeâ€¦,surprise2,SPRING,default
+,,,,
+Haruka,WellXYZ we all have to grow up at some pointXYZ donâ€™t we? Hehe. AnywaysXYZ what do you think of the chicken? I donâ€™t know if its too greasyâ€¦,joy,SPRING,default
+,,,,
+M,The topic naturally shifted to something differentXYZ and that was that. I never really learned more about her or her father from that conversationXYZ and there wasnâ€™t much of an opportunity to bring it up again.,default,SPRING,default
+,,,,
+M,Itâ€™s not easy to open upXYZ so perhaps if I didâ€¦ she would feel more comfortable talking about it.,default,SPRING,default
+,,,,
+Haruka,OhXYZ break time is almost over. HeheXYZ this was fun! Iâ€™ll make you food again some time.,default,SPRING,default
+,,,,
+MC,OhXYZ yeahâ€¦ thank youXYZ I would appreciate it.,none,SPRING,default
+,,,,
+M,I watch her pack up and walk back to her assigned seat. The rest of the day was a blurXYZ and I couldnâ€™t shake off the lingering feeling of regret.,default,SPRING,default
+,,,,
+MC,Harukaâ€¦,none,SPRING,default
+,,,,
+M,Like I said beforeXYZ there are days harder than othersâ€¦ and the better days are when I get to talk with Haruka.,default,SPRING,default
+,,,,
+M,But todayXYZ even though I ate lunch with her...,default,SPRING,default
+,,,,
+M,This day was hard.,default,SPRING,default
