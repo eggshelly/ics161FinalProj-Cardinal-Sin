@@ -171,28 +171,15 @@ public class DialogueManager : MonoBehaviour
         if (DialogueObj.speaker.Length == 1) //monologue: set namePanel to invisible and text to italic
         {
             namePanel.SetActive(false);
-
-            if (spriteName == "none")
-            {
-                //Debug.Log("NO SPRITE");
-                spritePanel.SetActive(false);
-            }
-
-            else
-                spritePanel.SetActive(true);
-
+            spritePanel.SetActive(true);
             dialogueText.fontStyle = FontStyles.Italic;
         }
-        else if (DialogueObj.speaker.Length == 2) //for special cases
+        else if (DialogueObj.speaker.Length == 2) //for MC talking: name and sprite panel are both visible, showing MC name and girl he talks to
         {
             namePanel.SetActive(true);
             nameText.text = DialogueObj.speaker;
+            spritePanel.SetActive(true);
 
-            if (spriteName == "none")
-            {
-                //Debug.Log("NO SPRITE");
-                spritePanel.SetActive(false);
-            }
 
         }
         else //any other character: set namePanel to visible and text to normal
