@@ -4,7 +4,7 @@ M,Just like beforeXYZ the physical world comes back into view. A new sense of co
 ,,,,
 M,That's right! it's scaryXYZ butXYZ if I want to learn more about HarukaXYZ I have to open up too.,default,SPRING,default
 ,,,,
-MC,…,none,SPRING,default
+MC,...,none,SPRING,default
 ,,,,
 Haruka,Hm?,default2,SPRING,default
 ,,,,
@@ -14,7 +14,7 @@ Haruka,...?,default,SPRING,default
 ,,,,
 Haruka,...oh! I--,surprise2,SPRING,default
 ,,,,
-MC,It's okayXYZ I donï¿½t mind talking about it. She was a fantastic cookXYZ and made me lunches to take to schoolXYZ even in high school. Even when she was sickXYZ she made sure I ate well.,none,SPRING,default
+MC,It's okayXYZ I dont mind talking about it. She was a fantastic cookXYZ and made me lunches to take to schoolXYZ even in high school. Even when she was sickXYZ she made sure I ate well.,none,SPRING,default
 ,,,,
 MC,That's actually why I transferred hereXYZ so...,none,SPRING,default
 ,,,,
@@ -22,25 +22,25 @@ MC,I really appreciate that you reached out. Especially even more now that I kno
 ,,,,
 M,My words hung in the airXYZ followed by a brief moment of silence.,default,SPRING,default
 ,,,,
-Haruka,…,sad2,SPRING,default
+Haruka,...,sad2,SPRING,default
 ,,,,
 M,To my surpriseXYZ Haruka smiles softly.,default,SPRING,default
 ,,,,
-Haruka,You knowï¿½,sad,SPRING,default
+Haruka,You know...,sad,SPRING,default
 ,,,,
 Haruka,I don't really talk much about these things with my friends. I never want to bring down the moodXYZ so I try to divert attention away when topics like that come up.,sad,SPRING,default
 ,,,,
 Haruka,When my father passed awayXYZ my whole world stopped. Everyday life was completely different from then onXYZ and I didn't know how to process it. So I just continued to dismiss my feelings...,sad2,SPRING,default
 ,,,,
-Haruka,So you being able to talk about itXYZ and relateï¿½,sad2,SPRING,default
+Haruka,So you being able to talk about itXYZ and relate...,sad2,SPRING,default
 ,,,,
 Haruka,It makes me happy. That I feel like I can talk a bit more freely about these things with you.,default,SPRING,default
 ,,,,
 Haruka,And... I'm sorry for your lossXYZ too.,default,SPRING,default
 ,,,,
-MC,Haruka…,none,SPRING,default
+MC,Haruka...,none,SPRING,default
 ,,,,
-MC,I don't think you bring down the mood. Iï¿½m sure your friends care about your feelingsXYZ too.,none,SPRING,default
+MC,I don't think you bring down the mood. I'm sure your friends care about your feelingsXYZ too.,none,SPRING,default
 ,,,,
 Haruka,That's true... but,sad2,SPRING,default
 ,,,,
@@ -60,10 +60,10 @@ M,OverwhelmedXYZ I muster up a response.,default,SPRING,default
 ,,,,
 MC,Of course.,none,SPRING,default
 ,,,,
-Haruka,Hehe. Alright! In exchangeXYZ Iï¿½ll make you more food next time I try something. So don't get sick of my cookingXYZ kay?,joy_blush,SPRING,default
+Haruka,Hehe. Alright! In exchangeXYZ I'll make you more food next time I try something. So don't get sick of my cookingXYZ kay?,joy_blush,SPRING,default
 ,,,,
 M,Like I said beforeXYZ there are days harder than others... and the better days are when I get to talk with Haruka.,default,SPRING,default
 ,,,,
-M,In the short time I've moved back to my townXYZ however…,default,SPRING,default
+M,In the short time I've moved back to my townXYZ however,default,SPRING,default
 ,,,,
 M,This might be one of the best.,default,SPRING,default
