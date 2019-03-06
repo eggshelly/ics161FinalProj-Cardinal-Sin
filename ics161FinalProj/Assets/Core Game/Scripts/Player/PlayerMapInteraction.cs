@@ -9,16 +9,19 @@ public class PlayerMapInteraction : MonoBehaviour
 
     bool canEnterStage = false;
 
-    
+    bool canInteract = true;
     void Update()
     {
-        if(canEnterStage && Time.timeScale != 0)
+        if (canInteract)
         {
-            if(Input.GetKeyDown(KeyCode.E))
+            if (canEnterStage && Time.timeScale != 0)
             {
-                OnThisStage.EnterStage();
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    OnThisStage.EnterStage();
+                }
             }
-        }
+        }   
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -38,5 +41,10 @@ public class PlayerMapInteraction : MonoBehaviour
             OnThisStage = null;
             
         }
+    }
+
+    public void CantInteract()
+    {
+        canInteract = false;
     }
 }

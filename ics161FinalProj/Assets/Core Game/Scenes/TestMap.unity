@@ -1646,7 +1646,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708545928}
-  m_LocalRotation: {x: -3.3692433e-31, y: 0.000000030165822, z: 6.4204353e-19, w: 1}
+  m_LocalRotation: {x: -3.3733058e-31, y: 0.000000030165822, z: 6.4280784e-19, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4461,8 +4461,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 65880961}
-        m_MethodName: BackToMenu
+      - m_Target: {fileID: 65880962}
+        m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

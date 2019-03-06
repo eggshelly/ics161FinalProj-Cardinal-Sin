@@ -7,11 +7,13 @@ public class PauseOnMap : MonoBehaviour
     [SerializeField] GameObject PausePanel;
     [SerializeField] GameObject StagePanel;
 
-
+    GameObject player;
+     
     bool toggled = false;
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         Time.timeScale = 1;
     }
 
@@ -50,6 +52,13 @@ public class PauseOnMap : MonoBehaviour
         Time.timeScale = 1;
         PausePanel.SetActive(false);
         toggled = false;
+    }
+
+    public void MainMenu()
+    {
+        player.GetComponent<PlayerMapInteraction>().CantInteract();
+        player.GetComponent<PlayerMapMovement>().CantMove();
+        GetComponent<ButtonFunctions>().BackToMenu();
     }
 
     //Saves the game 

@@ -15,6 +15,8 @@ public class PlayerMapMovement : MonoBehaviour
 
     Animator animator;
 
+    bool canMove = true;
+
     private void Awake()
     {
         m_RigidBody2D = GetComponent<Rigidbody2D>();
@@ -32,7 +34,8 @@ public class PlayerMapMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Move();
+        if(canMove)
+            Move();
     }
 
     //Translates the player's position
@@ -99,6 +102,11 @@ public class PlayerMapMovement : MonoBehaviour
         right = bounds.bounds.center.x + bounds.bounds.extents.x;
         top = bounds.bounds.center.y + bounds.bounds.extents.y;
         bottom = bounds.bounds.center.y - bounds.bounds.extents.y;
+    }
+
+    public void CantMove()
+    {
+        canMove = false;
     }
 
 

@@ -9,7 +9,6 @@ public class ButtonFunctions : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.Find("Player");
     }
     
 
@@ -67,8 +66,6 @@ public class ButtonFunctions : MonoBehaviour
 
     public IEnumerator LoadMainScreen()
     {
-        player.GetComponent<PlayerMapMovement>().enabled = false;
-        player.GetComponent<PlayerMapInteraction>().enabled = false;
         SaveFileManager.instance.SetLoadDataFalse();
         yield return StartCoroutine(TransitionManager.instance.FadeToBlack(1.5f));
         SceneManager.LoadScene("MainMenu");
