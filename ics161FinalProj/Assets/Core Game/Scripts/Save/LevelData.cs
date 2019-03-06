@@ -17,6 +17,10 @@ public class LevelData
     //To keep track of if the intro has been done already
     public bool introCompleted;
 
+
+    //keeps track of which levels have been finished
+    public bool[][] finishedLevels;
+
     //Constructs the LevelData object which stores all the information that should be saved and later retrieved
     public LevelData(Vector3 playerPos, StageHubScript stageHub, DialogueManager manager)
     {
@@ -32,6 +36,8 @@ public class LevelData
         }
 
         stageCollectibles = coll.ToArray();
+
+        finishedLevels = stageHub.GetAllStageLevelStatus().ToArray();
 
         introCompleted = manager.hasDoneIntro;
         

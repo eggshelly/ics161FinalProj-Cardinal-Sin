@@ -4315,7 +4315,6 @@ GameObject:
   - component: {fileID: 1954083807}
   - component: {fileID: 1954083809}
   - component: {fileID: 1954083808}
-  - component: {fileID: 1954083810}
   m_Layer: 5
   m_Name: StagePanel
   m_TagString: Untagged
@@ -4383,21 +4382,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1954083806}
   m_CullTransparentMesh: 0
---- !u!114 &1954083810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1954083806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 316d8bfa9d5f29945833f54b139a954e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Panel: {fileID: 1451276608}
-  keySpriteFilled: {fileID: 21300000, guid: 852b80b7228c61d4eafb1d89a8fdac85, type: 3}
-  keySpriteEmpty: {fileID: 21300000, guid: 5d4d940c9645ec942be2000141495887, type: 3}
 --- !u!1 &2054512848
 GameObject:
   m_ObjectHideFlags: 0
