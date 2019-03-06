@@ -135,12 +135,16 @@ public class StageHubScript : MonoBehaviour
     public void PreviousLevel(int index, int level)
     {
         int cLevel = allStages[index].PrevLevel(level);
+        currentStage = currentStage.Substring(0, currentStage.Length - 1) + cLevel;
+        Debug.Log(currentStage);
         panel.UpdatePanel(cLevel, allStages[index].GetLevelCollectibles()); 
     }
 
     public void NextLevel(int index, int level)
     {
         int cLevel = allStages[index].NextLevel(level);
+        currentStage = currentStage.Substring(0, currentStage.Length - 1) + cLevel;
+        Debug.Log(currentStage);
         panel.UpdatePanel(cLevel, allStages[index].GetLevelCollectibles()); 
     }
 
@@ -166,7 +170,7 @@ public class StageHubScript : MonoBehaviour
 
     public IEnumerator DoneDialogueCR()
     {
-
+        Debug.Log(currentStage);
         while(AudioManager.instance.CR_running)
         {
             yield return null;

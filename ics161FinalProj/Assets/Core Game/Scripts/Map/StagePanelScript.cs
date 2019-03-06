@@ -139,6 +139,7 @@ public class StagePanelScript : MonoBehaviour
 
     public void NextLevel()
     {
+        Debug.Log("Current " + currentStageLevel);
         stage.NextLevel(currentStageIndex, currentStageLevel);
     }
 
