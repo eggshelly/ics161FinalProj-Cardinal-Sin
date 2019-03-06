@@ -41,7 +41,7 @@ public class AudioManager : MonoBehaviour
     }
     void Start()
     {
-        Play("Opening");
+        
     }
 
     public void Play (string name)  //s.source.volume will adjust actual volume. s.volume will adjust initial value which has no meaning here

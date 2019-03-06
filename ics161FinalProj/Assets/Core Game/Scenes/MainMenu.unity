@@ -6039,7 +6039,7 @@ MonoBehaviour:
   fadeInTime: 4
   fadeOutTime: 2.1
   sounds:
-  - name: Opening
+  - name: MainMenu
     loop: 1
     clip: {fileID: 8300000, guid: 6867fd6932321d84cab5ca87759dc0ee, type: 3}
     volume: 0
