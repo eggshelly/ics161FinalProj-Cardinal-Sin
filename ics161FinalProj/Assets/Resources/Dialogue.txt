@@ -1,249 +1,81 @@
-INTRODUCTION
-M: 10 years ago
-M: I walked this same path
-M: to reach the other side of a town that, at the time
-M: I would call home.
-M: The new buildings and paved walkways made the little rural town I grew up in almost unrecognizable, but 
-M: Something about being back here, for the first time… since I lost someone...
-M: made everything feel more familiar. 
-M: This time last Spring, my Mother, after a long battle
-M: succumbed to her illness and passed on. 
-M: I spent the last four seasons grieving, letting time pass by…
-M: Wishing things were different...
-M: Until I realized, even if time seemed to stop in my cramped room
-M: Seasons were still changing outside. And I was missing all of it. 
-M: As last winter’s snow began to melt, signaling the coming of a new school term
-M: my remaining family gently suggested to finish my last year as a high school student in a more familiar setting.
-M: My hometown.
-M: In the distance, I see trees dotted with flush colored blossoms, slowly growing near.
-MC: Cherry blossoms. Those were her favorite.
-M: I stop in the middle of the road, basking in the comfortable Spring breeze, recalling the times my mom would drag me to the cherry blossom viewings.
-M: We’ve been to many different ones, but…
-M: Nothing could ever compare to my home town’s blossoms. 
-Haruka: They’re pretty, aren’t they?
-MC: Huh?
-M: I turn to see a small girl with blush colored hair, gazing at the same tree I was dazed by. 
-MC: Yeah... too bad they don’t last very long, though. 
-Haruka: Hm…
-M: The girl shakes her head, still admiring the budding flowers. 
-Haruka: Isn’t that part of their beauty, though?
-Haruka: The fact you know they won’t be there long, but…
-Haruka: you spend extra time looking at them anyways?
-MC: …
-Haruka: In the countryside, there are so many wonderful plants and flowers that bloom year-round.
-Haruka: But people always make a big event of seeing the ones that don’t last long. It must be because they’re temporary, don’t you think?
-M: Temporary…
-M: So many unhappy memories attached to a single word.
-M: If there’s anything I’ve learned this past year…
-M: ...is that the only permanent thing in life is the passage of time.
-M: And time takes away things.
-MC: I guess that means we just take things for granted, then.
-M: The girl laughs a bit.
-Haruka: That’s a bit dark!
-M: She turns to me, the slight breeze catching her hair.
-Haruka: I’d like to think…
-Haruka: We just know how to especially appreciate things enough, before they go.
-M: Before they go…
-M: 10 years ago, I walked this same path.
-M: This time, I’m walking on a branching path that wasn’t paved before,
-M: to the other side of a town that
-M: Is no longer my home.
-
-SPRING 1
-MC: Ah… so tiring!
-M: I let out a relieved sigh and stretch out in relief on my desk. 
-M: I just completed my first day of high school.
-M: Besides the fact it’s been almost a year since I’ve been through a proper school day
-M: Everyone was excited to see a new transfer student, especially a senior. 
-M: I’ve spent so much time in the city that I forgot how easily things can become news in a small town.
-MC: Where to now…
-M: Even if I won’t be here long, it won’t do me any good if I’m getting lost all semester. 
-M: I proceed to explore the school, taking mental note of each turn…
-M: er, or so I thought. I forgot how many turns I made and now
-M: I don’t even know which way to start backtracking. Shoot!
-MC: Why does every classroom look the same?? Am I even in the same building… 
-Haruka: Ah, sorry to bother, but do you think you might be lost? 
-M: I hear a small yet familiar sounding voice from behind me. 
-M: D-Did I just say what I said before out loud?? Oh crap...
-MC: Uhhh, yes, yes I am. I just transferred here, so... 
-M: SmallTalk.exe not found. 
-M: I turn around and see a small-framed girl with blush colored hair and bright green eyes. 
-M: Oh, I thought she looked familiar… it’s the cherry blossom girl I had a strange conversation with earlier.
-Haruka: Oh!
-M: Before I could confirm my assumptions, Haruka’s face beamed with the same sudden realization.
-Haruka: I saw you while walking to school, didn’t I? Sorry for not introducing myself earlier
-Haruka: My name is Haruka Furukawa, you introduced yourself to my class today.
-MC: Ah, nice to properly meet you.
-Haruka: You just moved here, right? This school can be pretty confusing. If I’m not paying attention I could easily walk pass our classroom too, hehe.
-M: Our classroom…? I look to my right, and sure enough, there’s a familiar sign clearly labelled with my classroom number.
-M: Shit.
-MC: O-Oh... I really was lost. Thank you, I would’ve been in circles for hours. 
-M: I could feel my face glow with embarrassment, and Haruka starts to giggle, slightly. 
-Haruka: Hehe. You’re not wrong though, this school is pretty modern, so many of the hallways look similar.
-MC: That’s for sure.
-M: Hmm... I hate to ask a stranger, but at this rate, I’ll be walking in circles the rest of my high school life.
-MC: Haruka, I don’t really know anyone else at this school, so… if you’re not busy, do you think you could show me around?
-Haruka: Hm? 
-M: I felt a second wave of embarrassment take over. Our conversation earlier wasn’t the most… conventional. I’m not so sure someone like Haruka would want to show a gloomy guy around.
-M: Before I could turn any redder, Haruka smiles shyly.
-Haruka: Sure! If you don’t mind me. I can show you around right now, if you’d like. 
-MC: I would appreciate that. Thank you.
-Haruka: Great! I’ll show you the library first, it’s my favorite place… 
-M: She shows me around the library, field, and other school facilities.
-M: We naturally make small talk.
-MC: If the library is your favorite place, I’m guessing you’re the studious type, then.
-Haruka: Mmm I try! I’m nowhere near as diligent as our class rep though. I don’t usually go to the library to just study, though.
-MC: Oh? That’s a bit strange. What else would you do there?
-Haruka: Mm I dunno, sometimes read, sometimes just have time to myself
-MC: I see...
-M: Time to herself? She definitely doesn’t seem like an introvert to me. Especially with her rather uh… interesting cherry blossom dialogue earlier… 
-Haruka: Mhm! But… that’s not as often. I usually go out with friends after school if I have the time, all though it’s hard to find new things to do in such a small town, hehe 
-MC: Heh. Tell me about it.
-M: Going out with friends after school, idling time away in the library… she’s living the dream high school life.
-M: Plus she can easily make conversation with a stranger. With a personality like that, she probably gets along well with anyone.
-M: I wish… that stuff came easily to me, too.
-M: We spend a while talking and walking, Haruka kindly showing me all the important places.
-Haruka: Aaand, were back to the classroom. I tried to cover all the important places… 
-MC: Already? Time flew... I really owe you one.
-M: The copper sunset shone through the hall windows. A lot of time really had passed… 
-M: It was going to get dark soon. 
-M: Haruka notices me staring out the window, and looks at the dim sky as well. 
-Haruka: Ah! It’s already getting dark, I should get going… 
-M: Oh no… I kept her here this long, I feel bad. Should I offer to walk her home? 
-M: Maybe that’s too bold to ask right now… but… 
-M: The right thing to do is offer to walk her home. Plus, maybe I’ll get to know her a bit better.
-MC: Haruka, it’s my fault for keeping you out this late. Is it okay I walk you home?
-Haruka: Oh! D-Don’t worry… you don’t have to… 
-MC: I know, but it’s the least I can do. Is it okay, then?
-Haruka: Ah sure… thank you... 
-M: We grab our things and make our way out the school.
-M: My thoughts begin to wander. 
-M: We just met but… she seems awfully generous to show a stranger around.
-M: And then that conversation near the blossoms as well… it seems a bit odd…
-M: Unlike before, Haruka was strangely quiet.
-M: And why didn’t she notice who I was earlier…? Is it really just a coincidence?
-M: I think hard. I want to ask her straight out, but I don’t want to come off accusatory. I need evidence.
-M: I don’t know how to approach this, I just met her after all… 
-M: Just think… what can I say to figure this out…? 
-SPRING 1 GOOD END
-M: The answer hits me like cold water to the face. That’s right!
-M: How could she not recognize me earlier, if she noticed that I was lost? That seems highly unlikely. I’ll ask her about that. 
-M: Before I could say anything, Haruka stops in front of a small apartment complex.
-Haruka: Well, this is where I live. Thank you for walking me all this way. 
-MC: …
-MC: Haruka, before you go… can I ask you something?
-Haruka: Hm? 
-MC: Earlier, when I was lost, you acted like you didn’t recognize me, but… 
-MC: You knew who I was, right? Since you said you saw me pass the classroom. 
-M: Haruka’s surprised look slowly melts into a shy smile.
-Haruka: Mm… you caught me, haha. I...
-Haruka: ...I actually knew you were the transfer student all along. Even when we were at the road with cherry blossoms. In a small town, there’s no way I wouldn’t recognize you unless you were a new student.
-Haruka: And then today... I saw you pass by our class a few times and I could tell you were lost. So I thought it was a perfect opportunity to talk to you.
-MC: Talk to me? Why me? 
-Haruka: Because I wanted to be the one to help you, since...
-Haruka: I actually only transferred here a year ago, last Spring. Due to unfortunate circumstances, I had to leave my high school midway and start a new life here.
-Haruka: So I know what it feels like to feel overwhelmed, and it can get pretty lonely if you have no one to talk to, so… 
-Haruka: … let’s get along, okay? 
-M: Her voice trails off at the end, that I could barely catch the last part. 
-M: I let out a relieving laugh and feel my nerves subside. For the first time in a while, I felt like I had made a friend. A friend I could relate to.    
-MC: Yes, I’d like that. Don’t be afraid to be forward with me, okay?
-MC: I’ll see you tomorrow, Haruka. 
-M: I wave, and start walking away. But out of the corner of my eye
-M: I realize Haruka was the same shade of red I was when we first met. 
-SPRING 1 BAD END
-M: ...I analyzed the situation, over and over, but…
-M: I just couldn’t figure out how to approach the subject. Maybe it’s just a coincidence after all. 
-M: Before I could think of anything to say, Haruka stops in front of a small apartment complex.
-Haruka: Well, this is where I live. Thank you for walking me all this way.
-MC: No problem. Well, see you tomorrow
-Haruka: See… you...
-M: As I make my way down the street, I can’t help but feel as if there was a slight sound of disappointment in her words.
-M: And the fact she seemed to not recognize me earlier still seems… far fetched…
-M: I do my best to shake it off. It’s probably all just in my head, right? 
-M: At least, I’ve met someone new at this school.
-SPRING 2
-M: I go into class and spend most of the day attempting to stay focused. During break, Haruka catches my eye.
-M: The past few weeks have flown by, and I’ve began to adjust to my new high school life.
-M: There are days harder than others, but meeting new people and doing normal high school things like schoolwork have actually helped a lot.
-M: ...and then there’s Haruka. I find that the better days are when I get to walk home and chat with her.
-M: I hear Haruka giggling softly with a group of people around her.
-MC: Must be nice to have such a radiating aura around yourself like that… 
-M: Haruka momentarily stops her conversation and peers over at me. She smiles and waves.
-MC: That’s right… we’re friends, too.
-M: Out of my surprise, Haruka gets out of her seat and walk towards my desk. 
-Haruka: Would you like to eat inside the classroom together? I made extra bento.
-MC: O-Oh, yeah, that sounds great.
-M: Homemade bento… it’s been a while.
-M: We spend time eating and exchanging normal small talk about life and classes.
-M: She really does have a positive aura. 
-MC: Ahhh that was so good! Where’d you learn to cook so well? 
-Haruka: My mom taught me! She used to spend a lot of time cutting fruit into cute shapes, shaping things into hearts. And somehow made it taste really delicious too
-M: Haruka’s mother seems really caring, I can see where Haruka gets it from.
-M: I remember my own Mom would make me lunches to take to school, even up until…
-M: ...
-MC: That’s sweet, does she still make you lunch still?
-M: Haruka shyly fidgets and looks down at her food, continuing to eat. 
-Haruka: Umm- You see...
-M: I was worried at her expression at first, but her voice seemed calm and open as she began to speak. 
-Haruka: Before I entered high school, my father passed away in an accident. So my mom works full-time now to support my brother and I... 
-M: As Haruka’s words began to fade off, I felt a surge of guilt in my chest. Before I could apologize however, Haruka’s demeanor perks up as quickly as it dimmed down.
-Haruka: She taught me everything she knew, before she went back to work. So in a way I still get to enjoy her lunches. She’s really amazing!
-MC: Oh… I’m sorry, I didn’t… 
-Haruka: Mm! Don’t worry about it, I don’t mind sharing. I’m glad you liked it though, hehe. I’ve been practicing a lot lately.
-M: Haruka smiles at me, seemingly unbothered.
-Haruka: How about you? Is your mother a good chef, too? 
-MC: ...
-M: I don’t know how to answer that. I want to make sure Haruka is okay, since I may have unintentionally brought up painful memories for her, but… 
-M: How do I do that when the spotlight is on me now? I don’t know how to really answer while being fully honest... 
-M: A familiar feeling emerges. The same emotion I felt when I was deep in thought while walking Haruka home that one day… sending me to a strange place where I collected keys until I knew what to say.
-M: Wherever I’m going, please let it help me unlock the right thing to say.
-SPRING 2 GOOD END
-M: Just like before, the physical world comes back into view. A new sense of confidence takes over.
-M: That’s right… it’s scary, but, if I want to learn more about Haruka, I have to open up too.
-MC: …
-Haruka: Hm?
-MC: She was.
-Haruka: …?
-Haruka: ...oh! I--
-MC: It’s okay, I don’t mind talking about it. She was a fantastic cook, and made me lunches to take to school, even in high school. Even when she was sick, she made sure I ate well.
-MC: That’s actually why I transferred here, so...
-MC: I really appreciate that you reached out. Especially even more now that I know that you too...
-M: My words hung in the air, followed by a brief moment of silence.
-Haruka: …
-M: To my surprise, Haruka smiles softly.
-Haruka: You know…
-Haruka: I don’t really talk much about these things with my friends. I never want to bring down the mood, so I try to divert attention away when topics like that come up.
-Haruka: When my father passed away, my whole world stopped. Everyday life was completely different from then on, and I didn’t know how to process it. So I just continued to dismiss my feelings...
-Haruka: So you being able to talk about it, and relate… 
-Haruka: It makes me happy. That I feel like I can talk a bit more freely about these things with you.
-Haruka: And... I’m sorry for your loss, too.
-MC: Haruka… 
-MC: I don’t think you bring down the mood. I’m sure your friends care about your feelings, too.
-Haruka: That’s true… but
-Haruka: All they’ve seen is the happy Haruka. Aloof Haruka, Haruka who studies hard and says silly things.
-Haruka: I don’t want to be rejected if they see this part of me.
-MC: I understand it’s scary but... you talked about it with me, didn’t you?
-Haruka: Yeah, you’re right. And it worked out. Maybe, little by little… I can show them this side, too.
-Haruka: Until then, can I confide in you?
-M: I felt heat rise from my face. It was difficult to explain… this topic is difficult for me to talk about, but somehow… I feel so happy.
-M: Overwhelmed, I muster up a response.
-MC: Of course.
-Haruka: Hehe. Alright! In exchange, I’ll make you more food next time I try something. So don’t get sick of my cooking, kay?
-M: Like I said before, there are days harder than others… and the better days are when I get to talk with Haruka.
-M: In the short time I’ve moved back to my town, however…
-M: This might be one of the best.
-SPRING 2 BAD END
-M: Just like before, the physical world comes back into view. I can’t talk about it… and I feel like it would just take the attention off of Haruka, anyways.
-M: I clear my throat and make an attempt to give a mostly honest answer.
-MC: She’s pretty good, but she doesn’t make me food anymore.
-Haruka: Oh, I see… 
-Haruka: Well, we all have to grow up at some point, don’t we? Hehe. Anyways, what do you think of the chicken? I don’t know if its too greasy…
-M: The topic naturally shifted to something different, and that was that. I never really learned more about her or her father from that conversation, and there wasn’t much of an opportunity to bring it up again.
-M: It’s not easy to open up, so perhaps if I did… she would feel more comfortable talking about it.
-Haruka: Oh, break time is almost over. Hehe, this was fun! I’ll make you food again some time.
-MC: Oh, yeah… thank you, I would appreciate it.
-M: I watch her pack up and walk back to her assigned seat. The rest of the day was a blur, and I couldn’t shake off the lingering feeling of regret. 
-MC: Haruka… 
-M: Like I said before, there are days harder than others… and the better days are when I get to talk with Haruka.
-M: But today, even though I ate lunch with her...
-M: This day was hard.
+SUMMER 1
+M: The weather was fair and sunny, a perfect day to check out the school’s field. 
+MC: Maybe there will be sport clubs practicing today, if I’m lucky…
+M: I walk to an open field, the sun basking lightly on the fresh green grass. I could hear faint cheering and yelling.
+Natsuki: Hey…!!! Hey you!!!! 
+MC: ??? 
+M: I hear a small yet aggressive voice call out in my direction. Is she talking to… me?? 
+M: A girl runs off the track circle excitedly towards my direction, her golden ponytail contrasting with the bright blue hues of the sky. 
+Natsuki: C’mon, I was waving to you stupid!!
+M: Ok. She’s definitely talking to me but… 
+M: The peculiar girl notices my discomfort and confusion. Maybe we really did meet? I feel like I would’ve recognized someone this… er,
+M: ...noticeable… 
+MC: Hi…? 
+M: The sunny girl responds with a displeased pout. 
+Natsuki: Is that our school uniform?? How could you not tell me you were transferring here? 
+M: This girl is not getting it. 
+M: My best bet is to just play along.
+MC: Y-Yeah, I moved here recently. Are you on the track team? 
+M: She gives me a skeptical look. 
+Natsuki: Hmmph, you sure changed. 
+Natsuki: Anyways, yeah. I’m the girl’s track captain now.
+M: She smiles proudly at her statement.
+MC: Wow, that’s pretty cool! Is the school’s team any good?
+Natsuki: Eh??? I m-mean… we haven’t won any titles but…
+M: Her off-guard demeanor abruptly turns into anger. She shoots a fiery glare.
+Natsuki: They try really hard ok??? Don’t disrespect my team! 
+MC: Oh wait no I wasn’t-- 
+Natsuki: Anyways, you haven’t told me, why didn’t you tell me you were transferring back here?
+Natsuki: You don’t even seem excited to see me… after all these years… 
+M: Her bright demeanor dims to a single candle, and her voice lowers for the first time in our meeting.
+M: Crap… now I feel bad… 
+M: She said after all these years though... 
+M: I dig my brain for answers.
+M: Who could she be…? 
+SUMMER 1 GOOD END
+M: And then, a flood of childhood memories instantly hit me. 
+MC: !!! 
+MC: Natsuki? Natsuki Kawakami? 
+M: Natsuki’s face lights up instantly.
+Natsuki: Yeah you big idiot!! What took you so long??? 
+Natsuki: Hmmph, whatever. I guess I have matured into quite the beauty, fufufu~
+M: Wrong. Well, at least her height hasn’t changed much. 
+M: However, she has certainly…
+M: changed...
+M: Natsuki and I grew up together in this town, and I spent the majority of my summer vacations with her.
+M: That is, until I moved away. 
+M: She cried a bunch of tears that day, and yelled at her parents for not letting her come with me.
+M: I let out a relieving sigh. With all the cosmetic changes to my hometown, it was reassuring to something familiar. 
+MC: Heh, I guess you have grown up a bit. And wow, look at you! You’re track captain now. 
+MC: I remember you always loved the outdoors as a kid. We really got into some trouble because of some of your ideas, you know. 
+Natsuki: My ideas??? It’s only because your baby butt BEGGED to come along. 
+M: Wrong, again. She always clinged to me. But she never liked to admit it. 
+Natsuki: Anyways, don’t be a stranger. We’re schoolmates now, kay?? I have to get back to practice. 
+MC: Definitely. It was nice to see you again, Natsuki.
+Natsuki: Hmmph, whatever. 
+M: Her dismissive words contradicted the smile that I knew she was holding back. 
+M: It truly was nice to see her again. 
+SUMMER 1 BAD END 
+M: I tried and tried to think but…
+M: I just couldn’t remember who she was.
+MC: I’m really sorry, but…
+MC: Who... are you...?
+M: As the words left my mouth, I could see a hint of hurt appear on the girl’s face. 
+Natsuki: … Natsuki. Natsuki Kawakami.
+M: As soon as she said her name, I felt a flood of nostalgia take over. 
+M: Natsuki and I grew up together, and I spent the majority of my summer vacations with her.
+M: That is, until I moved away. 
+M: She cried a bunch of tears that day, and yelled at her parents for not letting her come with me.
+M: How could I forget? 
+MC: Natsuki, shoot. Of course I remember! It’s so nice to be in the same school again.  
+Natsuki: Idiot! Not nice enough for you to remember, I guess. Hmph. 
+Natsuki: ...It is nice to see your big dumb face again too. 
+MC: Heh. I’m sorry though, for not realizing earlier. 
+Natsuki: Whatever, I don’t care. It’s been years anyways, I just remembered you c-cause… 
+Natsuki: Cause who else has an idiot face like you! I could spot it a mile a way…
+M: Those words hung in the air. They didn’t mean to but, they made me feel even more ashamed. 
+Natsuki: A-Anyways… I have to go back to practice so… 
+Natsuki: Feel free to show your stupid face here again. If you want. 
+M: She runs off before I could say anything back. 
+MC: Natsuki…
+MC: Sorry… 
