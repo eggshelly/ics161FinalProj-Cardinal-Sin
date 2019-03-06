@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class TransitionManager : MonoBehaviour
 {
-    public static TransitionManager instance;
+    public static TransitionManager instance = null;
     public Animator animator;
 
     private void Start()
@@ -17,7 +17,7 @@ public class TransitionManager : MonoBehaviour
         else
             Destroy(this.gameObject);
 
-        DontDestroyOnLoad(instance);
+        DontDestroyOnLoad(this.gameObject);
     }
 
     public IEnumerator FadeToBlack(float duration)

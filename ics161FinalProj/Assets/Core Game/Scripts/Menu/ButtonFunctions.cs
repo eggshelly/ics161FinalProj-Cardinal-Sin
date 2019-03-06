@@ -55,6 +55,7 @@ public class ButtonFunctions : MonoBehaviour
         yield return StartCoroutine(TransitionManager.instance.FadeToBlack(2.1f));
         SaveFileManager.instance.DeleteInstancesIfNotLoading();
         SceneManager.LoadScene("TestMap");
+
     }
 
     public IEnumerator LoadMenu()
@@ -68,9 +69,9 @@ public class ButtonFunctions : MonoBehaviour
     {
         player.GetComponent<PlayerMapMovement>().enabled = false;
         player.GetComponent<PlayerMapInteraction>().enabled = false;
+        SaveFileManager.instance.SetLoadDataFalse();
         yield return StartCoroutine(TransitionManager.instance.FadeToBlack(1.5f));
         SceneManager.LoadScene("MainMenu");
         yield return StartCoroutine(TransitionManager.instance.FadeToLevel(1.5f));
-        SaveFileManager.instance.SetLoadDataFalse();
     }
 }

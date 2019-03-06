@@ -70,6 +70,8 @@ public class StageHubScript : MonoBehaviour
     //Called by SaveFileManager when data is loaded. Passes in the stored lists of collectibles and stores it.
     public void loadStages(bool[][][] stagesCollectibles, bool[][] levelStatus)
     {
+        Debug.Log(stagesCollectibles.Length);
+        Debug.Log(allStages.Length);
         Stage s;
         for (int i = 0; i < stagesCollectibles.Length; ++i)
         {

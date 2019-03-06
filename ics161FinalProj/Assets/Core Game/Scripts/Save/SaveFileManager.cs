@@ -40,7 +40,9 @@ public class SaveFileManager : MonoBehaviour
         }
         else
             Destroy(this.gameObject);
-        DontDestroyOnLoad(instance);
+
+
+        DontDestroyOnLoad(this.gameObject);
 
         SceneManager.sceneLoaded += OnSceneLoaded;      
     }
@@ -54,7 +56,9 @@ public class SaveFileManager : MonoBehaviour
     //Called by BackToMenu function in ButtonFunctions Script. When a player goes back to the main menu, it sets loadData to false so if the player starts a new game it won't try to load data
     public void SetLoadDataFalse()
     {
+        Debug.Log("Before " + loadData);
         loadData = false;
+        Debug.Log("After " + loadData);
     }
 
     //Saves the game
@@ -80,8 +84,10 @@ public class SaveFileManager : MonoBehaviour
     {
         if(!loadData)
         {
-            Destroy(instance);
-            Destroy(DialogueManager.instance);
+            if (DialogueManager.instance != null)
+            { 
+                Destroy(DialogueManager.instance.gameObject);
+            }
         }
     }
 
@@ -118,6 +124,7 @@ public class SaveFileManager : MonoBehaviour
                 player.transform.position = loadedPos;
                 stageHub.loadStages(level.stageCollectibles, level.finishedLevels);
                 DialogueManager.instance.hasDoneIntro = level.introCompleted;
+                StartCoroutine(TransitionManager.instance.FadeToLevel(2f));
 
             }
             if (finishedAStage)
