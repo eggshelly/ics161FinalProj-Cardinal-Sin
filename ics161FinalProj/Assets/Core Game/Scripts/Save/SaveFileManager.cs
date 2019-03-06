@@ -56,9 +56,7 @@ public class SaveFileManager : MonoBehaviour
     //Called by BackToMenu function in ButtonFunctions Script. When a player goes back to the main menu, it sets loadData to false so if the player starts a new game it won't try to load data
     public void SetLoadDataFalse()
     {
-        Debug.Log("Before " + loadData);
         loadData = false;
-        Debug.Log("After " + loadData);
     }
 
     //Saves the game
