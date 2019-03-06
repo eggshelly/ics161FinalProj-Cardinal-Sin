@@ -308,7 +308,6 @@ MonoBehaviour:
   namePanel: {fileID: 1448700749}
   spritePanel: {fileID: 806953505}
   initialText: 0
-  activeFade: 0
   dialogueAvailable: 0
   DoneWithDialogue:
     m_PersistentCalls:
@@ -1397,7 +1396,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &595133855
 Transform:
   m_ObjectHideFlags: 0
@@ -1647,7 +1646,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708545928}
-  m_LocalRotation: {x: -3.3333578e-31, y: 0.000000030165822, z: 6.352921e-19, w: 1}
+  m_LocalRotation: {x: -3.3692433e-31, y: 0.000000030165822, z: 6.4204353e-19, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3873,18 +3872,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1614763268}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 23808603}
-        m_MethodName: LoadDialogue
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: SPRING 1
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1614763268
@@ -3942,7 +3930,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1630258299
 Transform:
   m_ObjectHideFlags: 0
@@ -5052,7 +5040,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
