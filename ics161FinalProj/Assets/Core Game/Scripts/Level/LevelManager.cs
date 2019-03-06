@@ -32,6 +32,7 @@ public class LevelManager : MonoBehaviour
     void Awake()
     {
         FinishedLevel = new UnityEvent();
+        StartCoroutine(TransitionManager.instance.FadeToLevel(1.5f));
     }
 
     private void Start()
