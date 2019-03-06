@@ -31,29 +31,45 @@ public class StagePanelScript : MonoBehaviour
         collectibleImages = new List<Image>();
         stage = GameObject.FindGameObjectWithTag("StageHub").GetComponent<StageHubScript>();
         EnterStage.onClick.AddListener(delegate { DialogueManager.instance.LoadDialogue(currentStage); });
+        EnterStage.onClick.AddListener(delegate { ClosePanel(); });
     }
 
     public void OpenPanel(string stageName, int sIndex, int sLevel, bool[] collectibles)
     {
-        SetButtonInteract(sLevel);
         StagePanel.SetActive(true);
         headerText.text = stageName;
         currentStage = stageName;
         currentStageIndex = sIndex;
         currentStageLevel = sLevel;
+        SetButtonInteract(sLevel);
+        if (stage.hasFinishedLevel(sIndex, sLevel))
+        {
+            EnterStage.interactable = false;
+        }
+        else
+        {
+            EnterStage.interactable = true;
+        }
         CreateCollectibles(collectibles); //Creates the collectibles sprite (filled and/or empty) on the panel
     }
 
     public void UpdatePanel(int sLevel, bool[] collectibles)
     {
-        SetButtonInteract(sLevel);
         currentStageLevel = sLevel;
         currentStage = currentStage.Substring(0, headerText.text.Length - 1) + sLevel;
         headerText.text = currentStage;
+        SetButtonInteract(sLevel);
+        if (stage.hasFinishedLevel(currentStageIndex, currentStageLevel))
+        {
+            EnterStage.interactable = false;
+        }
+        else
+        {
+            EnterStage.interactable = true;
+        }
         CreateCollectibles(collectibles);
     }
       
-     
 
     void SetButtonInteract(int level)
     {
@@ -66,7 +82,7 @@ public class StagePanelScript : MonoBehaviour
         {
             prevLevel.interactable = true;
         }
-        if (level == 4)
+        if (level == 4 || !stage.hasFinishedLevel(currentStageIndex, currentStageLevel))
         {
             if(nextLevel.interactable == true)
                 nextLevel.interactable = false;

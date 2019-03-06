@@ -33,6 +33,8 @@ public class Stage : MonoBehaviour
 
     bool[] collectibles; //collectibles for the stage
 
+    Dictionary<int, bool> hasFinishedLevel;
+
     private void Awake()
     {
         //Events to be called
@@ -43,6 +45,8 @@ public class Stage : MonoBehaviour
 
 
         allCollectibles = new Dictionary<int, bool[]>();
+        hasFinishedLevel = new Dictionary<int, bool>();
+        SetLevelBools();
         ResetCollectibles();
         currentLevel = 1;
         player = GameObject.FindGameObjectWithTag("Player");
@@ -54,6 +58,15 @@ public class Stage : MonoBehaviour
     {
         return allCollectibles[currentLevel];
     }
+
+    void SetLevelBools()
+    {
+        for(int i = 1; i < 5; ++i)
+        {
+            hasFinishedLevel[i] = false;
+        }
+    }
+
 
     //Initially sets its collectibles to all false - no collectibles have been obtained yet
     void ResetCollectibles()
@@ -99,6 +112,7 @@ public class Stage : MonoBehaviour
     //Called by PlayerMapInteraction - Passes this information to StageHubScript
     public void EnterStage()
     {
+        
         StageEntered.Invoke(GetName(), stageIndex, currentLevel, allCollectibles[currentLevel]);
     }
 
@@ -114,6 +128,7 @@ public class Stage : MonoBehaviour
 
     public int NextLevel(int level)
     {
+        FinishedLevel(level);
         currentLevel = level + 1;
         return currentLevel;
     }
@@ -129,6 +144,34 @@ public class Stage : MonoBehaviour
         return gameObject.name + " " + currentLevel;
     }
 
+    public bool levelComplete(int level)
+    {
+        //Debug.Log(level);
+        return hasFinishedLevel[level];
+    }
+
+    public bool[] GetLevelStatus()
+    {
+        List<bool> l = new List<bool>();
+        foreach(bool b in hasFinishedLevel.Values)
+        {
+            l.Add(b);
+        }
+        return l.ToArray();
+    }
+
+    public void SetLevelStatus(bool[] status)
+    {
+        for(int i = 0; i < status.Length; ++i)
+        {
+            hasFinishedLevel[i + 1] = status[i];
+        }
+    }
+
+    void FinishedLevel(int level)
+    {
+        hasFinishedLevel[level] = true;
+    }
     
 
 

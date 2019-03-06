@@ -116,7 +116,7 @@ public class SaveFileManager : MonoBehaviour
                 LevelData level = SaveFileScript.LoadLevel(currentButton);
                 Vector3 loadedPos = new Vector3(level.position[0], level.position[1], level.position[2]);
                 player.transform.position = loadedPos;
-                stageHub.loadStages(level.stageCollectibles);
+                stageHub.loadStages(level.stageCollectibles, level.finishedLevels);
                 DialogueManager.instance.hasDoneIntro = level.introCompleted;
 
             }

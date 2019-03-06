@@ -68,14 +68,16 @@ public class StageHubScript : MonoBehaviour
 
 
     //Called by SaveFileManager when data is loaded. Passes in the stored lists of collectibles and stores it.
-    public void loadStages(bool[][][] stagesCollectibles)
+    public void loadStages(bool[][][] stagesCollectibles, bool[][] levelStatus)
     {
         Stage s;
         for (int i = 0; i < stagesCollectibles.Length; ++i)
         {
             s = allStages[i];
+            s.SetLevelStatus(levelStatus[i]);
             for(int j = 0; j < stagesCollectibles[i].Length; ++j)
-                allStageCollectibles[allStages[i]][j] = stagesCollectibles[i][j];   
+                allStageCollectibles[allStages[i]][j] = stagesCollectibles[i][j];  
+            
         }
         UpdateAllStages();
     }
@@ -119,6 +121,7 @@ public class StageHubScript : MonoBehaviour
     {
         if (currentStage != null)
         {
+            panel.ClosePanel();
             player.GetComponent<PlayerMapMovement>().enabled = false;
             player.GetComponent<PlayerMapInteraction>().enabled = false;
             FindObjectOfType<AudioManager>().Stop("TestMap");
@@ -136,6 +139,21 @@ public class StageHubScript : MonoBehaviour
     {
         int cLevel = allStages[index].NextLevel(level);
         panel.UpdatePanel(cLevel, allStages[index].GetLevelCollectibles()); 
+    }
+
+    public bool hasFinishedLevel(int index, int level)
+    {
+        return allStages[index].levelComplete(level);
+    }
+
+    public List<bool[]> GetAllStageLevelStatus()
+    {
+        List<bool[]> l = new List<bool[]>();
+        foreach(Stage s in allStages)
+        {
+            l.Add(s.GetLevelStatus());
+        }
+        return l;
     }
 
     public void BackToMap()
