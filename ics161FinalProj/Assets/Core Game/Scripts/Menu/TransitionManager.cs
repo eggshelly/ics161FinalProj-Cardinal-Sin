@@ -23,6 +23,7 @@ public class TransitionManager : MonoBehaviour
     public IEnumerator FadeToBlack(float duration)
     {
         animator.SetTrigger("FadeOut");
+        Debug.Log("Fading out.");
 
         yield return new WaitForSeconds(duration);
     }
@@ -30,7 +31,7 @@ public class TransitionManager : MonoBehaviour
     public IEnumerator FadeToLevel(float duration)
     {
         animator.SetTrigger("FadeIn");
-
+        Debug.Log("Fading in.");
         yield return new WaitForSeconds(duration);
     }
 }

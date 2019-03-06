@@ -36,7 +36,7 @@ public class LevelManager : MonoBehaviour
     }
 
     private void Start()
-    {
+    {  
         SetDeathBlockListener();
         playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerLevelMovement>();
         playerInteraction = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerLevelInteraction>();
@@ -86,6 +86,7 @@ public class LevelManager : MonoBehaviour
         playerInteraction.enabled = false;
         playerMovement.enabled = false;
         FindObjectOfType<AudioManager>().Stop("SPRING"); //this needs to be replaced with a variable holding the current song being played
+        StartCoroutine(TransitionManager.instance.FadeToBlack(1f));
         StartCoroutine(BackToMapCR()); 
     }
 
@@ -151,7 +152,5 @@ public class LevelManager : MonoBehaviour
         playerInteraction.enabled = true;
         SaveFileManager.instance.AddCollectablesCountToCurrentState(collected);
         SceneManager.LoadScene("TestMap");
-
-
     }
 }

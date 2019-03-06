@@ -127,6 +127,7 @@ public class SaveFileManager : MonoBehaviour
             }
             if (finishedAStage)
             {
+                StartCoroutine(TransitionManager.instance.FadeToLevel(2f));
                 string path = string.Format("{0} ", currentStageName);      //create the string to be the name of the current stage followed by the stage number
                 if(isStageCompleted)
                     path += "GOOD END";
