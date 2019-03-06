@@ -5,6 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class ButtonFunctions : MonoBehaviour
 {
+    GameObject player;
+
+    void Start()
+    {
+        player = GameObject.Find("Player");
+    }
+    
 
     public void QuitGame()
     {
@@ -17,6 +24,7 @@ public class ButtonFunctions : MonoBehaviour
     }
     public void BackToMenu()
     {
+        Time.timeScale = 1;
         StartCoroutine(LoadMainScreen());
     }
 
@@ -58,6 +66,8 @@ public class ButtonFunctions : MonoBehaviour
 
     public IEnumerator LoadMainScreen()
     {
+        player.GetComponent<PlayerMapMovement>().enabled = false;
+        player.GetComponent<PlayerMapInteraction>().enabled = false;
         yield return StartCoroutine(TransitionManager.instance.FadeToBlack(1.5f));
         SceneManager.LoadScene("MainMenu");
         yield return StartCoroutine(TransitionManager.instance.FadeToLevel(1.5f));
