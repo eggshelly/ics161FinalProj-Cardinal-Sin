@@ -5,13 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class ButtonFunctions : MonoBehaviour
 {
-    GameObject player;
-
-    void Start()
-    {
-    }
-    
-
     public void QuitGame()
     {
         Application.Quit();
@@ -24,12 +17,13 @@ public class ButtonFunctions : MonoBehaviour
     public void BackToMenu()
     {
         Time.timeScale = 1;
+        FindObjectOfType<AudioManager>().Stop("TestMap");
         StartCoroutine(LoadMainScreen());
     }
 
     public void StartGame()
     {
-        FindObjectOfType<AudioManager>().Stop("Opening");
+        FindObjectOfType<AudioManager>().Stop("MainMenu");
         StartCoroutine(StartGameCR());
     }
 
