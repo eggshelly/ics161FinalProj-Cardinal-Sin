@@ -27,6 +27,7 @@ public class DialogueManager : MonoBehaviour
     public UnityEvent DoneWithDialogue;
 
     public bool hasDoneIntro = false;
+    private Sprite currentSprite = null;
 
     private void Awake()
     {
@@ -83,6 +84,7 @@ public class DialogueManager : MonoBehaviour
                 initialText = 0;
                 HidePanels();
                 textOutput.Clear();
+                currentSprite = null;
                 DoneWithDialogue.Invoke();
             }
         }
@@ -93,7 +95,7 @@ public class DialogueManager : MonoBehaviour
                 HidePanels();
                 initialText = 0;
                 dialogueAvailable = false;
-
+                currentSprite = null;
                 DoneWithDialogue.Invoke();
             }
             else if (Input.GetKeyDown(KeyCode.Space) && spaceDelay)
@@ -103,7 +105,7 @@ public class DialogueManager : MonoBehaviour
                 HidePanels();
                 initialText = 0;
                 dialogueAvailable = false;
-
+                currentSprite = null;
                 DoneWithDialogue.Invoke();
             }
         }
@@ -171,14 +173,20 @@ public class DialogueManager : MonoBehaviour
         if (DialogueObj.speaker.Length == 1) //monologue: set namePanel to invisible and text to italic
         {
             namePanel.SetActive(false);
-            spritePanel.SetActive(true);
+            if(currentSprite == null)
+                spritePanel.SetActive(false);
+            else
+                spritePanel.SetActive(true);
             dialogueText.fontStyle = FontStyles.Italic;
         }
         else if (DialogueObj.speaker.Length == 2) //for MC talking: name and sprite panel are both visible, showing MC name and girl he talks to
         {
             namePanel.SetActive(true);
             nameText.text = DialogueObj.speaker;
-            spritePanel.SetActive(true);
+            if(currentSprite == null)
+                spritePanel.SetActive(false);
+            else
+                spritePanel.SetActive(true);
 
 
         }
@@ -195,7 +203,8 @@ public class DialogueManager : MonoBehaviour
                     StartCoroutine(TransitionManager.instance.FadeToLevel(2f));
                     introTransition = true;
                 }
-                spritePanel.GetComponent<Image>().sprite = Resources.Load<Sprite>(filePath) as Sprite;
+                currentSprite = Resources.Load<Sprite>(filePath) as Sprite;
+                spritePanel.GetComponent<Image>().sprite = currentSprite;
             }
 
             spritePanel.SetActive(true);
