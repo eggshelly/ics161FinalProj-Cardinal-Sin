@@ -85,7 +85,7 @@ public class LevelManager : MonoBehaviour
         Time.timeScale = 1;    //allows the fade coroutine to run when player wants to quit back to map
         playerInteraction.enabled = false;
         playerMovement.enabled = false;
-        FindObjectOfType<AudioManager>().Stop("SPRING"); //this needs to be replaced with a variable holding the current song being played
+        FindObjectOfType<AudioManager>().Stop(AudioManager.instance.currentSong.name); 
         StartCoroutine(TransitionManager.instance.FadeToBlack(1f));
         StartCoroutine(BackToMapCR()); 
     }

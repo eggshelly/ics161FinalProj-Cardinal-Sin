@@ -8,8 +8,6 @@ using System.Linq;
 
 public class AudioManager : MonoBehaviour
 {
-    //[HideInInspector]
-    //public Sound s;
     public float fadeInTime;  //affects how long it takes to fade audio
     public float fadeOutTime;
     public Sound[] sounds;
@@ -18,6 +16,8 @@ public class AudioManager : MonoBehaviour
     private IEnumerator fadeOut;
     [HideInInspector]
     public bool CR_running = false;
+    [HideInInspector]
+    public Sound currentSong;
 
     void Awake()
     {
@@ -39,14 +39,11 @@ public class AudioManager : MonoBehaviour
             track.source.loop = track.loop;
         }
     }
-    void Start()
-    {
-        
-    }
 
     public void Play (string name)  //s.source.volume will adjust actual volume. s.volume will adjust initial value which has no meaning here
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
+        currentSong = s;
         fadeIn = FadeIn(s);     //we assign coroutines only when we start the song. These same references are used when we stop the song
         fadeOut = FadeOut(s);
         if(s == null)

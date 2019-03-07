@@ -126,7 +126,7 @@ public class StageHubScript : MonoBehaviour
             panel.ClosePanel();
             player.GetComponent<PlayerMapMovement>().enabled = false;
             player.GetComponent<PlayerMapInteraction>().enabled = false;
-            FindObjectOfType<AudioManager>().Stop("TestMap");
+            FindObjectOfType<AudioManager>().Stop(AudioManager.instance.currentSong.name);
             StartCoroutine(DoneDialogueCR());
             StartCoroutine(TransitionManager.instance.FadeToBlack(4f));
         }

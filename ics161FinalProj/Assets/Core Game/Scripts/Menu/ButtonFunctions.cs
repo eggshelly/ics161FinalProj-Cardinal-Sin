@@ -17,13 +17,13 @@ public class ButtonFunctions : MonoBehaviour
     public void BackToMenu()
     {
         Time.timeScale = 1;
-        FindObjectOfType<AudioManager>().Stop("TestMap");
+        FindObjectOfType<AudioManager>().Stop(AudioManager.instance.currentSong.name);
         StartCoroutine(LoadMainScreen());
     }
 
     public void StartGame()
     {
-        FindObjectOfType<AudioManager>().Stop("MainMenu");
+        FindObjectOfType<AudioManager>().Stop(AudioManager.instance.currentSong.name);
         StartCoroutine(StartGameCR());
     }
 
