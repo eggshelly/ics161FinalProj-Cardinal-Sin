@@ -6063,13 +6063,20 @@ MonoBehaviour:
     volume: 0
     pitch: 1
     source: {fileID: 0}
-  - name: TestMap
+  - name: INTRODUCTION
     loop: 1
     clip: {fileID: 8300000, guid: 839a8e35aec336a4e81310e1f167fdaa, type: 3}
     volume: 0
     pitch: 1
     source: {fileID: 0}
   CR_running: 0
+  currentSong:
+    name: 
+    loop: 0
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
 --- !u!4 &1428112524
 Transform:
   m_ObjectHideFlags: 0

@@ -170,6 +170,10 @@ public class DialogueManager : MonoBehaviour
         string filePath = "Art/Portraits/";
         string spriteName = DialogueObj.sprite.ToString().Trim();
 
+
+        if(AudioManager.instance.currentSong.name != DialogueObj.audio && DialogueObj.audio != null)
+            FindObjectOfType<AudioManager>().DialogueTransitionSong(DialogueObj.audio);    //music changes during dialogue
+
         if (DialogueObj.speaker.Length == 1) //monologue: set namePanel to invisible and text to italic
         {
             namePanel.SetActive(false);

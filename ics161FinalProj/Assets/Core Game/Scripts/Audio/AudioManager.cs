@@ -45,7 +45,7 @@ public class AudioManager : MonoBehaviour
         Sound s = Array.Find(sounds, sound => sound.name == name);
         currentSong = s;
         fadeIn = FadeIn(s);     //we assign coroutines only when we start the song. These same references are used when we stop the song
-        fadeOut = FadeOut(s);
+        fadeOut = FadeOut(s);   //this is used to hard stop the last coroutine in case the player spam clicks
         if(s == null)
         {
             Debug.Log("ERROR: Sound not found");
@@ -65,7 +65,8 @@ public class AudioManager : MonoBehaviour
             return;
         }
         StopCoroutine(fadeIn);  
-        StartCoroutine(fadeOut);
+        if(s.source.isPlaying)
+            StartCoroutine(fadeOut);
     }
     public IEnumerator FadeOut(Sound s)
     {
@@ -91,4 +92,17 @@ public class AudioManager : MonoBehaviour
         }
         CR_running = false;
     }    
+
+    public void DialogueTransitionSong(string songToPlay)
+    {
+        if(currentSong != null)
+            Stop(currentSong.name);
+        StartCoroutine(WaitForAudioFade());
+        Play(songToPlay);
+    }
+    public IEnumerator WaitForAudioFade()   //this function will force the fade to only run when the last fade has completed
+    {
+        while(CR_running)
+            yield return null;
+    }
 }
