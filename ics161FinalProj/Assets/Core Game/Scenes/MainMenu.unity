@@ -6036,7 +6036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 063cabaaf06186a4dae4c259f26c3277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeInTime: 4
+  fadeInTime: 2.1
   fadeOutTime: 2.1
   sounds:
   - name: MainMenu
@@ -6066,6 +6066,12 @@ MonoBehaviour:
   - name: INTRODUCTION
     loop: 1
     clip: {fileID: 8300000, guid: 839a8e35aec336a4e81310e1f167fdaa, type: 3}
+    volume: 0
+    pitch: 1
+    source: {fileID: 0}
+  - name: CG_intro
+    loop: 1
+    clip: {fileID: 8300000, guid: 07c16b72896e2a043a04e7e53f69a5a9, type: 3}
     volume: 0
     pitch: 1
     source: {fileID: 0}

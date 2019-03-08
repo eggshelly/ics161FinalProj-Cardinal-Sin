@@ -44,6 +44,7 @@ public class AudioManager : MonoBehaviour
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
         currentSong = s;
+        //s.source.volume = 0f;   //makes sure we always start at zero if last coroutine didnt finish. Take out this line if not necessary
         fadeIn = FadeIn(s);     //we assign coroutines only when we start the song. These same references are used when we stop the song
         fadeOut = FadeOut(s);   //this is used to hard stop the last coroutine in case the player spam clicks
         if(s == null)
