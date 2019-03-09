@@ -54,9 +54,9 @@ public class Stage : MonoBehaviour
         origColor = m_SpriteRenderer.color;
     }
 
-    public bool[] GetLevelCollectibles()
+    public bool[] GetLevelCollectibles(int level)
     {
-        return allCollectibles[currentLevel];
+        return allCollectibles[level];
     }
 
     void SetLevelBools()
@@ -128,7 +128,7 @@ public class Stage : MonoBehaviour
 
     public int NextLevel(int level)
     {
-        FinishedLevel(level);
+        hasFinishedLevel[level] = true;
         currentLevel = level + 1;
         return currentLevel;
     }
@@ -146,7 +146,6 @@ public class Stage : MonoBehaviour
 
     public bool levelComplete(int level)
     {
-        //Debug.Log(level);
         return hasFinishedLevel[level];
     }
 
@@ -166,11 +165,6 @@ public class Stage : MonoBehaviour
         {
             hasFinishedLevel[i + 1] = status[i];
         }
-    }
-
-    void FinishedLevel(int level)
-    {
-        hasFinishedLevel[level] = true;
     }
     
 

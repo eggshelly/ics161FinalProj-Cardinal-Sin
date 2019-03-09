@@ -23,6 +23,7 @@ public class SaveFileManager : MonoBehaviour
     public string currentStageName; //The Stage's name is also the name of the scene. This keeps track of what Stage/Scene was just finished 
     int currentStageLevel;
     bool[] currentStageCollectibles; //Keeps track of the list of collectibles from the finished stage (each index refers to one collectible, true if collected, false if not)
+    LevelData data;
 
     Vector3 playerPos; //Keeps track of the position of the player prior to entering the stage. Once the stage is finished the player is moved to this location
 
@@ -63,7 +64,6 @@ public class SaveFileManager : MonoBehaviour
     public void SaveGame()
     {
         SaveFileScript.SaveLevel(currentButton, player.transform.position, stageHub, DialogueManager.instance);
-        LoadDataForLevel();
     }
 
 
@@ -113,16 +113,18 @@ public class SaveFileManager : MonoBehaviour
         }
         else if (loadedScene == SceneManager.GetSceneByName("TestMap"))
         {
+            //StartCoroutine(TransitionManager.instance.FadeToLevel(2f));
             player = GameObject.FindGameObjectWithTag("Player");
             stageHub = GameObject.FindGameObjectWithTag("StageHub").GetComponent<StageHubScript>();
             if (loadData)
             {
+                StartCoroutine(TransitionManager.instance.FadeToLevel(2f));
                 LevelData level = SaveFileScript.LoadLevel(currentButton);
                 Vector3 loadedPos = new Vector3(level.position[0], level.position[1], level.position[2]);
                 player.transform.position = loadedPos;
                 stageHub.loadStages(level.stageCollectibles, level.finishedLevels);
                 DialogueManager.instance.hasDoneIntro = level.introCompleted;
-                StartCoroutine(TransitionManager.instance.FadeToLevel(2f));
+                
 
             }
             if (finishedAStage)
@@ -134,13 +136,19 @@ public class SaveFileManager : MonoBehaviour
                 else
                     path += "BAD END";
 
-                Debug.Log(path);
                 DialogueManager.instance.LoadDialogue(path);
+                Vector3 loadedPos = new Vector3(data.position[0], data.position[1], data.position[2]);
+                player.transform.position = loadedPos;
+                stageHub.loadStages(data.stageCollectibles, data.finishedLevels);
                 stageHub.UpdateFinishedStage(currentStage, currentStageLevel, currentStageCollectibles);
-                player.transform.position = playerPos;
                 finishedAStage = false;
             }
         }
+    }
+
+    public void SaveTempInfo()
+    {
+        data = new LevelData(Vector3.zero, stageHub, DialogueManager.instance);
     }
 
 

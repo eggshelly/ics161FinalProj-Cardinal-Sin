@@ -69,9 +69,7 @@ public class StageHubScript : MonoBehaviour
 
     //Called by SaveFileManager when data is loaded. Passes in the stored lists of collectibles and stores it.
     public void loadStages(bool[][][] stagesCollectibles, bool[][] levelStatus)
-    {
-        Debug.Log(stagesCollectibles.Length);
-        Debug.Log(allStages.Length);
+    { 
         Stage s;
         for (int i = 0; i < stagesCollectibles.Length; ++i)
         {
@@ -136,16 +134,14 @@ public class StageHubScript : MonoBehaviour
     {
         int cLevel = allStages[index].PrevLevel(level);
         currentStage = currentStage.Substring(0, currentStage.Length - 1) + cLevel;
-        Debug.Log(currentStage);
-        panel.UpdatePanel(cLevel, allStages[index].GetLevelCollectibles()); 
+        panel.UpdatePanel(cLevel, allStages[index].GetLevelCollectibles(cLevel)); 
     }
 
     public void NextLevel(int index, int level)
     {
         int cLevel = allStages[index].NextLevel(level);
         currentStage = currentStage.Substring(0, currentStage.Length - 1) + cLevel;
-        Debug.Log(currentStage);
-        panel.UpdatePanel(cLevel, allStages[index].GetLevelCollectibles()); 
+        panel.UpdatePanel(cLevel, allStages[index].GetLevelCollectibles(cLevel)); 
     }
 
     public bool hasFinishedLevel(int index, int level)
@@ -170,14 +166,14 @@ public class StageHubScript : MonoBehaviour
 
     public IEnumerator DoneDialogueCR()
     {
-        Debug.Log(currentStage);
         while(AudioManager.instance.CR_running)
         {
             yield return null;
         }
         player.GetComponent<PlayerMapMovement>().enabled = true;
         player.GetComponent<PlayerMapInteraction>().enabled = true;
-        SaveFileManager.instance.SaveCurrentPosition();
+        //SaveFileManager.instance.SaveCurrentPosition();
+        SaveFileManager.instance.SaveTempInfo();
         SceneManager.LoadScene(currentStage);
 
     }
