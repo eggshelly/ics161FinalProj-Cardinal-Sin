@@ -15,6 +15,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject stagePanel;
     public GameObject namePanel;
     public GameObject spritePanel;
+    public GameObject bgPanel;
 
     private Queue<Dialogue> textOutput;
     public int initialText = 0;    //if initialText is -1, then a sentence can start as the dialoguePanel is set to true
@@ -28,6 +29,7 @@ public class DialogueManager : MonoBehaviour
 
     public bool hasDoneIntro = false;
     private Sprite currentSprite = null;
+    //private string currentBGPath = "";
 
     private void Awake()
     {
@@ -116,6 +118,7 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(false);
         namePanel.SetActive(false);
         spritePanel.SetActive(false);
+        bgPanel.SetActive(false);
     }
 
     private Dictionary<int, Dialogue> BuildDialogueDictionary(TextAsset textFile) //converts CSV file to dictionary
@@ -169,10 +172,23 @@ public class DialogueManager : MonoBehaviour
         dialogueText.fontStyle = FontStyles.Normal;
         string filePath = "Art/Portraits/";
         string spriteName = DialogueObj.sprite.ToString().Trim();
+        string backgroundName = DialogueObj.background.ToString().Trim();
+        string bgFilepath = "Art/";
 
 
         if(AudioManager.instance.currentSong.name != DialogueObj.audio && DialogueObj.audio != null)
             FindObjectOfType<AudioManager>().DialogueTransitionSong(DialogueObj.audio);    //music changes during dialogue
+        if(backgroundName != "default")
+        {
+            bgFilepath = BGStringBuilder(bgFilepath, backgroundName, DialogueObj);
+            //currentBGPath = bgFilepath;
+            bgPanel.GetComponent<Image>().sprite = Resources.Load(bgFilepath) as Sprite;
+            bgPanel.SetActive(true);
+        }
+        else
+            bgPanel.SetActive(false);
+            
+
 
         if (DialogueObj.speaker.Length == 1) //monologue: set namePanel to invisible and text to italic
         {
@@ -220,5 +236,17 @@ public class DialogueManager : MonoBehaviour
             yield return null;  
         }
         spaceDelay = false;
+    }
+
+    public string BGStringBuilder(string filePath, string backgroundName, Dialogue DO)
+    {
+        string[] splitString = backgroundName.Split(' ');
+        if(splitString[0] == "BG")
+        {
+            return string.Format("{0}{1}/{2}", filePath, "BG", splitString[2]);
+        }
+        else{
+            return string.Format("{0}{1}/{2}", filePath, "CG", DO.speaker, splitString[2]);
+        }
     }
 }
