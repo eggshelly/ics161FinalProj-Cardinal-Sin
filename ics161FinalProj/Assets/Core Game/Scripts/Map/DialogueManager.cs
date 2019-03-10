@@ -243,9 +243,11 @@ public class DialogueManager : MonoBehaviour
         string[] splitString = backgroundName.Split(' ');
         if(splitString[0] == "BG")
         {
+            spritePanel.SetActive(true);
             return string.Format("{0}{1}/{2}", filePath, "BG", splitString[2]);
         }
         else{
+            spritePanel.SetActive(false);
             return string.Format("{0}{1}/{2}", filePath, "CG", DO.speaker, splitString[2]);
         }
     }
