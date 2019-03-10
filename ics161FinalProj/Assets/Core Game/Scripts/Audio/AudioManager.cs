@@ -60,6 +60,7 @@ public class AudioManager : MonoBehaviour
     public void Stop(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
+        currentSong = null;
         if(s == null)
         {
             Debug.Log("ERROR: Sound not found to stop");
