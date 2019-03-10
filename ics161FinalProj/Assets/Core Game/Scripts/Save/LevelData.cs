@@ -6,6 +6,11 @@ using UnityEngine;
 public class LevelData
 
 {
+    //for keeping track of what day and week it is
+    public int day;
+    public int week;
+
+
     //for the player
     public float[] position;
 
@@ -22,7 +27,7 @@ public class LevelData
     public bool[][] finishedLevels;
 
     //Constructs the LevelData object which stores all the information that should be saved and later retrieved
-    public LevelData(Vector3 playerPos, StageHubScript stageHub, DialogueManager manager)
+    public LevelData(Vector3 playerPos, StageHubScript stageHub, DialogueManager manager, TimeManager time)
     {
         position = new float[3];
         position[0] = playerPos.x;
@@ -40,6 +45,9 @@ public class LevelData
         finishedLevels = stageHub.GetAllStageLevelStatus().ToArray();
 
         introCompleted = manager.hasDoneIntro;
+
+        day = time.GetCurrentDay();
+        week = time.GetCurrentWeek();
         
     }
 }

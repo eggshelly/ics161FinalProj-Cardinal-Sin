@@ -10,13 +10,13 @@ public static class SaveFileScript
      * Creates a new level data object, which contains a series of public variables 
      * The public variables are then serialized then stored in the file
      */
-    public static void SaveLevel(string buttonName, Vector3 playerPos, StageHubScript stageHub, DialogueManager manager)
+    public static void SaveLevel(string buttonName, Vector3 playerPos, StageHubScript stageHub, DialogueManager manager, TimeManager time)
     {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + string.Format("/{0}.csin", buttonName);
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        LevelData l = new LevelData(playerPos, stageHub, manager);
+        LevelData l = new LevelData(playerPos, stageHub, manager, time);
 
         formatter.Serialize(stream, l);
         stream.Close();

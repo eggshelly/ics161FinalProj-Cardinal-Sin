@@ -63,7 +63,7 @@ public class SaveFileManager : MonoBehaviour
     //Saves the game
     public void SaveGame()
     {
-        SaveFileScript.SaveLevel(currentButton, player.transform.position, stageHub, DialogueManager.instance);
+        SaveFileScript.SaveLevel(currentButton, player.transform.position, stageHub, DialogueManager.instance, TimeManager.instance);
     }
 
 
@@ -83,8 +83,9 @@ public class SaveFileManager : MonoBehaviour
         if(!loadData)
         {
             if (DialogueManager.instance != null)
-            { 
+            {
                 Destroy(DialogueManager.instance.gameObject);
+                Destroy(TimeManager.instance.gameObject);
             }
         }
     }
@@ -124,6 +125,7 @@ public class SaveFileManager : MonoBehaviour
                 player.transform.position = loadedPos;
                 stageHub.loadStages(level.stageCollectibles, level.finishedLevels);
                 DialogueManager.instance.hasDoneIntro = level.introCompleted;
+                TimeManager.instance.SetDay(level.week, level.day);
                 
 
             }
@@ -141,6 +143,7 @@ public class SaveFileManager : MonoBehaviour
                 player.transform.position = loadedPos;
                 stageHub.loadStages(data.stageCollectibles, data.finishedLevels);
                 stageHub.UpdateFinishedStage(currentStage, currentStageLevel, currentStageCollectibles);
+                TimeManager.instance.NextDay();
                 finishedAStage = false;
             }
         }
@@ -148,7 +151,7 @@ public class SaveFileManager : MonoBehaviour
 
     public void SaveTempInfo()
     {
-        data = new LevelData(Vector3.zero, stageHub, DialogueManager.instance);
+        data = new LevelData(Vector3.zero, stageHub, DialogueManager.instance, TimeManager.instance);
     }
 
 
