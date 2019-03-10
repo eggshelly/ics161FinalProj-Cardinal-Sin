@@ -48,15 +48,16 @@ def run(file):
 def makecsv(title:str, text:str):
     dialogue_map = dict()
     if os.path.isfile(f"./{title}.csv"):  #already in directory
-        skippedFirst  = False
-
-        with open(f"./{title}.csv") as csvfile:
-            filereader = csv.reader(csvfile,delimiter=',')
-            for line in filereader:
-                if line != [] and skippedFirst:
-                    dialogue_map.update({line[1]:{"sprite":line[2], "audio":line[3], "background":line[4]}})
-                    
-                skippedFirst = True
+        title += "_NEW"
+##        skippedFirst  = False
+##
+##        with open(f"./{title}.csv") as csvfile:
+##            filereader = csv.reader(csvfile,delimiter=',')
+##            for line in filereader:
+##                if line != [] and skippedFirst:
+##                    dialogue_map.update({line[1]:{"sprite":line[2], "audio":line[3], "background":line[4]}})
+##                    
+##                skippedFirst = True
 
 
     with open(f"{title}.csv", "w") as csvfile:
