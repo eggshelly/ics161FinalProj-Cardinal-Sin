@@ -1,0 +1,21 @@
+SPEAKER,CONVO,SPRITE,AUDIO,BACKGROUND
+,,,,
+MC,…,none,AUTUMN,BG cafe
+,,,,
+M,I couldn’t think of anything. I guess I’ll just play it off…,default,AUTUMN,BG cafe
+,,,,
+MC,Here are the tissues by the way. I think you left them here earlier.,none,AUTUMN,BG cafe
+,,,,
+Akiko,Oh! Woops~,default,AUTUMN,BG cafe
+,,,,
+M,Her surprised expression couldn’t fool me. She left them here on purpose… I feel bad.,default,AUTUMN sad,BG cafe
+,,,,
+MC,Thank you for the teaXYZ Akiko. You seem quite busy soXYZ I’ll get going.,none,AUTUMN sad,BG cafe
+,,,,
+M,Akiko smiles in an understanding way. I can’t tell if she looks disappointed or just tired. Or both.,default,AUTUMN sad,BG cafe
+,,,,
+Akiko,Sure thing. Come by anytimeXYZ okay?,default,AUTUMN sad,BG cafe
+,,,,
+M,I say my goodbyes and leave the cozy little coffee shop. I stand alone in the afternoon breeze.,default,AUTUMN sad,BG grass2
+,,,,
+M,SomehowXYZ it felt even colder.,default,AUTUMN sad,BG grass2

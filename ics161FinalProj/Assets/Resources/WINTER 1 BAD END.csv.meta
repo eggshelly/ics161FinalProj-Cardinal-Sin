@@ -1,11 +1,10 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
-guid: f4f6003e59baceb49812071a909a7b20
+guid: 2514383ecf6256a46a753d0171785e23
 =======
-guid: 7633912b06071e749874c92a8cce73fe
+guid: 508bcf606607b5745b9e0ad0e25c67f5
 >>>>>>> fab99dedfb88d5603108be49c9a25c2983865810
-folderAsset: yes
-DefaultImporter:
+TextScriptImporter:
   externalObjects: {}
   userData: 
   assetBundleName: 
