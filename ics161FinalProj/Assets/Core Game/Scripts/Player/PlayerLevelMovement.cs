@@ -72,6 +72,15 @@ public class PlayerLevelMovement : MonoBehaviour
                 animator.SetFloat("VelocityY", 0);
             }
         }
+        else
+        {
+            if (animator.GetFloat("VelocityX") != 0 || animator.GetFloat("VelocityY") != 0)
+            {
+                animator.SetFloat("VelocityX", 0);
+                animator.SetFloat("VelocityY", 0);
+                m_RigidBody2D.velocity = new Vector2(0, m_RigidBody2D.velocity.y);
+            }
+        }
     }
 
     //Sets player's velocity and flips the character depending on what direction it is moving 

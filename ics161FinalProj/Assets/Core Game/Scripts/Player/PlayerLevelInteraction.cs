@@ -6,6 +6,8 @@ public class PlayerLevelInteraction : MonoBehaviour
 {
     [SerializeField] float MaxDistanceAway;
 
+    public bool interact { get; set; }
+
     float distanceAwayX;
     float distanceAwayY;
 
@@ -28,16 +30,19 @@ public class PlayerLevelInteraction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E))
+        if (interact)
         {
-            if(ObjectToPull == null)
-                m_LevelMovement.PullingObject(GrabItem());
-            else
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                DetachObject();
+                if (ObjectToPull == null)
+                    m_LevelMovement.PullingObject(GrabItem());
+                else
+                {
+                    DetachObject();
+                }
             }
+            MoveObject();
         }
-        MoveObject();
     }
 
     bool GrabItem()
