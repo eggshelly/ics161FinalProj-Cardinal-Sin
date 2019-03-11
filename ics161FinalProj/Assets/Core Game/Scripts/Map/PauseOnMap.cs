@@ -9,7 +9,7 @@ public class PauseOnMap : MonoBehaviour
 
     GameObject player;
      
-    bool toggled = false;
+    static public bool mapPaused = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +24,7 @@ public class PauseOnMap : MonoBehaviour
         {
             if (!StagePanel.activeInHierarchy)
             {
-                if (!toggled)
+                if (!mapPaused)
                 {
                     Pause();
                 }
@@ -44,14 +44,14 @@ public class PauseOnMap : MonoBehaviour
     {
         Time.timeScale = 0;
         PausePanel.SetActive(true);
-        toggled = true;
+        mapPaused = true;
     }
 
     public void ResumedGame()
     {
         Time.timeScale = 1;
         PausePanel.SetActive(false);
-        toggled = false;
+        mapPaused = false;
     }
 
     public void MainMenu()

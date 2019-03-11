@@ -57,11 +57,11 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(PauseOnMap.mapPaused == false){
         if (textOutput.Count >= 1)
         {
             dialogueAvailable = true;
             dialoguePanel.SetActive(true);            
-
             if (initialText == 0)
             {
                 initialText++;
@@ -89,6 +89,7 @@ public class DialogueManager : MonoBehaviour
                 currentSprite = null;
                 DoneWithDialogue.Invoke();
             }
+
         }
         else if (textOutput.Count == 0)     //if we're on the last sentence, we want to wait for the player to close the dialogue box
         {
@@ -111,9 +112,10 @@ public class DialogueManager : MonoBehaviour
                 DoneWithDialogue.Invoke();
             }
         }
+        }
     }
 
-    private void HidePanels()
+    public void HidePanels()
     {
         dialoguePanel.SetActive(false);
         namePanel.SetActive(false);

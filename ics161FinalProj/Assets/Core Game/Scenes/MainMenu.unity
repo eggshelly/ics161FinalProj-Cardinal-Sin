@@ -6233,6 +6233,12 @@ MonoBehaviour:
     volume: 0
     pitch: 1
     source: {fileID: 0}
+  - name: CG_intro
+    loop: 1
+    clip: {fileID: 8300000, guid: 07c16b72896e2a043a04e7e53f69a5a9, type: 3}
+    volume: 0
+    pitch: 1
+    source: {fileID: 0}
   CR_running: 0
   currentSong:
     name: 
