@@ -29,6 +29,7 @@ public class DialogueManager : MonoBehaviour
 
     public bool hasDoneIntro = false;
     private Sprite currentSprite = null;
+    private Sprite currentBG = null;
     //private string currentBGPath = "";
 
     private void Awake()
@@ -183,8 +184,10 @@ public class DialogueManager : MonoBehaviour
         if(backgroundName != "default")
         {
             bgFilepath = BGStringBuilder(bgFilepath, backgroundName, DialogueObj);
+            Debug.Log(bgFilepath);
             //currentBGPath = bgFilepath;
-            bgPanel.GetComponent<Image>().sprite = Resources.Load(bgFilepath) as Sprite;
+            currentBG = Resources.Load(bgFilepath) as Sprite;
+            bgPanel.GetComponent<Image>().sprite = currentBG;
             bgPanel.SetActive(true);
         }
         else
@@ -225,6 +228,7 @@ public class DialogueManager : MonoBehaviour
                     StartCoroutine(TransitionManager.instance.screenFadeIn);
                     introTransition = true;
                 }
+                Debug.Log(filePath);
                 currentSprite = Resources.Load<Sprite>(filePath) as Sprite;
                 spritePanel.GetComponent<Image>().sprite = currentSprite;
             }
@@ -246,11 +250,11 @@ public class DialogueManager : MonoBehaviour
         if(splitString[0] == "BG")
         {
             spritePanel.SetActive(true);
-            return string.Format("{0}{1}/{2}", filePath, "BG", splitString[2]);
+            return string.Format("{0}{1}/{2}", filePath, "BG", splitString[1]);
         }
         else{
             spritePanel.SetActive(false);
-            return string.Format("{0}{1}/{2}", filePath, "CG", DO.speaker, splitString[2]);
+            return string.Format("{0}{1}/{2}", filePath, "CG", DO.speaker, splitString[1]);
         }
     }
 }

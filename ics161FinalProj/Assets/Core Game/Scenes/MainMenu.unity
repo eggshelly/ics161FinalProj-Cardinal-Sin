@@ -6233,9 +6233,99 @@ MonoBehaviour:
     volume: 0
     pitch: 1
     source: {fileID: 0}
-  - name: CG_intro
+  - name: snowy-roads instrumental
     loop: 1
-    clip: {fileID: 8300000, guid: 07c16b72896e2a043a04e7e53f69a5a9, type: 3}
+    clip: {fileID: 8300000, guid: fc861d2b96acf004caae3d38bc355a35, type: 3}
+    volume: 0
+    pitch: 1
+    source: {fileID: 0}
+  - name: SPRING sad
+    loop: 1
+    clip: {fileID: 8300000, guid: 6a5c43ee61f41dd4e88d199dd91e799e, type: 3}
+    volume: 0
+    pitch: 1
+    source: {fileID: 0}
+  - name: SPRING bittersweet
+    loop: 1
+    clip: {fileID: 8300000, guid: a2c5faf8ae7ed94479af9f8c41d74134, type: 3}
+    volume: 0
+    pitch: 1
+    source: {fileID: 0}
+  - name: SPRING bittersweet2
+    loop: 1
+    clip: {fileID: 8300000, guid: 06c0b1afa57647648b24dd34edc4b08b, type: 3}
+    volume: 0
+    pitch: 1
+    source: {fileID: 0}
+  - name: AUTUMN busy
+    loop: 1
+    clip: {fileID: 8300000, guid: da86ac3a2052644419d808f82653674a, type: 3}
+    volume: 0
+    pitch: 1
+    source: {fileID: 0}
+  - name: AUTUMN sad
+    loop: 1
+    clip: {fileID: 8300000, guid: 3dc520827a5ac984d9f2a9d737edf59b, type: 3}
+    volume: 0
+    pitch: 1
+    source: {fileID: 0}
+  - name: AUTUMN smerk
+    loop: 1
+    clip: {fileID: 8300000, guid: e6c7022147bf50e45809cc94763970fa, type: 3}
+    volume: 0
+    pitch: 1
+    source: {fileID: 0}
+  - name: SUMMER bittersweet
+    loop: 1
+    clip: {fileID: 8300000, guid: b3f7749169024004d97930083fa84e7f, type: 3}
+    volume: 0
+    pitch: 1
+    source: {fileID: 0}
+  - name: SUMMER happy
+    loop: 1
+    clip: {fileID: 8300000, guid: 14c619876e9d26f46b16f4728c514cc2, type: 3}
+    volume: 0
+    pitch: 1
+    source: {fileID: 0}
+  - name: SUMMER music box
+    loop: 1
+    clip: {fileID: 8300000, guid: 144379379865e6d41bc140fab6bfb830, type: 3}
+    volume: 0
+    pitch: 1
+    source: {fileID: 0}
+  - name: SUMMER relax
+    loop: 1
+    clip: {fileID: 8300000, guid: 8be1884713e2e7a44a8eba03dea43ce5, type: 3}
+    volume: 0
+    pitch: 1
+    source: {fileID: 0}
+  - name: WINTER Clair de Lune
+    loop: 1
+    clip: {fileID: 8300000, guid: 473bff7dbcffa0a46a8e350facc62ab3, type: 3}
+    volume: 0
+    pitch: 1
+    source: {fileID: 0}
+  - name: WINTER emotional
+    loop: 1
+    clip: {fileID: 8300000, guid: 0e01985fad8d75a4dbfb80d74387f52b, type: 3}
+    volume: 0
+    pitch: 1
+    source: {fileID: 0}
+  - name: WINTER happy
+    loop: 1
+    clip: {fileID: 8300000, guid: 8eb055ea4cba5d348b874fad7e7f1784, type: 3}
+    volume: 0
+    pitch: 1
+    source: {fileID: 0}
+  - name: WINTER sad
+    loop: 1
+    clip: {fileID: 8300000, guid: e64912c375e62614793b66631186eeb2, type: 3}
+    volume: 0
+    pitch: 1
+    source: {fileID: 0}
+  - name: WINTER steps
+    loop: 1
+    clip: {fileID: 8300000, guid: 4e37784f7588ff147860fa0f24faae16, type: 3}
     volume: 0
     pitch: 1
     source: {fileID: 0}
