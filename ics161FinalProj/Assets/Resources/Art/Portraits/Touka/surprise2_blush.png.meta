@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:ics161FinalProj/Assets/Resources/Art/Portraits/Touka/surprise2_blush.png.meta
 guid: 5f0b7d077daab144dbc4cb67207c7dda
+=======
+guid: 57837d0e8f3f4004ab70c26d874089db
+>>>>>>> fab99dedfb88d5603108be49c9a25c2983865810:ics161FinalProj/Assets/Resources/Art/Portraits/Touka/surprise2_blush.png.meta
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -75,7 +79,11 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
+<<<<<<< HEAD:ics161FinalProj/Assets/Resources/Art/Portraits/Touka/surprise2_blush.png.meta
     spriteID: 7b38bd28f7543e540a509b437a9a3ad1
+=======
+    spriteID: 427c7359c88e97644bc035c2a6c0b540
+>>>>>>> fab99dedfb88d5603108be49c9a25c2983865810:ics161FinalProj/Assets/Resources/Art/Portraits/Touka/surprise2_blush.png.meta
     vertices: []
     indices: 
     edges: []

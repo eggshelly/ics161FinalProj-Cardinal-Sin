@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:ics161FinalProj/Assets/Resources/Music/Akiko/sad.mp3.meta
 guid: df535462d900e2040b111f8efa75a287
+=======
+guid: 3dc520827a5ac984d9f2a9d737edf59b
+>>>>>>> fab99dedfb88d5603108be49c9a25c2983865810:ics161FinalProj/Assets/Resources/Music/Akiko/sad.mp3.meta
 AudioImporter:
   externalObjects: {}
   serializedVersion: 6

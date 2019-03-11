@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:ics161FinalProj/Assets/Resources/Art/Portraits/Touka/surprise.png.meta
 guid: fa7a5217f9a48ff40ab3781d1a0bbca8
+=======
+guid: b5ac890d4c457a04cbe51062bb4193e1
+>>>>>>> fab99dedfb88d5603108be49c9a25c2983865810:ics161FinalProj/Assets/Resources/Art/Portraits/Touka/surprise.png.meta
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -75,7 +79,11 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
+<<<<<<< HEAD:ics161FinalProj/Assets/Resources/Art/Portraits/Touka/surprise.png.meta
     spriteID: 15d35080c78d3c24aae0ba7debbf1b44
+=======
+    spriteID: f44df5499da82174ea796bf998364930
+>>>>>>> fab99dedfb88d5603108be49c9a25c2983865810:ics161FinalProj/Assets/Resources/Art/Portraits/Touka/surprise.png.meta
     vertices: []
     indices: 
     edges: []

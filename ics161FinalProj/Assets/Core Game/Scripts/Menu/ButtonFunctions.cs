@@ -18,9 +18,9 @@ public class ButtonFunctions : MonoBehaviour
     {
         Time.timeScale = 1;
         PauseOnMap.mapPaused = false;
+        DialogueManager.instance.HidePanels();
         FindObjectOfType<AudioManager>().Stop(AudioManager.instance.currentSong.name);
         StartCoroutine(LoadMainScreen());
-        DialogueManager.instance.HidePanels();
     }
 
     public void StartGame()

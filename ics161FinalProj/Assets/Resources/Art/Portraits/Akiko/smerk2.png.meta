@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:ics161FinalProj/Assets/Resources/Art/Portraits/Akiko/smerk2.png.meta
 guid: a3c36d1e65fde984388bece7b90d0026
+=======
+guid: 11f27d7c3c7f1ed4c8bd8f0d86b7d761
+>>>>>>> fab99dedfb88d5603108be49c9a25c2983865810:ics161FinalProj/Assets/Resources/Art/Portraits/Akiko/smerk2.png.meta
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -75,7 +79,11 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
+<<<<<<< HEAD:ics161FinalProj/Assets/Resources/Art/Portraits/Akiko/smerk2.png.meta
     spriteID: c8e6d65a6beedd64594377e2cda7d0b6
+=======
+    spriteID: 337846f9403690b40aff8ca98b42b0e3
+>>>>>>> fab99dedfb88d5603108be49c9a25c2983865810:ics161FinalProj/Assets/Resources/Art/Portraits/Akiko/smerk2.png.meta
     vertices: []
     indices: 
     edges: []
