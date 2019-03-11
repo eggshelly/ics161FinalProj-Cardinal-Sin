@@ -30,7 +30,6 @@ public class DialogueManager : MonoBehaviour
     public bool hasDoneIntro = false;
     private Sprite currentSprite = null;
     private Sprite currentBG = null;
-    //private string currentBGPath = "";
 
     private void Awake()
     {
@@ -191,17 +190,14 @@ public class DialogueManager : MonoBehaviour
 
         if(AudioManager.instance.currentSong.name != DialogueObj.audio && DialogueObj.audio != null)
             FindObjectOfType<AudioManager>().DialogueTransitionSong(DialogueObj.audio);    //music changes during dialogue
-        if(backgroundName != "default")
+        bgFilepath = BGStringBuilder(bgFilepath, backgroundName, DialogueObj);
+        currentBG = Resources.Load<Sprite>(bgFilepath) as Sprite;
+        if(currentBG != null)
         {
-            bgFilepath = BGStringBuilder(bgFilepath, backgroundName, DialogueObj);
-            Debug.Log(bgFilepath);
-            //currentBGPath = bgFilepath;
-            currentBG = Resources.Load(bgFilepath) as Sprite;
             bgPanel.GetComponent<Image>().sprite = currentBG;
             bgPanel.SetActive(true);
         }
-        else
-            bgPanel.SetActive(false);
+        
             
 
 
@@ -210,8 +206,6 @@ public class DialogueManager : MonoBehaviour
             namePanel.SetActive(false);
             if(currentSprite == null)
                 spritePanel.SetActive(false);
-            else
-                spritePanel.SetActive(true);
             dialogueText.fontStyle = FontStyles.Italic;
         }
         else if (DialogueObj.speaker.Length == 2) //for MC talking: name and sprite panel are both visible, showing MC name and girl he talks to
@@ -220,8 +214,6 @@ public class DialogueManager : MonoBehaviour
             nameText.text = DialogueObj.speaker;
             if(currentSprite == null)
                 spritePanel.SetActive(false);
-            else
-                spritePanel.SetActive(true);
 
 
         }
@@ -243,7 +235,6 @@ public class DialogueManager : MonoBehaviour
                 spritePanel.GetComponent<Image>().sprite = currentSprite;
             }
 
-            spritePanel.SetActive(true);
         }
 
         foreach (char letter in DialogueObj.text.ToCharArray())
@@ -264,7 +255,7 @@ public class DialogueManager : MonoBehaviour
         }
         else{
             spritePanel.SetActive(false);
-            return string.Format("{0}{1}/{2}", filePath, "CG", DO.speaker, splitString[1]);
+            return string.Format("{0}{1}/{2}/{3}", filePath, "CG", DO.speaker, splitString[1]);
         }
     }
 }
