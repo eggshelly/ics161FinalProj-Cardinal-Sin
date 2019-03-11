@@ -45,7 +45,7 @@ public class ButtonFunctions : MonoBehaviour
 
     public IEnumerator StartGameCR()
     {
-        yield return StartCoroutine(TransitionManager.instance.FadeToBlack(2.1f));
+        yield return StartCoroutine(TransitionManager.instance.screenFadeOut);
         SaveFileManager.instance.DeleteInstancesIfNotLoading();
         SceneManager.LoadScene("TestMap");
 
@@ -53,16 +53,16 @@ public class ButtonFunctions : MonoBehaviour
 
     public IEnumerator LoadMenu()
     {
-        yield return StartCoroutine(TransitionManager.instance.FadeToBlack(1.5f));
+        yield return StartCoroutine(TransitionManager.instance.screenFadeOut);
         SceneManager.LoadScene("SaveFiles");
-        yield return StartCoroutine(TransitionManager.instance.FadeToLevel(1.5f));
+        yield return StartCoroutine(TransitionManager.instance.screenFadeIn);
     }
 
     public IEnumerator LoadMainScreen()
     {
         SaveFileManager.instance.SetLoadDataFalse();
-        yield return StartCoroutine(TransitionManager.instance.FadeToBlack(1.5f));
+        yield return StartCoroutine(TransitionManager.instance.screenFadeOut);
         SceneManager.LoadScene("MainMenu");
-        yield return StartCoroutine(TransitionManager.instance.FadeToLevel(1.5f));
+        yield return StartCoroutine(TransitionManager.instance.screenFadeIn);
     }
 }

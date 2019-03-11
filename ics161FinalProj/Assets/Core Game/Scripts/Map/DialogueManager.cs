@@ -79,7 +79,7 @@ public class DialogueManager : MonoBehaviour
 
                 if (!introTransition)
                 {
-                    StartCoroutine(TransitionManager.instance.FadeToLevel(2f));
+                    StartCoroutine(TransitionManager.instance.screenFadeIn);
                     introTransition = true;
                 }
 
@@ -220,7 +220,7 @@ public class DialogueManager : MonoBehaviour
             {
                 if (DialogueObj.speaker == "Haruka" && !introTransition)
                 {
-                    StartCoroutine(TransitionManager.instance.FadeToLevel(2f));
+                    StartCoroutine(TransitionManager.instance.screenFadeIn);
                     introTransition = true;
                 }
                 currentSprite = Resources.Load<Sprite>(filePath) as Sprite;
