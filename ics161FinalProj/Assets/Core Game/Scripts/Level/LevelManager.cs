@@ -32,7 +32,7 @@ public class LevelManager : MonoBehaviour
     void Awake()
     {
         FinishedLevel = new UnityEvent();
-        StartCoroutine(TransitionManager.instance.FadeToLevel(1.5f));
+        StartCoroutine(TransitionManager.instance.screenFadeIn);
     }
 
     private void Start()
@@ -86,7 +86,7 @@ public class LevelManager : MonoBehaviour
         playerInteraction.enabled = false;
         playerMovement.enabled = false;
         FindObjectOfType<AudioManager>().Stop(AudioManager.instance.currentSong.name); 
-        StartCoroutine(TransitionManager.instance.FadeToBlack(1f));
+        StartCoroutine(TransitionManager.instance.screenFadeOut);
         StartCoroutine(BackToMapCR()); 
     }
 
