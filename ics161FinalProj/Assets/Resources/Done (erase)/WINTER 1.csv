@@ -1,0 +1,85 @@
+SPEAKER,CONVO,SPRITE,AUDIO,BACKGROUND
+,,,,
+M,Today is particularly cold…,default,WINTER,BG classroom
+,,,,
+M,I’ll spend some time warming up inside before heading home.,default,WINTER,BG classroom
+,,,,
+MC,Maybe I’ll check out the music rooms...,none,WINTER,BG classroom
+,,,,
+M,I walk towards the music rooms...,default,WINTER,BG hallway
+,,,,
+M,...only to find them mostly empty and unused.,default,WINTER,BG music
+,,,,
+M,Before I could explore more roomsXYZ a gentle sound of a piano catches my attention. It’s so faintXYZ I almost missed it.,default,WINTER Clair de Lune,BG music
+,,,,
+MC,Sounds like it’s coming from the end of the hall...,none,WINTER Clair de Lune,BG hallway
+,,,,
+M,It’s too quiet for me to recognize itXYZ but I swear I’ve heard this before…,default,WINTER Clair de Lune,BG hallway
+,,,,
+M,As if each note is beckoning me to come nearerXYZ I follow the noise until I’m only a few steps away from the room.,default,WINTER Clair de Lune,BG hallway
+,,,,
+MC,Clair de lune…,none,WINTER Clair de Lune,BG hallway
+,,,,
+M,It’s one of my favorites. I stand thereXYZ dazedXYZ letting the music fill my ears… the air… the hall…,default,WINTER Clair de Lune,BG hallway
+,,,,
+M,That’s right. She used to play this.,default,WINTER Clair de Lune,BG hallway
+,,,,
+M,The painful nostalgia pinches at my chestXYZ but the notes engulf that feeling like a comforting blanket of snow. For the first time in a whileXYZ I felt so…,default,WINTER Clair de Lune,BG hallway
+,,,,
+MC,at peace.,none,WINTER Clair de Lune,BG hallway
+,,,,
+M,As soon as those words leave my mouthXYZ a little louder than intendedXYZ an abrupt silence cuts off the sound.,default,WINTER steps,BG hallway
+,,,,
+M,The beautiful arrangement was replaced by a staccato of footstepsXYZ slowly heading towards the door. Shoot… They heard me...,default,WINTER steps,BG hallway
+,,,,
+M,…,default,WINTER steps,BG hallway
+,,,,
+M,...,default,WINTER steps,BG hallway
+,,,,
+M,I panic as the steps grow near.,default,WINTER steps,BG hallway
+,,,,
+M,The door opens… and a the mysterious pianist emerges from the other side. She stares at me with a blank lookXYZ her cold eyes staring sharply through me like icicles.,default,NONE,BG hallway
+,,,,
+MC,Uhhhh….,none,NONE,BG hallway
+,,,,
+M,MomentarilyXYZ I was stunned.,default,NONE,BG hallway
+,,,,
+Touka,…,neutral,NONE,BG hallway
+,,,,
+M,Oh god… I look like a creep now…,default,NONE,BG hallway
+,,,,
+Touka,...I’m done with the music room. My apologies if I took long. Feel free to use it...,lookback,WINTER,BG hallway
+,,,,
+MC,O-OhXYZ no no please feel free to keep playing. I didn’t mean to interruptXYZ I just really liked your playing…,none,WINTER,BG hallway
+,,,,
+M,The mystery player’s eyes widened slightly.,default,WINTER,BG hallway
+,,,,
+Touka,Mm. Is that so.  …Thank you.,lookback_blush,WINTER,BG hallway
+,,,,
+M,Her tone is hard to readXYZ cold but not unfriendly...,default,WINTER,BG hallway
+,,,,
+MC,Yeah… I just transferred and wandered off here.,none,WINTER,BG hallway
+,,,,
+Touka,Mm…,neutral,WINTER,BG hallway
+,,,,
+Touka,If you were looking for a club to joinXYZ music clubs don’t usually practice on these days… So I am sure if you come another dayXYZ you could join.,neutral2,WINTER,BG hallway
+,,,,
+MC,AhXYZ oh… thank you.,none,WINTER,BG hallway
+,,,,
+M,She doesn’t say muchXYZ and comes off a little cold but… that was nice information to share with a stranger who interrupted her piano session. Somehow her calm demeanor calmed my racing nerves from before.,default,WINTER,BG hallway
+,,,,
+M,It’s comforting to be able to share silence with another person.,default,WINTER,BG hallway
+,,,,
+Touka,... Debussy.,lookback,WINTER,BG hallway
+,,,,
+MC,H-Hm?,none,WINTER,BG hallway
+,,,,
+Touka,You said you liked my playing. It’s a classic by Debussy… Have you heard… before…?,neural2_blush,WINTER,BG hallway
+,,,,
+M,Yes… I love Clair de Lune. I’ve listened to it since I was a child. I want to talk to her about the piece she was playingXYZ it was so beautifulXYZ but…,default,WINTER,BG hallway
+,,,,
+M,There are a lot of emotions attached to that song. I don’t really know how to talk about it while avoiding the sentimental value of the song.,default,WINTER,BG hallway
+,,,,
+M,I search my mind for the right words to say…,default,WINTER,BG hallway
+,,,,
+M,The key to answering honestlyXYZ without going into detail to a pure stranger…What could it be…?,default,WINTER,BG hallway

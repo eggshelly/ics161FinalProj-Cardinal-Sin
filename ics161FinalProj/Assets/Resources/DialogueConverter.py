@@ -46,18 +46,12 @@ def run(file):
 
 
 def makecsv(title:str, text:str):
-    dialogue_map = dict()
-    if os.path.isfile(f"./{title}.csv"):  #already in directory
+    #folder = "Haruka\\" if "SPRING" in title else "Akiko\\" if "AUTUMN" in title else "Touka\\" if "WINTER" in title else "Natsuki\\" if "SUMMER" in title else ""
+    #filePath = f"\CSV\{folder}{title}.csv"
+    oldTitle = title
+    if os.path.isfile(f"{title}.csv"):  #already in directory
         title += "_NEW"
-##        skippedFirst  = False
-##
-##        with open(f"./{title}.csv") as csvfile:
-##            filereader = csv.reader(csvfile,delimiter=',')
-##            for line in filereader:
-##                if line != [] and skippedFirst:
-##                    dialogue_map.update({line[1]:{"sprite":line[2], "audio":line[3], "background":line[4]}})
-##                    
-##                skippedFirst = True
+        #filePath = f"\CSV{folder}{title}"
 
 
     with open(f"{title}.csv", "w") as csvfile:
@@ -70,8 +64,8 @@ def makecsv(title:str, text:str):
             speaker = line[:line.index(":")]
             convo   = line[line.index(":")+1:]
             sprite  = (dialogue_map[convo]["sprite"]) if convo in dialogue_map else "none" if speaker == "MC" else "default"
-            audio   = dialogue_map[convo]["audio"] if convo in dialogue_map else title[:title.index(" ")] if " " in title else title
-            bg      = dialogue_map[convo]["background"] if convo in dialogue_map else "default"
+            audio   = dialogue_map[convo]["audio"] if convo in dialogue_map else oldTitle[:oldTitle.index(" ")] if " " in oldTitle else oldTitle
+            bg      = dialogue_map[convo]["background"] if convo in dialogue_map else "BG "
 
             filewriter.writerow([speaker, convo, sprite, audio, bg])
     
