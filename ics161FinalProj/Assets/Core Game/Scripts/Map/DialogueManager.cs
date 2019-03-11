@@ -124,6 +124,16 @@ public class DialogueManager : MonoBehaviour
         bgPanel.SetActive(false);
     }
 
+    public void ClearDialogue()
+    {
+        dialogueAvailable = false;
+        currentSprite = null;
+        HidePanels();
+        textOutput.Clear();
+        dialogueText.text = "";
+        StopAllCoroutines();
+    }
+
     private Dictionary<int, Dialogue> BuildDialogueDictionary(TextAsset textFile) //converts CSV file to dictionary
     {
         Dictionary <int, Dialogue> GameDialogue = new Dictionary<int, Dialogue>();
