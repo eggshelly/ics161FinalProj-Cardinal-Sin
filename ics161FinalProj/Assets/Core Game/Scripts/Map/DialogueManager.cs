@@ -31,10 +31,9 @@ public class DialogueManager : MonoBehaviour
 
     public bool hasDoneIntro = false;
     private Sprite currentSprite = null;
-    private Sprite currentBG = null;
-    private Color invisible;
-
-    private bool CR_Run = false;
+    [HideInInspector]
+    public Sprite currentBG = null;
+    private string currentSpeaker = "";
 
     private void Awake()
     {
@@ -108,7 +107,7 @@ public class DialogueManager : MonoBehaviour
                 dialogueAvailable = false;
                 currentSprite = null;
                 bgPanel2.GetComponent<Image>().sprite = null;
-                    NextWeek();
+                NextWeek();
                 DoneWithDialogue.Invoke();
             }
             else if (Input.GetKeyDown(KeyCode.Space) && spaceDelay)
@@ -188,6 +187,7 @@ public class DialogueManager : MonoBehaviour
     {
         nextLine = textOutput.Dequeue();
         spaceDelay = true;
+        UpdateBackground(nextLine);
         lastRoutine = StartCoroutine(UpdateText(nextLine));
     }
 
@@ -204,44 +204,10 @@ public class DialogueManager : MonoBehaviour
         dialogueText.fontStyle = FontStyles.Normal;
         string filePath = "Art/Portraits/";
         string spriteName = DialogueObj.sprite.ToString().Trim();
-        string backgroundName = DialogueObj.background.ToString().Trim();
-        string bgFilepath = "Art/";
-
 
         if(AudioManager.instance.currentSong.name != DialogueObj.audio && DialogueObj.audio != null)
             FindObjectOfType<AudioManager>().DialogueTransitionSong(DialogueObj.audio);    //music changes during dialogue
-        bgFilepath = BGStringBuilder(bgFilepath, backgroundName, DialogueObj);
-        currentBG = Resources.Load<Sprite>(bgFilepath) as Sprite;
-        if(currentBG != null)
-        {
-            if(bgPanel2.GetComponent<Image>().sprite == null)
-            {
-                bgPanel.GetComponent<Image>().sprite = currentBG;
-                bgPanel2.GetComponent<Image>().sprite = currentBG;
-                invisible = bgPanel2.GetComponent<Image>().color;
-                invisible.a = 0f;
-                bgPanel2.GetComponent<Image>().color = invisible;
-                bgPanel2.SetActive(true);        //bgpanel2 alpha value must be initialized as invisible
-                StartCoroutine(bgFadeIn(1.0f));     //this will fade in panel2
-                StartCoroutine(WaitCR());
-            }
-            else       //this is run if the bgpanel image component is not null, which means its not the first time in the dialogue
-            {
-                bgPanel2.GetComponent<Image>().sprite = currentBG;
-                invisible = bgPanel2.GetComponent<Image>().color;
-                invisible.a = 0f;
-                bgPanel2.SetActive(true);    //must be invisible at this point
-                StartCoroutine(bgFadeIn(1.0f));
-                StartCoroutine(WaitForCR());
-            }
-
-            //if last dialogue has passed, set the image sprite componenet of bgpanel2 to null so we know that at start of next dialogue,
-            //it will start at the first part of the block instead of the second part.
-        }
         
-            
-
-
         if (DialogueObj.speaker.Length == 1) //monologue: set namePanel to invisible and text to italic
         {
             namePanel.SetActive(false);
@@ -271,7 +237,6 @@ public class DialogueManager : MonoBehaviour
                     StartCoroutine(TransitionManager.instance.screenFadeIn);
                     introTransition = true;
                 }
-                Debug.Log(filePath);
                 currentSprite = Resources.Load<Sprite>(filePath) as Sprite;
                 spritePanel.GetComponent<Image>().sprite = currentSprite;
             }
@@ -286,7 +251,7 @@ public class DialogueManager : MonoBehaviour
         spaceDelay = false;
     }
 
-    public string BGStringBuilder(string filePath, string backgroundName, Dialogue DO)
+    public string BGStringBuilder(string filePath, string backgroundName, string speaker, Dialogue DO)
     {
         string[] splitString = backgroundName.Split(' ');
         if(splitString[0] == "BG")
@@ -299,46 +264,35 @@ public class DialogueManager : MonoBehaviour
         }
         else{
             spritePanel.SetActive(false);
-            return string.Format("{0}{1}/{2}/{3}", filePath, "CG", DO.speaker, splitString[1]);
+            if(speaker == "")
+                speaker = DO.speaker;
+            return string.Format("{0}{1}/{2}/{3}", filePath, "CG", speaker, splitString[1]);
         }
     }
-
-
-    public IEnumerator bgFadeIn(float fadeTime)
+    private void UpdateBackground(Dialogue DialogueObj)
     {
-        CR_Run = true;
-        Image tempImage = bgPanel2.GetComponent<Image>();
-        float alphaVal = 0f;
-        while(bgPanel2.GetComponent<Image>().color.a < 1f)
+        string backgroundName = DialogueObj.background.ToString().Trim();
+        string bgFilepath = "Art/";
+        string testSpeaker = DialogueObj.speaker.ToString().Trim();
+        Sprite tempBG;
+        if(testSpeaker != "MC" && testSpeaker != "M")
         {
-            alphaVal += Time.deltaTime / fadeTime;
-            bgPanel2.GetComponent<Image>().color = new Color(tempImage.color.r, tempImage.color.g, tempImage.color.b, alphaVal);
-            yield return null;
+            currentSpeaker = testSpeaker;
         }
-        CR_Run = false;
-    }
-
-    private IEnumerator WaitCR()
-    {
-        while (CR_Run)
+        bgFilepath = BGStringBuilder(bgFilepath, backgroundName, currentSpeaker, DialogueObj);
+        tempBG = Resources.Load<Sprite>(bgFilepath) as Sprite;
+        if(tempBG != null)
         {
-            yield return null;
-        }
-        bgPanel.SetActive(true);
-        bgPanel2.GetComponent<Image>().color = invisible;
-        bgPanel2.SetActive(false);
+            currentBG = tempBG;
         
-    }
-
-    private IEnumerator WaitForCR()
-    {
-        while(CR_Run)
-        {
-            yield return null;
+            if(bgPanel2.GetComponent<Image>().sprite == null)
+            {
+                TransitionManager.instance.BGFadeFirst();
+            }
+            else
+            {   
+                TransitionManager.instance.BGFadeSecond();
+            }
         }
-        bgPanel.GetComponent<Image>().sprite = currentBG;
-        bgPanel2.GetComponent<Image>().color = invisible;
-        bgPanel2.SetActive(false);
-
     }
 }
