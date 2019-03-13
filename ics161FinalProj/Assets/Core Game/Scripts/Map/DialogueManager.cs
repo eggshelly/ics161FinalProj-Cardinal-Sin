@@ -16,6 +16,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject namePanel;
     public GameObject spritePanel;
     public GameObject bgPanel;
+    public GameObject bgPanel2;
 
     private Queue<Dialogue> textOutput;
     public int initialText = 0;    //if initialText is -1, then a sentence can start as the dialoguePanel is set to true
@@ -30,6 +31,9 @@ public class DialogueManager : MonoBehaviour
     public bool hasDoneIntro = false;
     private Sprite currentSprite = null;
     private Sprite currentBG = null;
+    private Color invisible;
+
+    private bool CR_Run = false;
 
     private void Awake()
     {
@@ -121,6 +125,7 @@ public class DialogueManager : MonoBehaviour
         namePanel.SetActive(false);
         spritePanel.SetActive(false);
         bgPanel.SetActive(false);
+        bgPanel2.SetActive(false);
     }
 
     public void ClearDialogue()
@@ -194,8 +199,46 @@ public class DialogueManager : MonoBehaviour
         currentBG = Resources.Load<Sprite>(bgFilepath) as Sprite;
         if(currentBG != null)
         {
-            bgPanel.GetComponent<Image>().sprite = currentBG;
-            bgPanel.SetActive(true);
+            if(bgPanel2.GetComponent<Image>().sprite == null)
+            {
+                Debug.Log("here");
+                bgPanel.GetComponent<Image>().sprite = currentBG;
+                bgPanel2.GetComponent<Image>().sprite = currentBG;
+                invisible = bgPanel2.GetComponent<Image>().color;
+                invisible.a = 0f;
+                bgPanel2.GetComponent<Image>().color = invisible;
+                bgPanel2.SetActive(true);        //bgpanel2 alpha value must be initialized as invisible
+                StartCoroutine(bgFadeIn(1.0f));     //this will fade in panel2
+                StartCoroutine(WaitCR());
+            }
+            else       //this is run if the bgpanel image component is not null, which means its not the first time in the dialogue
+            {
+                Debug.Log("there");
+                bgPanel2.GetComponent<Image>().sprite = currentBG;
+                invisible = bgPanel2.GetComponent<Image>().color;
+                invisible.a = 0f;
+                bgPanel2.SetActive(true);    //must be invisible at this point
+                StartCoroutine(bgFadeIn(1.0f));
+                StartCoroutine(WaitForCR());
+            }
+
+            //if last dialogue has passed, set the image sprite componenet of bgpanel2 to null so we know that at start of next dialogue,
+            //it will start at the first part of the block instead of the second part.
+
+
+            /*notes:   the first time in a dialogue, both panels are assigned the same image. Panel 1 is hidden and panel2 slowly fades in
+            once panel 2 has faded in fully, panel 1 becomes visible and panel 2 disappears. panel 2 alpha value is set back to invisible
+            
+            any time after the first background change in dialogue, if a new
+            background change occurs, panel 2 gets assigned a new image, and then starts the fade in.
+            after fade in coroutine is done, panel 1 gets the image from panel 2, and then panel 2 gets hidden. and 
+            alpha value gets reset back to invisible. repeats from top of this
+            paragraph
+
+            during last dialogue, bgpanel 2 image sprite component gets set to null: this is how we know whether or not its the first time
+            in a dialogue. 
+            
+             */
         }
         
             
@@ -260,5 +303,44 @@ public class DialogueManager : MonoBehaviour
             spritePanel.SetActive(false);
             return string.Format("{0}{1}/{2}/{3}", filePath, "CG", DO.speaker, splitString[1]);
         }
+    }
+
+
+    public IEnumerator bgFadeIn(float fadeTime)
+    {
+        CR_Run = true;
+        Image tempImage = bgPanel2.GetComponent<Image>();
+        float alphaVal = 0f;
+        while(bgPanel2.GetComponent<Image>().color.a < 1f)
+        {
+            alphaVal += Time.deltaTime / fadeTime;
+            bgPanel2.GetComponent<Image>().color = new Color(tempImage.color.r, tempImage.color.g, tempImage.color.b, alphaVal);
+            yield return null;
+        }
+        CR_Run = false;
+    }
+
+    private IEnumerator WaitCR()
+    {
+        while (CR_Run)
+        {
+            yield return null;
+        }
+        bgPanel.SetActive(true);
+        bgPanel2.GetComponent<Image>().color = invisible;
+        bgPanel2.SetActive(false);
+        
+    }
+
+    private IEnumerator WaitForCR()
+    {
+        while(CR_Run)
+        {
+            yield return null;
+        }
+        bgPanel.GetComponent<Image>().sprite = currentBG;
+        bgPanel2.GetComponent<Image>().color = invisible;
+        bgPanel2.SetActive(false);
+
     }
 }
