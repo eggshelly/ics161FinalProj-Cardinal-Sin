@@ -7,7 +7,6 @@ public class LevelData
 
 {
     //for keeping track of what day and week it is
-    public int day;
     public int week;
 
 
@@ -46,7 +45,6 @@ public class LevelData
 
         introCompleted = manager.hasDoneIntro;
 
-        day = time.GetCurrentDay();
         week = time.GetCurrentWeek();
         
     }

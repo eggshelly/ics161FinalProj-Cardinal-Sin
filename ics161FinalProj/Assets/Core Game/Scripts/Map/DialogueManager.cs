@@ -27,6 +27,7 @@ public class DialogueManager : MonoBehaviour
     public bool dialogueAvailable = false;
 
     public UnityEvent DoneWithDialogue;
+    public UnityEvent EndOfWeek;
 
     public bool hasDoneIntro = false;
     private Sprite currentSprite = null;
@@ -38,6 +39,7 @@ public class DialogueManager : MonoBehaviour
     private void Awake()
     {
         DoneWithDialogue = new UnityEvent();
+        EndOfWeek = new UnityEvent();
         if (instance == null)
         {
             instance = this;
@@ -92,7 +94,7 @@ public class DialogueManager : MonoBehaviour
                 textOutput.Clear();
                 currentSprite = null;
                 bgPanel2.GetComponent<Image>().sprite = null;
-                NextDay();
+                NextWeek();
                 DoneWithDialogue.Invoke();
             }
 
@@ -106,7 +108,7 @@ public class DialogueManager : MonoBehaviour
                 dialogueAvailable = false;
                 currentSprite = null;
                 bgPanel2.GetComponent<Image>().sprite = null;
-                    NextDay();
+                    NextWeek();
                 DoneWithDialogue.Invoke();
             }
             else if (Input.GetKeyDown(KeyCode.Space) && spaceDelay)
@@ -117,18 +119,18 @@ public class DialogueManager : MonoBehaviour
                 dialogueAvailable = false;
                 currentSprite = null;
                 bgPanel2.GetComponent<Image>().sprite = null;
-                NextDay();
+                NextWeek();
                 DoneWithDialogue.Invoke();
             }
         }
         }
     }
 
-    void NextDay()
+    void NextWeek()
     {
         if (SaveFileManager.instance.finishedAStage)
         {
-            TimeManager.instance.NextDay();
+            EndOfWeek.Invoke();
         }
     }
 

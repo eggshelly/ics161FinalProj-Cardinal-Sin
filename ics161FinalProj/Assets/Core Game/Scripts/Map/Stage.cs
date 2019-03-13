@@ -10,6 +10,7 @@ public class StringIntUnityEvent: UnityEvent<string, int, int, bool[]> { }
 
 public class Stage : MonoBehaviour
 {
+    [SerializeField] Sprite WavingSprite;
     [SerializeField] float sizeMulti;
     [SerializeField] int[] totalNumCollectibles; //total number of collectibles the stage will contain. MUST SET IN THE INSPECTOR IN ORDER TO DISPLAY CORRECTLY ON THE PANEL
 
@@ -25,7 +26,7 @@ public class Stage : MonoBehaviour
     //--------------------
     //temporary
     SpriteRenderer m_SpriteRenderer;
-    Color origColor;
+    Sprite origSprite;
     //--------------------
     GameObject player;
 
@@ -51,7 +52,7 @@ public class Stage : MonoBehaviour
         currentLevel = 1;
         player = GameObject.FindGameObjectWithTag("Player");
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
-        origColor = m_SpriteRenderer.color;
+        origSprite = m_SpriteRenderer.sprite;
     }
 
     public bool[] GetLevelCollectibles(int level)
@@ -93,8 +94,7 @@ public class Stage : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            transform.localScale = transform.localScale * sizeMulti;
-            m_SpriteRenderer.color = Color.red;
+            m_SpriteRenderer.sprite = WavingSprite;
         }
     }
 
@@ -103,8 +103,7 @@ public class Stage : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            transform.localScale = transform.localScale / sizeMulti;
-            m_SpriteRenderer.color = origColor;
+            m_SpriteRenderer.sprite = origSprite;
             StageLeft.Invoke();
         }
     }

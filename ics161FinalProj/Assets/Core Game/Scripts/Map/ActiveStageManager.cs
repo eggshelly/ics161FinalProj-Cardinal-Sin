@@ -8,16 +8,16 @@ public class ActiveStageManager : MonoBehaviour
     [SerializeField] GameObject summer;
     [SerializeField] GameObject autumn;
     [SerializeField] GameObject winter;
-    [SerializeField] List<int> springDays;
-    [SerializeField] List<int> summerDays;
-    [SerializeField] List<int> autumnDays;
-    [SerializeField] List<int> winterDays;
+    [SerializeField] List<int> springweeks;
+    [SerializeField] List<int> summerweeks;
+    [SerializeField] List<int> autumnweeks;
+    [SerializeField] List<int> winterweeks;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        ActivateDays();
+        TimeManager.instance.NextWeekEvent.AddListener(ActivateWeeks);
     }
 
     // Update is called once per frame
@@ -26,10 +26,10 @@ public class ActiveStageManager : MonoBehaviour
         
     }
 
-    void ActivateDays()
+    void ActivateWeeks()
     {
-        int day = TimeManager.instance.GetCurrentDay();
-        if(springDays.Contains(day))
+        int week = TimeManager.instance.GetCurrentWeek();
+        if(springweeks.Contains(week))
         {
             spring.SetActive(true);
         }
@@ -37,7 +37,7 @@ public class ActiveStageManager : MonoBehaviour
         {
             spring.SetActive(false);
         }
-        if (summerDays.Contains(day))
+        if (summerweeks.Contains(week))
         {
             summer.SetActive(true);
         }
@@ -45,7 +45,7 @@ public class ActiveStageManager : MonoBehaviour
         {
             summer.SetActive(false);
         }
-        if (autumnDays.Contains(day))
+        if (autumnweeks.Contains(week))
         {
             autumn.SetActive(true);
         }
@@ -53,7 +53,7 @@ public class ActiveStageManager : MonoBehaviour
         {
             autumn.SetActive(false);
         }
-        if (winterDays.Contains(day))
+        if (winterweeks.Contains(week))
         {
             winter.SetActive(true);
         }

@@ -125,7 +125,8 @@ public class SaveFileManager : MonoBehaviour
                 player.transform.position = loadedPos;
                 stageHub.loadStages(level.stageCollectibles, level.finishedLevels);
                 DialogueManager.instance.hasDoneIntro = level.introCompleted;
-                TimeManager.instance.SetDay(level.week, level.day);
+                TimeManager.instance.SetDay(level.week);
+                SetLoadDataFalse();
                 
 
             }
@@ -137,7 +138,7 @@ public class SaveFileManager : MonoBehaviour
                     path += "GOOD END";
                 else
                     path += "BAD END";
-
+                Debug.Log(path);
                 DialogueManager.instance.LoadDialogue(path);
                 Vector3 loadedPos = new Vector3(data.position[0], data.position[1], data.position[2]);
                 player.transform.position = loadedPos;

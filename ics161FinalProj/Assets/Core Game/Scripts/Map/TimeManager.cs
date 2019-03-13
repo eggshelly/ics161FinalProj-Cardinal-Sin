@@ -3,83 +3,72 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class TimeManager : MonoBehaviour
 {
-    [SerializeField] int daysInTheWeek = 5;
+    [SerializeField] int maxNumberOfWeeks;
+    [SerializeField] string textBetweenWeeks = "One Week Later...";
     [SerializeField] TextMeshProUGUI timeText;
+    [SerializeField] TextMeshProUGUI betweenWeekText;
     public static TimeManager instance = null;
 
+    public UnityEvent NextWeekEvent;
+
+
     int week = 1;
-    int day = 1;
+    //int day = 1;
 
-    Dictionary<int, string> daysOfTheWeek;
+    //Dictionary<int, string> daysOfTheWeek;
 
-    string[] days = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
+    //string[] days = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
 
     private void Awake()
     {
+        NextWeekEvent = new UnityEvent();
         if (instance == null)
         {
             instance = this;
         }
         else
             Destroy(this.gameObject);
+
         DontDestroyOnLoad(this.gameObject);
 
         SceneManager.sceneLoaded += OnSceneLoaded;
 
-        CreateDaysOfWeek();
+        //CreateDaysOfWeek();
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        UpdateText();
+        DialogueManager.instance.EndOfWeek.AddListener(EndOfWeekListener);
+
     }
 
-    void CreateDaysOfWeek()
+    /*void CreateDaysOfWeek()
     {
         daysOfTheWeek = new Dictionary<int, string>();
         for(int i = day; i <= daysInTheWeek; ++i)
         {
             daysOfTheWeek[i] = days[i - 1];
         }
-    }
+    }*/
 
-    public void SetDay(int week, int day)
+    public void SetDay(int week)
     {
         this.week = week;
-        this.day = day;
+        Debug.Log("Set day being called");
         UpdateText();
     }
 
-    public void NextDay()
+    void NextWeek()
     {
-        GetText();
-        day += 1; 
-        if(day > daysInTheWeek)
-        {
-            day = 1;
-            week += 1; 
-        }
+        week += 1;
         UpdateText();
+        NextWeekEvent.Invoke();
         SaveFileManager.instance.DoneWithEndDialogue();
-    }
-
-    void GetText()
-    {
-        GameObject text = GameObject.Find("Time Text");
-        Debug.Log("Text");
-        if (text != null)
-        {
-            timeText = text.GetComponent<TextMeshProUGUI>();
-        }
-    }
-
-    public int GetCurrentDay()
-    {
-        return day;
     }
 
     public int GetCurrentWeek()
@@ -89,17 +78,50 @@ public class TimeManager : MonoBehaviour
 
     void UpdateText()
     {
-        timeText.text = string.Format("{0}, Week {1}", daysOfTheWeek[day], week);
+        timeText.text = string.Format("Week {0}", week);
     }
+
+    void EndOfWeekListener()
+    {
+        StartCoroutine(EndOfWeekFade());
+    }
+
+    IEnumerator EndOfWeekFade()
+    {
+        yield return StartCoroutine(TransitionManager.instance.screenFadeOut);
+        StartCoroutine(EndOfWeekText());        
+    }
+
+    IEnumerator EndOfWeekText()
+    {
+        NextWeek();
+        betweenWeekText.gameObject.SetActive(true);
+        foreach (var c in textBetweenWeeks)
+        {
+            betweenWeekText.text += c;
+            yield return new WaitForSeconds(0.05f);
+        }
+        yield return new WaitForSeconds(1f);
+        betweenWeekText.text = "";
+        yield return StartCoroutine(TransitionManager.instance.screenFadeIn);
+        betweenWeekText.gameObject.SetActive(false);
+    }
+
 
     void OnSceneLoaded(Scene loadedScene, LoadSceneMode sceneMode)
     {
         if(loadedScene == SceneManager.GetSceneByName("TestMap"))
         {
-            GetText();
+            timeText.gameObject.SetActive(true);
             UpdateText();
         }
+        else
+        {
+            timeText.gameObject.SetActive(false);
+        }
     }
+
+
 
 
 
