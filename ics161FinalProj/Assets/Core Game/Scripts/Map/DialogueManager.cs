@@ -250,7 +250,10 @@ public class DialogueManager : MonoBehaviour
         string[] splitString = backgroundName.Split(' ');
         if(splitString[0] == "BG")
         {
-            spritePanel.SetActive(true);
+            if(DO.sprite != "NONE")
+                spritePanel.SetActive(true);    //shows the sprite only if the background is BG and if the sprite name is not equal to NONE
+            else
+                spritePanel.SetActive(false);    //otherwise it hides the spritePanel
             return string.Format("{0}{1}/{2}", filePath, "BG", splitString[1]);
         }
         else{
