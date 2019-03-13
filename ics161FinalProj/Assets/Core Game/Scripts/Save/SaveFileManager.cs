@@ -29,7 +29,7 @@ public class SaveFileManager : MonoBehaviour
 
     bool loadData = false; //Tells the SaveFileManager whether or not to load the data when the scene is loaded
 
-    bool finishedAStage = false; //Keeps track of whether or not a state was just finished - aids in passing to the stage its list of collectibles
+    public bool finishedAStage { get; private set; } = false; //Keeps track of whether or not a state was just finished - aids in passing to the stage its list of collectibles
     public bool isStageCompleted { get; private set; }
     
     //Creates the instance of the SaveFileManager
@@ -143,10 +143,13 @@ public class SaveFileManager : MonoBehaviour
                 player.transform.position = loadedPos;
                 stageHub.loadStages(data.stageCollectibles, data.finishedLevels);
                 stageHub.UpdateFinishedStage(currentStage, currentStageLevel, currentStageCollectibles);
-                TimeManager.instance.NextDay();
-                finishedAStage = false;
             }
         }
+    }
+
+    public void DoneWithEndDialogue()
+    {
+        finishedAStage = false;
     }
 
     public void SaveTempInfo()

@@ -27,6 +27,8 @@ public class TimeManager : MonoBehaviour
             Destroy(this.gameObject);
         DontDestroyOnLoad(this.gameObject);
 
+        SceneManager.sceneLoaded += OnSceneLoaded;
+
         CreateDaysOfWeek();
     }
 
@@ -62,11 +64,13 @@ public class TimeManager : MonoBehaviour
             week += 1; 
         }
         UpdateText();
+        SaveFileManager.instance.DoneWithEndDialogue();
     }
 
     void GetText()
     {
         GameObject text = GameObject.Find("Time Text");
+        Debug.Log("Text");
         if (text != null)
         {
             timeText = text.GetComponent<TextMeshProUGUI>();
@@ -86,6 +90,15 @@ public class TimeManager : MonoBehaviour
     void UpdateText()
     {
         timeText.text = string.Format("{0}, Week {1}", daysOfTheWeek[day], week);
+    }
+
+    void OnSceneLoaded(Scene loadedScene, LoadSceneMode sceneMode)
+    {
+        if(loadedScene == SceneManager.GetSceneByName("TestMap"))
+        {
+            GetText();
+            UpdateText();
+        }
     }
 
 

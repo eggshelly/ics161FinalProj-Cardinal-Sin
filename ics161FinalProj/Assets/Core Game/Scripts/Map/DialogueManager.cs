@@ -92,33 +92,43 @@ public class DialogueManager : MonoBehaviour
                 textOutput.Clear();
                 currentSprite = null;
                 bgPanel2.GetComponent<Image>().sprite = null;
+                NextDay();
                 DoneWithDialogue.Invoke();
             }
 
         }
         else if (textOutput.Count == 0)     //if we're on the last sentence, we want to wait for the player to close the dialogue box
         {
-            if (Input.GetKeyDown(KeyCode.Space) && !spaceDelay)
+            if(Input.GetKeyDown(KeyCode.Space) && !spaceDelay)
             {
                 HidePanels();
                 initialText = 0;
                 dialogueAvailable = false;
                 currentSprite = null;
                 bgPanel2.GetComponent<Image>().sprite = null;
+                    NextDay();
                 DoneWithDialogue.Invoke();
             }
             else if (Input.GetKeyDown(KeyCode.Space) && spaceDelay)
             {
                 DisplayFullSentence();
-
                 HidePanels();
                 initialText = 0;
                 dialogueAvailable = false;
                 currentSprite = null;
                 bgPanel2.GetComponent<Image>().sprite = null;
+                NextDay();
                 DoneWithDialogue.Invoke();
             }
         }
+        }
+    }
+
+    void NextDay()
+    {
+        if (SaveFileManager.instance.finishedAStage)
+        {
+            TimeManager.instance.NextDay();
         }
     }
 
