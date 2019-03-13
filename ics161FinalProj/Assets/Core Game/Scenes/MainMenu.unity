@@ -6283,7 +6283,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: SUMMER happy
     loop: 1
-    clip: {fileID: 8300000, guid: 14c619876e9d26f46b16f4728c514cc2, type: 3}
+    clip: {fileID: 8300000, guid: ff57a729cc356a94a906b0339fdf01de, type: 3}
     volume: 0
     pitch: 1
     source: {fileID: 0}
