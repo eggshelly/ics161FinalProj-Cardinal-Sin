@@ -91,6 +91,7 @@ public class DialogueManager : MonoBehaviour
                 HidePanels();
                 textOutput.Clear();
                 currentSprite = null;
+                bgPanel2.GetComponent<Image>().sprite = null;
                 DoneWithDialogue.Invoke();
             }
 
@@ -103,6 +104,7 @@ public class DialogueManager : MonoBehaviour
                 initialText = 0;
                 dialogueAvailable = false;
                 currentSprite = null;
+                bgPanel2.GetComponent<Image>().sprite = null;
                 DoneWithDialogue.Invoke();
             }
             else if (Input.GetKeyDown(KeyCode.Space) && spaceDelay)
@@ -113,6 +115,7 @@ public class DialogueManager : MonoBehaviour
                 initialText = 0;
                 dialogueAvailable = false;
                 currentSprite = null;
+                bgPanel2.GetComponent<Image>().sprite = null;
                 DoneWithDialogue.Invoke();
             }
         }
@@ -201,7 +204,6 @@ public class DialogueManager : MonoBehaviour
         {
             if(bgPanel2.GetComponent<Image>().sprite == null)
             {
-                Debug.Log("here");
                 bgPanel.GetComponent<Image>().sprite = currentBG;
                 bgPanel2.GetComponent<Image>().sprite = currentBG;
                 invisible = bgPanel2.GetComponent<Image>().color;
@@ -213,7 +215,6 @@ public class DialogueManager : MonoBehaviour
             }
             else       //this is run if the bgpanel image component is not null, which means its not the first time in the dialogue
             {
-                Debug.Log("there");
                 bgPanel2.GetComponent<Image>().sprite = currentBG;
                 invisible = bgPanel2.GetComponent<Image>().color;
                 invisible.a = 0f;
