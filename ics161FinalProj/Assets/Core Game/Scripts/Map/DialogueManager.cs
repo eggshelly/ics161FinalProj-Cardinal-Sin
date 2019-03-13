@@ -225,21 +225,6 @@ public class DialogueManager : MonoBehaviour
 
             //if last dialogue has passed, set the image sprite componenet of bgpanel2 to null so we know that at start of next dialogue,
             //it will start at the first part of the block instead of the second part.
-
-
-            /*notes:   the first time in a dialogue, both panels are assigned the same image. Panel 1 is hidden and panel2 slowly fades in
-            once panel 2 has faded in fully, panel 1 becomes visible and panel 2 disappears. panel 2 alpha value is set back to invisible
-            
-            any time after the first background change in dialogue, if a new
-            background change occurs, panel 2 gets assigned a new image, and then starts the fade in.
-            after fade in coroutine is done, panel 1 gets the image from panel 2, and then panel 2 gets hidden. and 
-            alpha value gets reset back to invisible. repeats from top of this
-            paragraph
-
-            during last dialogue, bgpanel 2 image sprite component gets set to null: this is how we know whether or not its the first time
-            in a dialogue. 
-            
-             */
         }
         
             
