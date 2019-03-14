@@ -35,6 +35,9 @@ public class DialogueManager : MonoBehaviour
     public Sprite currentBG = null;
     private string currentSpeaker = "";
 
+    int maxLines = 0;
+    int count = 0;
+
     private void Awake()
     {
         DoneWithDialogue = new UnityEvent();
@@ -72,12 +75,15 @@ public class DialogueManager : MonoBehaviour
                     initialText++;
                     DisplayNextSentence();
                 }
-
+                Debug.Log(maxLines - count);
                 if (Input.GetKeyDown(KeyCode.Space) && !spaceDelay)
+                {
                     DisplayNextSentence();
+                    count -= 1;
+                }
                 else if (Input.GetKeyDown(KeyCode.Space) && spaceDelay)
                     DisplayFullSentence();
-                else if (Input.GetKeyDown(KeyCode.P)) //press P to skip dialogue, FOR T E S T I N G P U R P O S E S
+                else if (Input.GetKeyDown(KeyCode.P) && (maxLines - count > 0)) //press P to skip dialogue, FOR T E S T I N G P U R P O S E S
                 {
                     spaceDelay = false;
                     dialogueAvailable = false;
@@ -200,6 +206,8 @@ public class DialogueManager : MonoBehaviour
 
         while (currentLine <= dialogueDict.Count)
             textOutput.Enqueue(dialogueDict[currentLine++]);
+        maxLines = textOutput.Count;
+        count = maxLines;
     }
 
     private void DisplayNextSentence()
@@ -215,6 +223,7 @@ public class DialogueManager : MonoBehaviour
         StopCoroutine(lastRoutine);
         dialogueText.text = nextLine.text;
         spaceDelay = false;
+
     }
 
     private IEnumerator UpdateText(Dialogue DialogueObj)
