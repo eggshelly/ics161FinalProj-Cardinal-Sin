@@ -450,7 +450,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1560792297
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
@@ -5220,7 +5220,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1546070311
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 1fe5a4484d007e0499c866cad3d6ee94, type: 3}
   m_Color: {r: 0.31798097, g: 0.1721698, b: 0.5, a: 1}
@@ -5262,6 +5262,7 @@ Transform:
   m_Children:
   - {fileID: 769399201}
   - {fileID: 771663884}
+  - {fileID: 309901704}
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5304,6 +5305,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &309901704 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8565172546891820204, guid: c8dc0bc5173f5c94ab1308db694b3637,
+    type: 3}
+  m_PrefabInstance: {fileID: 2006990871}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &395787029
 GameObject:
   m_ObjectHideFlags: 0
@@ -5529,7 +5536,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -634599909
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -6373,7 +6380,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2030651331
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -7562,7 +7569,7 @@ PrefabInstance:
     - target: {fileID: 8565172546891820204, guid: c8dc0bc5173f5c94ab1308db694b3637,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -62.49
+      value: -58.56
       objectReference: {fileID: 0}
     - target: {fileID: 8565172546891820204, guid: c8dc0bc5173f5c94ab1308db694b3637,
         type: 3}
@@ -7632,12 +7639,12 @@ PrefabInstance:
     - target: {fileID: 8565172546891820207, guid: c8dc0bc5173f5c94ab1308db694b3637,
         type: 3}
       propertyPath: levelDialogue.Array.data[0]
-      value: uwu
+      value: Hm...
       objectReference: {fileID: 0}
     - target: {fileID: 8565172546891820207, guid: c8dc0bc5173f5c94ab1308db694b3637,
         type: 3}
       propertyPath: levelDialogue.Array.data[1]
-      value: test
+      value: Maybe getting those heart things will get me out of here.
       objectReference: {fileID: 0}
     - target: {fileID: 8565172546891820207, guid: c8dc0bc5173f5c94ab1308db694b3637,
         type: 3}
@@ -7748,7 +7755,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1546070311
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c06fb63aed1f5c049beaf7c7cfb2bb31, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -7828,7 +7835,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1560792297
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -11194,7 +11201,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1546070311
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c06fb63aed1f5c049beaf7c7cfb2bb31, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -11308,7 +11315,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1546070311
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 44cc656b344293c49b4568002d2e87c5, type: 3}
   m_Color: {r: 0.385, g: 0.385, b: 0.385, a: 1}
@@ -11387,7 +11394,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1546070311
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 44cc656b344293c49b4568002d2e87c5, type: 3}
   m_Color: {r: 0.385, g: 0.385, b: 0.385, a: 1}
@@ -11466,7 +11473,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1546070311
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 44cc656b344293c49b4568002d2e87c5, type: 3}
   m_Color: {r: 0.385, g: 0.385, b: 0.385, a: 1}
@@ -11636,7 +11643,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1546070311
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 1fe5a4484d007e0499c866cad3d6ee94, type: 3}
   m_Color: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 1}
@@ -11719,7 +11726,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1343664585
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -23635,7 +23642,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1161440983
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: -5
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -25379,7 +25386,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1546070311
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c06fb63aed1f5c049beaf7c7cfb2bb31, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -25608,7 +25615,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2030651331
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300002, guid: 58e48c15d06794b4f81cde83046bc0af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -25801,7 +25808,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1546070311
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -26895,7 +26902,7 @@ PrefabInstance:
     - target: {fileID: 5309328394198043222, guid: d45a8c493340b9943916596b053ee466,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0007396097
+      value: -0.0007504596
       objectReference: {fileID: 0}
     - target: {fileID: 5309328394198043222, guid: d45a8c493340b9943916596b053ee466,
         type: 3}
@@ -27024,7 +27031,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1546070311
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 44cc656b344293c49b4568002d2e87c5, type: 3}
   m_Color: {r: 0.385, g: 0.385, b: 0.385, a: 1}
@@ -27139,6 +27146,135 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1001 &2006990871
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 257712284}
+    m_Modifications:
+    - target: {fileID: 8565172546891820206, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: m_Name
+      value: LevelDialogue (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820204, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820204, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820204, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820204, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820204, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820204, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820204, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820204, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820204, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820204, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820204, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820207, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: levelDialogue.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820207, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: dialoguePanel
+      value: 
+      objectReference: {fileID: 2119495979}
+    - target: {fileID: 8565172546891820207, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 1138528963}
+    - target: {fileID: 8565172546891820207, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: levelDialogue.Array.data[0]
+      value: '!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820207, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: levelDialogue.Array.data[1]
+      value: A door?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820207, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: levelDialogue.Array.data[2]
+      value: Maybe I can get back to Haruka through there!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820202, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.25155652
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820202, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.5611002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820202, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.22320461
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820202, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 4.2532825
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820205, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820205, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c8dc0bc5173f5c94ab1308db694b3637, type: 3}
 --- !u!1 &2039287770
 GameObject:
   m_ObjectHideFlags: 0
@@ -27205,7 +27341,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1546070311
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 1fe5a4484d007e0499c866cad3d6ee94, type: 3}
   m_Color: {r: 0.4339623, g: 0.4339623, b: 0.4339623, a: 1}
@@ -27284,7 +27420,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1546070311
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 44cc656b344293c49b4568002d2e87c5, type: 3}
   m_Color: {r: 0.385, g: 0.385, b: 0.385, a: 1}
@@ -27980,7 +28116,7 @@ PrefabInstance:
     - target: {fileID: 8565172546891820207, guid: c8dc0bc5173f5c94ab1308db694b3637,
         type: 3}
       propertyPath: levelDialogue.Array.size
-      value: 5
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8565172546891820207, guid: c8dc0bc5173f5c94ab1308db694b3637,
         type: 3}
@@ -27995,27 +28131,57 @@ PrefabInstance:
     - target: {fileID: 8565172546891820207, guid: c8dc0bc5173f5c94ab1308db694b3637,
         type: 3}
       propertyPath: levelDialogue.Array.data[0]
-      value: '...'
+      value: '*I feel the gentle Spring breeze brush my neck.*'
       objectReference: {fileID: 0}
     - target: {fileID: 8565172546891820207, guid: c8dc0bc5173f5c94ab1308db694b3637,
         type: 3}
       propertyPath: levelDialogue.Array.data[1]
-      value: '...'
+      value: . . .
       objectReference: {fileID: 0}
     - target: {fileID: 8565172546891820207, guid: c8dc0bc5173f5c94ab1308db694b3637,
         type: 3}
       propertyPath: levelDialogue.Array.data[2]
-      value: '...'
+      value: . . .
       objectReference: {fileID: 0}
     - target: {fileID: 8565172546891820207, guid: c8dc0bc5173f5c94ab1308db694b3637,
         type: 3}
       propertyPath: levelDialogue.Array.data[3]
-      value: Huh...?
+      value: . . .
       objectReference: {fileID: 0}
     - target: {fileID: 8565172546891820207, guid: c8dc0bc5173f5c94ab1308db694b3637,
         type: 3}
       propertyPath: levelDialogue.Array.data[4]
+      value: Huh...?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820207, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: levelDialogue.Array.data[5]
       value: Where am I?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820207, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: levelDialogue.Array.data[6]
+      value: '*I call out to Haruka*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820207, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: levelDialogue.Array.data[7]
+      value: HARUKA! WHERE ARE YOU?!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820207, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: levelDialogue.Array.data[8]
+      value: . . .
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820207, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: levelDialogue.Array.data[9]
+      value: No response, huh...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565172546891820207, guid: c8dc0bc5173f5c94ab1308db694b3637,
+        type: 3}
+      propertyPath: levelDialogue.Array.data[10]
+      value: Guess I have to find a way back.
       objectReference: {fileID: 0}
     - target: {fileID: 8565172546891820202, guid: c8dc0bc5173f5c94ab1308db694b3637,
         type: 3}

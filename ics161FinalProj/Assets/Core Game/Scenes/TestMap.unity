@@ -2087,7 +2087,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708545928}
-  m_LocalRotation: {x: -4.860861e-31, y: 0.000000030165822, z: 9.226745e-19, w: 1}
+  m_LocalRotation: {x: -4.8700016e-31, y: 0.000000030165822, z: 9.243942e-19, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3427,7 +3427,6 @@ MonoBehaviour:
   textBetweenWeeks: One Week Later...
   timeText: {fileID: 347345559}
   betweenWeekText: {fileID: 1490716468}
-  blockInput: {fileID: 1288403342}
   NextWeekEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -3736,8 +3735,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 867d2c802de964448b8265be575a20a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  springweeks: 0100000002000000
-  summerweeks: 0300000004000000
+  springweeks: 0100000003000000
+  summerweeks: 0200000004000000
   autumnweeks: 
   winterweeks: 
 --- !u!1 &1335650318
