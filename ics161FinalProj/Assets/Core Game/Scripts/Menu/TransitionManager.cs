@@ -37,7 +37,7 @@ public class TransitionManager : MonoBehaviour
     }
 
     public IEnumerator FadeToLevel(float duration)
-    {
+    { 
         screenFadeOut = FadeToBlack(2.1f);    //resets variable to a fresh coroutine
         StopCoroutine(screenFadeOut);           //stops the opposite coroutine when this one starts
         animator.SetTrigger("FadeIn");
@@ -140,7 +140,8 @@ public class TransitionManager : MonoBehaviour
         {
             yield return null;
         }
-        DialogueManager.instance.HidePanels();
+        //DialogueManager.instance.HideBackground();
+        //DialogueManager.instance.HidePanels();
         
     }
     public IEnumerator Wait()

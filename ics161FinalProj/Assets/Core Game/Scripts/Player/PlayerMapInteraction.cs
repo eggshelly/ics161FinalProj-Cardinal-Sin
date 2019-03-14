@@ -16,10 +16,11 @@ public class PlayerMapInteraction : MonoBehaviour
         {
             if (canEnterStage && Time.timeScale != 0)
             {
-                if (Input.GetKeyDown(KeyCode.E))
+                if (Input.GetAxisRaw("Interact") == 1 && !DialogueManager.instance.dialogueAvailable)
                 {
                     OnThisStage.EnterStage();
                 }
+
             }
         }   
     }

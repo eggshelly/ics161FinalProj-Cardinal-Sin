@@ -144,6 +144,7 @@ public class SaveFileManager : MonoBehaviour
                 player.transform.position = loadedPos;
                 stageHub.loadStages(data.stageCollectibles, data.finishedLevels);
                 stageHub.UpdateFinishedStage(currentStage, currentStageLevel, currentStageCollectibles);
+                //stageHub.gameObject.GetComponent<ActiveStageManager>().StageJustFinished(currentStage);
             }
         }
     }
@@ -155,15 +156,10 @@ public class SaveFileManager : MonoBehaviour
 
     public void SaveTempInfo()
     {
-        data = new LevelData(Vector3.zero, stageHub, DialogueManager.instance, TimeManager.instance);
+        data = new LevelData(player.transform.position, stageHub, DialogueManager.instance, TimeManager.instance);
     }
 
 
-    //Keeps track of the player's position right before they enter the stage
-    public void SaveCurrentPosition()
-    {
-        playerPos = player.transform.position;
-    }
 
     //Holds the list of collectibles from the stage that was just finished.
     public void AddCollectablesCountToCurrentState(bool[] collected)

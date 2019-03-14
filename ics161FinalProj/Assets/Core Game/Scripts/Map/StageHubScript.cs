@@ -24,7 +24,6 @@ public class StageHubScript : MonoBehaviour
 
     private void Awake()
     {
-
         allStageCollectibles = new Dictionary<Stage, List<bool[]>>();
         allStages = GetComponentsInChildren<Stage>();
         CreateArrays();
@@ -58,12 +57,17 @@ public class StageHubScript : MonoBehaviour
 
     //Adds event listeners to the Events in the Stage script
     void SetStageListeners()
-    {
+    { 
         for (int i = 0; i < allStages.Length; ++i)
         {
             allStages[i].StageEntered.AddListener(StageEnteredListener);
             allStages[i].StageLeft.AddListener(StageLeftListener);
         }
+    }
+
+    public Stage[] GetStages()
+    {
+        return allStages;
     }
 
 
@@ -127,7 +131,10 @@ public class StageHubScript : MonoBehaviour
             FindObjectOfType<AudioManager>().Stop(AudioManager.instance.currentSong.name);
             StartCoroutine(DoneDialogueCR());
             StartCoroutine(TransitionManager.instance.screenFadeOut);
+
         }
+
+
     }
 
     public void PreviousLevel(int index, int level)
@@ -170,6 +177,7 @@ public class StageHubScript : MonoBehaviour
         {
             yield return null;
         }
+        DialogueManager.instance.HideBackground();
         player.GetComponent<PlayerMapMovement>().enabled = true;
         player.GetComponent<PlayerMapInteraction>().enabled = true;
         //SaveFileManager.instance.SaveCurrentPosition();

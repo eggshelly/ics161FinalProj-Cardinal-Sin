@@ -4,19 +4,23 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class TimeManager : MonoBehaviour
 {
     [SerializeField] int maxNumberOfWeeks;
     [SerializeField] string textBetweenWeeks = "One Week Later...";
-    [SerializeField] TextMeshProUGUI timeText;
+    [SerializeField] GameObject timeText;
     [SerializeField] TextMeshProUGUI betweenWeekText;
     public static TimeManager instance = null;
 
     public UnityEvent NextWeekEvent;
 
+    TextMeshProUGUI text;
 
     int week = 1;
+
+    bool CR_started = false;
     //int day = 1;
 
     //Dictionary<int, string> daysOfTheWeek;
@@ -38,11 +42,13 @@ public class TimeManager : MonoBehaviour
         SceneManager.sceneLoaded += OnSceneLoaded;
 
         //CreateDaysOfWeek();
+        
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        
         DialogueManager.instance.EndOfWeek.AddListener(EndOfWeekListener);
 
     }
@@ -78,22 +84,29 @@ public class TimeManager : MonoBehaviour
 
     void UpdateText()
     {
-        timeText.text = string.Format("Week {0}", week);
+        text.text= string.Format("Week {0}", week);
     }
 
     void EndOfWeekListener()
     {
-        StartCoroutine(EndOfWeekFade());
+        if (!CR_started)
+        {
+            CR_started = true;
+            Debug.Log("Here");
+            StartCoroutine(EndOfWeekFade());
+        }
     }
 
     IEnumerator EndOfWeekFade()
     {
         yield return StartCoroutine(TransitionManager.instance.screenFadeOut);
+        DialogueManager.instance.HideBackground();
         StartCoroutine(EndOfWeekText());        
     }
 
     IEnumerator EndOfWeekText()
     {
+        GameObject.FindGameObjectWithTag("Player").transform.position = Vector3.zero;
         NextWeek();
         betweenWeekText.gameObject.SetActive(true);
         foreach (var c in textBetweenWeeks)
@@ -104,20 +117,22 @@ public class TimeManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         betweenWeekText.text = "";
         yield return StartCoroutine(TransitionManager.instance.screenFadeIn);
+        CR_started = false;
         betweenWeekText.gameObject.SetActive(false);
     }
 
 
     void OnSceneLoaded(Scene loadedScene, LoadSceneMode sceneMode)
     {
-        if(loadedScene == SceneManager.GetSceneByName("TestMap"))
+        if (loadedScene == SceneManager.GetSceneByName("TestMap"))
         {
-            timeText.gameObject.SetActive(true);
+            text = timeText.GetComponent<TextMeshProUGUI>();
+            timeText.SetActive(true);
             UpdateText();
         }
         else
         {
-            timeText.gameObject.SetActive(false);
+            timeText.SetActive(false);
         }
     }
 

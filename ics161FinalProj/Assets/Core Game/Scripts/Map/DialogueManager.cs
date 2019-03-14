@@ -55,77 +55,91 @@ public class DialogueManager : MonoBehaviour
         if (!hasDoneIntro)
         {
             LoadDialogue("INTRODUCTION");
-            hasDoneIntro = true;
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(PauseOnMap.mapPaused == false){
-        if (textOutput.Count >= 1)
+        if(PauseOnMap.mapPaused == false)
         {
-            dialogueAvailable = true;
-            dialoguePanel.SetActive(true);            
-            if (initialText == 0)
+            if (textOutput.Count >= 1)
             {
-                initialText++;
-                DisplayNextSentence();
-            }
-
-            if (Input.GetKeyDown(KeyCode.Space) && !spaceDelay)
-                DisplayNextSentence();
-            else if (Input.GetKeyDown(KeyCode.Space) && spaceDelay)
-                DisplayFullSentence();
-            else if (Input.GetKeyDown(KeyCode.P)) //press P to skip dialogue, FOR T E S T I N G P U R P O S E S
-            {
-                spaceDelay = false;
-                dialogueAvailable = false;
-
-                if (!introTransition)
+                dialogueAvailable = true;
+                dialoguePanel.SetActive(true);            
+                if (initialText == 0)
                 {
-                    StartCoroutine(TransitionManager.instance.screenFadeIn);
-                    introTransition = true;
+                    initialText++;
+                    DisplayNextSentence();
                 }
 
-                initialText = 0;
-                HidePanels();
-                textOutput.Clear();
-                currentSprite = null;
-                bgPanel2.GetComponent<Image>().sprite = null;
-                NextWeek();
-                DoneWithDialogue.Invoke();
-            }
+                if (Input.GetKeyDown(KeyCode.Space) && !spaceDelay)
+                    DisplayNextSentence();
+                else if (Input.GetKeyDown(KeyCode.Space) && spaceDelay)
+                    DisplayFullSentence();
+                else if (Input.GetKeyDown(KeyCode.P)) //press P to skip dialogue, FOR T E S T I N G P U R P O S E S
+                {
+                    spaceDelay = false;
+                    dialogueAvailable = false;
 
-        }
-        else if (textOutput.Count == 0)     //if we're on the last sentence, we want to wait for the player to close the dialogue box
-        {
-            if(Input.GetKeyDown(KeyCode.Space) && !spaceDelay)
-            {
-                HidePanels();
-                initialText = 0;
-                dialogueAvailable = false;
-                currentSprite = null;
-                bgPanel2.GetComponent<Image>().sprite = null;
-                NextWeek();
-                DoneWithDialogue.Invoke();
+                    if (!introTransition)
+                    {
+                        StartCoroutine(TransitionManager.instance.screenFadeIn);
+                        introTransition = true;
+                    }
+                    if (!hasDoneIntro)
+                    {
+                        HideBackground();
+                        hasDoneIntro = true;
+                    }
+                    initialText = 0;
+                    HidePanels();
+                    textOutput.Clear();
+                    currentSprite = null;
+                    bgPanel2.GetComponent<Image>().sprite = null;
+                    NextWeek();
+                    DoneWithDialogue.Invoke();
+                }
+
             }
-            else if (Input.GetKeyDown(KeyCode.Space) && spaceDelay)
+            else if (textOutput.Count == 0)     //if we're on the last sentence, we want to wait for the player to close the dialogue box
             {
-                DisplayFullSentence();
-                HidePanels();
-                initialText = 0;
-                dialogueAvailable = false;
-                currentSprite = null;
-                bgPanel2.GetComponent<Image>().sprite = null;
-                NextWeek();
-                DoneWithDialogue.Invoke();
+                if(Input.GetKeyDown(KeyCode.Space) && !spaceDelay)
+                {
+                    HidePanels();
+                    if(!hasDoneIntro)
+                    {
+                        HideBackground();
+                        hasDoneIntro = true;
+                    }
+                    initialText = 0;
+                    dialogueAvailable = false;
+                    currentSprite = null;
+                    bgPanel2.GetComponent<Image>().sprite = null;
+                    NextWeek();
+                    DoneWithDialogue.Invoke();
+                }
+                else if (Input.GetKeyDown(KeyCode.Space) && spaceDelay)
+                {
+                    if (!hasDoneIntro)
+                    {
+                        HideBackground();
+                        hasDoneIntro = true;
+                    }
+                    DisplayFullSentence();
+                    HidePanels();
+                    initialText = 0;
+                    dialogueAvailable = false;
+                    currentSprite = null;
+                    bgPanel2.GetComponent<Image>().sprite = null;
+                    NextWeek();
+                    DoneWithDialogue.Invoke();
+                }
             }
-        }
         }
     }
 
-    void NextWeek()
+    public void NextWeek()
     {
         if (SaveFileManager.instance.finishedAStage)
         {
@@ -138,6 +152,10 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(false);
         namePanel.SetActive(false);
         spritePanel.SetActive(false);
+    }
+
+    public void HideBackground()
+    {
         bgPanel.SetActive(false);
         bgPanel2.SetActive(false);
     }
@@ -147,6 +165,7 @@ public class DialogueManager : MonoBehaviour
         dialogueAvailable = false;
         currentSprite = null;
         HidePanels();
+        HideBackground();
         textOutput.Clear();
         dialogueText.text = "";
         StopAllCoroutines();
