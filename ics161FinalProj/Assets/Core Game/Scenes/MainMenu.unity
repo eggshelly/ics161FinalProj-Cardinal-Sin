@@ -6277,7 +6277,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: SUMMER bittersweet
     loop: 1
-    clip: {fileID: 8300000, guid: b3f7749169024004d97930083fa84e7f, type: 3}
+    clip: {fileID: 8300000, guid: d51c735043ba3f44db412df3be0d5edb, type: 3}
     volume: 0
     pitch: 1
     source: {fileID: 0}
@@ -6295,7 +6295,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: SUMMER relax
     loop: 1
-    clip: {fileID: 8300000, guid: 8be1884713e2e7a44a8eba03dea43ce5, type: 3}
+    clip: {fileID: 8300000, guid: 83501e41f390d1247b05ecb7d843b3bd, type: 3}
     volume: 0
     pitch: 1
     source: {fileID: 0}
@@ -6326,6 +6326,12 @@ MonoBehaviour:
   - name: WINTER steps
     loop: 1
     clip: {fileID: 8300000, guid: 4e37784f7588ff147860fa0f24faae16, type: 3}
+    volume: 0
+    pitch: 1
+    source: {fileID: 0}
+  - name: SUMMER music box 2
+    loop: 1
+    clip: {fileID: 8300000, guid: 43f4a29438ad4954aa45993f60e90524, type: 3}
     volume: 0
     pitch: 1
     source: {fileID: 0}
