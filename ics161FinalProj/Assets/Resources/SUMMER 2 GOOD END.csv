@@ -1,0 +1,55 @@
+SPEAKER,CONVO,SPRITE,AUDIO,BACKGROUND
+,,,,
+MC,...,none,NONE,BG grass2
+,,,,
+Natsuki,H-HeyXYZ what's wrong? Trying to keep all the curry to yourself? Heh...,default,NONE,BG grass2
+,,,,
+M,That's right... Natsuki is always good at communicating her feelings unfiltered. MaybeXYZ this time I can do the same.,default,NONE,BG grass2
+,,,,
+MC,...NatsukiXYZ I'm sorry.,none,SUMMER bittersweet,BG grass2
+,,,,
+Natsuki,H-Huh?,sad_surprise2,SUMMER bittersweet,BG grass2
+,,,,
+MC,IXYZ uh... I don't have the right words to say itXYZ but... she passed on last Spring. That's why I'm here actually... I'm sorry I didn't tell you sooner. I just haven't really come to terms with it myself yetXYZ so...,none,SUMMER bittersweet,BG grass2
+,,,,
+Natsuki,...so sh-she'sXYZ gone...?,sad_surprise,SUMMER bittersweet,BG grass2
+,,,,
+M,My throat felt dry and my chest felt heavy. All I could give her was a simple nod.,default,SUMMER bittersweet,BG grass2
+,,,,
+Natsuki,I-I see...,sad,SUMMER bittersweet,BG grass2
+,,,,
+MC,I'm sorry NatsukiXYZ I really should have told you right awayXYZ I just--,none,SUMMER bittersweet,BG grass2
+,,,,
+Natsuki,I-Idiot! I'm... I'm not upset about thatXYZ I understand that part...but.. but!!,surprise2,SUMMER bittersweet,BG grass2
+,,,,
+Natsuki,Keeping all that pain to yourself! IdiotXYZ what are childhood friends for...,sad_tsundere2,SUMMER bittersweet,BG grass2
+,,,,
+Natsuki,You can rely on me tooXYZ you know...,sad_surprise2,SUMMER bittersweet,BG grass2
+,,,,
+MC,Natsuki...,none,SUMMER bittersweet,BG grass2
+,,,,
+M,Her eyes were glossyXYZ but I never saw a tear drop. I knew she was hurtingXYZ yet...,default,SUMMER bittersweet,BG grass2
+,,,,
+MC,...,none,SUMMER bittersweet,BG grass2
+,,,,
+MC,Is it really okay... to rely on you?,none,SUMMER bittersweet,BG grass2
+,,,,
+Natsuki,Of courseXYZ idiot... you shouldn't have to ask...,sad,SUMMER bittersweet,BG grass2
+,,,,
+M,Natsuki understands. She understands that I don't have to be strong right now. That I can just... be me right now. Talking about it right now brings back a wave of memoriesXYZ as if she just passed yesterday. It's heavy.,default,SUMMER bittersweet,BG grass2
+,,,,
+M,It hurts.,default,SUMMER bittersweet,BG grass2
+,,,,
+Natsuki,H-Hey...,sad_surprise,SUMMER bittersweet,BG grass2
+,,,,
+Natsuki,Would it be okay if... next time you pay respects to her... can I come to give her an offering to? I have a lot of things to thank her for... she put up with a lot of my outburstsXYZ back in the day...,sad_surprise2,SUMMER bittersweet,BG grass2
+,,,,
+M,Pay respects... I haven't done that since her funeral. I've been afraid toXYZ because that would mean accepting everythingXYZ accepting that she's...,default,SUMMER bittersweet,BG grass2
+,,,,
+MC,...,none,SUMMER bittersweet,BG grass2
+,,,,
+M,But maybeXYZ if I have someone go with meXYZ it won't be as hard. It might be nice to see Mom again.,default,SUMMER bittersweet,BG grass2
+,,,,
+M,And if I'm going to take anyone with me...,default,SUMMER bittersweet,BG grass2
+,,,,
+MC,Let's go together next timeXYZ Natsuki.,none,SUMMER bittersweet,BG grass2

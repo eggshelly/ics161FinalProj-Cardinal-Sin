@@ -1,0 +1,145 @@
+SPEAKER,CONVO,SPRITE,AUDIO,BACKGROUND
+,,,,
+M,Midterm season has passedXYZ and finally I can enjoy summer vacation. Track practices have become more frequentXYZ meaning I’m seeing a lot more of Natsuki. She drags me along and has me run errands for her team now.,default,SUMMER,BG livingroom
+,,,,
+M,I don’t particularly mind though. If I’m going to wait for her after schoolXYZ I might as well be useful. Now that it’s summer vacationXYZ I’m excited to spend time visiting old places with NatsukiXYZ just like when we were kids.,default,SUMMER,BG livingroom
+,,,,
+Natsuki,Hey heyXYZ what do I do for this one? I square it right? ‘Cause I’m getting 34 and the answer in the back is saying 3 squareroot of 5…,tsundere2,SUMMER happy,BG livingroom
+,,,,
+M,...or so I thought. I let out an exasperated sigh.,default,SUMMER happy,BG livingroom
+,,,,
+MC,NoXYZ like I saidXYZ you’re forgetting to apply the formula in the third step Natsuki…,none,SUMMER happy,BG livingroom
+,,,,
+Natsuki,Hehe oh yeah! Just like the last problemXYZ ok I’ll try again.,smile,SUMMER happy,BG livingroom
+,,,,
+M,UnfortunatelyXYZ the only place new I’ve visited with Natsuki is her house. It is nice to come back after all these yearsXYZ but I was hoping we could at least go to the beach or something fun.,default,SUMMER happy,BG livingroom
+,,,,
+M,InsteadXYZ I’m keeping Natsuki company while she does her summer homework. Apparently she did really bad on her midtermsXYZ so her parents begged me to help her out. Not that I’m all that great with school either but...,default,SUMMER happy,BG livingroom
+,,,,
+Natsuki,Aha! This one was easyXYZ the answer was clearly-- w-wait that answer doesn’t look like mine at all…,surprise,SUMMER happy,BG livingroom
+,,,,
+M,...it could be worse.,default,SUMMER happy,BG livingroom
+,,,,
+MC,C’mon NatsukiXYZ this should be review for you. The math teacher went over this part recentlyXYZ too. Do you not take notes?,none,SUMMER happy,BG livingroom
+,,,,
+Natsuki,I know I knowXYZ jeez you sound like my parents. I take notes butXYZ I don’t do any of the suggested problems… I haven’t really been doing the homeworkXYZ either...,tsundere2,SUMMER happy,BG livingroom
+,,,,
+MC,Really? Natsuki! No wonder your midterms went poorly…,none,SUMMER happy,BG livingroom
+,,,,
+Natsuki,I get it I get it! It’s just track is getting really busyXYZ y’know? I have to plan out the perfect workout routines for them and go to every practice. We’re preparing for the biggest meet of the year. We don’t have enough money for a proper coachXYZ so…,tsundere,SUMMER happy,BG livingroom
+,,,,
+Natsuki,Plus I really want to win! I made a bet with them if we loseXYZ so I have to give it my all while they’re all pumped!,smile2,SUMMER happy,BG livingroom
+,,,,
+MC,A bet?,none,SUMMER happy,BG livingroom
+,,,,
+Natsuki,Yeah yeahXYZ every year for this big track meetXYZ I let them choose some sort of punishment. Last year they made me wear a maid costume at the cultural festivalXYZ disgusting…,neutral,SUMMER happy,BG livingroom
+,,,,
+MC,O-Oh…,none,SUMMER happy,BG livingroom
+,,,,
+Natsuki,Yeah. This yearXYZ they won’t even tell me what my punishmentXYZ hmph. They say it’s going to take the most courage out of all the punishments they’ve thought of. Not looking forward to that…,tsundere2,SUMMER happy,BG livingroom
+,,,,
+Natsuki,But I won’t have to! ‘Cause we’re totally going to win this yearXYZ I know it! Hehe,neutral2,SUMMER happy,BG livingroom
+,,,,
+MC,Some ruthless team. Why go as far to take a punishment though? If they’re your teammatesXYZ there’s no need to subject yourself to that.,none,SUMMER happy,BG livingroom
+,,,,
+Natsuki,No… need? Sh-shut up!! You vanilla ass normie!,surprise,SUMMER happy,BG livingroom
+,,,,
+Natsuki,It gets them pumped upXYZ mmkay? It’s tradition! Tradition!!!,surprise2,SUMMER happy,BG livingroom
+,,,,
+MC,Okay okay sorryXYZ sorry. You know how to coach your team.,none,SUMMER happy,BG livingroom
+,,,,
+Natsuki,Hmmph. It gets them motivated and excitedXYZ and makes practices more fun. Brings up the moodXYZ y’know? A small team like ours with no proper coach or schedule in place is usually the laughing stock at meets like that…,tsundere,SUMMER relax,BG livingroom
+,,,,
+Natsuki,Our first yearXYZ our team was practically scoffed at just for signing up. So I came up with this idea to make it funXYZ whether we won or lost. It would unite us as a teamXYZ which is really importantXYZ too.,surprise,SUMMER relax,BG livingroom
+,,,,
+MC,That’s… a good pointXYZ actually…,none,SUMMER relax,BG livingroom
+,,,,
+M,I’ve been in the city for so longXYZ I forgot sports teams from the countryside stand little chance to other fancy schools. I know I wouldn’t be excited to get pummelled by schools that already look down on me.,default,SUMMER relax,BG livingroom
+,,,,
+MC,Good for youXYZ Natsuki. Your team is lucky to have a captain like you.,none,SUMMER relax,BG livingroom
+,,,,
+Natsuki,E-Eh??,surprise2_blush,SUMMER relax,BG livingroom
+,,,,
+Natsuki,…,tsundere,SUMMER relax,BG livingroom
+,,,,
+Natsuki,Wh-whatever. I put a lot of time into this teamXYZ might as well give it my all…,tsundere_blush,SUMMER relax,BG livingroom
+,,,,
+Natsuki,I have a lot of good memories with my teamXYZ afterall,tsundere2_blush,SUMMER relax,BG livingroom
+,,,,
+MC,MemoriesXYZ huh? This town has a lot of those for me too. Even if I haven’t been here as long as you.,none,SUMMER relax,BG livingroom
+,,,,
+Natsuki,It really does! I don’t know why anyone would ever leave this place after spending their whole life here. So many happy times in this quiet place. Idiots say it’s boringXYZ but I think it’s the opposite!,neutral,SUMMER relax,BG livingroom
+,,,,
+Natsuki,‘Cause going to the store isn’t just going to the store. It’s going to the same market I went to with my parents when I was youngXYZ buying the same brand of fish. It’s meaningful! Even if the store sign looks a lil different now-a-days…,surprise2,SUMMER relax,BG livingroom
+,,,,
+Natsuki,It’s a meaningful journey!,smile2_blush,SUMMER relax,BG livingroom
+,,,,
+MC,Buying fish is a meaningful journey…? You’re still a weirdoXYZ Natsuki. But I see what you mean. Even if things look differentXYZ even walking to school brings me nostalgia…,none,SUMMER relax,BG livingroom
+,,,,
+Natsuki,Oh yeah! That one pathXYZ heh. We’d walk that way after playing in the parkXYZ tiring ourselves out. Your mom would always scold us for getting dirt in the houseXYZ fufu~,neutral,SUMMER relax,BG livingroom
+,,,,
+MC,…,none,SUMMER relax,BG livingroom
+,,,,
+Natsuki,Those were some fun times. Especially when she’d cook for us afterXYZ don’t you think?,neutral2,SUMMER relax,BG livingroom
+,,,,
+MC,…,none,SUMMER relax,BG livingroom
+,,,,
+M,Nostalgia is an interesting feeling. It initially feels happy and warmXYZ but as the feeling sets inXYZ I start to feel strangely empty. Maybe that’s why I don’t enjoy this town in the same way Natsuki does.,default,SUMMER relax,BG livingroom
+,,,,
+Natsuki,Hey idiot…,sad_surprise2,SUMMER relax,BG livingroom
+,,,,
+Natsuki,I know it’s hardXYZ but it’s good to talk about herXYZ you know. Memories are what keep people alive.,sad_tsundere2,SUMMER relax,BG livingroom
+,,,,
+MC,Y-Yeah… I guess that’s true.,none,SUMMER relax,BG livingroom
+,,,,
+Natsuki,I understand it’s difficult at firstXYZ though. It’s not completely the same butXYZ when you leftXYZ I avoided so many placesXYZ ‘cause all they brought were memories of y-you…,sad_surprise2,SUMMER relax,BG livingroom
+,,,,
+Natsuki,I thought it’d be easier to pretend you never existed. But that’s kinda hard to do in a little townXYZ where every part of it had my favor-- I-I meanXYZ some memories to them…,sad_surprise2_blush,SUMMER relax,BG livingroom
+,,,,
+Natsuki,So eventually I came to accept that you were goneXYZ but the memories weren’t. So a piece of you would still be hereXYZ in this town... It’s nice right? That even after people leave or kick the bucket or whatever…,sad_tsundere2_blush,SUMMER relax,BG livingroom
+,,,,
+Natsuki,...they still leave a part of them behind...,neutral,SUMMER relax,BG livingroom
+,,,,
+Natsuki,And soon enoughXYZ those places I used to avoid became places of comfortXYZ because of those memoriesXYZ so...,neutral_blush,SUMMER relax,BG livingroom
+,,,,
+Natsuki,S-So what I mean! Is that unless you get bonked on the head or somethingXYZ those memories with your mom are permanent.,surprise2_blush,SUMMER relax,BG livingroom
+,,,,
+M,Permanent… that’s interesting. I see what she means nowXYZ how they keep people alive.,default,SUMMER relax,BG livingroom
+,,,,
+MC,...,none,SUMMER relax,BG livingroom
+,,,,
+M,Thank youXYZ Natsuki.,default,SUMMER relax,BG livingroom
+,,,,
+MC,Heh. You’ve grown up a lot.,none,SUMMER relax,BG livingroom
+,,,,
+Natsuki,G-Grown up? Shut up loser we’re like the same age. I didn’t even say anything… I just like this town a lot…,tsundere2_blush,SUMMER relax,BG livingroom
+,,,,
+MC,Whatever. And for the recordXYZ my mom would scold *you* for bringing dirt into the house. I was never as filthy as youXYZ pig.,none,SUMMER relax,BG livingroom
+,,,,
+Natsuki,P-Pig!? I’m going to punch your little city boy mouthXYZ ya hear???,surprise,SUMMER relax,BG livingroom
+,,,,
+M,Natsuki usually acts without tactXYZ but... she says some very wise things at times. Things that… have helped me heal. She’s rightXYZ I shouldn’t be afraid to talk about my mother. After allXYZ we had a lot of wonderful memoriesXYZ especially in this town…,default,SUMMER relax,BG livingroom
+,,,,
+M,Maybe I’m starting to see the appeal of nostalgia. Just a bit.,default,SUMMER relax,BG livingroom
+,,,,
+MC,A-AnywaysXYZ go finish your math homework so we can do something fun. It’s bright outXYZ I’m sick of being inside.,none,SUMMER relax,BG livingroom
+,,,,
+Natsuki,HmphXYZ don’t tell me what to do. I was just takin’ a little break.,tsundere,SUMMER relax,BG livingroom
+,,,,
+M,SighXYZ Natsuki. Some things will never change. I admire how much time she invests into her teamXYZ but now she’s in remedial classes because of it. I feel like I’m a bit of a distraction nowXYZ too.,default,SUMMER relax,BG livingroom
+,,,,
+M,She’s given me amazing advice and has been a source of familiarity and comfort while I was finding my way at this school. The least I can do is support herXYZ but… she can’t afford to repeat her senior year of high school either.,default,SUMMER relax,BG livingroom
+,,,,
+MC,Natsuki…,none,SUMMER relax,BG livingroom
+,,,,
+Natsuki,Hm? Didn’t you tell me to do my work!? Idiot…,surprise,SUMMER relax,BG livingroom
+,,,,
+MC,OhXYZ r-right…,none,SUMMER relax,BG livingroom
+,,,,
+MC,...,none,SUMMER relax,BG livingroom
+,,,,
+M,I want to support herXYZ but I don’t want to say the wrong thing and encourage her to fail her classes. I know how much her team means to herXYZ but…,default,SUMMER relax,BG livingroom
+,,,,
+M,I know what I have to do. I need to go back to *that* placeXYZ and unlock the right words.,default,SUMMER relax,BG livingroom
+,,,,
+M,I want to support her.,default,SUMMER relax,BG livingroom

@@ -63,9 +63,9 @@ def makecsv(title:str, text:str):
             print(line)
             speaker = line[:line.index(":")]
             convo   = line[line.index(":")+1:]
-            sprite  = (dialogue_map[convo]["sprite"]) if convo in dialogue_map else "none" if speaker == "MC" else "default"
-            audio   = dialogue_map[convo]["audio"] if convo in dialogue_map else oldTitle[:oldTitle.index(" ")] if " " in oldTitle else oldTitle
-            bg      = dialogue_map[convo]["background"] if convo in dialogue_map else "BG "
+            sprite  = "none" if speaker == "MC" else "default"
+            audio   = oldTitle[:oldTitle.index(" ")] if " " in oldTitle else oldTitle
+            bg      = "BG "
 
             filewriter.writerow([speaker, convo, sprite, audio, bg])
     
