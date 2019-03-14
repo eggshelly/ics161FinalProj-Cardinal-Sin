@@ -71,9 +71,11 @@ public class TransitionManager : MonoBehaviour
                 StartCoroutine(WaitForCR());
             }
             else     //addresses case where user clicks so fast that next coroutine tries to start before the last fade in effect has finished. this will force it to wait in theory
+            {
                 StartCoroutine(Wait());
                 StartCoroutine(bgFadeIn(1.15f));
                 StartCoroutine(WaitForCR());
+            }
         }
     }
 
