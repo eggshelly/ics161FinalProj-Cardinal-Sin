@@ -72,7 +72,7 @@ public class LevelDialogue : MonoBehaviour
         for(int i = 0; i < l.Length; ++i )
         {
             dialogueText.text += l[i];
-            yield return new WaitForSeconds(0.02f);
+            yield return new WaitForSeconds(0.01f);
         }
         NextLine();
     }

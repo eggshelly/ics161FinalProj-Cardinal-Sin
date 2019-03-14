@@ -109,5 +109,9 @@ public class PlayerMapMovement : MonoBehaviour
         canMove = false;
     }
 
+    public void CanMove()
+    {
+        canMove = true;
+    }
 
 }

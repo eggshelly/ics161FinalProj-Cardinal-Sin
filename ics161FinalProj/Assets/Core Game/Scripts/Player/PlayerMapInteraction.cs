@@ -14,9 +14,15 @@ public class PlayerMapInteraction : MonoBehaviour
     {
         if (canInteract)
         {
+            
             if (canEnterStage && Time.timeScale != 0)
             {
-                if (Input.GetAxisRaw("Interact") == 1 && !DialogueManager.instance.dialogueAvailable)
+                if (OnThisStage != null && !OnThisStage.gameObject.activeInHierarchy)
+                {
+                    OnThisStage = null;
+                    canEnterStage = false;
+                }
+                else if (Input.GetAxisRaw("Interact") == 1 && !DialogueManager.instance.dialogueAvailable)
                 {
                     OnThisStage.EnterStage();
                 }
@@ -29,6 +35,7 @@ public class PlayerMapInteraction : MonoBehaviour
     {   
         if(collision.CompareTag("Stage"))
         {
+            Debug.Log("stage");
             canEnterStage = true;
             OnThisStage = collision.gameObject.GetComponent<Stage>();
         }
@@ -47,5 +54,10 @@ public class PlayerMapInteraction : MonoBehaviour
     public void CantInteract()
     {
         canInteract = false;
+    }
+
+    public void CanInteract()
+    {
+        canInteract = true;
     }
 }

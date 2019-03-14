@@ -87,7 +87,6 @@ public class DialogueManager : MonoBehaviour
                 {
                     spaceDelay = false;
                     dialogueAvailable = false;
-
                     if (!introTransition)
                     {
                         StartCoroutine(TransitionManager.instance.screenFadeIn);

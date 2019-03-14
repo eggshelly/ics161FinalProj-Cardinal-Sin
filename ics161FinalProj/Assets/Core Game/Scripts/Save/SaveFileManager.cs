@@ -177,5 +177,11 @@ public class SaveFileManager : MonoBehaviour
         currentStage = index;
         currentStageLevel = level;
     }
+
+    public void ChangedStageLevel(string name, int level)
+    {
+        currentStageName = name;
+        currentStageLevel = level;
+    }
     
 }

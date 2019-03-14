@@ -140,15 +140,17 @@ public class StageHubScript : MonoBehaviour
     public void PreviousLevel(int index, int level)
     {
         int cLevel = allStages[index].PrevLevel(level);
-        currentStage = currentStage.Substring(0, currentStage.Length - 1) + cLevel;
-        panel.UpdatePanel(cLevel, allStages[index].GetLevelCollectibles(cLevel)); 
+        currentStage = allStages[index].GetName();
+        panel.UpdatePanel(cLevel, allStages[index].GetLevelCollectibles(cLevel));
+        SaveFileManager.instance.ChangedStageLevel(currentStage, cLevel);
     }
 
     public void NextLevel(int index, int level)
     {
         int cLevel = allStages[index].NextLevel(level);
-        currentStage = currentStage.Substring(0, currentStage.Length - 1) + cLevel;
-        panel.UpdatePanel(cLevel, allStages[index].GetLevelCollectibles(cLevel)); 
+        currentStage = allStages[index].GetName();
+        panel.UpdatePanel(cLevel, allStages[index].GetLevelCollectibles(cLevel));
+        SaveFileManager.instance.ChangedStageLevel(currentStage, cLevel);
     }
 
     public bool hasFinishedLevel(int index, int level)

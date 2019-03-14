@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class TimeManager : MonoBehaviour
 {
     [SerializeField] int maxNumberOfWeeks;
-    [SerializeField] string textBetweenWeeks = "One Week Later...";
+    [SerializeField] string[] textBetweenWeeks;
     [SerializeField] GameObject timeText;
     [SerializeField] TextMeshProUGUI betweenWeekText;
     public static TimeManager instance = null;
@@ -41,6 +41,7 @@ public class TimeManager : MonoBehaviour
 
         SceneManager.sceneLoaded += OnSceneLoaded;
 
+        text = timeText.GetComponent<TextMeshProUGUI>();
         //CreateDaysOfWeek();
         
     }
@@ -91,6 +92,9 @@ public class TimeManager : MonoBehaviour
     {
         if (!CR_started)
         {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            player.GetComponent<PlayerMapInteraction>().CantInteract();
+            player.GetComponent<PlayerMapMovement>().CantMove();
             CR_started = true;
             Debug.Log("Here");
             StartCoroutine(EndOfWeekFade());
@@ -106,10 +110,11 @@ public class TimeManager : MonoBehaviour
 
     IEnumerator EndOfWeekText()
     {
-        GameObject.FindGameObjectWithTag("Player").transform.position = Vector3.zero;
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        player.transform.position = Vector3.zero;
         NextWeek();
         betweenWeekText.gameObject.SetActive(true);
-        foreach (var c in textBetweenWeeks)
+        foreach (var c in textBetweenWeeks[(int)(Random.value*textBetweenWeeks.Length)])
         {
             betweenWeekText.text += c;
             yield return new WaitForSeconds(0.05f);
@@ -117,6 +122,8 @@ public class TimeManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         betweenWeekText.text = "";
         yield return StartCoroutine(TransitionManager.instance.screenFadeIn);
+        player.GetComponent<PlayerMapInteraction>().CanInteract();
+        player.GetComponent<PlayerMapMovement>().CanMove();
         CR_started = false;
         betweenWeekText.gameObject.SetActive(false);
     }
@@ -126,13 +133,11 @@ public class TimeManager : MonoBehaviour
     {
         if (loadedScene == SceneManager.GetSceneByName("TestMap"))
         {
-            text = timeText.GetComponent<TextMeshProUGUI>();
-            timeText.SetActive(true);
-            UpdateText();
+                UpdateText();
         }
         else
         {
-            timeText.SetActive(false);
+            text.text = "";
         }
     }
 

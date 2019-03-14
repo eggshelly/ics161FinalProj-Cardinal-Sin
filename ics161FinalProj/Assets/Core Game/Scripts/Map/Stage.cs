@@ -138,7 +138,7 @@ public class Stage : MonoBehaviour
         return currentLevel;
     }
 
-    string GetName()
+    public string GetName()
     {
         return gameObject.name + " " + currentLevel;
     }
