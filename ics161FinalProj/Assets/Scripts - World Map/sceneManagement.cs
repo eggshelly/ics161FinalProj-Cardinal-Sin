@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System;
 
-public class SceneMusicManager : MonoBehaviour
+public class sceneManagement : MonoBehaviour
 {
     private string scName;
-    public static SceneMusicManager instance;
+    public static sceneManagement instance;
     public bool sceneFlag = false;
 
     void Awake()

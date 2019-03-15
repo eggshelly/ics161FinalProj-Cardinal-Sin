@@ -312,14 +312,20 @@ public class DialogueManager : MonoBehaviour
         if(tempBG != null)
         {
             currentBG = tempBG;
-        
+            if(sceneManagement.instance.sceneFlag == true)
+            {
+                sceneManagement.instance.sceneFlag = false;
+                TransitionManager.instance.BGFadeFirst();
+            }
+            else{
             if(bgPanel2.GetComponent<Image>().sprite == null)
             {
-                TransitionManager.instance.BGFadeFirst();
+                TransitionManager.instance.BGFadeZero();
             }
             else
             {   
                 TransitionManager.instance.BGFadeSecond();
+            }
             }
         }
     }
