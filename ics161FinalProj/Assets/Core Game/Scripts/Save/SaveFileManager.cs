@@ -114,7 +114,6 @@ public class SaveFileManager : MonoBehaviour
         }
         else if (loadedScene == SceneManager.GetSceneByName("TestMap"))
         {
-            //StartCoroutine(TransitionManager.instance.FadeToLevel(2f));
             player = GameObject.FindGameObjectWithTag("Player");
             stageHub = GameObject.FindGameObjectWithTag("StageHub").GetComponent<StageHubScript>();
             if (loadData)
@@ -126,6 +125,7 @@ public class SaveFileManager : MonoBehaviour
                 stageHub.loadStages(level.stageCollectibles, level.finishedLevels);
                 DialogueManager.instance.hasDoneIntro = level.introCompleted;
                 TimeManager.instance.SetDay(level.week);
+                FindObjectOfType<AudioManager>().DialogueTransitionSong("INTRODUCTION");
                 SetLoadDataFalse();
                 
 
