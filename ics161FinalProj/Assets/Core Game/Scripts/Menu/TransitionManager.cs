@@ -51,9 +51,7 @@ public class TransitionManager : MonoBehaviour
         invisible = DialogueManager.instance.bgPanel2.GetComponent<Image>().color;
         invisible.a = 0f;
         DialogueManager.instance.bgPanel2.GetComponent<Image>().color = invisible;
-        DialogueManager.instance.bgPanel2.SetActive(true);        //bgpanel2 alpha value must be initialized as invisible
-        StartCoroutine(bgFadeIn(1.15f));     //this will fade in panel2
-        StartCoroutine(WaitCR());
+        DialogueManager.instance.bgPanel.SetActive(true);
     }
             
     public void BGFadeSecond()
