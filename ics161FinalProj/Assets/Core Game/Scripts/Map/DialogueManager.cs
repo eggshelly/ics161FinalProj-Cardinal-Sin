@@ -65,7 +65,6 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        string sceneName = SceneManager.GetActiveScene().name;
         if(PauseOnMap.mapPaused == false)
         {
             if (textOutput.Count >= 1)
@@ -104,8 +103,6 @@ public class DialogueManager : MonoBehaviour
                     textOutput.Clear();
                     currentSprite = null;
                     bgPanel2.GetComponent<Image>().sprite = null;
-                    if(AudioManager.instance.currentSong.name != "INTRODUCTION" && sceneName == "TestMap")
-                        FindObjectOfType<AudioManager>().DialogueTransitionSong("INTRODUCTION");
                     NextWeek();
                     DoneWithDialogue.Invoke();
                 }
@@ -125,8 +122,6 @@ public class DialogueManager : MonoBehaviour
                     dialogueAvailable = false;
                     currentSprite = null;
                     bgPanel2.GetComponent<Image>().sprite = null;
-                    if(AudioManager.instance.currentSong.name != "INTRODUCTION" && sceneName == "TestMap")
-                        FindObjectOfType<AudioManager>().DialogueTransitionSong("INTRODUCTION");
                     NextWeek();
                     DoneWithDialogue.Invoke();
                 }
@@ -143,8 +138,6 @@ public class DialogueManager : MonoBehaviour
                     dialogueAvailable = false;
                     currentSprite = null;
                     bgPanel2.GetComponent<Image>().sprite = null;
-                    if(AudioManager.instance.currentSong.name != "INTRODUCTION" && sceneName == "TestMap")
-                        FindObjectOfType<AudioManager>().DialogueTransitionSong("INTRODUCTION");
                     NextWeek();
                     DoneWithDialogue.Invoke();
                 }

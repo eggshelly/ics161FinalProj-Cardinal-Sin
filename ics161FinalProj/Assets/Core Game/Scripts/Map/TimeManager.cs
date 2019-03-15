@@ -121,6 +121,7 @@ public class TimeManager : MonoBehaviour
         }
         yield return new WaitForSeconds(1f);
         betweenWeekText.text = "";
+        FindObjectOfType<AudioManager>().DialogueTransitionSong("INTRODUCTION");
         yield return StartCoroutine(TransitionManager.instance.screenFadeIn);
         player.GetComponent<PlayerMapInteraction>().CanInteract();
         player.GetComponent<PlayerMapMovement>().CanMove();
