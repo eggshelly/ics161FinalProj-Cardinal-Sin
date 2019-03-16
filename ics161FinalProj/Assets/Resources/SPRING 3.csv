@@ -1,52 +1,52 @@
 SPEAKER,CONVO,SPRITE,AUDIO,BACKGROUND
 ,,,,
-M,Midterms were handed back today. More than half the term already passed by. I look down at my paperXYZ clearly marked with a red 73.,default,SPRING bittersweet bittersweet,BG classroom
+M,Midterms were handed back today. More than half the term already passed by. I look down at my paperXYZ clearly marked with a red 73.,default,SPRING bittersweet,BG classroom
 ,,,,
-MC,Barely made it... I wonder how Haruka did...,none,SPRING bittersweet bittersweet,BG classroom
+MC,Barely made it... I wonder how Haruka did...,none,SPRING bittersweet,BG classroom
 ,,,,
-Student A,Haruka wait!!,default,SPRING bittersweet bittersweet,BG classroom
+Student A,Haruka wait!!,none,SPRING bittersweet,BG classroom
 ,,,,
-Student B,Haruka!,default,SPRING bittersweet bittersweet,BG classroom
+Student B,Haruka!,none,SPRING bittersweet,BG classroom
 ,,,,
-M,A small commotion emerges from the corner of the classroom. By the time I look overXYZ I see two girls standing up from their desksXYZ and another girl with pink hair run out the room with papers in her hand.,default,SPRING bittersweet bittersweet,BG classroom
+M,A small commotion emerges from the corner of the classroom. By the time I look overXYZ I see two girls standing up from their desksXYZ and another girl with pink hair run out the room with papers in her hand.,sad_sad2,SPRING bittersweet,BG classroom
 ,,,,
-MC,Haruka...?,none,SPRING bittersweet bittersweet,BG classroom
+MC,Haruka...?,none,SPRING bittersweet,BG classroom
 ,,,,
-M,I jolt out of my seat and head over to the students that called out her name. Those girls... I usually see them around Haruka. Without thinkingXYZ I immediately approach one of them.,default,SPRING bittersweet bittersweet,BG classroom
+M,I jolt out of my seat and head over to the students that called out her name. Those girls... I usually see them around Haruka. Without thinkingXYZ I immediately approach one of them.,none,SPRING bittersweet,BG classroom
 ,,,,
-MC,What happened?,none,SPRING bittersweet bittersweet,BG classroom
+MC,What happened?,none,SPRING bittersweet,BG classroom
 ,,,,
-Student A,I don't know! She got her test back and went all silent... then ran off without saying anything...,default,SPRING bittersweet bittersweet,BG classroom
+Student A,I don't know! She got her test back and went all silent... then ran off without saying anything...,none,SPRING bittersweet,BG classroom
 ,,,,
-Student B,She's left like that before. AlbeitXYZ not as sudden as this...,default,SPRING bittersweet bittersweet,BG classroom
+Student B,She's left like that before. AlbeitXYZ not as sudden as this...,none,SPRING bittersweet,BG classroom
 ,,,,
-Student A,I'm worried!! Should we go find her? We never know where she goes...,default,SPRING bittersweet bittersweet,BG classroom
+Student A,I'm worried!! Should we go find her? We never know where she goes...,none,SPRING bittersweet,BG classroom
 ,,,,
-M,I let the two girls talk amongst themselves. My focus shifts to finding Haruka... it seems really out of character for her to leave like that. Where would she goXYZ though?,default,SPRING bittersweet bittersweet,BG classroom
+M,I let the two girls talk amongst themselves. My focus shifts to finding Haruka... it seems really out of character for her to leave like that. Where would she goXYZ though?,none,SPRING bittersweet,BG classroom
 ,,,,
-M,My mind flashes back to our previous conversations and interactions.,default,SPRING bittersweet bittersweet,BG classroom
+M,My mind flashes back to our previous conversations and interactions.,none,SPRING bittersweet,BG classroom
 ,,,,
-Haruka,I'll show you the library firstXYZ its my favorite place...,joy2,SPRING bittersweet bittersweet,BG hallway
+Haruka,I'll show you the library firstXYZ its my favorite place...,joy2,SPRING bittersweet,BG hallway
 ,,,,
-MC,That's rightXYZ the library! I run out of the classroom and down the hallXYZ recounting the way Haruka showed me the first day I came to this school,NONE,SPRING bittersweet bittersweet,BG hallway
+MC,That's rightXYZ the library! I run out of the classroom and down the hallXYZ recounting the way Haruka showed me the first day I came to this school,NONE,SPRING bittersweet,BG hallway
 ,,,,
-M,...and finallyXYZ I arrive to the familiar roomXYZ and see a pink fluff of hair in the corner table.,default,SPRING bittersweet bittersweet,BG lib1
+M,...and finallyXYZ I arrive to the familiar roomXYZ and see a pink fluff of hair in the corner table.,default,SPRING bittersweet,BG lib1
 ,,,,
-MC,Haruka...?,none,SPRING bittersweet bittersweet,BG lib2
+MC,Haruka...?,none,SPRING bittersweet,BG lib2
 ,,,,
-Haruka,Ah! O-Oh... it's you...,surprise2,SPRING bittersweet bittersweet,BG lib2
+Haruka,Ah! O-Oh... it's you...,surprise2,SPRING bittersweet,BG lib2
 ,,,,
-M,Her eyes appeared puffy and red. She sniffles a few times as I walk over.,default,SPRING bittersweet bittersweet,BG lib2
+M,Her eyes appeared puffy and red. She sniffles a few times as I walk over.,default,SPRING bittersweet,BG lib2
 ,,,,
-MC,Are you okay...?,none,SPRING bittersweet bittersweet,BG lib2
+MC,Are you okay...?,none,SPRING bittersweet,BG lib2
 ,,,,
-Haruka,Ahaha... yeah... just didn't do that well and... yeahXYZ haha...Sorry for creating such a commotion back there. I just needed some air...,sad_joy,SPRING bittersweet bittersweet,BG lib2
+Haruka,Ahaha... yeah... just didn't do that well and... yeahXYZ haha...Sorry for creating such a commotion back there. I just needed some air...,sad_joy,SPRING bittersweet,BG lib2
 ,,,,
-MC,Hmm...,none,SPRING bittersweet bittersweet,BG lib2
+MC,Hmm...,none,SPRING bittersweet,BG lib2
 ,,,,
-MC,You knowXYZ you can talk to me about your problems Haruka. I'm your friend.,none,SPRING bittersweet bittersweet,BG lib2
+MC,You knowXYZ you can talk to me about your problems Haruka. I'm your friend.,none,SPRING bittersweet,BG lib2
 ,,,,
-Haruka,...,sad2,SPRING bittersweet bittersweet,BG lib2
+Haruka,...,sad2,SPRING bittersweet,BG lib2
 ,,,,
 Haruka,... thank you ...,sad2,SPRING sad,BG lib2
 ,,,,

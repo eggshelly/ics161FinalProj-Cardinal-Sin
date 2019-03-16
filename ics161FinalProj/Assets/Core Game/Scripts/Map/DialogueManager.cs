@@ -252,23 +252,27 @@ public class DialogueManager : MonoBehaviour
 
 
         }
-        else //any other character: set namePanel to visible and text to normal
+        else if (DialogueObj.speaker == "Haruka" || DialogueObj.speaker == "Touka" || DialogueObj.speaker == "Akiko" || DialogueObj.speaker == "Natsuki") //aka only loads avail sprite 
         {
             namePanel.SetActive(true);
             nameText.text = DialogueObj.speaker;
             filePath = string.Format("{0}{1}/{2}", filePath, DialogueObj.speaker.Trim(), spriteName);
 
-            if (DialogueObj.speaker == "Haruka" || DialogueObj.speaker == "Touka" || DialogueObj.speaker == "Akiko" || DialogueObj.speaker == "Natsuki") //aka only loads avail sprite    
+            if (DialogueObj.speaker == "Haruka" && !introTransition)
             {
-                if (DialogueObj.speaker == "Haruka" && !introTransition)
-                {
-                    StartCoroutine(TransitionManager.instance.screenFadeIn);
-                    introTransition = true;
-                }
-                currentSprite = Resources.Load<Sprite>(filePath) as Sprite;
-                spritePanel.GetComponent<Image>().sprite = currentSprite;
+                StartCoroutine(TransitionManager.instance.screenFadeIn);
+                introTransition = true;
             }
-
+            currentSprite = Resources.Load<Sprite>(filePath) as Sprite;
+            spritePanel.GetComponent<Image>().sprite = currentSprite;
+        }
+        else //any other character: set namePanel to visible and text to normal
+        {
+            namePanel.SetActive(true);
+            nameText.text = DialogueObj.speaker;
+            filePath = string.Format("{0}{1}/{2}", filePath, DialogueObj.speaker.Trim(), spriteName);
+            if (currentSprite == null)
+                spritePanel.SetActive(false);
         }
 
         foreach (char letter in DialogueObj.text.ToCharArray())
