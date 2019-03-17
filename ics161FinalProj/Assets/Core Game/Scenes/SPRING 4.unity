@@ -7959,7 +7959,7 @@ PrefabInstance:
     - target: {fileID: 8565172546891820207, guid: c8dc0bc5173f5c94ab1308db694b3637,
         type: 3}
       propertyPath: levelDialogue.Array.data[1]
-      value: '*I''m left awstruck by sheer beauty of the world around me*'
+      value: '*I''m left awestruck by sheer beauty of the world around me*'
       objectReference: {fileID: 0}
     - target: {fileID: 8565172546891820207, guid: c8dc0bc5173f5c94ab1308db694b3637,
         type: 3}
@@ -40519,7 +40519,7 @@ PrefabInstance:
     - target: {fileID: 5309328394198043222, guid: d45a8c493340b9943916596b053ee466,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0010403894
+      value: -0.0010404639
       objectReference: {fileID: 0}
     - target: {fileID: 5309328394198043222, guid: d45a8c493340b9943916596b053ee466,
         type: 3}
