@@ -35,7 +35,6 @@ public class PlayerMapInteraction : MonoBehaviour
     {   
         if(collision.CompareTag("Stage"))
         {
-            Debug.Log("stage");
             canEnterStage = true;
             OnThisStage = collision.gameObject.GetComponent<Stage>();
         }

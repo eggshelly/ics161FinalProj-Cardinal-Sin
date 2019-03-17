@@ -13,7 +13,7 @@ public class PlayerLevelMovement : MonoBehaviour
     float speed;
 
     Rigidbody2D m_RigidBody2D;
-    CapsuleCollider2D m_CapsuleCollider2D;
+    BoxCollider2D m_BoxCollider2D;
     SpriteRenderer m_SpriteRenderer;
 
     LevelManager manager;
@@ -40,7 +40,7 @@ public class PlayerLevelMovement : MonoBehaviour
         speed = walkSpeed;
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<LevelManager>();
         m_RigidBody2D = GetComponent<Rigidbody2D>();
-        m_CapsuleCollider2D = GetComponent<CapsuleCollider2D>();
+        m_BoxCollider2D = GetComponent<BoxCollider2D>();
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
         jumpsRemaining = maxNumberOfJumps;
 
@@ -141,8 +141,8 @@ public class PlayerLevelMovement : MonoBehaviour
 
     void checkGrounded()
     {
-        Vector3 pos = m_CapsuleCollider2D.bounds.center + m_CapsuleCollider2D.bounds.extents.y * Vector3.down;
-        RaycastHit2D ray = Physics2D.Raycast(pos, Vector2.down, 0.01f);
+        Vector3 pos = m_BoxCollider2D.bounds.center + m_BoxCollider2D.bounds.extents.y * Vector3.down;
+        RaycastHit2D ray = Physics2D.Raycast(pos, Vector2.down, 0.02f);
         if (ray.collider != null && ray.collider.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
             m_isGrounded = true;

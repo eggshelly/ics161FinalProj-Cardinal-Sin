@@ -46,12 +46,12 @@ public class StageHubScript : MonoBehaviour
         for (int i = 0; i < allStages.Length; ++i)
         {
             s = allStages[i];
+            s.stageIndex = i;
             allStageCollectibles[s] = new List<bool[]>();
-            for (int j = 0; j < 4; ++j)
+            for (int j = 0; j < s.totalLevels; ++j)
             {
                 allStageCollectibles[s].Add(new bool[s.GetTotalCollectibles(j)]);
             }
-            s.stageIndex = i;
         }
     }
 

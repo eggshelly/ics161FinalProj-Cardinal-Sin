@@ -13,7 +13,7 @@ public class PlayerLevelInteraction : MonoBehaviour
 
     GameObject ObjectToPull;
 
-    CapsuleCollider2D m_Collider;
+    BoxCollider2D m_Collider;
     SpriteRenderer m_SpriteRenderer;
     PlayerLevelMovement m_LevelMovement;
     Rigidbody2D m_RigidBody;
@@ -21,7 +21,7 @@ public class PlayerLevelInteraction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        m_Collider = GetComponent<CapsuleCollider2D>();
+        m_Collider = GetComponent<BoxCollider2D>();
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
         m_LevelMovement = GetComponent<PlayerLevelMovement>();
         m_RigidBody = GetComponent<Rigidbody2D>();

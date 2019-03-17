@@ -13,6 +13,7 @@ public class Stage : MonoBehaviour
     [SerializeField] Sprite WavingSprite;
     [SerializeField] float sizeMulti;
     [SerializeField] int[] totalNumCollectibles; //total number of collectibles the stage will contain. MUST SET IN THE INSPECTOR IN ORDER TO DISPLAY CORRECTLY ON THE PANEL
+    public int totalLevels;
 
     public int currentLevel{ get; private set; }
     public int stageIndex { get; set; }
@@ -44,10 +45,8 @@ public class Stage : MonoBehaviour
         StageLeft = new UnityEvent();
 
 
-
         allCollectibles = new Dictionary<int, bool[]>();
         hasFinishedLevel = new Dictionary<int, bool>();
-        SetLevelBools();
         ResetCollectibles();
         currentLevel = 1;
         player = GameObject.FindGameObjectWithTag("Player");
@@ -60,21 +59,14 @@ public class Stage : MonoBehaviour
         return allCollectibles[level];
     }
 
-    void SetLevelBools()
-    {
-        for(int i = 1; i < 5; ++i)
-        {
-            hasFinishedLevel[i] = false;
-        }
-    }
-
 
     //Initially sets its collectibles to all false - no collectibles have been obtained yet
     void ResetCollectibles()
     { 
-        for(int i = 1; i < 5; ++i)
+        for(int i = 1; i < (totalLevels+1); ++i)
         {
             allCollectibles[i] = new bool[totalNumCollectibles[i - 1]];
+            hasFinishedLevel[i] = false;
             for(int j = 0; j < totalNumCollectibles[i-1]; ++j)
             {
                 allCollectibles[i][j] = false;

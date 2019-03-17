@@ -7,7 +7,7 @@ using System;
 public class SceneMusicManager : MonoBehaviour
 {
     private string scName;
-    public static SceneMusicManager instance;
+    public static SceneMusicManager instance = null;
     public bool sceneFlag = false;
 
     void Awake()

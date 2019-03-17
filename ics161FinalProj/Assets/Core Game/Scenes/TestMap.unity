@@ -1729,6 +1729,7 @@ MonoBehaviour:
   WavingSprite: {fileID: 21300010, guid: f5747900e0e97c948a4fa3f4980a4717, type: 3}
   sizeMulti: 1.5
   totalNumCollectibles: 03000000030000000300000003000000
+  totalLevels: 4
   StageLeft:
     m_PersistentCalls:
       m_Calls: []
@@ -1855,7 +1856,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WavingSprite: {fileID: 21300014, guid: f5747900e0e97c948a4fa3f4980a4717, type: 3}
   sizeMulti: 1.5
-  totalNumCollectibles: 03000000030000000300000003000000
+  totalNumCollectibles: 030000000300000003000000
+  totalLevels: 3
   StageLeft:
     m_PersistentCalls:
       m_Calls: []
@@ -2087,7 +2089,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708545928}
-  m_LocalRotation: {x: -4.9661477e-31, y: 0.000000030165822, z: 9.42483e-19, w: 1}
+  m_LocalRotation: {x: -4.9685175e-31, y: 0.000000030165822, z: 9.429288e-19, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4665,7 +4667,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WavingSprite: {fileID: 21300006, guid: f5747900e0e97c948a4fa3f4980a4717, type: 3}
   sizeMulti: 1.5
-  totalNumCollectibles: 03000000030000000300000003000000
+  totalNumCollectibles: 030000000300000003000000
+  totalLevels: 3
   StageLeft:
     m_PersistentCalls:
       m_Calls: []
@@ -4767,6 +4770,7 @@ MonoBehaviour:
   WavingSprite: {fileID: 21300002, guid: f5747900e0e97c948a4fa3f4980a4717, type: 3}
   sizeMulti: 1.5
   totalNumCollectibles: 03000000030000000300000003000000
+  totalLevels: 4
   StageLeft:
     m_PersistentCalls:
       m_Calls: []

@@ -11,7 +11,7 @@ public class AudioManager : MonoBehaviour
     public float fadeInTime;  //affects how long it takes to fade audio
     public float fadeOutTime;
     public Sound[] sounds;
-    public static AudioManager instance;
+    public static AudioManager instance = null;
     private IEnumerator fadeIn;
     private IEnumerator fadeOut;
     [HideInInspector]

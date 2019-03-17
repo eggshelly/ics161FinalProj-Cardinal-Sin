@@ -96,7 +96,6 @@ public class TimeManager : MonoBehaviour
             player.GetComponent<PlayerMapInteraction>().CantInteract();
             player.GetComponent<PlayerMapMovement>().CantMove();
             CR_started = true;
-            Debug.Log("Here");
             StartCoroutine(EndOfWeekFade());
         }
     }
@@ -125,6 +124,7 @@ public class TimeManager : MonoBehaviour
         yield return StartCoroutine(TransitionManager.instance.screenFadeIn);
         player.GetComponent<PlayerMapInteraction>().CanInteract();
         player.GetComponent<PlayerMapMovement>().CanMove();
+        AllWeeksFinished();
         CR_started = false;
         betweenWeekText.gameObject.SetActive(false);
     }
@@ -139,6 +139,14 @@ public class TimeManager : MonoBehaviour
         else
         {
             text.text = "";
+        }
+    }
+
+    void AllWeeksFinished()
+    {
+        if(week >= maxNumberOfWeeks)
+        {
+            //do smth
         }
     }
 
