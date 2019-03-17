@@ -17,8 +17,11 @@ public class ButtonFunctions : MonoBehaviour
     public void BackToMenu()
     {
         Time.timeScale = 1;
-        PauseOnMap.mapPaused = false;
-        DialogueManager.instance.HidePanels();
+        if (DialogueManager.instance != null)
+        {
+            DialogueManager.instance.HidePanels();
+            PauseOnMap.mapPaused = false;
+        }
         FindObjectOfType<AudioManager>().Stop(AudioManager.instance.currentSong.name);
         StartCoroutine(LoadMainScreen());
     }
