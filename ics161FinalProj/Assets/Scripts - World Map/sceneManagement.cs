@@ -9,6 +9,7 @@ public class sceneManagement : MonoBehaviour
     private string scName;
     public static sceneManagement instance;
     public bool sceneFlag = false;
+    public sceneMusic[] relations;
 
     void Awake()
     {
@@ -29,13 +30,14 @@ public class sceneManagement : MonoBehaviour
     // called second
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        sceneFlag = true;
-        scName = scene.name.Split(' ')[0];
-        foreach(Sound x in AudioManager.instance.sounds)
+        sceneFlag = true;   //for background transitions
+
+        scName = scene.name;
+        foreach(sceneMusic x in relations)
         {
-            if(x.name == scName)
+            if(x.sceneName == scName)
             {
-                FindObjectOfType<AudioManager>().Play(scName);
+                FindObjectOfType<AudioManager>().Play(x.songName);
             }
         }
 

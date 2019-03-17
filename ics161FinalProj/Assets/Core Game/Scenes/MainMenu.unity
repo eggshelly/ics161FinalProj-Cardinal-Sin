@@ -306,6 +306,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneFlag: 0
+  relations:
+  - sceneName: MainMenu
+    songName: MainMenu
+  - sceneName: SPRING 1
+    songName: SPRING
+  - sceneName: SPRING 2
+    songName: SPRING bittersweet
+  - sceneName: SPRING 3
+    songName: SPRING sad
+  - sceneName: SPRING 4
+    songName: SPRING sad
+  - sceneName: SUMMER 1
+    songName: SUMMER
+  - sceneName: SUMMER 2
+    songName: SUMMER relax
+  - sceneName: SUMMER 3
+    songName: SUMMER relax
+  - sceneName: SUMMER 4
+    songName: SUMMER
+  - sceneName: AUTUMN 1
+    songName: AUTUMN
+  - sceneName: AUTUMN 2
+    songName: AUTUMN
+  - sceneName: AUTUMN 3
+    songName: AUTUMN
+  - sceneName: WINTER 1
+    songName: WINTER
+  - sceneName: WINTER 2
+    songName: WINTER
+  - sceneName: WINTER 3
+    songName: WINTER
 --- !u!4 &228665642
 Transform:
   m_ObjectHideFlags: 0
@@ -6375,6 +6406,12 @@ MonoBehaviour:
   - name: SUMMER music box 2
     loop: 1
     clip: {fileID: 8300000, guid: 43f4a29438ad4954aa45993f60e90524, type: 3}
+    volume: 0
+    pitch: 1
+    source: {fileID: 0}
+  - name: WINTER
+    loop: 1
+    clip: {fileID: 8300000, guid: 63f2efc06a7128643948d0e0506971e4, type: 3}
     volume: 0
     pitch: 1
     source: {fileID: 0}
