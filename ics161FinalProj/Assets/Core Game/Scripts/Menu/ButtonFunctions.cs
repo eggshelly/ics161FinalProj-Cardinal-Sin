@@ -16,8 +16,7 @@ public class ButtonFunctions : MonoBehaviour
     }
     public void BackToMenu()
     {
-        if(SceneManager.GetActiveScene() != SceneManager.GetSceneByName("Credits"))
-            FindObjectOfType<AudioManager>().Stop(AudioManager.instance.currentSong.name);
+        FindObjectOfType<AudioManager>().Stop(AudioManager.instance.currentSong.name);
         StartCoroutine(LoadMainScreen());
     }
 
