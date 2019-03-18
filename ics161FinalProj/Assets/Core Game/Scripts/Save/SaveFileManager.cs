@@ -133,18 +133,21 @@ public class SaveFileManager : MonoBehaviour
             if (finishedAStage)
             {
                 StartCoroutine(TransitionManager.instance.FadeToLevel(2f));
+                Vector3 loadedPos = new Vector3(data.position[0], data.position[1], data.position[2]);
+                player.transform.position = loadedPos;
+                stageHub.loadStages(data.stageCollectibles, data.finishedLevels);
+                stageHub.UpdateFinishedStage(currentStage, currentStageLevel, currentStageCollectibles);
                 string path = string.Format("{0} ", currentStageName);      //create the string to be the name of the current stage followed by the stage number
-                if(isStageCompleted)
+                if(stageHub.EveryLevelFinished(currentStage))
+                {
+                    path += "TRUE END";
+                }
+                else if(isStageCompleted)
                     path += "GOOD END";
                 else
                     path += "BAD END";
                 Debug.Log(path);
                 DialogueManager.instance.LoadDialogue(path);
-                Vector3 loadedPos = new Vector3(data.position[0], data.position[1], data.position[2]);
-                player.transform.position = loadedPos;
-                stageHub.loadStages(data.stageCollectibles, data.finishedLevels);
-                stageHub.UpdateFinishedStage(currentStage, currentStageLevel, currentStageCollectibles);
-                //stageHub.gameObject.GetComponent<ActiveStageManager>().StageJustFinished(currentStage);
             }
         }
     }

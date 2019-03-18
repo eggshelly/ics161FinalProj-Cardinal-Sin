@@ -119,14 +119,18 @@ public class Stage : MonoBehaviour
 
     public int NextLevel(int level)
     {
-        hasFinishedLevel[level] = true;
-        currentLevel = level + 1;
+        if (level < totalLevels)
+        {
+            hasFinishedLevel[level] = true;
+            currentLevel = level + 1;
+        }
         return currentLevel;
     }
 
     public int PrevLevel(int level)
     {
-        currentLevel = level - 1;
+        if(level > 1)
+            currentLevel = level - 1;
         return currentLevel;
     }
 
@@ -156,6 +160,21 @@ public class Stage : MonoBehaviour
         {
             hasFinishedLevel[i + 1] = status[i];
         }
+    }
+
+    public bool AllLevelsComplete()
+    {
+        foreach(int s in allCollectibles.Keys)
+        {
+            foreach(bool b in allCollectibles[s])
+            {
+                if(b == false)
+                {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
     
 

@@ -142,7 +142,7 @@ public class PlayerLevelMovement : MonoBehaviour
     void checkGrounded()
     {
         Vector3 pos = m_BoxCollider2D.bounds.center + m_BoxCollider2D.bounds.extents.y * Vector3.down;
-        RaycastHit2D ray = Physics2D.Raycast(pos, Vector2.down, 0.02f);
+        RaycastHit2D ray = Physics2D.Raycast(pos, Vector2.down, 0.03f);
         if (ray.collider != null && ray.collider.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
             m_isGrounded = true;

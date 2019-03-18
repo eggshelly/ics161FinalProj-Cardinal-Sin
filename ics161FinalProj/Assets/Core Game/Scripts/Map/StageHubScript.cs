@@ -184,6 +184,26 @@ public class StageHubScript : MonoBehaviour
         panel.ClosePanel();
     }
 
+    public int GetTotalNumLevels()
+    {
+        int counter = 0;
+        foreach(Stage s in allStages)
+        {
+            counter += s.totalLevels;
+        }
+        return counter;
+    }
+
+    public int GetNumLevelsOfStage(int index)
+    {
+        return allStages[index].totalLevels;
+    }
+
+    public bool EveryLevelFinished(int index)
+    {
+        return allStages[index].AllLevelsComplete();
+    }
+
     public IEnumerator DoneDialogueCR()
     {
         while(AudioManager.instance.CR_running)

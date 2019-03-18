@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class TimeManager : MonoBehaviour
 {
-    [SerializeField] int maxNumberOfWeeks;
+    [SerializeField] int week = 1;
     [SerializeField] string[] textBetweenWeeks;
     [SerializeField] GameObject timeText;
     [SerializeField] TextMeshProUGUI betweenWeekText;
@@ -18,14 +18,10 @@ public class TimeManager : MonoBehaviour
 
     TextMeshProUGUI text;
 
-    int week = 1;
-
     bool CR_started = false;
-    //int day = 1;
 
-    //Dictionary<int, string> daysOfTheWeek;
+    int maxNumberOfWeeks;
 
-    //string[] days = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
 
     private void Awake()
     {
@@ -42,26 +38,17 @@ public class TimeManager : MonoBehaviour
         SceneManager.sceneLoaded += OnSceneLoaded;
 
         text = timeText.GetComponent<TextMeshProUGUI>();
-        //CreateDaysOfWeek();
         
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        maxNumberOfWeeks = GameObject.Find("StageHub").GetComponent<StageHubScript>().GetTotalNumLevels();
+        Debug.Log(maxNumberOfWeeks);
         DialogueManager.instance.EndOfWeek.AddListener(EndOfWeekListener);
 
     }
-
-    /*void CreateDaysOfWeek()
-    {
-        daysOfTheWeek = new Dictionary<int, string>();
-        for(int i = day; i <= daysInTheWeek; ++i)
-        {
-            daysOfTheWeek[i] = days[i - 1];
-        }
-    }*/
 
     public void SetDay(int week)
     {
@@ -109,24 +96,30 @@ public class TimeManager : MonoBehaviour
 
     IEnumerator EndOfWeekText()
     {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        player.transform.position = Vector3.zero;
         NextWeek();
-        betweenWeekText.gameObject.SetActive(true);
-        foreach (var c in textBetweenWeeks[(int)(Random.value*textBetweenWeeks.Length)])
+        if (week >= maxNumberOfWeeks)
         {
-            betweenWeekText.text += c;
-            yield return new WaitForSeconds(0.05f);
+            AllWeeksFinished();
         }
-        yield return new WaitForSeconds(1f);
-        betweenWeekText.text = "";
-        FindObjectOfType<AudioManager>().DialogueTransitionSong("INTRODUCTION");
+        else
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            player.transform.position = Vector3.zero;
+            betweenWeekText.gameObject.SetActive(true);
+            foreach (var c in textBetweenWeeks[(int)(Random.value * textBetweenWeeks.Length)])
+            {
+                betweenWeekText.text += c;
+                yield return new WaitForSeconds(0.05f);
+            }
+            yield return new WaitForSeconds(1f);
+            betweenWeekText.text = "";
+            FindObjectOfType<AudioManager>().DialogueTransitionSong("INTRODUCTION");
+            player.GetComponent<PlayerMapInteraction>().CanInteract();
+            player.GetComponent<PlayerMapMovement>().CanMove();
+            CR_started = false;
+            betweenWeekText.gameObject.SetActive(false);
+        }
         yield return StartCoroutine(TransitionManager.instance.screenFadeIn);
-        player.GetComponent<PlayerMapInteraction>().CanInteract();
-        player.GetComponent<PlayerMapMovement>().CanMove();
-        AllWeeksFinished();
-        CR_started = false;
-        betweenWeekText.gameObject.SetActive(false);
     }
 
 
@@ -144,10 +137,8 @@ public class TimeManager : MonoBehaviour
 
     void AllWeeksFinished()
     {
-        if(week >= maxNumberOfWeeks)
-        {
-            //do smth
-        }
+        SaveFileManager.instance.SaveGame();
+        SceneManager.LoadScene("Credits");
     }
 
 

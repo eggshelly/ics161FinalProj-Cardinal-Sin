@@ -82,7 +82,7 @@ public class StagePanelScript : MonoBehaviour
         {
             prevLevel.interactable = true;
         }
-        if (level == 4 || !stage.hasFinishedLevel(currentStageIndex, currentStageLevel))
+        if (level == stage.GetNumLevelsOfStage(currentStageIndex) || !stage.hasFinishedLevel(currentStageIndex, currentStageLevel))
         {
             if(nextLevel.interactable == true)
                 nextLevel.interactable = false;
