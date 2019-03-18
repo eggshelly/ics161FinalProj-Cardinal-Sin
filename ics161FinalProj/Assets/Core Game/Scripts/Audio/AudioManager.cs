@@ -8,7 +8,9 @@ using System.Linq;
 
 public class AudioManager : MonoBehaviour
 {
+    [HideInInspector]
     public float fadeInTime;  //affects how long it takes to fade audio
+    [HideInInspector]
     public float fadeOutTime;
     public Sound[] sounds;
     public static AudioManager instance = null;
