@@ -1,0 +1,41 @@
+SPEAKER,CONVO,SPRITE,AUDIO,BACKGROUND
+,,,,
+M,My last chance…,default,NONE,BG grass2
+,,,,
+M,I couldn’t do it. I couldn’t figure it out. I want to support herXYZ but I don’t know the right thing to say. If she wanted me to know… she’d just tell meXYZ right? I shouldn’t medle in her business like that…,default,NONE,BG grass2
+,,,,
+M,After allXYZ it’s been ten years. Of course she likes someone.,default,NONE,BG grass2
+,,,,
+M,…,default,NONE,BG grass2
+,,,,
+MC,H-HaXYZ I see. Good thing you don’t have to tell him publiclyXYZ then!,none,NONE,BG grass2
+,,,,
+Natsuki,Y-Yeah…,sad_surprise_blush,SUMMER music box,BG grass2
+,,,,
+Natsuki,You’re rightXYZ it is a good thing. I… like him so muchXYZ I’d rather deal with unrequited love than break our special bond.,sad_blush,SUMMER music box,BG grass2
+,,,,
+MC,I see…,none,SUMMER music box,BG grass2
+,,,,
+M,Sounds like she really cares about him. Natsuki and I share everything togetherXYZ but… we’re getting older. I’m not the only person in Natsuki’s lifeXYZ and with all the time that’s passedXYZ it’s inevitable that I won’t always be the closest oneXYZ anymore.,default,SUMMER music box,BG grass2
+,,,,
+M,I’m happy for herXYZ though. Really… I am.,default,SUMMER music box,BG grass2
+,,,,
+Natsuki,YeahXYZ I’m glad you understand. You know how I love this townXYZ right?,sad_surprise2_blush,SUMMER music box,BG grass2
+,,,,
+MC,Of course.,none,SUMMER music box,BG grass2
+,,,,
+Natsuki,Well… he’s part of why I love this town so much. Even if he’s not always in itXYZ even if the old places we used to go to are torn downXYZ even if this town is practically unrecognizable… I still pass by places that have our old memoriesXYZ lingering.,sad_tsundere2_blush,SUMMER music box,BG grass2
+,,,,
+Natsuki,Memories where he and I made memoriesXYZ together.,sad_surprise_blush,SUMMER music box,BG grass2
+,,,,
+Natsuki,So even if this town won’t have that special person anymoreXYZ even though I’m sure he’ll leave again and never come backXYZ having those memories will be enough. Because that’s what makes home for me. The memories.,sad_blush,SUMMER music box,BG grass2
+,,,,
+M,Home…,default,SUMMER music box,BG grass2
+,,,,
+M,I haven’t really felt ‘home’ in a long time. Even before I moved hereXYZ and even after I moved back to this nostalgic town. Talking to NatsukiXYZ howeverXYZ made me remember what home felt like. It motivated me to want to find it again.,NONE,SUMMER music box,BG black
+,,,,
+M,I want to continue searching for that feeling. That feeling of home.,NONE,SUMMER music box,BG black
+,,,,
+M,I hope… Natsuki can find that feeling againXYZ too. If her heart is with someone else that isn’t in this townXYZ I can only support her from a distance. After allXYZ the feeling I’m searching for,NONE,SUMMER music box,BG black
+,,,,
+M,Might not be here...,NONE,SUMMER music box,BG black

@@ -1,0 +1,99 @@
+SPEAKER,CONVO,SPRITE,AUDIO,BACKGROUND
+,,,,
+M,…,default,NONE,BG grass2
+,,,,
+M,If someone as open as Natsuki hasn’t mentioned himXYZ then there has to be a good reason for it. As her childhood friendXYZ the best thing I can do is support her.,default,NONE,BG grass2
+,,,,
+MC,Hey Natsuki… bet or notXYZ if you do have feelings for someoneXYZ I think you should tell him. I’m sure any guy would be happy to hear a confession from you.,none,SUMMER relax,BG grass2
+,,,,
+Natsuki,Any guy…?,tsundere2_blush,SUMMER relax,BG grass2
+,,,,
+MC,Of course. You’re the captain of an amazing track teamXYZ and even if your words sound crassXYZ it’s no doubt you care about others. PlusXYZ I personally know you’re an amazing friend so…,none,SUMMER relax,BG grass2
+,,,,
+Natsuki,You really think my crush is just any guyXYZ idiot???,surprise_blush,SUMMER relax,BG grass2
+,,,,
+MC,N-No I just--,none,SUMMER relax,BG grass2
+,,,,
+Natsuki,C-Cause he’s not just any guyXYZ okay? He’s… He’s….,surprise2_blush,SUMMER music box 2,BG grass2
+,,,,
+Natsuki,Someone I’ve known forever. He’s someone that accepts all the quirks that even my parents get tired of.,sad_surprise2,SUMMER music box 2,BG grass2
+,,,,
+Natsuki,...,sad_tsundere2_blush,SUMMER music box 2,BG grass2
+,,,,
+Natsuki,He’s the kind of person you can never forgetXYZ even after a long time...,sad_surprise_blush,SUMMER music box 2,BG grass2
+,,,,
+MC,a long…time...?,none,SUMMER music box 2,BG grass2
+,,,,
+Natsuki,S-Stupid! He’s special ‘cause he’s such a huge idiot that he doesn’t even realize his childhood has been in love with him all this time. That’s who my crush isXYZ got it?,surprise_blush,SUMMER music box 2,BG grass2
+,,,,
+MC,N-Natsu--,none,SUMMER music box 2,BG grass2
+,,,,
+Natsuki,Sh-Shut it! I don’t have to confess to himXYZ remember? I didn’t lose the betXYZ and… I don’t think I’d want a replyXYZ yet...,surprise2_blush,SUMMER music box 2,BG grass2
+,,,,
+Natsuki,Because even though he’s too slow for his own goodXYZ I love him because of the memories we’ve made as friends. And I want to make more memories with this personXYZ just like that. At least until the end of high school…,tsundere_blush,SUMMER music box 2,BG grass2
+,,,,
+M,All this time…? She’s thought of me that way…?,default,SUMMER music box 2,BG grass2
+,,,,
+MC,Natsuki...,none,SUMMER music box 2,BG grass2
+,,,,
+Natsuki,…,sad_surprise_blush,SUMMER music box 2,BG grass2
+,,,,
+Natsuki,H-Hey… no need to be quiet. It’s not like it’s a confession or anything…it’s a non-confessionXYZ alright? A non-confession!,surprise_blush,SUMMER music box 2,BG grass2
+,,,,
+M,Natsuki… even when you’re flusteredXYZ you brighten the mood.,default,SUMMER music box 2,BG grass2
+,,,,
+MC,Oh? Alright. WellXYZ here’s my non-reply.,none,SUMMER music box 2,BG grass2
+,,,,
+MC,Let’s graduate together like you promised. And…,none,SUMMER music box 2,BG grass2
+,,,,
+MC,MaybeXYZ you can just do a normal confession next time.,none,SUMMER music box 2,BG grass2
+,,,,
+Natsuki,Wh-Whatever. Of course we’re graduating togetherXYZ I’m not failing out ya know!,surprise2_blush,SUMMER music box 2,BG grass2
+,,,,
+Natsuki,A-And heyXYZ don’t tell anyone about this… okay…?,tsundere_blush,SUMMER music box 2,BG grass2
+,,,,
+MC,Of courseXYZ don’t be silly. HeyXYZ it’s getting dark. Let’s start heading back.,none,SUMMER music box 2,BG grass2
+,,,,
+Natsuki,Not before you buy me melon soda on the way backXYZ you owe me!,smile2_blush,SUMMER music box 2,BG grass2
+,,,,
+M,Since I’ve returnedXYZ all the changes to this town on top of living alone has made this nostalgic little town still feel unfamiliar to me. But…,default,SUMMER music box 2,BG grass2
+,,,,
+M,Hearing Natsuki talk about the little things she loves about this townXYZ and reminding me of the fond memories I’ve left behind here… I remembered what made this town feel like home.,default,SUMMER music box 2,BG grass2
+,,,,
+M,Even when I leave this place againXYZ even when I leave Natsuki behindXYZ again… I want to continue searching for that feeling. That feeling of home.,default,SUMMER music box 2,BG grass2
+,,,,
+M,The feeling I get with...,default,SUMMER music box 2,BG grass2
+,,,,
+M,…,NONE,SUMMER music box 2,BG black
+,,,,
+Natsuki,Secret base meeting has started! Today’s course of action is: Operation Run Away!,NONE,SUMMER music box,BG black
+,,,,
+MC,NatsuXYZ you can’t come with me. My mom already said you can’t and your parents got mad last time you ran to my house.,NONE,SUMMER music box,BG black
+,,,,
+Natsuki,B-But… what will I do? You’re l-leaving me behind…,NONE,SUMMER music box,BG black
+,,,,
+MC,Natsu… sorry… it’s up to my parents. I’m only in grade schoolXYZ I can’t stay here alone.,NONE,SUMMER music box,BG black
+,,,,
+Natsuki,I-I know! So that’s why Operation Run Away--,NONE,SUMMER music box,BG black
+,,,,
+MC,Natsu… Natsuki. We have to grow up at some pointXYZ we can’t play pretend forever.,NONE,SUMMER music box,BG black
+,,,,
+Natsuki,Hmph…,NONE,SUMMER music box,BG black
+,,,,
+MC,...How aboutXYZ instead of Operation Run AwayXYZ we do Operation Run To Your Future. My future is somewhere elseXYZ and yours is here. One dayXYZ I’m sure we’ll see eachother againXYZ but,NONE,SUMMER music box,BG black
+,,,,
+MC,Your future is hereXYZ okay?,NONE,SUMMER music box,BG black
+,,,,
+Natsuki,F-Fine! I hate you!!,NONE,SUMMER music box,BG black
+,,,,
+MC,N-Natsuki...,NONE,SUMMER music box,BG black
+,,,,
+Natsuki M,That was the last day he called me Natsu. He said it sounded to childishXYZ and since we were graduating elementary schoolXYZ he felt like we needed to grow up. I’ve always liked the nicknameXYZ though… even now.,NONE,SUMMER music box,BG black
+,,,,
+Natsuki M,But even at the timeXYZ I knew we couldn’t play pretend forever. I knew we would have to grow up at some pointXYZ and stop playing around as if we were living in an endless summer vacation.,NONE,SUMMER music box,BG black
+,,,,
+Natsuki M,But… when he told me to run towards my future instead of running away...,NONE,SUMMER music box,BG black
+,,,,
+Natsuki,Idiot… you’re my future tooXYZ so…,NONE,SUMMER music box,BG black
+,,,,
+Natsuki,I’ll keep running.,NONE,SUMMER music box,BG black

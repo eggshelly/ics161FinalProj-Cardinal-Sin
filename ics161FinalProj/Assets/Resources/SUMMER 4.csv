@@ -1,0 +1,181 @@
+SPEAKER,CONVO,SPRITE,AUDIO,BACKGROUND
+,,,,
+M,Summer vacation flew by even quicker than usual. I spent most of it at Natsuki’sXYZ watching her complain while she did her summer school work. The occasional times we went outXYZ we somehow ended up at the same places we went to when we were little,default,NONE,BG grass1
+,,,,
+M,The warm feelings of nostalgia felt cut short by the returning school session. HoweverXYZ there was one thing I was looking forward to after vacation…,default,NONE,BG grass1
+,,,,
+Natsuki,Alright!! It’s time to kick some proper butt todayXYZ got it?,smile2,SUMMER run,BG grass1
+,,,,
+Track Team,Yes captain!!,default,SUMMER run,BG grass1
+,,,,
+M,The annual track meetXYZ where several schools in the prefecture come together and participate in various events. UnfortunatelyXYZ we’re one of the smaller schools that participate but…,default,SUMMER run,BG grass1
+,,,,
+Natsuki,And don’t be intimidated by their fancy uniformsXYZ pfft. Just shows they’re not willing to sweat in themXYZ hehe~,surprise,SUMMER run,BG grass1
+,,,,
+Track Team,Y-Yes captain!!!,default,SUMMER run,BG grass1
+,,,,
+M,I don’t think Natsuki minds. WellXYZ that or she’s afraid of whatever bet she made with her team. She seemed unbothered by previous year’s betsXYZ but she actually seems to dread whatever they concocted. Too bad she refuses to tell meXYZ though.,default,SUMMER run,BG grass1
+,,,,
+Natsuki,AlrightXYZ let’s divide up into events alright? Don’t forget to stretch. Let’s cheer each other onXYZ kay?,smile,SUMMER run,BG grass1
+,,,,
+Track Team,We’ll do our best Natsu!,default,SUMMER run,BG grass1
+,,,,
+Speaker,Participants of Event 1XYZ please head to the center field.,NONE,SUMMER run,BG grass1
+,,,,
+MC,It’s starting…,NONE,SUMMER run,BG grass1
+,,,,
+MC,Good luckXYZ Natsuki.,NONE,NONE,BG black
+,,,,
+M,…,NONE,NONE,BG black
+,,,,
+M,Natsuki’s team clearly had improved since I first started watching them. For some eventsXYZ it was a close callXYZ but...,NONE,NONE,BG black
+,,,,
+M,What I appreciated was even if the event was clearly a landslideXYZ Natsuki and her team cheered one another on with the same energy and support.,NONE,NONE,BG black
+,,,,
+M,Of courseXYZ Natsuki was always yelling the loudest. Even after her eventXYZ she was running around getting the girls proper water and snacks.,NONE,NONE,BG black
+,,,,
+M,She really tried her best. They all tried their bestXYZ but…,NONE,NONE,BG grass1
+,,,,
+Natsuki,…,tsundere,NONE,BG grass1
+,,,,
+MC,HeyXYZ cheer up Natsuki. You did amazingXYZ and no other team has as much spirit as you guys did.,none,SUMMER relax,BG grass1
+,,,,
+Natsuki,Whatever. This isn’t some cheerleading tournamentXYZ idiot. Hmph. Their smug little facesXYZ ugh!,surprise2,SUMMER relax,BG grass1
+,,,,
+M,Natsuki’s team overall came 2nd... to last. Natsuki and another senior placed in top three in their respective eventsXYZ but were completely outmatched in every other one.,default,SUMMER relax,BG grass1
+,,,,
+MC,I knowXYZ I know. How about I get you a melon soda after this? Or something from that taiyaki stand?,none,SUMMER relax,BG grass1
+,,,,
+Natsuki,HmphXYZ those aren’t good for youXYZ stupid. But since you offered...,tsundere2,SUMMER relax,BG grass1
+,,,,
+Natsuki,Is it fine we take a walk? I don’t want to go home yet.,sad_surprise2,SUMMER relax,BG grass1
+,,,,
+MC,Sure.,none,SUMMER relax,BG grass1
+,,,,
+M,Summer heat still lingered in the airXYZ but the setting sun and slight breeze made the weather comfortable. Calm.,default,SUMMER relax,BG grass2
+,,,,
+MC,Still upset?,none,SUMMER relax,BG grass2
+,,,,
+Natsuki,No idiotXYZ I’m completely fine that we just lost my last annual track meet. Yes I’m still upset!!!,surprise,SUMMER relax,BG grass2
+,,,,
+MC,OkayXYZ okay. I understand. At least your team looked like they took the defeat okay. You seemed completely unphased when you sent them off.,none,SUMMER relax,BG grass2
+,,,,
+Natsuki,Duh. They can’t see their team captain look down. I don’t want them to be discouraged to try again next year…,tsundere2,SUMMER relax,BG grass2
+,,,,
+M,Next yearXYZ huh? When she won’t even be there. Natsuki really loves her teamXYZ even if she’s not going to be there next year.,default,SUMMER relax,BG grass2
+,,,,
+MC,Next year…,none,SUMMER relax,BG grass2
+,,,,
+MC,…,none,SUMMER relax,BG grass2
+,,,,
+Natsuki,...sorry. I know you’re just trying to help. I’m just sad. It’s my last yearXYZ and I’m realizing a lot of things will be the last time I ever do themXYZ so…,sad,SUMMER relax,BG grass2
+,,,,
+MC,...I understand. You seemed to enjoy yourselfXYZ didn’t you? Your team was definitely the rowdiest there. All the other teams looked too serious and bored.,none,SUMMER relax,BG grass2
+,,,,
+Natsuki,Heh. I taught them well. Hopefully they’re just as obnoxiously loud next yearXYZ and carry on my legacy.,smile2,SUMMER relax,BG grass2
+,,,,
+Natsuki,...,sad_surprise,SUMMER relax,BG grass2
+,,,,
+MC,I don’t even think they’re capable of being anything but loud. But… I can understand your feelings about it ending. It’s exciting we’re going to graduateXYZ but it’s hard knowing what we’re leaving behind. And with your attachment to this town...,none,SUMMER relax,BG grass2
+,,,,
+MC,I’m sure it’s especially hard for you.,none,SUMMER relax,BG grass2
+,,,,
+Natsuki,Mm… left behind… yeahXYZ that’s what I feel.,sad_blush,SUMMER relax,BG grass2
+,,,,
+MC,Hm?,none,SUMMER relax,BG grass2
+,,,,
+Natsuki,N-Nothing… heyXYZ we’ve walked this trail beforeXYZ right?,surprsie2_blush,SUMMER relax,BG grass2
+,,,,
+MC,Hm? YeahXYZ I think so.,none,SUMMER relax,BG grass2
+,,,,
+M,Now that she mentions itXYZ it looks really familiar. Of courseXYZ many places here give me a sense of familiarityXYZ but this part of town in particular… feels extra nostalgic.,default,SUMMER relax,BG grass2
+,,,,
+Natsuki,Heh. Thought you’d recognize it. It’s one of the few places in town that’s remained untouched.,neutral_blush,SUMMER relax,BG grass2
+,,,,
+Natsuki,I like to walk here to cool off. Lots of happy times here. WellXYZ except one… b-but anywaysXYZ it’s pretty cool how it looks the sameXYZ right?,neutral2_blush,SUMMER relax,BG grass2
+,,,,
+MC,Yeah… like it’s lost in time…,none,SUMMER relax,BG grass2
+,,,,
+Natsuki,Weirdo…,surprise,SUMMER relax,BG grass2
+,,,,
+Natsuki,…,sad_surprise_blush,SUMMER relax,BG grass2
+,,,,
+M,We approach a small park. Besides the paint severely chipping off the rusted over metal…,default,SUMMER relax,BG grass2
+,,,,
+MC,It looks… the same…,none,SUMMER relax,BG grass2
+,,,,
+Natsuki,Hehe~ I wanted to take you hereXYZ but there wasn’t much time over summer break. It’s our ‘secret baseXYZ’ remember?,neutral2,SUMMER relax,BG grass2
+,,,,
+M,I give Natsuki a silent nod. Natsuki and I played here a lot after schoolXYZ and even more frequently over summer vacation. Some timesXYZ Natsuki would even call a ‘secret meeting’ and throw a paper airplane into my roomXYZ telling me to come here.,default,SUMMER relax,BG grass2
+,,,,
+MC,Good times...,none,SUMMER relax,BG grass2
+,,,,
+M,Natsuki sat down on a swingXYZ swaying back and forthXYZ looking at the setting sun. It felt nice to come back here with herXYZ after all these years.,default,SUMMER relax,BG grass2
+,,,,
+Natsuki,It’s been nice… since you’ve been back...,neutral_blush,SUMMER relax,BG grass2
+,,,,
+MC,YeahXYZ it has. I didn’t realize it until we talked butXYZ I really missed this town. Lots of… happy memories…It was good my family told me to come here. It was helpful to be supported by a familiar faceXYZ too.,none,SUMMER relax,BG grass2
+,,,,
+Natsuki,Sh-Shut upXYZ so sappy... you’re making it seem like we’re graduating already…,sad_surprise2,SUMMER relax,BG grass2
+,,,,
+MC,WellXYZ it is coming up soon.,none,SUMMER relax,BG grass2
+,,,,
+Natsuki,Y-Yeah…,sad_surprise_blush,SUMMER relax,BG grass2
+,,,,
+M,Sooner than I’d personally like.,default,SUMMER relax,BG grass2
+,,,,
+Natsuki,…,sad_blush,SUMMER relax,BG grass2
+,,,,
+M,Natsuki stands up from the swing and leans on the park fenceXYZ staring at the ground in silence.,default,SUMMER relax,BG grass2
+,,,,
+MC,Hey… are you alright?,none,SUMMER relax,BG grass2
+,,,,
+Natsuki,H-Huh? Yeah I’m fineXYZ idiot.,surprise_blush,SUMMER relax,BG grass2
+,,,,
+MC,NatsukiXYZ I’ve known you for over ten years. You can’t fool me.,none,SUMMER relax,BG grass2
+,,,,
+Natsuki,...,tsundere_blush,SUMMER relax,BG grass2
+,,,,
+MC,Wait a minute. I think I know… are you down because…,none,SUMMER relax,BG grass2
+,,,,
+Natsuki,H-Huh???,surprise_blush,SUMMER relax,BG grass2
+,,,,
+MC,...of the bet?,none,SUMMER relax,BG grass2
+,,,,
+Natsuki,O-Oh. Just that. Whew...,surprise2,SUMMER relax,BG grass2
+,,,,
+Natsuki,Nah. I’m off the hook for thatXYZ kinda. They said since I placed the highest they’d give me a ‘break’. But... those little demons! They’re still pushing me to do the worst part of the bet. They’re bulliesXYZ I tell you!,smile,SUMMER relax,BG grass2
+,,,,
+MC,What? Weren’t you the one yelling at me saying it was ‘tradition’ ? But hmm… only part of the bet? What was this bet that you were so afraid ofXYZ anyways?,none,SUMMER relax,BG grass2
+,,,,
+Natsuki,…Ahaha…,tsundere2,SUMMER relax,BG grass2
+,,,,
+Natsuki,...,tsundere2_blush,SUMMER relax,BG grass2
+,,,,
+Natsuki,P-Public confession. In front of everyone. UghXYZ that would’ve been terrible...,tsundere_blush,SUMMER relax,BG grass2
+,,,,
+MC,Public confession? Ha! That would be… quite an interesting sight. The spunky track captainXYZ confessing her love in such a romantic way.,none,SUMMER relax,BG grass2
+,,,,
+MC,That’s not such a bad betXYZ though. You could’ve just let someone know beforehand it’s a joke. AlthoughXYZ you’d have to deal with some interesting rumorsXYZ that kind of stuff spreads fast in our town.,none,SUMMER relax,BG grass2
+,,,,
+Natsuki,S-Someone? You’re not just supposed to confess to ‘someoneXYZ’ idiot. It’s a terrible betXYZ hmph.,surprise2_blush,SUMMER relax,BG grass2
+,,,,
+MC,WaitXYZ don’t tell me you actually have someone you’d confess to…?,none,SUMMER relax,BG grass2
+,,,,
+Natsuki,Wh-Who says I don’tXYZ idiot? I’m a girl tooXYZ you know…,tsundere_blush,SUMMER relax,BG grass2
+,,,,
+M,I’ve been friends with Natsuki for so longXYZ yet I’ve never really heard her talk about boys like that. I honestly can’t even imagine her doing such a romantic gesture.,default,SUMMER relax,BG grass2
+,,,,
+M,…or maybeXYZ I don’t want to.,default,SUMMER relax,BG grass2
+,,,,
+M,But… since I’ve come backXYZ we’ve spent so much time together. She would’ve told me if she liked someoneXYZ right…? Or maybe she doesn’t trust me? It’s not really like her to hide that from meXYZ though...,default,SUMMER relax,BG grass2
+,,,,
+M,Something doesn’t add up…,default,SUMMER relax,BG grass2
+,,,,
+M,A familiar feeling arises. I’m going to *that* placeXYZ againXYZ I feel it. Natsuki looks off into the distanceXYZ seemingly lost in her thoughts.,default,SUMMER relax,BG grass2
+,,,,
+M,I want to… unlock the right thing to say. Because even if I leave this town againXYZ even if I leave Natsuki once more,default,SUMMER relax,BG grass2
+,,,,
+M,I don’t want the distance to grow between my childhood friend and I. Not again.,default,SUMMER relax,BG grass2
+,,,,
+M,And this might be my last chance to prevent that.,default,SUMMER relax,BG grass2
