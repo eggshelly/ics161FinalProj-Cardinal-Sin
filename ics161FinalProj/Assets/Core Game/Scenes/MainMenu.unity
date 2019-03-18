@@ -6415,6 +6415,12 @@ MonoBehaviour:
     volume: 0
     pitch: 1
     source: {fileID: 0}
+  - name: SUMMER run
+    loop: 1
+    clip: {fileID: 8300000, guid: 39591366ef2897c4a8888a895a86acdf, type: 3}
+    volume: 0
+    pitch: 1
+    source: {fileID: 0}
   CR_running: 0
   currentSong:
     name: 
