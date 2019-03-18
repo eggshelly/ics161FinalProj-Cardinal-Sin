@@ -19,7 +19,7 @@ public class Credits : MonoBehaviour
     void Start()
     {
         roles = new Dictionary<string, string[]>();
-        roles["Producer"] = new string[]{ "Timothy Quach"};
+        roles["Designer"] = new string[]{ "Timothy Quach"};
         roles["Artist"] = new string[]{ "Michelle Wang"};
         roles["Writer"] = new string[]{ "Michaela Gonzales"};
         roles["Programmers"] = new string[]{ "Josh Lebow", "Johnny Vong", "Danny Qi"};
