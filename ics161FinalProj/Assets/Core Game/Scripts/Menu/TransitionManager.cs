@@ -12,7 +12,7 @@ public class TransitionManager : MonoBehaviour
     public IEnumerator screenFadeOut;
     private bool CR_Run = false;
     private Color invisible;
-
+    private Color changingColor;
     private void Start()
     {
         if (instance == null)
@@ -44,7 +44,7 @@ public class TransitionManager : MonoBehaviour
         yield return new WaitForSeconds(duration);
     }
 
-        public void BGFadeFirst()
+        public void BGFadeFirst()   //when scene first opens up, background starts solid
     {
         DialogueManager.instance.bgPanel.GetComponent<Image>().sprite = DialogueManager.instance.currentBG;
         DialogueManager.instance.bgPanel2.GetComponent<Image>().sprite = DialogueManager.instance.currentBG;
@@ -54,7 +54,7 @@ public class TransitionManager : MonoBehaviour
         DialogueManager.instance.bgPanel.SetActive(true);
     }
             
-    public void BGFadeSecond()
+    public void BGFadeSecond()  //for background transitions during dialogue
     {
         DialogueManager.instance.bgPanel2.GetComponent<Image>().sprite = DialogueManager.instance.currentBG;
         invisible = DialogueManager.instance.bgPanel2.GetComponent<Image>().color;
@@ -77,7 +77,7 @@ public class TransitionManager : MonoBehaviour
         }
     }
 
-    public void BGFadeZero()
+    public void BGFadeZero()   //for fading in the background when a new conversation is started mid scene
     {
         DialogueManager.instance.bgPanel.GetComponent<Image>().sprite = DialogueManager.instance.currentBG;
         DialogueManager.instance.bgPanel2.GetComponent<Image>().sprite = DialogueManager.instance.currentBG;
@@ -91,8 +91,8 @@ public class TransitionManager : MonoBehaviour
 
     public void BGFadeToMap()
     {
-        DialogueManager.instance.bgPanel2.GetComponent<Image>().sprite = null;
-        StartCoroutine(bgFadeOut(2.0f));
+        //DialogueManager.instance.bgPanel2.GetComponent<Image>().sprite = null;
+        StartCoroutine(bgFadeOut(1f));
         StartCoroutine(WaitFadeOut());
     }
 
@@ -100,12 +100,11 @@ public class TransitionManager : MonoBehaviour
     public IEnumerator bgFadeIn(float fadeTime)
     {
         CR_Run = true;
-        Image tempImage = DialogueManager.instance.bgPanel2.GetComponent<Image>();
-        float alphaVal = 0f;
+        changingColor = DialogueManager.instance.bgPanel2.GetComponent<Image>().color;
         while(DialogueManager.instance.bgPanel2.GetComponent<Image>().color.a < 1f)
         {
-            alphaVal += Time.deltaTime / fadeTime;
-            DialogueManager.instance.bgPanel2.GetComponent<Image>().color = new Color(tempImage.color.r, tempImage.color.g, tempImage.color.b, alphaVal);
+            changingColor.a += Time.deltaTime / fadeTime;
+            DialogueManager.instance.bgPanel2.GetComponent<Image>().color = changingColor;
             yield return null;
         }
         CR_Run = false;
@@ -114,13 +113,11 @@ public class TransitionManager : MonoBehaviour
     public IEnumerator bgFadeOut(float fadeTime)
     {
         CR_Run = true;
-        Image tempImage = DialogueManager.instance.bgPanel.GetComponent<Image>();
-        float alphaVal = 0f;
+        changingColor = DialogueManager.instance.bgPanel.GetComponent<Image>().color;
         while(DialogueManager.instance.bgPanel.GetComponent<Image>().color.a > 0f)
         {
-
-            alphaVal -= Time.deltaTime / fadeTime;
-            DialogueManager.instance.bgPanel.GetComponent<Image>().color = new Color(tempImage.color.r, tempImage.color.g, tempImage.color.b, alphaVal);
+            changingColor.a -= Time.deltaTime / fadeTime;
+            DialogueManager.instance.bgPanel.GetComponent<Image>().color = changingColor;
             yield return null;
         }
         CR_Run = false;
@@ -128,7 +125,7 @@ public class TransitionManager : MonoBehaviour
 
     }
 
-    private IEnumerator WaitCR()
+    private IEnumerator WaitCR()  //coroutine used for the starting dialogue mid scene
     {
         while (CR_Run)
             yield return null;
@@ -137,7 +134,7 @@ public class TransitionManager : MonoBehaviour
         DialogueManager.instance.bgPanel2.SetActive(false);
     }
 
-    private IEnumerator WaitForCR()
+    private IEnumerator WaitForCR()  //coroutine for transitions within dialogue
     {
         while(CR_Run)
             yield return null;
@@ -152,8 +149,10 @@ public class TransitionManager : MonoBehaviour
         {
             yield return null;
         }
-        //DialogueManager.instance.HideBackground();
-        //DialogueManager.instance.HidePanels();
+        //DialogueManager.instance.bgPanel2.GetComponent<Image>().sprite = null;
+        DialogueManager.instance.bgPanel.SetActive(false);
+        changingColor.a = 1f;
+        DialogueManager.instance.bgPanel.GetComponent<Image>().color = changingColor;
         
     }
     public IEnumerator Wait()

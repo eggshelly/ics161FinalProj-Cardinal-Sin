@@ -38,6 +38,8 @@ public class DialogueManager : MonoBehaviour
 
     int maxLines = 0;
     int count = 0;
+    [HideInInspector]
+    public bool isIntro = true;    //allows us to do things that are specific to post introduction in stagehub script
 
     private void Awake()
     {
@@ -76,7 +78,7 @@ public class DialogueManager : MonoBehaviour
                     initialText++;
                     DisplayNextSentence();
                 }
-                Debug.Log(maxLines - count);
+                //Debug.Log(maxLines - count);
                 if (Input.GetKeyDown(KeyCode.Space) && !spaceDelay)
                 {
                     DisplayNextSentence();
@@ -313,7 +315,7 @@ public class DialogueManager : MonoBehaviour
         }
         bgFilepath = BGStringBuilder(bgFilepath, backgroundName, currentSpeaker, DialogueObj);
         tempBG = Resources.Load<Sprite>(bgFilepath) as Sprite;
-        if(tempBG != null)
+        if(tempBG != null)    //if it is null then that means that the MC or someone else is talking and we cant access a new background
         {
             currentBG = tempBG;
             if(sceneManagement.instance.sceneFlag == true)
@@ -321,15 +323,16 @@ public class DialogueManager : MonoBehaviour
                 sceneManagement.instance.sceneFlag = false;
                 TransitionManager.instance.BGFadeFirst();
             }
-            else{
-            if(bgPanel2.GetComponent<Image>().sprite == null)
-            {
-                TransitionManager.instance.BGFadeZero();
-            }
             else
-            {   
-                TransitionManager.instance.BGFadeSecond();
-            }
+            {
+                if(bgPanel2.GetComponent<Image>().sprite == null)
+                {
+                    TransitionManager.instance.BGFadeZero();
+                }
+                else
+                {   
+                    TransitionManager.instance.BGFadeSecond();
+                }
             }
         }
     }

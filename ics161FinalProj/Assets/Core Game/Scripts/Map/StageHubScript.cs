@@ -22,6 +22,7 @@ public class StageHubScript : MonoBehaviour
 
     StagePanelScript panel;
 
+
     private void Awake()
     {
         allStageCollectibles = new Dictionary<Stage, List<bool[]>>();
@@ -123,7 +124,17 @@ public class StageHubScript : MonoBehaviour
     //Listener that is triggered when the DialogueManager is done with the current sequence. Starts the level 
     void DoneWithDialogueListener()
     {
-        if (currentStage != null)
+        //this runs only when introduction dialogue has finished
+        if(currentStage == null && DialogueManager.instance.isIntro == true)
+        {
+            if(AudioManager.instance.currentSong.name != "INTRODUCTION")
+                AudioManager.instance.DialogueTransitionSong("INTRODUCTION");
+            DialogueManager.instance.bgPanel.SetActive(true);
+            TransitionManager.instance.BGFadeToMap();
+            DialogueManager.instance.isIntro = false;
+        }
+        //this runs when any other dialogue has finished
+        else if(currentStage != null)
         {
             panel.ClosePanel();
             player.GetComponent<PlayerMapMovement>().enabled = false;
