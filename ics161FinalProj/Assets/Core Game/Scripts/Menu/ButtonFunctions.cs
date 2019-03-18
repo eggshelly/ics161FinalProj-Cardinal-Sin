@@ -16,7 +16,8 @@ public class ButtonFunctions : MonoBehaviour
     }
     public void BackToMenu()
     {
-        FindObjectOfType<AudioManager>().Stop(AudioManager.instance.currentSong.name);
+        if(AudioManager.instance.currentSong.name != "MainMenu")
+            FindObjectOfType<AudioManager>().Stop(AudioManager.instance.currentSong.name);
         StartCoroutine(LoadMainScreen());
     }
 

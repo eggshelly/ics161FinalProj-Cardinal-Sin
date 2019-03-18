@@ -34,7 +34,7 @@ public class sceneManagement : MonoBehaviour
 
         scName = scene.name;
         sceneMusic s = Array.Find(relations, x => x.sceneName == scene.name);
-        if(s != null)
+        if(s != null && AudioManager.instance.currentSong.name != s.songName)  //allows us to have menu theme consistent during all submenus in main menu
             FindObjectOfType<AudioManager>().Play(s.songName);
     }
 

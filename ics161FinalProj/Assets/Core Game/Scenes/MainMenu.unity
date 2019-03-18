@@ -6291,7 +6291,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: AUTUMN
     loop: 1
-    clip: {fileID: 8300000, guid: 975d3d58d2993b64eafbc7ebefd2b575, type: 3}
+    clip: {fileID: 8300000, guid: f7700a36c000eba4b8d448b0cfb154b5, type: 3}
     volume: 0
     pitch: 1
     source: {fileID: 0}
@@ -6339,13 +6339,13 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: AUTUMN sad
     loop: 1
-    clip: {fileID: 8300000, guid: 3dc520827a5ac984d9f2a9d737edf59b, type: 3}
+    clip: {fileID: 8300000, guid: df535462d900e2040b111f8efa75a287, type: 3}
     volume: 0
     pitch: 1
     source: {fileID: 0}
   - name: AUTUMN smerk
     loop: 1
-    clip: {fileID: 8300000, guid: e6c7022147bf50e45809cc94763970fa, type: 3}
+    clip: {fileID: 8300000, guid: e6b528b02876b4d4484d391f82d54dda, type: 3}
     volume: 0
     pitch: 1
     source: {fileID: 0}
@@ -6399,7 +6399,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: WINTER steps
     loop: 1
-    clip: {fileID: 8300000, guid: 4e37784f7588ff147860fa0f24faae16, type: 3}
+    clip: {fileID: 8300000, guid: 2706eace6d0611d469b8f05d426e8ffb, type: 3}
     volume: 0
     pitch: 1
     source: {fileID: 0}
