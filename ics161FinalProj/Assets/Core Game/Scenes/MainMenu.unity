@@ -6327,7 +6327,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: SPRING bittersweet2
     loop: 1
-    clip: {fileID: 8300000, guid: 06c0b1afa57647648b24dd34edc4b08b, type: 3}
+    clip: {fileID: 8300000, guid: a883d3b32f58a8747aa6825a32debc03, type: 3}
     volume: 0
     pitch: 1
     source: {fileID: 0}

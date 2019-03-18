@@ -65,13 +65,13 @@ public class TransitionManager : MonoBehaviour
 
             if(CR_Run == false)   //ensures that this is only called once so that if user clicks again during this routine, it will only register once and still work properly
             {
-                StartCoroutine(bgFadeIn(0.75f));
+                StartCoroutine(bgFadeIn(1f));
                 StartCoroutine(WaitForCR());
             }
             else     //addresses case where user clicks so fast that next coroutine tries to start before the last fade in effect has finished. this will force it to wait in theory
             {
                 StartCoroutine(Wait());
-                StartCoroutine(bgFadeIn(1.15f));
+                StartCoroutine(bgFadeIn(1f));
                 StartCoroutine(WaitForCR());
             }
         }
@@ -85,14 +85,14 @@ public class TransitionManager : MonoBehaviour
         invisible.a = 0f;
         DialogueManager.instance.bgPanel2.GetComponent<Image>().color = invisible;
         DialogueManager.instance.bgPanel2.SetActive(true);        //bgpanel2 alpha value must be initialized as invisible
-        StartCoroutine(bgFadeIn(0.75f));     //this will fade in panel2
+        StartCoroutine(bgFadeIn(1f));     //this will fade in panel2
         StartCoroutine(WaitCR());
     }
 
     public void BGFadeToMap()
     {
         //DialogueManager.instance.bgPanel2.GetComponent<Image>().sprite = null;
-        StartCoroutine(bgFadeOut(0.75f));
+        StartCoroutine(bgFadeOut(1f));
         StartCoroutine(WaitFadeOut());
     }
 

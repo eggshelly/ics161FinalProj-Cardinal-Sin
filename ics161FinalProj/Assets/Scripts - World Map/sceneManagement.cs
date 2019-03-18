@@ -33,14 +33,9 @@ public class sceneManagement : MonoBehaviour
         sceneFlag = true;   //for background transitions
 
         scName = scene.name;
-        foreach(sceneMusic x in relations)
-        {
-            if(x.sceneName == scName)
-            {
-                FindObjectOfType<AudioManager>().Play(x.songName);
-            }
-        }
-
+        sceneMusic s = Array.Find(relations, x => x.sceneName == scene.name);
+        if(s != null)
+            FindObjectOfType<AudioManager>().Play(s.songName);
     }
 
     // called when the game is terminated
