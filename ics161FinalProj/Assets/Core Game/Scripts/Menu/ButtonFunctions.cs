@@ -16,13 +16,8 @@ public class ButtonFunctions : MonoBehaviour
     }
     public void BackToMenu()
     {
-        Time.timeScale = 1;
-        if (DialogueManager.instance != null)
-        {
-            DialogueManager.instance.HidePanels();
-            PauseOnMap.mapPaused = false;
-        }
-        FindObjectOfType<AudioManager>().Stop(AudioManager.instance.currentSong.name);
+        if(SceneManager.GetActiveScene() != SceneManager.GetSceneByName("Credits"))
+            FindObjectOfType<AudioManager>().Stop(AudioManager.instance.currentSong.name);
         StartCoroutine(LoadMainScreen());
     }
 
@@ -34,7 +29,7 @@ public class ButtonFunctions : MonoBehaviour
 
     public void Credits()
     {
-        //SceneManager.LoadScene("Credits");
+        StartCoroutine(LoadCredits());
     }
 
     public void ChooseFile(string buttonName)
@@ -62,10 +57,17 @@ public class ButtonFunctions : MonoBehaviour
         SceneManager.LoadScene("SaveFiles");
         yield return StartCoroutine(TransitionManager.instance.screenFadeIn);
     }
+    public IEnumerator LoadCredits()
+    {
+        yield return StartCoroutine(TransitionManager.instance.screenFadeOut);
+        SceneManager.LoadScene("Credits");
+        yield return StartCoroutine(TransitionManager.instance.screenFadeIn);
+    }
 
     public IEnumerator LoadMainScreen()
     {
-        SaveFileManager.instance.SetLoadDataFalse();
+        if(SaveFileManager.instance != null)
+            SaveFileManager.instance.SetLoadDataFalse();
         yield return StartCoroutine(TransitionManager.instance.screenFadeOut);
         SceneManager.LoadScene("MainMenu");
         yield return StartCoroutine(TransitionManager.instance.screenFadeIn);

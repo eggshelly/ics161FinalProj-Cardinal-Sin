@@ -60,6 +60,9 @@ public class PauseOnMap : MonoBehaviour
         player.GetComponent<PlayerMapMovement>().CantMove();
         DialogueManager.instance.ClearDialogue();
         PausePanel.SetActive(false);
+        Time.timeScale = 1;
+        DialogueManager.instance.HidePanels();
+        PauseOnMap.mapPaused = false;
         GetComponent<ButtonFunctions>().BackToMenu();
     }
 
