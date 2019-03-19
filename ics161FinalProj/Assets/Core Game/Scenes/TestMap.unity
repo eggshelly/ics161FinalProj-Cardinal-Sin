@@ -323,7 +323,13 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  AllWeeksFinished:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   hasDoneIntro: 0
+  doneWithGame: 0
   currentBG: {fileID: 0}
   isIntro: 1
 --- !u!4 &23808604
@@ -2090,7 +2096,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708545928}
-  m_LocalRotation: {x: -5.061278e-31, y: 0.000000030165822, z: 9.603807e-19, w: 1}
+  m_LocalRotation: {x: -5.0622937e-31, y: 0.000000030165822, z: 9.605718e-19, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3352,7 +3358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c900e11b554251e43a083064df8f6bff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  week: 1
+  week: 8
   textBetweenWeeks:
   - One Week Later...
   - The Following Week...

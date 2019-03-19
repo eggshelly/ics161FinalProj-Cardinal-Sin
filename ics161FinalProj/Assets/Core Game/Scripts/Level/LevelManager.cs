@@ -82,9 +82,12 @@ public class LevelManager : MonoBehaviour
     //Passes the array of bools representing the collectibles obtained to SaveFileManager (to pass to the StageHubScript to update the StagePanel in the test map) and then loads the Test Map scene
     public void PassDataToSaveManager()
     {
-        Time.timeScale = 1;    //allows the fade coroutine to run when player wants to quit back to map
+        PauseOnLevel p = GameObject.Find("Pause").GetComponent<PauseOnLevel>();
+        p.ResumedGame();
+        p.enabled = false;
         playerInteraction.enabled = false;
         playerMovement.enabled = false;
+        collectiblesPanel.SetActive(false);
         FindObjectOfType<AudioManager>().Stop(AudioManager.instance.currentSong.name); 
         StartCoroutine(TransitionManager.instance.screenFadeOut);
         StartCoroutine(BackToMapCR()); 

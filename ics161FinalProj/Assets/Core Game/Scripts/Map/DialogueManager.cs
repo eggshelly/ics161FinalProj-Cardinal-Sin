@@ -29,8 +29,10 @@ public class DialogueManager : MonoBehaviour
 
     public UnityEvent DoneWithDialogue;
     public UnityEvent EndOfWeek;
+    public UnityEvent AllWeeksFinished;
 
     public bool hasDoneIntro = false;
+    public bool doneWithGame = false;
     private Sprite currentSprite = null;
     [HideInInspector]
     public Sprite currentBG = null;
@@ -45,6 +47,7 @@ public class DialogueManager : MonoBehaviour
     {
         DoneWithDialogue = new UnityEvent();
         EndOfWeek = new UnityEvent();
+        AllWeeksFinished = new UnityEvent();
         if (instance == null)
         {
             instance = this;
@@ -105,8 +108,16 @@ public class DialogueManager : MonoBehaviour
                     textOutput.Clear();
                     currentSprite = null;
                     bgPanel2.GetComponent<Image>().sprite = null;
-                    NextWeek();
-                    DoneWithDialogue.Invoke();
+                    if (!doneWithGame)
+                    {
+                        NextWeek();
+                        DoneWithDialogue.Invoke();
+                    }
+                    else
+                    {
+                        HideBackground();
+                        AllWeeksFinished.Invoke();
+                    }
                 }
 
             }
@@ -124,8 +135,16 @@ public class DialogueManager : MonoBehaviour
                     dialogueAvailable = false;
                     currentSprite = null;
                     bgPanel2.GetComponent<Image>().sprite = null;
-                    NextWeek();
-                    DoneWithDialogue.Invoke();
+                    if (!doneWithGame)
+                    {
+                        NextWeek();
+                        DoneWithDialogue.Invoke();
+                    }
+                    else
+                    {
+                        HideBackground();
+                        AllWeeksFinished.Invoke();
+                    }
                 }
                 else if (Input.GetKeyDown(KeyCode.Space) && spaceDelay)
                 {
@@ -140,8 +159,16 @@ public class DialogueManager : MonoBehaviour
                     dialogueAvailable = false;
                     currentSprite = null;
                     bgPanel2.GetComponent<Image>().sprite = null;
-                    NextWeek();
-                    DoneWithDialogue.Invoke();
+                    if (!doneWithGame)
+                    {
+                        NextWeek();
+                        DoneWithDialogue.Invoke();
+                    }
+                    else
+                    {
+                        HideBackground();
+                        AllWeeksFinished.Invoke();
+                    }
                 }
             }
         }

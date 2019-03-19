@@ -119,10 +119,10 @@ public class Stage : MonoBehaviour
 
     public int NextLevel(int level)
     {
-        if (level < totalLevels)
+        if (level <= totalLevels)
         {
             hasFinishedLevel[level] = true;
-            currentLevel = level + 1;
+            currentLevel = (level < totalLevels ? level + 1 : currentLevel);
         }
         return currentLevel;
     }

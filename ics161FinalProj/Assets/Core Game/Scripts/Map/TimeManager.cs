@@ -45,7 +45,7 @@ public class TimeManager : MonoBehaviour
     void Start()
     {
         maxNumberOfWeeks = GameObject.Find("StageHub").GetComponent<StageHubScript>().GetTotalNumLevels();
-        Debug.Log(maxNumberOfWeeks);
+        DialogueManager.instance.AllWeeksFinished.AddListener(AllWeeksFinishedListener);
         DialogueManager.instance.EndOfWeek.AddListener(EndOfWeekListener);
 
     }
@@ -53,7 +53,6 @@ public class TimeManager : MonoBehaviour
     public void SetDay(int week)
     {
         this.week = week;
-        Debug.Log("Set day being called");
         UpdateText();
     }
 
@@ -91,35 +90,39 @@ public class TimeManager : MonoBehaviour
     {
         yield return StartCoroutine(TransitionManager.instance.screenFadeOut);
         DialogueManager.instance.HideBackground();
-        StartCoroutine(EndOfWeekText());        
+        NextWeek();
+        StartCoroutine(EndOfWeekText(textBetweenWeeks[(int)(Random.value * textBetweenWeeks.Length)]));
+        
     }
 
-    IEnumerator EndOfWeekText()
+    IEnumerator EndOfWeekText(string text)
     {
-        NextWeek();
-        if (week >= maxNumberOfWeeks)
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        player.transform.position = Vector3.zero;
+        betweenWeekText.gameObject.SetActive(true);
+        foreach (var c in text)
         {
-            AllWeeksFinished();
+            betweenWeekText.text += c;
+            yield return new WaitForSeconds(0.05f);
+        }
+        yield return new WaitForSeconds(1f);
+        betweenWeekText.text = "";
+        CR_started = false;
+        betweenWeekText.gameObject.SetActive(false);
+        if (week > maxNumberOfWeeks)
+        {
+            DialogueManager.instance.doneWithGame = true;
+            DialogueManager.instance.LoadDialogue("CONCLUSION");
         }
         else
         {
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
-            player.transform.position = Vector3.zero;
-            betweenWeekText.gameObject.SetActive(true);
-            foreach (var c in textBetweenWeeks[(int)(Random.value * textBetweenWeeks.Length)])
-            {
-                betweenWeekText.text += c;
-                yield return new WaitForSeconds(0.05f);
-            }
-            yield return new WaitForSeconds(1f);
-            betweenWeekText.text = "";
             FindObjectOfType<AudioManager>().DialogueTransitionSong("INTRODUCTION");
             player.GetComponent<PlayerMapInteraction>().CanInteract();
             player.GetComponent<PlayerMapMovement>().CanMove();
-            CR_started = false;
-            betweenWeekText.gameObject.SetActive(false);
+            yield return StartCoroutine(TransitionManager.instance.screenFadeIn);
         }
-        yield return StartCoroutine(TransitionManager.instance.screenFadeIn);
+        
+            
     }
 
 
@@ -135,10 +138,18 @@ public class TimeManager : MonoBehaviour
         }
     }
 
-    void AllWeeksFinished()
+    void AllWeeksFinishedListener()
     {
+        StartCoroutine(EndingText());
+
+    }
+
+    IEnumerator EndingText()
+    {
+        yield return StartCoroutine(EndOfWeekText("More levels coming soon!\nThank you for playing!")); //temporary
         SaveFileManager.instance.SaveGame();
         SceneManager.LoadScene("Credits");
+        StartCoroutine(TransitionManager.instance.screenFadeIn);
     }
 
 

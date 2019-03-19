@@ -59,6 +59,7 @@ public class StagePanelScript : MonoBehaviour
         currentStage = currentStage.Substring(0, headerText.text.Length - 1) + sLevel;
         headerText.text = currentStage;
         SetButtonInteract(sLevel);
+        Debug.Log(sLevel + " " + stage.hasFinishedLevel(currentStageIndex, currentStageLevel));
         if (stage.hasFinishedLevel(currentStageIndex, currentStageLevel))
         {
             EnterStage.interactable = false;
