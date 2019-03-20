@@ -2,11 +2,11 @@ SPEAKER,CONVO,SPRITE,AUDIO,BACKGROUND
 ,,,,
 MC,…,none,AUTUMN,BG cafe1
 ,,,,
-M,I couldn’t think of anything. I guess I’ll just play it off…,default,AUTUMN,BG cafe1
+M,I couldn’t think of anything. I guess I’ll just play it off…,none,AUTUMN,BG cafe1
 ,,,,
 MC,Here are the tissues by the way. I think you left them here earlier.,none,AUTUMN,BG cafe1
 ,,,,
-Akiko,Oh! Woops~,default,AUTUMN,BG cafe1
+Akiko,Oh! Woops~,neutral,AUTUMN,BG cafe1
 ,,,,
 M,Her surprised expression couldn’t fool me. She left them here on purpose… I feel bad.,default,AUTUMN sad,BG cafe1
 ,,,,
@@ -14,14 +14,14 @@ MC,Thank you for the teaXYZ Akiko. You seem quite busy soXYZ I’ll get going.,n
 ,,,,
 M,Akiko smiles in an understanding way. I can’t tell if she looks disappointed or just tired. Or both.,default,AUTUMN sad,BG cafe1
 ,,,,
-Akiko,Sure thing. Come by anytimeXYZ okay?,default,AUTUMN sad,BG cafe1
+Akiko,Sure thing. Come by anytimeXYZ okay?,neutral,AUTUMN sad,BG cafe1
 ,,,,
 M,I say my goodbyes and leave the cozy little coffee shop. I stand alone in the afternoon breeze.,default,AUTUMN sad,BG grass2
 ,,,,
 M,SomehowXYZ it felt even colder.,default,AUTUMN sad,BG grass2
 ,,,,
-???,"Thanks for taking interest in Akiko's route! Unfortunately for this build, we haven't yet implemented her story/levels.",,NONE,BG black
+???,"Thanks for taking interest in Akiko's route! Unfortunately for this buildXYZ we haven't yet implemented her story/levels.",none,NONE,BG black
 ,,,,
-???,"If you would like experience the game from beginning to end, please check out Haruka and Natsuki!",,NONE,BG black
+???,"If you would like experience the game from beginning to endXYZ please check out Haruka and Natsuki!",none,NONE,BG black
 ,,,,
-???,Check back another time for the final build and thanks for playing!,,NONE,BG black
+???,Check back another time for the final build and thanks for playing!,none,NONE,BG black
