@@ -215,7 +215,7 @@ public class DialogueManager : MonoBehaviour
         for (int i = 2; i <= data.Length - 1; i += 2) //even lines due to CSV sheet issues (prime lines are ,,)
         {
             string[] parsedData = data[i].Split(new char[] { ',' });
-
+            Debug.Log(i);
             Dialogue dialogueObj = new Dialogue(parsedData[0], parsedData[1].Replace("XYZ", ","), parsedData[2], parsedData[3], parsedData[4]); 
 
             GameDialogue.Add(i / 2, dialogueObj);

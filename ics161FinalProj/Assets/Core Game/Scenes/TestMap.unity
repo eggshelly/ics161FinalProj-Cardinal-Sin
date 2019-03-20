@@ -1980,8 +1980,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.0060489, y: -422}
-  m_SizeDelta: {x: 1120.8, y: 234.3}
+  m_AnchoredPosition: {x: -0.0060489, y: -410.5}
+  m_SizeDelta: {x: 1120.8, y: 272.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &670893823
 MonoBehaviour:
@@ -2096,7 +2096,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708545928}
-  m_LocalRotation: {x: -5.0622937e-31, y: 0.000000030165822, z: 9.605718e-19, w: 1}
+  m_LocalRotation: {x: -5.108674e-31, y: 0.000000030165822, z: 9.692977e-19, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3358,7 +3358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c900e11b554251e43a083064df8f6bff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  week: 8
+  week: 1
   textBetweenWeeks:
   - One Week Later...
   - The Following Week...
@@ -4077,7 +4077,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 136.99998, y: 122.02855}
+  m_AnchoredPosition: {x: 136.99998, y: 143}
   m_SizeDelta: {x: 208.2, y: 43.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1448700751

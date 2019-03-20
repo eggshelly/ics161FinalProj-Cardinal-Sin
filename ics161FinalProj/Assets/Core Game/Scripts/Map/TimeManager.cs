@@ -22,6 +22,7 @@ public class TimeManager : MonoBehaviour
 
     int maxNumberOfWeeks;
 
+    bool endingDone = false;
 
     private void Awake()
     {
@@ -111,8 +112,12 @@ public class TimeManager : MonoBehaviour
         betweenWeekText.gameObject.SetActive(false);
         if (week > maxNumberOfWeeks)
         {
-            DialogueManager.instance.doneWithGame = true;
-            DialogueManager.instance.LoadDialogue("CONCLUSION");
+            if (!endingDone)
+            {
+                DialogueManager.instance.doneWithGame = true;
+                DialogueManager.instance.LoadDialogue("CONCLUSION");
+                endingDone = true;
+            }
         }
         else
         {
@@ -147,7 +152,7 @@ public class TimeManager : MonoBehaviour
     IEnumerator EndingText()
     {
         yield return StartCoroutine(EndOfWeekText("More levels coming soon!\nThank you for playing!")); //temporary
-        SaveFileManager.instance.SaveGame();
+        //SaveFileManager.instance.SaveGame();
         SceneManager.LoadScene("Credits");
         StartCoroutine(TransitionManager.instance.screenFadeIn);
     }
