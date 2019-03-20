@@ -2080,11 +2080,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 980872472}
+    - target: {fileID: 8680255401941994137, guid: 432d72d7b5065d643a3acac3188b5c2f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartLevel
       objectReference: {fileID: 0}
     - target: {fileID: 8680255402150954678, guid: 432d72d7b5065d643a3acac3188b5c2f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 980872472}
+    - target: {fileID: 8680255402150954678, guid: 432d72d7b5065d643a3acac3188b5c2f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PassDataToSaveManager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 432d72d7b5065d643a3acac3188b5c2f, type: 3}
@@ -2909,6 +2919,18 @@ PrefabInstance:
       objectReference: {fileID: 588856816}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 358f226309f36f1428c94e469698668d, type: 3}
+--- !u!114 &980872472 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4116506116296435903, guid: 358f226309f36f1428c94e469698668d,
+    type: 3}
+  m_PrefabInstance: {fileID: 980872471}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5884c939a6e9e904d9036c0ed6a80c33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &987555866
 GameObject:
   m_ObjectHideFlags: 0
@@ -5606,6 +5628,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6154046035216310540, guid: 1131598cd5cd38b4d91b19834c095a44,
+        type: 3}
+      propertyPath: canRun
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1104641669, guid: 1131598cd5cd38b4d91b19834c095a44, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6154046035216310538, guid: 1131598cd5cd38b4d91b19834c095a44,
         type: 3}
       propertyPath: m_Material
@@ -5615,15 +5646,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AngularDrag
       value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 6154046035216310540, guid: 1131598cd5cd38b4d91b19834c095a44,
-        type: 3}
-      propertyPath: canRun
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1104641669, guid: 1131598cd5cd38b4d91b19834c095a44, type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1131598cd5cd38b4d91b19834c095a44, type: 3}
@@ -6968,7 +6990,7 @@ PrefabInstance:
     - target: {fileID: 5309328394198043222, guid: d45a8c493340b9943916596b053ee466,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0010008455
+      value: -0.0010010131
       objectReference: {fileID: 0}
     - target: {fileID: 5309328394198043222, guid: d45a8c493340b9943916596b053ee466,
         type: 3}
@@ -7123,11 +7145,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 980872472}
+    - target: {fileID: 774392049903567385, guid: 830451f6974a90745a68fe1fe15949f9,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartLevel
       objectReference: {fileID: 0}
     - target: {fileID: 774392049268793999, guid: 830451f6974a90745a68fe1fe15949f9,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 980872472}
+    - target: {fileID: 774392049268793999, guid: 830451f6974a90745a68fe1fe15949f9,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PassDataToSaveManager
       objectReference: {fileID: 0}
     - target: {fileID: 774392049391394523, guid: 830451f6974a90745a68fe1fe15949f9,
         type: 3}
