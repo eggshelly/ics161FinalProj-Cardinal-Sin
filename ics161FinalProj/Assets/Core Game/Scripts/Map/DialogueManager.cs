@@ -40,7 +40,6 @@ public class DialogueManager : MonoBehaviour
 
     int maxLines = 0;
     int count = 0;
-    bool ShouldBePlayingDialogue = false;
     [HideInInspector]
     public bool isIntro = true;    //allows us to do things that are specific to post introduction in stagehub script
 
@@ -71,7 +70,7 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(PauseOnMap.mapPaused == false && ShouldBePlayingDialogue)
+        if(PauseOnMap.mapPaused == false)
         {
             if (textOutput.Count >= 1)
             {
@@ -92,7 +91,6 @@ public class DialogueManager : MonoBehaviour
                     DisplayFullSentence();
                 else if (Input.GetKeyDown(KeyCode.P) && (maxLines - count > 0)) //press P to skip dialogue, FOR T E S T I N G P U R P O S E S
                 {
-                    ShouldBePlayingDialogue = false;
                     spaceDelay = false;
                     dialogueAvailable = false;
                     if (!introTransition)
@@ -127,7 +125,6 @@ public class DialogueManager : MonoBehaviour
             {
                 if(Input.GetKeyDown(KeyCode.Space) && !spaceDelay)
                 {
-                    ShouldBePlayingDialogue = false;
                     HidePanels();
                     if(!hasDoneIntro)
                     {
@@ -151,7 +148,6 @@ public class DialogueManager : MonoBehaviour
                 }
                 else if (Input.GetKeyDown(KeyCode.Space) && spaceDelay)
                 {
-                    ShouldBePlayingDialogue = false;
                     if (!hasDoneIntro)
                     {
                         HideBackground();
@@ -241,7 +237,6 @@ public class DialogueManager : MonoBehaviour
             textOutput.Enqueue(dialogueDict[currentLine++]);
         maxLines = textOutput.Count;
         count = maxLines;
-        ShouldBePlayingDialogue = true;
     }
 
     private void DisplayNextSentence()
